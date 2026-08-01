@@ -189,3 +189,15 @@ What is missing is:
 - What minimum workflow would make them adopt a new tool?
 - Which existing AI tool do they already use, and what do they still do manually?
 
+## Appendix A: Survey Instrument
+
+Use the Google Form-ready survey draft in [research_survey.md](research_survey.md) as the primary instrument for validating the gap analysis with mathematicians.
+
+Recommended use:
+
+- Copy the section headings into Google Forms as form sections.
+- Paste the numbered questions as individual form questions.
+- Keep the listed options for multiple-choice items.
+- Use the short-answer prompts for open feedback and follow-up contact details.
+- After collecting responses, feed the results back into this gap analysis to refine the opportunity list and the MVP scope.
+

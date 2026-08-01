@@ -15,6 +15,9 @@ Your responses will be used only for research and product design purposes.
 ## Section 1: Background
 
 ### 1. What is your current role?
+
+Type: Multiple choice
+
 - MSc student
 - PhD scholar
 - Professor
@@ -23,6 +26,9 @@ Your responses will be used only for research and product design purposes.
 - Other
 
 ### 2. What area of mathematics do you work in?
+
+Type: Multiple choice
+
 - Pure mathematics
 - Applied mathematics
 - Statistics
@@ -31,6 +37,9 @@ Your responses will be used only for research and product design purposes.
 - Other
 
 ### 3. How many research papers do you read in a typical week?
+
+Type: Multiple choice
+
 - 1 to 2
 - 3 to 5
 - 6 to 10
@@ -39,6 +48,9 @@ Your responses will be used only for research and product design purposes.
 ## Section 2: Reading Challenges
 
 ### 4. What is the hardest part of reading mathematical papers?
+
+Type: Multiple choice
+
 - Dense notation
 - Understanding definitions
 - Understanding theorem statements
@@ -48,6 +60,9 @@ Your responses will be used only for research and product design purposes.
 - Other
 
 ### 5. How do you currently organize definitions, theorems, lemmas, and proofs?
+
+Type: Multiple choice
+
 - Handwritten notes
 - Digital notes
 - Reference manager
@@ -56,6 +71,9 @@ Your responses will be used only for research and product design purposes.
 - I do not have a fixed system
 
 ### 6. What is the biggest problem with notation across papers?
+
+Type: Multiple choice
+
 - Same symbol means different things
 - Different symbols mean the same thing
 - Too much notation in one paper
@@ -66,6 +84,9 @@ Your responses will be used only for research and product design purposes.
 ## Section 3: Tools and Workflow
 
 ### 7. Which tools do you currently use when reading or organizing papers?
+
+Type: Multiple choice
+
 - PDF reader
 - Zotero
 - Mendeley
@@ -80,6 +101,9 @@ Your responses will be used only for research and product design purposes.
 - Other
 
 ### 8. What would save you the most time?
+
+Type: Multiple choice
+
 - Extracting definitions automatically
 - Extracting theorem-like statements
 - Linking lemmas to theorems
@@ -90,6 +114,9 @@ Your responses will be used only for research and product design purposes.
 - Other
 
 ### 9. Would a tool that extracts definitions, theorems, lemmas, and proofs from PDFs be useful to you?
+
+Type: Multiple choice
+
 - Very useful
 - Useful
 - Neutral
@@ -97,6 +124,9 @@ Your responses will be used only for research and product design purposes.
 - Not sure
 
 ### 10. What would you not trust an AI tool to do?
+
+Type: Multiple choice
+
 - Summarize papers
 - Extract definitions
 - Extract theorem statements
@@ -109,6 +139,9 @@ Your responses will be used only for research and product design purposes.
 ## Section 4: AI Tools
 
 ### 11. Which AI tools have you used for research?
+
+Type: Multiple choice
+
 - ChatGPT
 - Gemini
 - Claude
@@ -118,6 +151,9 @@ Your responses will be used only for research and product design purposes.
 - Other
 
 ### 12. What problems have you faced with AI tools for research?
+
+Type: Multiple choice
+
 - Hallucinated answers
 - Weak citations
 - Poor handling of notation
@@ -127,6 +163,9 @@ Your responses will be used only for research and product design purposes.
 - Other
 
 ### 13. What feature would make an AI research tool actually useful for mathematics?
+
+Type: Multiple choice
+
 - Source-grounded answers only
 - Better PDF understanding
 - Theorem and proof extraction
@@ -138,15 +177,24 @@ Your responses will be used only for research and product design purposes.
 ## Section 5: Follow-up
 
 ### 14. Would you be open to a short follow-up interview?
+
+Type: Multiple choice
+
 - Yes
 - No
 
 ### 15. If yes, leave your email or preferred contact method here.
+
+Type: Short answer
+
 - Short answer
 
 ## Optional Closing Question
 
 ### 16. What feature would you most want in a mathematics research assistant?
+
+Type: Short answer
+
 - Short answer
 
 ## Recommended Survey Strategy
@@ -167,3 +215,11 @@ Use the responses to validate these gap areas:
 - PDF parsing quality
 - Note organization
 - Dependency tracking
+
+## Google Form Build Notes
+
+- Use each numbered item as a separate question in Google Forms.
+- Use the section headings as Google Form sections.
+- Mark the short-answer prompts as paragraph or short answer fields as appropriate.
+- Keep the multiple-choice options in the same order unless pilot feedback suggests a different ranking.
+- Add an introductory description explaining that the survey supports MathResearch Studio, an AI-assisted research workspace for mathematics researchers.
