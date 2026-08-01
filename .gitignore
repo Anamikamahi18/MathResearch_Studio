@@ -1,0 +1,25 @@
+# Python environments
+venv/
+
+# Python cache
+__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# Project runtime data
+uploads/
+models/
+
+# Databases
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
