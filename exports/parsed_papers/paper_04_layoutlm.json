@@ -1,0 +1,580 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_04_layoutlm_5bec7f49",
+  "source_file": {
+    "file_name": "paper_04_layoutlm.pdf",
+    "file_path": "C:\\Projects\\MathResearchStudio\\tests\\sample_papers\\paper_04_layoutlm.pdf",
+    "file_hash": "5bec7f495a9ea91616a73200b3e13b97f42bbf7d0bf5162749a98831d4c0de5b",
+    "ingested_at": "2026-08-03T06:15:38.544485+00:00"
+  },
+  "title": "LayoutLM: Pre-training of Text and Layout for  Document Image Understanding",
+  "authors": [
+    {
+      "name": "Yiheng Xu",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "Minghao Li",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "Lei Cui",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "Shaohan Huang",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "Furu Wei",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "Ming Zhou",
+      "affiliation": null,
+      "email": null
+    }
+  ],
+  "abstract": "Pre-training techniques have been verified successfully in a vari-\nety of NLP tasks in recent years. Despite the widespread use of\npre-training models for NLP applications, they almost exclusively\nfocus on text-level manipulation, while neglecting layout and style\ninformation that is vital for document image understanding. In\nthis paper, we propose the LayoutLM to jointly model interactions\nbetween text and layout information across scanned document\nimages, which is beneficial for a great number of real-world doc-\nument image understanding tasks such as information extraction\nfrom scanned documents. Furthermore, we also leverage image\nfeatures to incorporate words\u2019 visual information into LayoutLM.\nTo the best of our knowledge, this is the first time that text and\nlayout are jointly learned in a single framework for document-\nlevel pre-training. It achieves new state-of-the-art results in several\ndownstream tasks, including form understanding (from 70.72 to\n79.27), receipt understanding (from 94.02 to 95.24) and document\nimage classification (from 93.07 to 94.42). The code and pre-trained\nLayoutLM models are publicly available at https://aka.ms/layoutlm.\nCCS CONCEPTS\n\u2022 Information systems \u2192Business intelligence; \u2022 Computing\nmethodologies \u2192Information extraction; Transfer learning;\n\u2022 Applied computing \u2192Document analysis.\nKEYWORDS\nLayoutLM; pre-trained models; document image understanding\nACM Reference Format:\nYiheng Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, and Ming\nZhou. 2020. LayoutLM: Pre-training of Text and Layout for Document\nImage Understanding. In Proceedings of the 26th ACM SIGKDD Conference\non Knowledge Discovery and Data Mining (KDD \u201920), August 23\u201327, 2020,\nVirtual Event, CA, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/\n10.1145/3394486.3403172\n\u2217Equal contributions during internship at Microsoft Research Asia.\nPermission to make digital or hard copies of all or part of this work for personal or\nclassroom use is granted without fee provided that copies are not made or distributed\nfor profit or commercial advantage and that copies bear this notice and the full citation\non the first page. Copyrights for components of this work owned by others than ACM\nmust be honored. Abstracting with credit is permitted. To copy otherwise, or republish,\nto post on servers or to redistribute to lists, requires prior specific permission and/or a\nfee. Request permissions from permissions@acm.org.\nKDD \u201920, August 23\u201327, 2020, Virtual Event, CA, USA\n\u00a9 2020 Association for Computing Machinery.\nACM ISBN 978-1-4503-7998-4/20/08...$15.00\nhttps://doi.org/10.1145/3394486.3403172\n1",
+  "keywords": [
+    "KEYWORDS"
+  ],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "Document Body",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "LayoutLM: Pre-training of Text and Layout for\nDocument Image Understanding\nYiheng Xu\u2217\ncharlesyihengxu@gmail.com\nHarbin Institute of Technology\nMinghao Li\u2217\nliminghao1630@buaa.edu.cn\nBeihang University\nLei Cui\nlecu@microsoft.com\nMicrosoft Research Asia\nShaohan Huang\nshaohanh@microsoft.com\nMicrosoft Research Asia\nFuru Wei\nfuwei@microsoft.com\nMicrosoft Research Asia\nMing Zhou\nmingzhou@microsoft.com\nMicrosoft Research Asia",
+      "parent_section_id": null
+    },
+    {
+      "section_id": "s2",
+      "heading": "ABSTRACT",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Pre-training techniques have been verified successfully in a vari-\nety of NLP tasks in recent years. Despite the widespread use of\npre-training models for NLP applications, they almost exclusively\nfocus on text-level manipulation, while neglecting layout and style\ninformation that is vital for document image understanding. In\nthis paper, we propose the LayoutLM to jointly model interactions\nbetween text and layout information across scanned document\nimages, which is beneficial for a great number of real-world doc-\nument image understanding tasks such as information extraction\nfrom scanned documents. Furthermore, we also leverage image\nfeatures to incorporate words\u2019 visual information into LayoutLM.\nTo the best of our knowledge, this is the first time that text and\nlayout are jointly learned in a single framework for document-\nlevel pre-training. It achieves new state-of-the-art results in several\ndownstream tasks, including form understanding (from 70.72 to\n79.27), receipt understanding (from 94.02 to 95.24) and document\nimage classification (from 93.07 to 94.42). The code and pre-trained\nLayoutLM models are publicly available at https://aka.ms/layoutlm.\nCCS CONCEPTS\n\u2022 Information systems \u2192Business intelligence; \u2022 Computing\nmethodologies \u2192Information extraction; Transfer learning;\n\u2022 Applied computing \u2192Document analysis.\nKEYWORDS\nLayoutLM; pre-trained models; document image understanding\nACM Reference Format:\nYiheng Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, and Ming\nZhou. 2020. LayoutLM: Pre-training of Text and Layout for Document\nImage Understanding. In Proceedings of the 26th ACM SIGKDD Conference\non Knowledge Discovery and Data Mining (KDD \u201920), August 23\u201327, 2020,\nVirtual Event, CA, USA. ACM, New York, NY, USA, 9 pages. https://doi.org/\n10.1145/3394486.3403172\n\u2217Equal contributions during internship at Microsoft Research Asia.\nPermission to make digital or hard copies of all or part of this work for personal or\nclassroom use is granted without fee provided that copies are not made or distributed\nfor profit or commercial advantage and that copies bear this notice and the full citation\non the first page. Copyrights for components of this work owned by others than ACM\nmust be honored. Abstracting with credit is permitted. To copy otherwise, or republish,\nto post on servers or to redistribute to lists, requires prior specific permission and/or a\nfee. Request permissions from permissions@acm.org.\nKDD \u201920, August 23\u201327, 2020, Virtual Event, CA, USA\n\u00a9 2020 Association for Computing Machinery.\nACM ISBN 978-1-4503-7998-4/20/08...$15.00\nhttps://doi.org/10.1145/3394486.3403172\n1",
+      "parent_section_id": null
+    },
+    {
+      "section_id": "s3",
+      "heading": "INTRODUCTION",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 4,
+      "text": "Document AI, or Document Intelligence1, is a relatively new re-\nsearch topic that refers techniques for automatically reading, under-\nstanding, and analyzing business documents. Business documents\nare files that provide details related to a company\u2019s internal and\nexternal transactions, which are shown in Figure 1. They may be\ndigital-born, occurring as electronic files, or they may be in scanned\nform that comes from written or printed on paper. Some common\nexamples of business documents include purchase orders, financial\nreports, business emails, sales agreements, vendor contracts, letters,\ninvoices, receipts, resumes, and many others. Business documents\nare critical to a company\u2019s efficiency and productivity. The exact\nformat of a business document may vary, but the information is\nusually presented in natural language and can be organized in a\nvariety of ways from plain text, multi-column layouts, and a wide\nvariety of tables/forms/figures. Understanding business documents\nis a very challenging task due to the diversity of layouts and formats,\npoor quality of scanned document images as well as the complexity\nof template structures.\nNowadays, many companies extract data from business docu-\nments through manual efforts that are time-consuming and expen-\nsive, meanwhile requiring manual customization or configuration.\nRules and workflows for each type of document often need to be\nhard-coded and updated with changes to the specific format or\nwhen dealing with multiple formats. To address these problems,\ndocument AI models and algorithms are designed to automatically\nclassify, extract, and structuralize information from business doc-\numents, accelerating automated document processing workflows.\nContemporary approaches for document AI are usually built upon\ndeep neural networks from a computer vision perspective or a natu-\nral language processing perspective, or a combination of them. Early\nattempts usually focused on detecting and analyzing certain parts\nof a document, such as tabular areas. [7] were the first to propose a\ntable detection method for PDF documents based on Convolutional\nNeural Networks (CNN). After that, [21, 24, 29] also leveraged more\nadvanced Faster R-CNN model [19] or Mask R-CNN model [9] to\nfurther improve the accuracy of document layout analysis. In addi-\ntion, [28] presented an end-to-end, multimodal, fully convolutional\nnetwork for extracting semantic structures from document images,\ntaking advantage of text embeddings from pre-trained NLP models.\nMore recently, [15] introduced a Graph Convolutional Networks\n(GCN) based model to combine textual and visual information for\n1https://sites.google.com/view/di2019\narXiv:1912.13318v5  [cs.CL]  16 Jun 2020\n(a)\n(b)\n(c)\n(d)\nFigure 1: Scanned images of business documents with different layouts and formats\ninformation extraction from business documents. Although these\nmodels have made significant progress in the document AI area\nwith deep neural networks, most of these methods confront two\nlimitations: (1) They rely on a few human-labeled training samples\nwithout fully exploring the possibility of using large-scale unla-\nbeled training samples. (2) They usually leverage either pre-trained\nCV models or NLP models, but do not consider a joint training of\ntextual and layout information. Therefore, it is important to inves-\ntigate how self-supervised pre-training of text and layout may help\nin the document AI area.\nTo this end, we propose LayoutLM, a simple yet effective pre-\ntraining method of text and layout for document image understand-\ning tasks. Inspired by the BERT model [4], where input textual\ninformation is mainly represented by text embeddings and position\nembeddings, LayoutLM further adds two types of input embeddings:\n(1) a 2-D position embedding that denotes the relative position of\na token within a document; (2) an image embedding for scanned\ntoken images within a document. The architecture of LayoutLM is\nshown in Figure 2. We add these two input embeddings because\nthe 2-D position embedding can capture the relationship among\ntokens within a document, meanwhile the image embedding can\ncapture some appearance features such as font directions, types,\nand colors. In addition, we adopt a multi-task learning objective for\nLayoutLM, including a Masked Visual-Language Model (MVLM)\nloss and a Multi-label Document Classification (MDC) loss, which\nfurther enforces joint pre-training for text and layout. In this work,\nour focus is the document pre-training based on scanned docu-\nment images, while digital-born documents are less challenging\nbecause they can be considered as a special case where OCR is\nnot required, thus they are out of the scope of this paper. Specifi-\ncally, the LayoutLM is pre-trained on the IIT-CDIP Test Collection\n1.02 [14], which contains more than 6 million scanned documents\nwith 11 million scanned document images. The scanned documents\nare in a variety of categories, including letter, memo, email, file-\nfolder, form, handwritten, invoice, advertisement, budget, news\n2https://ir.nist.gov/cdip/\narticles, presentation, scientific publication, questionnaire, resume,\nscientific report, specification, and many others, which is ideal for\nlarge-scale self-supervised pre-training. We select three benchmark\ndatasets as the downstream tasks to evaluate the performance of the\npre-trained LayoutLM model. The first is the FUNSD dataset3 [10]\nthat is used for spatial layout analysis and form understanding.\nThe second is the SROIE dataset4 for Scanned Receipts Information\nExtraction. The third is the RVL-CDIP dataset5 [8] for document\nimage classification, which consists of 400,000 grayscale images in\n16 classes. Experiments illustrate that the pre-trained LayoutLM\nmodel significantly outperforms several SOTA pre-trained models\non these benchmark datasets, demonstrating the enormous advan-\ntage for pre-training of text and layout information in document\nimage understanding tasks.\nThe contributions of this paper are summarized as follows:\n\u2022 For the first time, textual and layout information from scanned\ndocument images is pre-trained in a single framework. Image\nfeatures are also leveraged to achieve new state-of-the-art\nresults.\n\u2022 LayoutLM uses the masked visual-language model and the\nmulti-label document classification as the training objectives,\nwhich significantly outperforms several SOTA pre-trained\nmodels in document image understanding tasks.\n\u2022 The code and pre-trained models are publicly available at\nhttps://aka.ms/layoutlm for more downstream tasks.\n2\nLAYOUTLM\nIn this section, we briefly review the BERT model, and introduce\nhow we extend to jointly model text and layout information in the\nLayoutLM framework.\n3https://guillaumejaume.github.io/FUNSD/\n4https://rrc.cvc.uab.es/?ch=13\n5https://www.cs.cmu.edu/~aharley/rvl-cdip/\nText\nEmbeddings\nPosition\nEmbeddings (x0)\nPosition\nEmbeddings (y0)\nPosition\nEmbeddings (x1)\nPosition\nEmbeddings (y1)\nE(86)\nE(117)\nE(227)\nE(281)\nE(303)\nE(415)\nE(468)\nE(556)\nE(138)\nE(138)\nE(138)\nE(138)\nE(139)\nE(138)\nE(139)\nE(139)\nE(112)\nE(162)\nE(277)\nE(293)\nE(331)\nE(464)\nE(487)\nE(583)\nE(148)\nE(148)\nE(153)\nE(148)\nE(149)\nE(149)\nE(149)\nE(150)\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\nE(Date)\nE(Routed:)\nE(January)\nE(11,)\nE(1994)\nE(Contract)\nE(No.)\nE(4011)\nE(589)\nE(139)\nE(621)\nE(150)\n+\n+\n+\n+\nE(0000)\nE(0)\nE(0)\nE(maxW)\nE(maxH)\n+\n+\n+\n+\nE([CLS])\nFaster R-CNN\nFC Layers\nPre-trained LayoutLM\nPre-built\nOCR/\nPDF\nParser\nROI\nImage\nEmbeddings\nDate\nRouted:\nJanuary\n11,\n1994\nContract\nNo.\n4011\n0000\n[CLS]\nLayoutLM\nEmbeddings\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\nDownstream Tasks\nFigure 2: An example of LayoutLM, where 2-D layout and image embeddings are integrated into the original BERT architecture.\nThe LayoutLM embeddings and image embeddings from Faster R-CNN work together for downstream tasks.\n2.1\nThe BERT Model\nThe BERT model is an attention-based bidirectional language mod-\neling approach. It has been verified that the BERT model shows\neffective knowledge transfer from the self-supervised task with\nlarge-scale training data. The architecture of BERT is basically a\nmulti-layer bidirectional Transformer encoder. It accepts a sequence\nof tokens and stacks multiple layers to produce final representa-\ntions. In detail, given a set of tokens processed using WordPiece, the\ninput embeddings are computed by summing the corresponding\nword embeddings, position embeddings, and segment embeddings.\nThen, these input embeddings are passed through a multi-layer\nbidirectional Transformer that can generate contextualized repre-\nsentations with an adaptive attention mechanism.\nThere are two steps in the BERT framework: pre-training and\nfine-tuning. During the pre-training, the model uses two objectives\nto learn the language representation: Masked Language Modeling\n(MLM) and Next Sentence Prediction (NSP), where MLM randomly\nmasks some input tokens and the objective is to recover these\nmasked tokens, and NSP is a binary classification task taking a\npair of sentences as inputs and classifying whether they are two\nconsecutive sentences. In the fine-tuning, task-specific datasets are\nused to update all parameters in an end-to-end way. The BERT\nmodel has been successfully applied in a set of NLP tasks.\n2.2\nThe LayoutLM Model\nAlthough BERT-like models become the state-of-the-art techniques\non several challenging NLP tasks, they usually leverage text infor-\nmation only for any kind of inputs. When it comes to visually rich\ndocuments, there is much more information that can be encoded\ninto the pre-trained model. Therefore, we propose to utilize the\nvisually rich information from document layouts and align them\nwith the input texts. Basically, there are two types of features which\nsubstantially improve the language representation in a visually rich\ndocument, which are:\nDocument Layout Information. It is evident that the relative po-\nsitions of words in a document contribute a lot to the semantic\nrepresentation. Taking form understanding as an example, given a\nkey in a form (e.g., \u201cPassport ID:\u201d), its corresponding value is much\nmore likely on its right or below instead of on the left or above.\nTherefore, we can embed these relative positions information as\n2-D position representation. Based on the self-attention mechanism\nwithin the Transformer, embedding 2-D position features into the\nlanguage representation will better align the layout information\nwith the semantic representation.\nVisual Information. Compared with the text information, the\nvisual information is another significantly important feature in doc-\nument representations. Typically, documents contain some visual\nsignals to show the importance and priority of document segments.\nThe visual information can be represented by image features and ef-\nfectively utilized in document representations. For document-level\nvisual features, the whole image can indicate the document layout,\nwhich is an essential feature for document image classification. For\nword-level visual features, styles such as bold, underline, and italic,\nare also significant hints for the sequence labeling tasks. There-\nfore, we believe that combining the image features with traditional\ntext representations can bring richer semantic representations to\ndocuments.\n2.3\nModel Architecture\nTo take advantage of existing pre-trained models and adapt to\ndocument image understanding tasks, we use the BERT architecture\nas the backbone and add two new input embeddings: a 2-D position\nembedding and an image embedding.\n2-D Position Embedding. Unlike the position embedding that\nmodels the word position in a sequence, 2-D position embedding\naims to model the relative spatial position in a document. To repre-\nsent the spatial position of elements in scanned document images,\nwe consider a document page as a coordinate system with the top-\nleft origin. In this setting, the bounding box can be precisely defined\nby (x0, y0, x1, y1), where (x0, y0) corresponds to the position of the\nupper left in the bounding box, and (x1, y1) represents the position\nof the lower right. We add four position embedding layers with two\nembedding tables, where the embedding layers representing the\nsame dimension share the same embedding table. This means that\nwe look up the position embedding of x0 and x1 in the embedding\ntable X and lookup y0 and y1 in table Y.\nImage Embedding. To utilize the image feature of a document and\nalign the image feature with the text, we add an image embedding\nlayer to represent image features in language representation. In\nmore detail, with the bounding box of each word from OCR results,\nwe split the image into several pieces, and they have a one-to-one\ncorrespondence with the words. We generate the image region\nfeatures with these pieces of images from the Faster R-CNN [19]\nmodel as the token image embeddings. For the [CLS] token, we\nalso use the Faster R-CNN model to produce embeddings using the\nwhole scanned document image as the Region of Interest (ROI) to\nbenefit the downstream tasks which need the representation of the\n[CLS] token.\n2.4\nPre-training LayoutLM\nTask #1: Masked Visual-Language Model. Inspired by the masked\nlanguage model, we propose the Masked Visual-language Model\n(MVLM) to learn the language representation with the clues of 2-D\nposition embeddings and text embeddings. During the pre-training,\nwe randomly mask some of the input tokens but keep the corre-\nsponding 2-D position embeddings, and then the model is trained\nto predict the masked tokens given the contexts. In this way, the\nLayoutLM model not only understands the language contexts but\nalso utilizes the corresponding 2-D position information, thereby\nbridging the gap between the visual and language modalities.\nTask #2: Multi-label Document Classification. For document im-\nage understanding, many tasks require the model to generate high-\nquality document-level representations. As the IIT-CDIP Test Col-\nlection includes multiple tags for each document image, we also\nuse a Multi-label Document Classification (MDC) loss during the\npre-training phase. Given a set of scanned documents, we use the\ndocument tags to supervise the pre-training process so that the\nmodel can cluster the knowledge from different domains and gener-\nate better document-level representation. Since the MDC loss needs\nthe label for each document image that may not exist for larger\ndatasets, it is optional during the pre-training and may not be used\nfor pre-training larger models in the future. We will compare the\nperformance of MVLM and MVLM+MDC in Section 3.\n2.5\nFine-tuning LayoutLM\nThe pre-trained LayoutLM model is fine-tuned on three document\nimage understanding tasks, including a form understanding task, a\nreceipt understanding task as well as a document image classifica-\ntion task. For the form and receipt understanding tasks, LayoutLM\npredicts {B, I, E, S, O} tags for each token and uses sequential label-\ning to detect each type of entity in the dataset. For the document\nimage classification task, LayoutLM predicts the class labels using\nthe representation of the [CLS] token.\n3",
+      "parent_section_id": null
+    },
+    {
+      "section_id": "s4",
+      "heading": "EXPERIMENTS",
+      "level": 1,
+      "page_start": 4,
+      "page_end": 5,
+      "text": "3.1\nPre-training Dataset\nThe performance of pre-trained models is largely determined by\nthe scale and quality of datasets. Therefore, we need a large-scale\nscanned document image dataset to pre-train the LayoutLM model.\nOur model is pre-trained on the IIT-CDIP Test Collection 1.0, which\ncontains more than 6 million documents, with more than 11 million\nscanned document images. Moreover, each document has its cor-\nresponding text and metadata stored in XML files. The text is the\ncontent produced by applying OCR to document images. The meta-\ndata describes the properties of the document, such as the unique\nidentity and document labels. Although the metadata contains er-\nroneous and inconsistent tags, the scanned document images in\nthis large-scale dataset are perfectly suitable for pre-training our\nmodel.\n3.2\nFine-tuning Dataset\nThe FUNSD Dataset. We evaluate our approach on the FUNSD\ndataset for form understanding in noisy scanned documents. This\ndataset includes 199 real, fully annotated, scanned forms with 9,707\nsemantic entities and 31,485 words. These forms are organized as a\nlist of semantic entities that are interlinked. Each semantic entity\ncomprises a unique identifier, a label (i.e., question, answer, header,\nor other), a bounding box, a list of links with other entities, and a\nlist of words. The dataset is split into 149 training samples and 50\ntesting samples. We adopt the word-level F1 score as the evaluation\nmetric.\nThe SROIE Dataset. We also evaluate our model on the SROIE\ndataset for receipt information extraction (Task 3). The dataset\ncontains 626 receipts for training and 347 receipts for testing. Each\nreceipt is organized as a list of text lines with bounding boxes. Each\nreceipt is labeled with four types of entities which are {company,\ndate, address, total}. The evaluation metric is the exact match of the\nentity recognition results in the F1 score.\nThe RVL-CDIP Dataset. The RVL-CDIP dataset consists of 400,000\ngrayscale images in 16 classes, with 25,000 images per class. There\nare 320,000 training images, 40,000 validation images, and 40,000\ntest images. The images are resized, so their largest dimension does\nnot exceed 1,000 pixels. The 16 classes include {letter, form, email,\nhandwritten, advertisement, scientific report, scientific publication,\nspecification, file folder, news article, budget, invoice, presentation,\nquestionnaire, resume, memo}. The evaluation metric is the overall\nclassification accuracy.\n3.3\nDocument Pre-processing\nTo utilize the layout information of each document, we need to\nobtain the location of each token. However, the pre-training dataset\n(IIT-CDIP Test Collection) only contains pure texts while missing\ntheir corresponding bounding boxes. In this case, we re-process the\nscanned document images to obtain the necessary layout informa-\ntion. Like the original pre-processing in IIT-CDIP Test Collection,\nwe similarly process the dataset by applying OCR to document\nimages. The difference is that we obtain both the recognized words\nand their corresponding locations in the document image. Thanks\nto Tesseract6, an open-source OCR engine, we can easily obtain the\nrecognition as well as the 2-D positions. We store the OCR results in\nhOCR format, a standard specification format which clearly defines\nthe OCR results of one single document image using a hierarchical\nrepresentation.\n3.4\nModel Pre-training\nWe initialize the weight of LayoutLM model with the pre-trained\nBERT base model. Specifically, our BASE model has the same ar-\nchitecture: a 12-layer Transformer with 768 hidden sizes, and 12\nattention heads, which contains about 113M parameters. Therefore,\nwe use the BERT base model to initialize all modules in our model\nexcept the 2-D position embedding layer. For the LARGE setting,\nour model has a 24-layer Transformer with 1,024 hidden sizes and\n16 attention heads, which is initialized by the pre-trained BERT\nLARGE model and contains about 343M parameters. Following [4],\nwe select 15% of the input tokens for prediction. We replace these\nmasked tokens with the [MASK] token 80% of the time, a random to-\nken 10% of the time, and an unchanged token 10% of the time. Then,\nthe model predicts the corresponding token with the cross-entropy\nloss.\nIn addition, we also add the 2-D position embedding layers with\nfour embedding representations (x0, y0, x1, y1), where (x0, y0) cor-\nresponds to the position of the upper left in the bounding box, and\n(x1, y1) represents the position of the lower right. Considering that\nthe document layout may vary in different page size, we scale the\nactual coordinate to a \u201cvirtual\u201d coordinate: the actual coordinate is\nscaled to have a value from 0 to 1,000. Furthermore, we also use the\nResNet-101 model as the backbone network in the Faster R-CNN\nmodel, which is pre-trained on the Visual Genome dataset [12].\nWe train our model on 8 NVIDIA Tesla V100 32GB GPUs with a\ntotal batch size of 80. The Adam optimizer is used with an initial\nlearning rate of 5e-5 and a linear decay learning rate schedule. The\nBASE model takes 80 hours to finish one epoch on 11M documents,\nwhile the LARGE model takes nearly 170 hours to finish one epoch.\n3.5\nTask-specific Fine-tuning\nWe evaluate the LayoutLM model on three document image under-\nstanding tasks: Form Understanding, Receipt Understanding,\nand Document Image Classification. We follow the typical fine-\ntuning strategy and update all parameters in an end-to-end way on\ntask-specific datasets.\nForm Understanding. This task requires extracting and structur-\ning the textual content of forms. It aims to extract key-value pairs\nfrom the scanned form images. In more detail, this task includes\ntwo sub-tasks: semantic labeling and semantic linking. Semantic\nlabeling is the task of aggregating words as semantic entities and\nassigning pre-defined labels to them. Semantic linking is the task\n6https://github.com/tesseract-ocr/tesseract\nof predicting the relations between semantic entities. In this work,\nwe focus on the semantic labeling task, while semantic linking\nis out of the scope. To fine-tune LayoutLM on this task, we treat\nsemantic labeling as a sequence labeling problem. We pass the final\nrepresentation into a linear layer followed by a softmax layer to\npredict the label of each token. The model is trained for 100 epochs\nwith a batch size of 16 and a learning rate of 5e-5.\nReceipt Understanding. This task requires filling several pre-\ndefined semantic slots according to the scanned receipt images.\nFor instance, given a set of receipts, we need to fill specific slots (\ni.g., company, address, date, and total). Different from the form un-\nderstanding task that requires labeling all matched entities and key-\nvalue pairs, the number of semantic slots is fixed with pre-defined\nkeys. Therefore, the model only needs to predict the corresponding\nvalues using the sequence labeling method.\nDocument Image Classification. Given a visually rich document,\nthis task aims to predict the corresponding category for each doc-\nument image. Distinct from the existing image-based approaches,\nour model includes not only image representations but also text and\nlayout information using the multimodal architecture in LayoutLM.\nTherefore, our model can combine the text, layout, and image in-\nformation in a more effective way. To fine-tune our model on this\ntask, we concatenate the output from the LayoutLM model and the\nwhole image embedding, followed by a softmax layer for category\nprediction. We fine-tune the model for 30 epochs with a batch size\nof 40 and a learning rate of 2e-5.\n3.6",
+      "parent_section_id": null
+    },
+    {
+      "section_id": "s5",
+      "heading": "Results",
+      "level": 1,
+      "page_start": 5,
+      "page_end": 7,
+      "text": "Form Understanding. We evaluate the form understanding task\non the FUNSD dataset. The experiment results are shown in Table 1.\nWe compare the LayoutLM model with two SOTA pre-trained NLP\nmodels: BERT and RoBERTa [16]. The BERT BASE model achieves\n0.603 and while the LARGE model achieves 0.656 in F1. Compared\nto BERT, the RoBERTa performs much better on this dataset as it is\ntrained using larger data with more epochs. Due to the time limita-\ntion, we present 4 settings for LayoutLM, which are 500K document\npages with 6 epochs, 1M with 6 epochs, 2M with 6 epochs as well\nas 11M with 2 epochs. It is observed that the LayoutLM model sub-\nstantially outperforms existing SOTA pre-training baselines. With\nthe BASE architecture, the LayoutLM model with 11M training\ndata achieves 0.7866 in F1, which is much higher than BERT and\nRoBERTa with the similar size of parameters. In addition, we also\nadd the MDC loss in the pre-training step and it does bring substan-\ntial improvements on the FUNSD dataset. Finally, the LayoutLM\nmodel achieves the best performance of 0.7927 when using the text,\nlayout, and image information at the same time.\nIn addition, we also evaluate the LayoutLM model with different\ndata and epochs on the FUNSD dataset, which is shown in Table 2.\nFor different data settings, we can see that the overall accuracy\nis monotonically increased as more epochs are trained during the\npre-training step. Furthermore, the accuracy is also improved as\nmore data is fed into the LayoutLM model. As the FUNSD dataset\ncontains only 149 images for fine-tuning, the results confirm that\nthe pre-training of text and layout is effective for scanned document\nunderstanding especially with low resource settings.\nModality\nModel\nPrecision\nRecall\nF1\n#Parameters\nText only\nBERTBASE\n0.5469\n0.671\n0.6026\n110M\nRoBERTaBASE\n0.6349\n0.6975\n0.6648\n125M\nBERTLARGE\n0.6113\n0.7085\n0.6563\n340M\nRoBERTaLARGE\n0.678\n0.7391\n0.7072\n355M\nText + Layout\nMVLM\nLayoutLMBASE (500K, 6 epochs)\n0.665\n0.7355\n0.6985\n113M\nLayoutLMBASE (1M, 6 epochs)\n0.6909\n0.7735\n0.7299\n113M\nLayoutLMBASE (2M, 6 epochs)\n0.7377\n0.782\n0.7592\n113M\nLayoutLMBASE (11M, 2 epochs)\n0.7597\n0.8155\n0.7866\n113M\nText + Layout\nMVLM+MDC\nLayoutLMBASE (1M, 6 epochs)\n0.7076\n0.7695\n0.7372\n113M\nLayoutLMBASE (11M, 1 epoch)\n0.7194\n0.7780\n0.7475\n113M\nText + Layout\nMVLM\nLayoutLMLARGE (1M, 6 epochs)\n0.7171\n0.805\n0.7585\n343M\nLayoutLMLARGE (11M, 1 epoch)\n0.7536\n0.806\n0.7789\n343M\nText + Layout + Image\nMVLM\nLayoutLMBASE (1M, 6 epochs)\n0.7101\n0.7815\n0.7441\n160M\nLayoutLMBASE (11M, 2 epochs)\n0.7677\n0.8195\n0.7927\n160M\nTable 1: Model accuracy (Precision, Recall, F1) on the FUNSD dataset\n# Pre-training Data\n# Pre-training Epochs\nPrecision\nRecall\nF1\n500K\n1 epoch\n0.5779\n0.6955\n0.6313\n2 epochs\n0.6217\n0.705\n0.6607\n3 epochs\n0.6304\n0.718\n0.6713\n4 epochs\n0.6383\n0.7175\n0.6756\n5 epochs\n0.6568\n0.734\n0.6933\n6 epochs\n0.665\n0.7355\n0.6985\n1M\n1 epoch\n0.6156\n0.7005\n0.6552\n2 epochs\n0.6545\n0.737\n0.6933\n3 epochs\n0.6794\n0.762\n0.7184\n4 epochs\n0.6812\n0.766\n0.7211\n5 epochs\n0.6863\n0.7625\n0.7224\n6 epochs\n0.6909\n0.7735\n0.7299\n2M\n1 epoch\n0.6599\n0.7355\n0.6957\n2 epochs\n0.6938\n0.759\n0.7249\n3 epochs\n0.6915\n0.7655\n0.7266\n4 epochs\n0.7081\n0.781\n0.7427\n5 epochs\n0.7228\n0.7875\n0.7538\n6 epochs\n0.7377\n0.782\n0.7592\n11M\n1 epoch\n0.7464\n0.7815\n0.7636\n2 epochs\n0.7597\n0.8155\n0.7866\nTable 2: LayoutLMBASE (Text + Layout, MVLM) accuracy with different data and epochs on the FUNSD dataset\nFurthermore, we compare different initialization methods for\nthe LayoutLM model including from scratch, BERT and RoBERTa.\nThe results in Table 3 show that the LayoutLMBASE model initial-\nized with RoBERTaBASE outperforms BERTBASE by 2.1 points in F1.\nFor the LARGE setting, the LayoutLMLARGE model initialized with\nRoBERTaLARGE further improve 1.3 points over the BERTLARGE\nmodel. We will pre-train more models with RoBERTa as the initial-\nization in the future, especially for the LARGE settings.\nReceipt Understanding. We evaluate the receipt understanding\ntask using the SROIE dataset. The results are shown in Table 4. As\nwe only test the performance of the Key Information Extraction\ntask in SROIE, we would like to eliminate the effect of incorrect\nOCR results. Therefore, we pre-process the training data by using\nthe ground truth OCR and run a set of experiments using the base-\nline models (BERT & RoBERTa) as well as the LayoutLM model.\nThe results show that the LayoutLMLARGE model trained with 11M\nInitialization\nModel\nPrecision\nRecall\nF1\nSCRATCH\nLayoutLMBASE (1M, 6 epochs)\n0.5630\n0.6728\n0.6130\nBERTBASE\nLayoutLMBASE (1M, 6 epochs)\n0.6909\n0.7735\n0.7299\nRoBERTaBASE\nLayoutLMBASE (1M, 6 epochs)\n0.7173\n0.7888\n0.7514\nSCRATCH\nLayoutLMLARGE (11M, 1 epoch)\n0.6845\n0.7804\n0.7293\nBERTLARGE\nLayoutLMLARGE (11M, 1 epoch)\n0.7536\n0.8060\n0.7789\nRoBERTaLARGE\nLayoutLMLARGE (11M, 1 epoch)\n0.7681\n0.8188\n0.7926\nTable 3: Different initialization methods for BASE and LARGE (Text + Layout, MVLM)\ndocument images achieve an F1 score of 0.9524, which is signifi-\ncantly better than the first place in the competition leaderboard.\nThis result also verifies that the pre-trained LayoutLM not only per-\nforms well on the in-domain dataset (FUNSD) but also outperforms\nseveral strong baselines on the out-of-domain dataset like SROIE.\nDocument Image Classification. Finally, we evaluate the docu-\nment image classification task using the RVL-CDIP dataset. Doc-\nument images are different from other natural images as most of\nthe content in document images are texts in a variety of styles and\nlayouts. Traditionally, image-based classification models with pre-\ntraining perform much better than the text-based models, which\nis shown in Table 5. We can see that either BERT or RoBERTa\nunderperforms the image-based approaches, illustrating that text\ninformation is not sufficient for this task, and it still needs layout\nand image features. We address this issue by using the LayoutLM\nmodel for this task. Results show that, even without the image\nfeatures, LayoutLM still outperforms the single model of the image-\nbased approaches. After integrating the image embeddings, the\nLayoutLM achieves the accuracy of 94.42%, which is significantly\nbetter than several SOTA baselines for document image classifi-\ncation. It is observed that our model performs best in the \"email\"\ncategory while performs worst in the \"form\" category. We will\nfurther investigate how to take advantage of both pre-trained Lay-\noutLM and image models, as well as involve image information in\nthe pre-training step for the LayoutLM model.\n4",
+      "parent_section_id": null
+    },
+    {
+      "section_id": "s6",
+      "heading": "RELATED WORK",
+      "level": 1,
+      "page_start": 7,
+      "page_end": 9,
+      "text": "The research of Document Analysis and Recognition (DAR) dates\nto the early 1990s. The mainstream approaches can be divided\ninto three categories: rule-based approaches, conventional machine\nlearning approaches, and deep learning approaches.\n4.1\nRule-based Approaches\nThe rule-based approaches [6, 13, 18, 23] contain two types of anal-\nysis methods: bottom-up and top-down. Bottom-up methods [5,\n13, 23] usually detect the connected components of black pixels as\nthe basic computational units in document images, and the docu-\nment segmentation process is to combine them into higher-level\nstructures through different heuristics and label them according\nto different structural features. Docstrum algorithm [18] is among\nthe earliest successful bottom-up algorithms that are based on the\nconnected component analysis. It groups connected components\non a polar structure to derive the final segmentation. [23] use a\nspecial distance-metric between different components to construct\na physical page structure. They further reduced the time complexity\nby using heuristics and path compression algorithms.\nThe top-down methods often recursively split a page into columns,\nblocks, text lines, and tokens. [6] propose replacing the basic unit\nwith the black pixels from all the pixels, and the method decom-\nposed the document using the recursive the X-Y cut algorithm to\nestablish an X-Y tree, which makes complex documents decompose\nmore easily. Although these methods perform well on some doc-\numents, they require extensive human efforts to figure out better\nrules, while sometimes failing to generalize to documents from\nother sources. Therefore, it is inevitable to leverage machine learn-\ning approaches in the DAR research.\n4.2\nMachine Learning Approaches\nWith the development of conventional machine learning, statistical\nmachine learning approaches [17, 22] have become the mainstream\nfor document segmentation tasks during the past decade. [22] con-\nsider the layout information of a document as a parsing problem,\nand globally search the optimal parsing tree based on a grammar-\nbased loss function. They utilize a machine learning approach to\nselect features and train all parameters during the parsing process.\nMeanwhile, artificial neural networks [17] have been extensively\napplied to document analysis and recognition. Most efforts have\nbeen devoted to the recognition of isolated handwritten and printed\ncharacters with widely recognized successful results. In addition to\nthe ANN model, SVM and GMM [27] have been used in document\nlayout analysis tasks. For machine learning approaches, they are\nusually time-consuming to design manually crafted features and\ndifficult to obtain a highly abstract semantic context. In addition,\nthese methods usually relied on visual cues but ignored textual\ninformation.\n4.3\nDeep Learning Approaches\nRecently, deep learning methods have become the mainstream and\nde facto standard for many machine learning problems. Theoreti-\ncally, they can fit any arbitrary functions through the stacking of\nmulti-layer neural networks and have been verified to be effective\nin many research areas. [28] treat the document semantic structure\nextraction task as a pixel-by-pixel classification problem. They pro-\npose a multimodal neural network that considers visual and textual\ninformation, while the limitation of this work is that they only\nused the network to assist heuristic algorithms to classify candidate\nbounding boxes rather than an end-to-end approach. [26] propose a\nlightweight model of document layout analysis for mobile and cloud\nservices. The model uses one-dimensional information of images for\nModality\nModel\nPrecision\nRecall\nF1\n#Parameters\nText only\nBERTBASE\n0.9099\n0.9099\n0.9099\n110M\nRoBERTaBASE\n0.9107\n0.9107\n0.9107\n125M\nBERTLARGE\n0.9200\n0.9200\n0.9200\n340M\nRoBERTaLARGE\n0.9280\n0.9280\n0.9280\n355M\nText + Layout\nMVLM\nLayoutLMBASE (500K, 6 epochs)\n0.9388\n0.9388\n0.9388\n113M\nLayoutLMBASE (1M, 6 epochs)\n0.9380\n0.9380\n0.9380\n113M\nLayoutLMBASE (2M, 6 epochs)\n0.9431\n0.9431\n0.9431\n113M\nLayoutLMBASE (11M, 2 epochs)\n0.9438\n0.9438\n0.9438\n113M\nText + Layout\nMVLM+MDC\nLayoutLMBASE (1M, 6 epochs)\n0.9402\n0.9402\n0.9402\n113M\nLayoutLMBASE (11M, 1 epoch)\n0.9460\n0.9460\n0.9460\n113M\nText + Layout\nMVLM\nLayoutLMLARGE (1M, 6 epochs)\n0.9416\n0.9416\n0.9416\n343M\nLayoutLMLARGE (11M, 1 epoch)\n0.9524\n0.9524\n0.9524\n343M\nText + Layout + Image\nMVLM\nLayoutLMBASE (1M, 6 epochs)\n0.9416\n0.9416\n0.9416\n160M\nLayoutLMBASE (11M, 2 epochs)\n0.9467\n0.9467\n0.9467\n160M\nBaseline\nRanking 1st in SROIE\n0.9402\n0.9402\n0.9402\n-\nTable 4: Model accuracy (Precision, Recall, F1) on the SROIE dataset\nModality\nModel\nAccuracy\n#Parameters\nText only\nBERTBASE\n89.81%\n110M\nRoBERTaBASE\n90.06%\n125M\nBERTLARGE\n89.92%\n340M\nRoBERTaLARGE\n90.11%\n355M\nText + Layout\nMVLM\nLayoutLMBASE (500K, 6 epochs)\n91.25%\n113M\nLayoutLMBASE (1M, 6 epochs)\n91.48%\n113M\nLayoutLMBASE (2M, 6 epochs)\n91.65%\n113M\nLayoutLMBASE (11M, 2 epochs)\n91.78%\n113M\nText + Layout\nMVLM+MDC\nLayoutLMBASE (1M, 6 epochs)\n91.74%\n113M\nLayoutLMBASE (11M, 1 epoch)\n91.78%\n113M\nText + Layout\nMVLM\nLayoutLMLARGE (1M, 6 epochs)\n91.88%\n343M\nLayoutLMLARGE (11M, 1 epoch)\n91.90%\n343M\nText + Layout + Image\nMVLM\nLayoutLMBASE (1M, 6 epochs)\n94.31%\n160M\nLayoutLMBASE (11M, 2 epochs)\n94.42%\n160M\nBaselines\nVGG-16 [1]\n90.97%\n-\nStacked CNN Single [2]\n91.11%\n-\nStacked CNN Ensemble [2]\n92.21%\n-\nInceptionResNetV2 [25]\n92.63%\n-\nLadderNet [20]\n92.77%\n-\nMultimodal Single [3]\n93.03%\n-\nMultimodal Ensemble [3]\n93.07%\n-\nTable 5: Classification accuracy on the RVL-CDIP dataset\ninference and compares it with the model using two-dimensional in-\nformation, achieving comparable accuracy in the experiments. [11]\nmake use of a fully convolutional encoder-decoder network that\npredicts a segmentation mask and bounding boxes, and the model\nsignificantly outperforms approaches based on sequential text or\ndocument images. [24] incorporate contextual information into the\nFaster R-CNN model that involves the inherently localized nature\nof article contents to improve region detection performance.\nExisting deep learning approaches for DAR usually confront\ntwo limitations: (1) The models often rely on limited labeled data\nwhile leaving a large amount of unlabeled data unused. (2) Current\ndeep learning models usually leverage pre-trained CV models or\nNLP models, but do not consider the joint pre-training of text and\nlayout. LayoutLM addresses these two limitations and achieves\nmuch better performance compared with the previous baselines.\n5\nCONCLUSION AND FUTURE WORK\nWe present LayoutLM, a simple yet effective pre-training technique\nwith text and layout information in a single framework. Based on\nthe Transformer architecture as the backbone, LayoutLM takes\nadvantage of multimodal inputs, including token embeddings, lay-\nout embeddings, and image embeddings. Meanwhile, the model\ncan be easily trained in a self-supervised way based on large scale\nunlabeled scanned document images. We evaluate the LayoutLM\nmodel on three tasks: form understanding, receipt understanding,\nand scanned document image classification. Experiments show\nthat LayoutLM substantially outperforms several SOTA pre-trained\nmodels in these tasks.\nFor future research, we will investigate pre-training models with\nmore data and more computation resources. In addition, we will\nalso train LayoutLM using the LARGE architecture with text and\nlayout, as well as involving image embeddings in the pre-training\nstep. Furthermore, we will explore new network architectures and\nother self-supervised training objectives that may further unlock\nthe power of LayoutLM.",
+      "parent_section_id": null
+    },
+    {
+      "section_id": "s7",
+      "heading": "REFERENCES",
+      "level": 1,
+      "page_start": 9,
+      "page_end": 9,
+      "text": "[1] Muhammad Zeshan Afzal, Andreas K\u00f6lsch, Sheraz Ahmed, and Marcus Liwicki.\n2017. Cutting the Error by Half: Investigation of Very Deep CNN and Advanced\nTraining Strategies for Document Image Classification. 2017 14th IAPR Inter-\nnational Conference on Document Analysis and Recognition (ICDAR) 01 (2017),\n883\u2013888.\n[2] Arindam Das, Saikat Roy, and Ujjwal Bhattacharya. 2018. Document Image\nClassification with Intra-Domain Transfer Learning and Stacked Generalization\nof Deep Convolutional Neural Networks. 2018 24th International Conference on\nPattern Recognition (ICPR) (2018), 3180\u20133185.\n[3] Tyler Dauphinee, Nikunj Patel, and Mohammad Mehdi Rashidi. 2019. Modular\nMultimodal Architecture for Document Classification. ArXiv abs/1912.04376\n(2019).\n[4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT:\nPre-training of Deep Bidirectional Transformers for Language Understanding. In\nProceedings of the 2019 Conference of the North American Chapter of the Association\nfor Computational Linguistics: Human Language Technologies, Volume 1 (Long and\nShort Papers). Association for Computational Linguistics, Minneapolis, Minnesota,\n4171\u20134186. https://doi.org/10.18653/v1/N19-1423\n[5] Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Document page\ndecomposition by the bounding-box project. In Proceedings of 3rd International\nConference on Document Analysis and Recognition, Vol. 2. IEEE, 1119\u20131122.\n[6] Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Recursive XY cut using\nbounding boxes of connected components. In Proceedings of 3rd International\nConference on Document Analysis and Recognition, Vol. 2. IEEE, 952\u2013955.\n[7] Leipeng Hao, Liangcai Gao, Xiaohan Yi, and Zhi Tang. 2016. A Table Detection\nMethod for PDF Documents Based on Convolutional Neural Networks. 2016 12th\nIAPR Workshop on Document Analysis Systems (DAS) (2016), 287\u2013292.\n[8] Adam W. Harley, Alex Ufkes, and Konstantinos G. Derpanis. 2015. Evaluation of\ndeep convolutional nets for document image classification and retrieval. 2015\n13th International Conference on Document Analysis and Recognition (ICDAR)\n(2015), 991\u2013995.\n[9] Kaiming He, Georgia Gkioxari, Piotr Doll\u00e1r, and Ross B. Girshick. 2017. Mask\nR-CNN. CoRR abs/1703.06870 (2017). arXiv:1703.06870 http://arxiv.org/abs/1703.\n06870\n[10] Guillaume Jaume, Hazim Kemal Ekenel, and Jean-Philippe Thiran. 2019. FUNSD:\nA Dataset for Form Understanding in Noisy Scanned Documents. 2019 Interna-\ntional Conference on Document Analysis and Recognition Workshops (ICDARW) 2\n(2019), 1\u20136.\n[11] Anoop R Katti, Christian Reisswig, Cordula Guder, Sebastian Brarda, Steffen\nBickel, Johannes H\u00f6hne, and Jean Baptiste Faddoul. 2018. Chargrid: Towards\nUnderstanding 2D Documents. In Proceedings of the 2018 Conference on Em-\npirical Methods in Natural Language Processing. Association for Computational\nLinguistics, Brussels, Belgium, 4459\u20134469. https://doi.org/10.18653/v1/D18-1476\n[12] Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua\nKravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David A Shamma, Michael\nBernstein, and Li Fei-Fei. 2016. Visual Genome: Connecting Language and Vision\nUsing Crowdsourced Dense Image Annotations. https://arxiv.org/abs/1602.07332\n[13] Frank Lebourgeois, Z Bublinski, and H Emptoz. 1992. A fast and efficient method\nfor extracting text paragraphs and graphics from unconstrained documents. In\nProceedings., 11th IAPR International Conference on Pattern Recognition. Vol. II.\nConference B: Pattern Recognition Methodology and Systems. IEEE, 272\u2013276.\n[14] D. Lewis, G. Agam, S. Argamon, O. Frieder, D. Grossman, and J. Heard. 2006.\nBuilding a Test Collection for Complex Document Information Processing. In\nProceedings of the 29th Annual International ACM SIGIR Conference on Research\nand Development in Information Retrieval (Seattle, Washington, USA) (SIGIR \u201906).\nACM, New York, NY, USA, 665\u2013666. https://doi.org/10.1145/1148170.1148307\n[15] Xiaojing Liu, Feiyu Gao, Qiong Zhang, and Huasha Zhao. 2019. Graph Convolu-\ntion for Multimodal Information Extraction from Visually Rich Documents. In\nProceedings of the 2019 Conference of the North American Chapter of the Association\nfor Computational Linguistics: Human Language Technologies, Volume 2 (Indus-\ntry Papers). Association for Computational Linguistics, Minneapolis, Minnesota,\n32\u201339. https://doi.org/10.18653/v1/N19-2005\n[16] Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer\nLevy, Mike Lewis, Luke S. Zettlemoyer, and Veselin Stoyanov. 2019. RoBERTa: A\nRobustly Optimized BERT Pretraining Approach. ArXiv abs/1907.11692 (2019).\n[17] S. Marinai, M. Gori, and G. Soda. 2005. Artificial neural networks for document\nanalysis and recognition. IEEE Transactions on Pattern Analysis and Machine\nIntelligence 27, 1 (Jan 2005), 23\u201335. https://doi.org/10.1109/TPAMI.2005.4\n[18] L. O\u2019Gorman. 1993. The document spectrum for page layout analysis. IEEE\nTransactions on Pattern Analysis and Machine Intelligence 15, 11 (Nov 1993), 1162\u2013\n1173. https://doi.org/10.1109/34.244677\n[19] Shaoqing Ren, Kaiming He, Ross B. Girshick, and Jian Sun. 2015. Faster R-CNN:\nTowards Real-Time Object Detection with Region Proposal Networks. IEEE\nTransactions on Pattern Analysis and Machine Intelligence 39 (2015), 1137\u20131149.\n[20] Ritesh Sarkhel and Arnab Nandi. 2019. Deterministic Routing between Lay-\nout Abstractions for Multi-Scale Classification of Visually Rich Documents. In\nProceedings of the Twenty-Eighth International Joint Conference on Artificial In-\ntelligence, IJCAI-19. International Joint Conferences on Artificial Intelligence\nOrganization, 3360\u20133366. https://doi.org/10.24963/ijcai.2019/466\n[21] Sebastian Schreiber, Stefan Agne, Ivo Wolf, Andreas Dengel, and Sheraz Ahmed.\n2017. DeepDeSRT: Deep Learning for Detection and Structure Recognition of\nTables in Document Images. 2017 14th IAPR International Conference on Document\nAnalysis and Recognition (ICDAR) 01 (2017), 1162\u20131167.\n[22] Michael Shilman, Percy Liang, and Paul Viola. 2005. Learning nongenerative\ngrammatical models for document analysis. In Tenth IEEE International Conference\non Computer Vision (ICCV\u201905) Volume 1, Vol. 2. IEEE, 962\u2013969.\n[23] Anik\u00f3 Simon, J-C Pret, and A Peter Johnson. 1997. A fast algorithm for bottom-up\ndocument layout analysis. IEEE Transactions on Pattern Analysis and Machine\nIntelligence 19, 3 (1997), 273\u2013277.\n[24] Carlos Soto and Shinjae Yoo. 2019. Visual Detection with Context for Document\nLayout Analysis. In Proceedings of the 2019 Conference on Empirical Methods in\nNatural Language Processing and the 9th International Joint Conference on Natural\nLanguage Processing (EMNLP-IJCNLP). Association for Computational Linguistics,\nHong Kong, China, 3462\u20133468. https://doi.org/10.18653/v1/D19-1348\n[25] Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi. 2016.\nInception-v4, Inception-ResNet and the Impact of Residual Connections on Learn-\ning. In AAAI.\n[26] Matheus Palhares Viana and D\u00e1rio Augusto Borges Oliveira. 2017. Fast CNN-\nBased Document Layout Analysis. 2017 IEEE International Conference on Computer\nVision Workshops (ICCVW) (2017), 1173\u20131180.\n[27] H. Wei, M. Baechler, F. Slimane, and R. Ingold. 2013. Evaluation of SVM, MLP\nand GMM Classifiers for Layout Analysis of Historical Documents. In 2013 12th\nInternational Conference on Document Analysis and Recognition. 1220\u20131224. https:\n//doi.org/10.1109/ICDAR.2013.247\n[28] Xiaowei Yang, Ersin Yumer, Paul Asente, Mike Kraley, Daniel Kifer, and C. Lee\nGiles. 2017. Learning to Extract Semantic Structure from Documents Using\nMultimodal Fully Convolutional Neural Networks. 2017 IEEE Conference on\nComputer Vision and Pattern Recognition (CVPR) (2017), 4342\u20134351.\n[29] Xu Zhong, Jianbin Tang, and Antonio Jimeno-Yepes. 2019. PubLayNet: largest\ndataset ever for document layout analysis. ArXiv abs/1908.07836 (2019).",
+      "parent_section_id": null
+    }
+  ],
+  "definitions": [],
+  "theorems": [],
+  "lemmas": [],
+  "corollaries": [],
+  "proofs": [],
+  "references": [
+    {
+      "reference_id": "r1",
+      "raw_text": "[1] Muhammad Zeshan Afzal, Andreas K\u00f6lsch, Sheraz Ahmed, and Marcus Liwicki.",
+      "title": null,
+      "authors": [
+        "Muhammad Zeshan Afzal",
+        "Andreas K\u00f6lsch",
+        "Sheraz Ahmed",
+        "and Marcus Liwicki"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r2",
+      "raw_text": "2017. Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification. 2017 14th IAPR Inter- national Conference on Document Analysis and Recognition (ICDAR) 01 (2017), 883\u2013888.",
+      "title": null,
+      "authors": [
+        "Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification"
+      ],
+      "year": 2017,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r3",
+      "raw_text": "[2] Arindam Das, Saikat Roy, and Ujjwal Bhattacharya. 2018. Document Image Classification with Intra-Domain Transfer Learning and Stacked Generalization of Deep Convolutional Neural Networks. 2018 24th International Conference on Pattern Recognition (ICPR) (2018), 3180\u20133185.",
+      "title": null,
+      "authors": [
+        "Arindam Das",
+        "Saikat Roy",
+        "and Ujjwal Bhattacharya"
+      ],
+      "year": 2018,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r4",
+      "raw_text": "[3] Tyler Dauphinee, Nikunj Patel, and Mohammad Mehdi Rashidi. 2019. Modular Multimodal Architecture for Document Classification. ArXiv abs/1912.04376 (2019).",
+      "title": null,
+      "authors": [
+        "Tyler Dauphinee",
+        "Nikunj Patel",
+        "and Mohammad Mehdi Rashidi"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r5",
+      "raw_text": "[4] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). Association for Computational Linguistics, Minneapolis, Minnesota, 4171\u20134186. https://doi.org/10.18653/v1/N19-1423",
+      "title": null,
+      "authors": [
+        "Jacob Devlin",
+        "Ming-Wei Chang",
+        "Kenton Lee",
+        "and Kristina Toutanova"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": "10.18653/v1/N19-1423",
+      "url": "https://doi.org/10.18653/v1/N19-1423"
+    },
+    {
+      "reference_id": "r6",
+      "raw_text": "[5] Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Document page decomposition by the bounding-box project. In Proceedings of 3rd International Conference on Document Analysis and Recognition, Vol. 2. IEEE, 1119\u20131122.",
+      "title": null,
+      "authors": [
+        "Jaekyu Ha",
+        "Robert M Haralick",
+        "and Ihsin T Phillips"
+      ],
+      "year": 1995,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r7",
+      "raw_text": "[6] Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Recursive XY cut using bounding boxes of connected components. In Proceedings of 3rd International Conference on Document Analysis and Recognition, Vol. 2. IEEE, 952\u2013955.",
+      "title": null,
+      "authors": [
+        "Jaekyu Ha",
+        "Robert M Haralick",
+        "and Ihsin T Phillips"
+      ],
+      "year": 1995,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r8",
+      "raw_text": "[7] Leipeng Hao, Liangcai Gao, Xiaohan Yi, and Zhi Tang. 2016. A Table Detection Method for PDF Documents Based on Convolutional Neural Networks. 2016 12th IAPR Workshop on Document Analysis Systems (DAS) (2016), 287\u2013292.",
+      "title": null,
+      "authors": [
+        "Leipeng Hao",
+        "Liangcai Gao",
+        "Xiaohan Yi",
+        "and Zhi Tang"
+      ],
+      "year": 2016,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r9",
+      "raw_text": "[8] Adam W. Harley, Alex Ufkes, and Konstantinos G. Derpanis. 2015. Evaluation of deep convolutional nets for document image classification and retrieval. 2015 13th International Conference on Document Analysis and Recognition (ICDAR) (2015), 991\u2013995.",
+      "title": null,
+      "authors": [
+        "Adam W"
+      ],
+      "year": 2015,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r10",
+      "raw_text": "[9] Kaiming He, Georgia Gkioxari, Piotr Doll\u00e1r, and Ross B. Girshick. 2017. Mask R-CNN. CoRR abs/1703.06870 (2017). arXiv:1703.06870 http://arxiv.org/abs/1703. 06870",
+      "title": null,
+      "authors": [
+        "Kaiming He",
+        "Georgia Gkioxari",
+        "Piotr Doll\u00e1r",
+        "and Ross B"
+      ],
+      "year": 2017,
+      "venue": null,
+      "doi": null,
+      "url": "http://arxiv.org/abs/1703."
+    },
+    {
+      "reference_id": "r11",
+      "raw_text": "[10] Guillaume Jaume, Hazim Kemal Ekenel, and Jean-Philippe Thiran. 2019. FUNSD: A Dataset for Form Understanding in Noisy Scanned Documents. 2019 Interna- tional Conference on Document Analysis and Recognition Workshops (ICDARW) 2 (2019), 1\u20136.",
+      "title": null,
+      "authors": [
+        "Guillaume Jaume",
+        "Hazim Kemal Ekenel",
+        "and Jean-Philippe Thiran"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r12",
+      "raw_text": "[11] Anoop R Katti, Christian Reisswig, Cordula Guder, Sebastian Brarda, Steffen Bickel, Johannes H\u00f6hne, and Jean Baptiste Faddoul. 2018. Chargrid: Towards Understanding 2D Documents. In Proceedings of the 2018 Conference on Em- pirical Methods in Natural Language Processing. Association for Computational Linguistics, Brussels, Belgium, 4459\u20134469. https://doi.org/10.18653/v1/D18-1476",
+      "title": null,
+      "authors": [
+        "Anoop R Katti",
+        "Christian Reisswig",
+        "Cordula Guder",
+        "Sebastian Brarda",
+        "Steffen Bickel",
+        "Johannes H\u00f6hne"
+      ],
+      "year": 2018,
+      "venue": null,
+      "doi": "10.18653/v1/D18-1476",
+      "url": "https://doi.org/10.18653/v1/D18-1476"
+    },
+    {
+      "reference_id": "r13",
+      "raw_text": "[12] Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua Kravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David A Shamma, Michael Bernstein, and Li Fei-Fei. 2016. Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations. https://arxiv.org/abs/1602.07332",
+      "title": null,
+      "authors": [
+        "Ranjay Krishna",
+        "Yuke Zhu",
+        "Oliver Groth",
+        "Justin Johnson",
+        "Kenji Hata",
+        "Joshua Kravitz"
+      ],
+      "year": 2016,
+      "venue": null,
+      "doi": null,
+      "url": "https://arxiv.org/abs/1602.07332"
+    },
+    {
+      "reference_id": "r14",
+      "raw_text": "[13] Frank Lebourgeois, Z Bublinski, and H Emptoz. 1992. A fast and efficient method for extracting text paragraphs and graphics from unconstrained documents. In Proceedings., 11th IAPR International Conference on Pattern Recognition. Vol. II. Conference B: Pattern Recognition Methodology and Systems. IEEE, 272\u2013276.",
+      "title": null,
+      "authors": [
+        "Frank Lebourgeois",
+        "Z Bublinski",
+        "and H Emptoz"
+      ],
+      "year": 1992,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r15",
+      "raw_text": "[14] D. Lewis, G. Agam, S. Argamon, O. Frieder, D. Grossman, and J. Heard. 2006. Building a Test Collection for Complex Document Information Processing. In Proceedings of the 29th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (Seattle, Washington, USA) (SIGIR \u201906). ACM, New York, NY, USA, 665\u2013666. https://doi.org/10.1145/1148170.1148307",
+      "title": null,
+      "authors": [],
+      "year": 2006,
+      "venue": null,
+      "doi": "10.1145/1148170.1148307",
+      "url": "https://doi.org/10.1145/1148170.1148307"
+    },
+    {
+      "reference_id": "r16",
+      "raw_text": "[15] Xiaojing Liu, Feiyu Gao, Qiong Zhang, and Huasha Zhao. 2019. Graph Convolu- tion for Multimodal Information Extraction from Visually Rich Documents. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Indus- try Papers). Association for Computational Linguistics, Minneapolis, Minnesota, 32\u201339. https://doi.org/10.18653/v1/N19-2005",
+      "title": null,
+      "authors": [
+        "Xiaojing Liu",
+        "Feiyu Gao",
+        "Qiong Zhang",
+        "and Huasha Zhao"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": "10.18653/v1/N19-2005",
+      "url": "https://doi.org/10.18653/v1/N19-2005"
+    },
+    {
+      "reference_id": "r17",
+      "raw_text": "[16] Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke S. Zettlemoyer, and Veselin Stoyanov. 2019. RoBERTa: A Robustly Optimized BERT Pretraining Approach. ArXiv abs/1907.11692 (2019).",
+      "title": null,
+      "authors": [
+        "Yinhan Liu",
+        "Myle Ott",
+        "Naman Goyal",
+        "Jingfei Du",
+        "Mandar Joshi",
+        "Danqi Chen"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r18",
+      "raw_text": "[17] S. Marinai, M. Gori, and G. Soda. 2005. Artificial neural networks for document analysis and recognition. IEEE Transactions on Pattern Analysis and Machine Intelligence 27, 1 (Jan 2005), 23\u201335. https://doi.org/10.1109/TPAMI.2005.4",
+      "title": null,
+      "authors": [],
+      "year": 2005,
+      "venue": null,
+      "doi": "10.1109/TPAMI.2005.4",
+      "url": "https://doi.org/10.1109/TPAMI.2005.4"
+    },
+    {
+      "reference_id": "r19",
+      "raw_text": "[18] L. O\u2019Gorman. 1993. The document spectrum for page layout analysis. IEEE Transactions on Pattern Analysis and Machine Intelligence 15, 11 (Nov 1993), 1162\u2013",
+      "title": null,
+      "authors": [],
+      "year": 1993,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r20",
+      "raw_text": "1173. https://doi.org/10.1109/34.244677",
+      "title": null,
+      "authors": [
+        "https://doi"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": "10.1109/34.244677",
+      "url": "https://doi.org/10.1109/34.244677"
+    },
+    {
+      "reference_id": "r21",
+      "raw_text": "[19] Shaoqing Ren, Kaiming He, Ross B. Girshick, and Jian Sun. 2015. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks. IEEE Transactions on Pattern Analysis and Machine Intelligence 39 (2015), 1137\u20131149.",
+      "title": null,
+      "authors": [
+        "Shaoqing Ren",
+        "Kaiming He",
+        "Ross B"
+      ],
+      "year": 2015,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r22",
+      "raw_text": "[20] Ritesh Sarkhel and Arnab Nandi. 2019. Deterministic Routing between Lay- out Abstractions for Multi-Scale Classification of Visually Rich Documents. In Proceedings of the Twenty-Eighth International Joint Conference on Artificial In- telligence, IJCAI-19. International Joint Conferences on Artificial Intelligence Organization, 3360\u20133366. https://doi.org/10.24963/ijcai.2019/466",
+      "title": null,
+      "authors": [
+        "Ritesh Sarkhel and Arnab Nandi"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": "10.24963/ijcai.2019/466",
+      "url": "https://doi.org/10.24963/ijcai.2019/466"
+    },
+    {
+      "reference_id": "r23",
+      "raw_text": "[21] Sebastian Schreiber, Stefan Agne, Ivo Wolf, Andreas Dengel, and Sheraz Ahmed.",
+      "title": null,
+      "authors": [
+        "Sebastian Schreiber",
+        "Stefan Agne",
+        "Ivo Wolf",
+        "Andreas Dengel",
+        "and Sheraz Ahmed"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r24",
+      "raw_text": "2017. DeepDeSRT: Deep Learning for Detection and Structure Recognition of Tables in Document Images. 2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR) 01 (2017), 1162\u20131167.",
+      "title": null,
+      "authors": [
+        "DeepDeSRT: Deep Learning for Detection and Structure Recognition of Tables in Document Images"
+      ],
+      "year": 2017,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r25",
+      "raw_text": "[22] Michael Shilman, Percy Liang, and Paul Viola. 2005. Learning nongenerative grammatical models for document analysis. In Tenth IEEE International Conference on Computer Vision (ICCV\u201905) Volume 1, Vol. 2. IEEE, 962\u2013969.",
+      "title": null,
+      "authors": [
+        "Michael Shilman",
+        "Percy Liang",
+        "and Paul Viola"
+      ],
+      "year": 2005,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r26",
+      "raw_text": "[23] Anik\u00f3 Simon, J-C Pret, and A Peter Johnson. 1997. A fast algorithm for bottom-up document layout analysis. IEEE Transactions on Pattern Analysis and Machine Intelligence 19, 3 (1997), 273\u2013277.",
+      "title": null,
+      "authors": [
+        "Anik\u00f3 Simon",
+        "J-C Pret",
+        "and A Peter Johnson"
+      ],
+      "year": 1997,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r27",
+      "raw_text": "[24] Carlos Soto and Shinjae Yoo. 2019. Visual Detection with Context for Document Layout Analysis. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). Association for Computational Linguistics, Hong Kong, China, 3462\u20133468. https://doi.org/10.18653/v1/D19-1348",
+      "title": null,
+      "authors": [
+        "Carlos Soto and Shinjae Yoo"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": "10.18653/v1/D19-1348",
+      "url": "https://doi.org/10.18653/v1/D19-1348"
+    },
+    {
+      "reference_id": "r28",
+      "raw_text": "[25] Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi. 2016. Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learn- ing. In AAAI.",
+      "title": null,
+      "authors": [
+        "Christian Szegedy",
+        "Sergey Ioffe",
+        "Vincent Vanhoucke",
+        "and Alex Alemi"
+      ],
+      "year": 2016,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r29",
+      "raw_text": "[26] Matheus Palhares Viana and D\u00e1rio Augusto Borges Oliveira. 2017. Fast CNN- Based Document Layout Analysis. 2017 IEEE International Conference on Computer Vision Workshops (ICCVW) (2017), 1173\u20131180.",
+      "title": null,
+      "authors": [
+        "Matheus Palhares Viana and D\u00e1rio Augusto Borges Oliveira"
+      ],
+      "year": 2017,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r30",
+      "raw_text": "[27] H. Wei, M. Baechler, F. Slimane, and R. Ingold. 2013. Evaluation of SVM, MLP and GMM Classifiers for Layout Analysis of Historical Documents. In 2013 12th International Conference on Document Analysis and Recognition. 1220\u20131224. https: //doi.org/10.1109/ICDAR.2013.247",
+      "title": null,
+      "authors": [],
+      "year": 2013,
+      "venue": null,
+      "doi": "10.1109/ICDAR.2013.247",
+      "url": null
+    },
+    {
+      "reference_id": "r31",
+      "raw_text": "[28] Xiaowei Yang, Ersin Yumer, Paul Asente, Mike Kraley, Daniel Kifer, and C. Lee Giles. 2017. Learning to Extract Semantic Structure from Documents Using Multimodal Fully Convolutional Neural Networks. 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2017), 4342\u20134351.",
+      "title": null,
+      "authors": [
+        "Xiaowei Yang",
+        "Ersin Yumer",
+        "Paul Asente",
+        "Mike Kraley",
+        "Daniel Kifer",
+        "and C"
+      ],
+      "year": 2017,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "r32",
+      "raw_text": "[29] Xu Zhong, Jianbin Tang, and Antonio Jimeno-Yepes. 2019. PubLayNet: largest dataset ever for document layout analysis. ArXiv abs/1908.07836 (2019).",
+      "title": null,
+      "authors": [
+        "Xu Zhong",
+        "Jianbin Tang",
+        "and Antonio Jimeno-Yepes"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": null,
+      "url": null
+    }
+  ],
+  "equations": [
+    {
+      "equation_id": "eq1",
+      "label": null,
+      "text_repr": "4https://rrc.cvc.uab.es/?ch=13",
+      "latex_repr": null,
+      "section_id": "s3",
+      "page": 2,
+      "confidence": 0.6
+    }
+  ],
+  "figures": [],
+  "tables": [],
+  "metadata": {
+    "parser_version": "0.1.0",
+    "extraction_mode": "text_pdf",
+    "extraction_confidence": 1.0,
+    "language": "en",
+    "page_count": 9,
+    "ocr_used": false,
+    "processing_time_ms": 488,
+    "warnings": []
+  }
+}

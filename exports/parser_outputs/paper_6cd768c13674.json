@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_6cd768c13674",
+  "source_file": {
+    "file_name": "paper_02_scibert.pdf",
+    "file_path": "C:\\Projects\\MathResearchStudio\\tests\\sample_papers\\paper_02_scibert.pdf",
+    "file_hash": "6cd768c13674657bdd1e314ef7ee378e929f6cacdd1c7e6be1cba6149d8fbe7b",
+    "ingested_at": "2026-08-03T09:37:41.441669+00:00"
+  },
+  "title": "SCIBERT: A Pretrained Language Model for Scienti\ufb01c Text",
+  "authors": [
+    {
+      "name": "Allen Institute for Arti\ufb01cial Intelligence",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "Seattle",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "W A",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "U SA",
+      "affiliation": null,
+      "email": null
+    }
+  ],
+  "abstract": "Obtaining large-scale annotated data for NLP\ntasks in the scienti\ufb01c domain is challeng-\ning and expensive. We release S CIBERT,\na pretrained language model based on\nBERT (\nDevlin et al., 2019) to address the lack\nof high-quality, large-scale labeled scienti\ufb01c\ndata. S CIBERT leverages unsupervised\npretraining on a large multi-domain corpus\nof scienti\ufb01c publications to improve perfor-\nmance on downstream scienti\ufb01c NLP tasks.\nWe evaluate on a suite of tasks including\nsequence tagging, sentence classi\ufb01cation and\ndependency parsing, with datasets from a\nvariety of scienti\ufb01c domains. We demon-\nstrate statistically signi\ufb01cant improvements\nover B ERT and achieve new state-of-the-\nart results on several of these tasks. The\ncode and pretrained models are available at\nhttps://github.com/allenai/scibert/.",
+  "keywords": [],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "Abstract",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Obtaining large-scale annotated data for NLP\ntasks in the scienti\ufb01c domain is challeng-\ning and expensive. We release S CIBERT,\na pretrained language model based on\nBERT (\nDevlin et al., 2019) to address the lack\nof high-quality, large-scale labeled scienti\ufb01c\ndata. S CIBERT leverages unsupervised\npretraining on a large multi-domain corpus\nof scienti\ufb01c publications to improve perfor-\nmance on downstream scienti\ufb01c NLP tasks.\nWe evaluate on a suite of tasks including\nsequence tagging, sentence classi\ufb01cation and\ndependency parsing, with datasets from a\nvariety of scienti\ufb01c domains. We demon-\nstrate statistically signi\ufb01cant improvements\nover B ERT and achieve new state-of-the-\nart results on several of these tasks. The\ncode and pretrained models are available at\nhttps://github.com/allenai/scibert/.",
+      "parent_section_id": null,
+      "section_type": "abstract",
+      "confidence": 0.99
+    },
+    {
+      "section_id": "s2",
+      "heading": "Introduction",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "The exponential increase in the volume of scien-\nti\ufb01c publications in the past decades has made\nNLP an essential tool for large-scale knowledge\nextraction and machine reading of these docu-\nments. Recent progress in NLP has been driven\nby the adoption of deep neural models, but train-\ning such models often requires large amounts of\nlabeled data. In general domains, large-scale train-\ning data is often possible to obtain through crowd-\nsourcing, but in scienti\ufb01c domains, annotated data\nis dif\ufb01cult and expensive to collect due to the ex-\npertise required for quality annotation.\nAs shown through E LMo (\nPeters et al. ,\n2018), GPT ( Radford et al., 2018) and\nBERT (Devlin et al., 2019), unsupervised pre-\ntraining of language models on large corpora\nsigni\ufb01cantly improves performance on many\nNLP tasks. These models return contextualized\nembeddings for each token which can be passed\ninto minimal task-speci\ufb01c neural architectures.\nLeveraging the success of unsupervised pretrain-\ning has become especially important especially\nwhen task-speci\ufb01c annotations are dif\ufb01cult to\nobtain, like in scienti\ufb01c NLP . Y et while both\nBERT and E LMo have released pretrained models,\nthey are still trained on general domain corpora\nsuch as news articles and Wikipedia.\nIn this work, we make the following contribu-\ntions:\n(i) We release SCIBERT, a new resource demon-\nstrated to improve performance on a range of NLP\ntasks in the scienti\ufb01c domain. S CIBERT is a pre-\ntrained language model based on B ERT but trained\non a large corpus of scienti\ufb01c text.\n(ii) We perform extensive experimentation to\ninvestigate the performance of \ufb01netuning ver-\nsus task-speci\ufb01c architectures atop frozen embed-\ndings, and the effect of having an in-domain vo-\ncabulary.\n(iii) We evaluate S CIBERT on a suite of tasks\nin the scienti\ufb01c domain, and achieve new state-of-\nthe-art (SOTA) results on many of these tasks.",
+      "parent_section_id": null,
+      "section_type": "introduction",
+      "confidence": 0.98
+    },
+    {
+      "section_id": "s3",
+      "heading": "Methods",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 2,
+      "text": "Background The B ERT model architecture\n(\nDevlin et al., 2019) is based on a multilayer bidi-\nrectional Transformer ( V aswani et al., 2017). In-\nstead of the traditional left-to-right language mod-\neling objective, B ERT is trained on two tasks: pre-\ndicting randomly masked tokens and predicting\nwhether two sentences follow each other. S CIB-\nERT follows the same architecture as B ERT but is\ninstead pretrained on scienti\ufb01c text.\nV ocabulary BERT uses WordPiece (\nWu et al.,\n2016) for unsupervised tokenization of the input\ntext. The vocabulary is built such that it contains\nthe most frequently used words or subword units.\nWe refer to the original vocabulary released with\nBERT as B ASE VOCAB .\nWe construct SCIVOCAB , a new WordPiece vo-\ncabulary on our scienti\ufb01c corpus using the Sen-\ntencePiece\n1 library. We produce both cased and\nuncased vocabularies and set the vocabulary size\nto 30K to match the size of B ASE VOCAB . The re-\nsulting token overlap between B ASE VOCAB and\nSCIVOCAB is 42%, illustrating a substantial dif-\nference in frequently used words between scien-\nti\ufb01c and general domain texts.\nCorpus We train S CIBERT on a random\nsample of 1.14M papers from Semantic\nScholar (\nAmmar et al. , 2018). This corpus\nconsists of 18% papers from the computer science\ndomain and 82% from the broad biomedical\ndomain. We use the full text of the papers, not\njust the abstracts. The average paper length is\n154 sentences (2,769 tokens) resulting in a corpus\nsize of 3.17B tokens, similar to the 3.3B tokens\non which B ERT was trained. We split sentences\nusing ScispaCy (\nNeumann et al. , 2019),2 which is\noptimized for scienti\ufb01c text.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s4",
+      "heading": "Experimental Setup",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s5",
+      "heading": "Tasks",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "We experiment on the following core NLP tasks:\n1. Named Entity Recognition (NER)\n2. PICO Extraction (PICO)\n3. Text Classi\ufb01cation (CLS)\n4. Relation Classi\ufb01cation (REL)\n5. Dependency Parsing (DEP)\nPICO, like NER, is a sequence labeling task where\nthe model extracts spans describing the Partici-\npants, Interventions, Comparisons, and Outcomes\nin a clinical trial paper (\nKim et al., 2011). REL\nis a special case of text classi\ufb01cation where the\nmodel predicts the type of relation expressed be-\ntween two entities, which are encapsulated in the\nsentence by inserted special tokens.",
+      "parent_section_id": "s4",
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s6",
+      "heading": "Datasets",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 3,
+      "text": "For brevity, we only describe the newer datasets\nhere, and refer the reader to the references in Ta-\nble\n1 for the older datasets. EBM-NLP ( Nye et al. ,\n2018) annotates PICO spans in clinical trial ab-\nstracts. SciERC ( Luan et al. , 2018) annotates en-\ntities and relations from computer science ab-\n1https://github.com/google/sentencepiece\n2https://github.com/allenai/SciSpaCy\nstracts. ACL-ARC ( Jurgens et al., 2018) and Sci-\nCite (Cohan et al. , 2019) assign intent labels (e.g.\nComparison, Extension, etc.) to sentences from\nscienti\ufb01c papers that cite other papers. The Paper\nField dataset is built from the Microsoft Academic\nGraph (\nSinha et al. , 2015)3 and maps paper titles\nto one of 7 \ufb01elds of study. Each \ufb01eld of study\n(i.e. geography, politics, economics, business, so-\nciology, medicine, and psychology) has approxi-\nmately 12K training examples.\n3.3 Pretrained B ERT Variants\nBERT-Base We use the pretrained weights for\nBERT-Base (\nDevlin et al., 2019) released with the\noriginal B ERT code.4 The vocabulary is B ASE -\nVOCAB . We evaluate both cased and uncased ver-\nsions of this model.\nSCIBERT We use the original B ERT code to\ntrain S CIBERT on our corpus with the same con-\n\ufb01guration and size as B ERT-Base. We train 4\ndifferent versions of S CIBERT: ( i) cased or un-\ncased and ( ii) B ASE VOCAB or S CIVOCAB . The\ntwo models that use B ASE VOCAB are \ufb01netuned\nfrom the corresponding B ERT-Base models. The\nother two models that use the new S CIVOCAB are\ntrained from scratch.\nPretraining B ERT for long sentences can be\nslow. Following the original B ERT code, we set a\nmaximum sentence length of 128 tokens, and train\nthe model until the training loss stops decreasing.\nWe then continue training the model allowing sen-\ntence lengths up to 512 tokens.\nWe use a single TPU v3 with 8 cores. Training\nthe SCIVOCAB models from scratch on our corpus\ntakes 1 week\n5 (5 days with max length 128, then\n2 days with max length 512). The B ASE VOCAB\nmodels take 2 fewer days of training because they\naren\u2019t trained from scratch.\nAll pretrained B ERT models are converted to\nbe compatible with PyTorch using the pytorch-\ntransformers library.\n6 All our models (Sec-\ntions 3.4 and 3.5) are implemented in PyTorch us-\ning AllenNLP (Gardner et al. , 2017).\nCasing We follow Devlin et al. (2019) in using\nthe cased models for NER and the uncased models\n3https://academic.microsoft.com/\n4https://github.com/google-research/bert\n5BERT\u2019s largest model was trained on 16 Cloud TPUs for\n4 days. Expected 40-70 days ( Dettmers, 2019) on an 8-GPU\nmachine.\n6https://github.com/huggingface/pytorch-transformers\nfor all other tasks. We also use the cased models\nfor parsing. Some light experimentation showed\nthat the uncased models perform slightly better\n(even sometimes on NER) than cased models.\n3.4 Finetuning B ERT\nWe mostly follow the same architecture, opti-\nmization, and hyperparameter choices used in\nDevlin et al. (2019). For text classi\ufb01cation (i.e.\nCLS and REL), we feed the \ufb01nal B ERT vector\nfor the [CLS] token into a linear classi\ufb01cation\nlayer. For sequence labeling (i.e. NER and PICO),\nwe feed the \ufb01nal B ERT vector for each token into\na linear classi\ufb01cation layer with softmax output.\nWe differ slightly in using an additional condi-\ntional random \ufb01eld, which made evaluation eas-\nier by guaranteeing well-formed entities. For DEP ,\nwe use the model from\nDozat and Manning (2017)\nwith dependency tag and arc embeddings of size\n100 and biaf\ufb01ne matrix attention over B ERT vec-\ntors instead of stacked BiLSTMs.\nIn all settings, we apply a dropout of 0.1\nand optimize cross entropy loss using Adam\n(\nKingma and Ba , 2015). We \ufb01netune for 2 to 5\nepochs using a batch size of 32 and a learning rate\nof 5e-6, 1e-5, 2e-5, or 5e-5 with a slanted triangu-\nlar schedule (\nHoward and Ruder, 2018) which is\nequivalent to the linear warmup followed by lin-\near decay (\nDevlin et al., 2019). For each dataset\nand B ERT variant, we pick the best learning rate\nand number of epochs on the development set and\nreport the corresponding test results.\nWe found the setting that works best across\nmost datasets and models is 2 or 4 epochs and a\nlearning rate of 2e-5. While task-dependent, op-\ntimal hyperparameters for each task are often the\nsame across B ERT variants.\n3.5 Frozen B ERT Embeddings\nWe also explore the usage of B ERT as pre-\ntrained contextualized word embeddings, like\nELMo (\nPeters et al. , 2018), by training simple\ntask-speci\ufb01c models atop frozen B ERT embed-\ndings.\nFor text classi\ufb01cation, we feed each sentence\nof B ERT vectors into a 2-layer BiLSTM of size\n200 and apply a multilayer perceptron (with hid-\nden size 200) on the concatenated \ufb01rst and last\nBiLSTM vectors. For sequence labeling, we\nuse the same BiLSTM layers and use a condi-\ntional random \ufb01eld to guarantee well-formed pre-\ndictions. For DEP , we use the full model from\nDozat and Manning (2017) with dependency tag\nand arc embeddings of size 100 and the same\nBiLSTM setup as other tasks. We did not \ufb01nd\nchanging the depth or size of the BiLSTMs to sig-\nni\ufb01cantly impact results (\nReimers and Gurevych,\n2017).\nWe optimize cross entropy loss using Adam,\nbut holding B ERT weights frozen and applying a\ndropout of 0.5. We train with early stopping on\nthe development set (patience of 10) using a batch\nsize of 32 and a learning rate of 0.001.\nWe did not perform extensive hyperparameter\nsearch, but while optimal hyperparameters are go-\ning to be task-dependent, some light experimenta-\ntion showed these settings work fairly well across\nmost tasks and B ERT variants.",
+      "parent_section_id": "s4",
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s7",
+      "heading": "Results",
+      "level": 1,
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Table\n1 summarizes the experimental results. We\nobserve that S CIBERT outperforms B ERT-Base\non scienti\ufb01c tasks (+2.11 F1 with \ufb01netuning and\n+2.43 F1 without)\n8. We also achieve new SOTA\nresults on many of these tasks using S CIBERT.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "confidence": 0.94
+    },
+    {
+      "section_id": "s8",
+      "heading": "Biomedical Domain",
+      "level": 2,
+      "page_start": 3,
+      "page_end": 4,
+      "text": "We observe that S CIBERT outperforms B ERT-\nBase on biomedical tasks (+1.92 F1 with \ufb01netun-\ning and +3.59 F1 without). In addition, S CIB-\nERT achieves new SOTA results on BC5CDR\nand ChemProt (\nLee et al. , 2019), and EBM-\nNLP (Nye et al. , 2018).\nSCIBERT performs slightly worse than SOTA\non 3 datasets. The SOTA model for JNLPBA\nis a BiLSTM-CRF ensemble trained on multi-\nple NER datasets not just JNLPBA (\nY oon et al.,\n2018). The SOTA model for NCBI-disease\nis B IOBERT (Lee et al. , 2019), which is B ERT-\nBase \ufb01netuned on 18B tokens from biomedi-\ncal papers. The SOTA result for GENIA is\nin\nNguyen and V erspoor (2019) which uses the\nmodel from Dozat and Manning (2017) with part-\nof-speech (POS) features, which we do not use.\nIn Table 2, we compare S CIBERT results\nwith reported B IOBERT results on the subset of\ndatasets included in ( Lee et al. , 2019). Interest-\ning, S CIBERT outperforms B IOBERT results on\n7The SOTA paper did not report a single score. We\ncompute the average of the reported results for each class\nweighted by number of examples in each class.\n8For rest of this paper, all results reported in this manner\nare averaged over datasets excluding UAS for DEP since we\nalready include LAS.\nField Task Dataset SOTA B ERT-Base S CI BERT\nFrozen Finetune Frozen Finetune\nBio\nNER\nBC5CDR (Li et al., 2016) 88.85 7 85.08 86.72 88.73 90.01\nJNLPBA (Collier and Kim , 2004) 78.58 74.05 76.09 75.77 77.28\nNCBI-disease ( Dogan et al., 2014) 89.36 84.06 86.88 86.39 88.57\nPICO EBM-NLP ( Nye et al., 2018) 66.30 61.44 71.53 68.30 72.28\nDEP GENIA (Kim et al. , 2003) - LAS 91.92 90.22 90.33 90.36 90.43\nGENIA (Kim et al. , 2003) - UAS 92.84 91.84 91.89 92.00 91.99\nREL ChemProt ( Kringelum et al. , 2016) 76.68 68.21 79.14 75.03 83.64\nCS\nNER SciERC (Luan et al., 2018) 64.20 63.58 65.24 65.77 67.57\nREL SciERC (Luan et al., 2018) n/a 72.74 78.71 75.25 79.97\nCLS ACL-ARC ( Jurgens et al., 2018) 67.9 62.04 63.91 60.74 70.98\nMulti CLS Paper Field n/a 63.64 65.37 64.38 65.71\nSciCite (Cohan et al., 2019) 84.0 84.31 84.85 85.42 85.49\nAverage 73.58 77.16 76.01 79.27\nTable 1: Test performances of all B ERT variants on all tasks and datasets. Bold indicates the SOTA result (multiple\nresults bolded if difference within 95% bootstrap con\ufb01denc e interval). Keeping with past work, we report macro\nF1 scores for NER (span-level), macro F1 scores for REL and CL S (sentence-level), and macro F1 for PICO\n(token-level), and micro F1 for ChemProt speci\ufb01cally. For D EP , we report labeled (LAS) and unlabeled (UAS)\nattachment scores (excluding punctuation) for the same mod el with hyperparameters tuned for LAS. All results\nare the average of multiple runs with different random seeds .\nTask Dataset B IO BERT SCI BERT\nNER\nBC5CDR 88.85 90.01\nJNLPBA 77.59 77.28\nNCBI-disease 89.36 88.57\nREL ChemProt 76.68 83.64\nTable 2: Comparing S CIBERT with the reported\nBIOBERT results on biomedical datasets.\nBC5CDR and ChemProt, and performs similarly\non JNLPBA despite being trained on a substan-\ntially smaller biomedical corpus.",
+      "parent_section_id": "s7",
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s9",
+      "heading": "Computer Science Domain",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "text": "We observe that S CIBERT outperforms B ERT-\nBase on computer science tasks (+3.55 F1 with\n\ufb01netuning and +1.13 F1 without). In addition,\nSCIBERT achieves new SOTA results on ACL-\nARC (\nCohan et al. , 2019), and the NER part of\nSciERC ( Luan et al., 2018). For relations in Sci-\nERC, our results are not comparable with those in\nLuan et al. (2018) because we are performing re-\nlation classi\ufb01cation given gold entities, while they\nperform joint entity and relation extraction.",
+      "parent_section_id": "s7",
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s10",
+      "heading": "Multiple Domains",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "text": "We observe that S CIBERT outperforms B ERT-\nBase on the multidomain tasks (+0.49 F1 with\n\ufb01netuning and +0.93 F1 without). In addi-\ntion, S CIBERT outperforms the SOTA on Sci-\nCite (\nCohan et al. , 2019). No prior published\nSOTA results exist for the Paper Field dataset.",
+      "parent_section_id": "s7",
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s11",
+      "heading": "Discussion",
+      "level": 1,
+      "page_start": 4,
+      "page_end": 5,
+      "text": "5.1 Effect of Finetuning\nWe observe improved results via B ERT \ufb01netuning\nrather than task-speci\ufb01c architectures atop frozen\nembeddings (+3.25 F1 with S CIBERT and +3.58\nwith B ERT-Base, on average). For each scienti\ufb01c\ndomain, we observe the largest effects of \ufb01netun-\ning on the computer science (+5.59 F1 with S CIB-\nERT and +3.17 F1 with B ERT-Base) and biomed-\nical tasks (+2.94 F1 with S CIBERT and +4.61 F1\nwith B ERT-Base), and the smallest effect on mul-\ntidomain tasks (+0.7 F1 with S CIBERT and +1.14\nF1 with B ERT-Base). On every dataset except\nBC5CDR and SciCite, B ERT-Base with \ufb01netuning\noutperforms (or performs similarly to) a model us-\ning frozen S CIBERT embeddings.\n5.2 Effect of S CIVOCAB\nWe assess the importance of an in-domain sci-\nenti\ufb01c vocabulary by repeating the \ufb01netuning ex-\nperiments for S CIBERT with B ASE VOCAB . We\n\ufb01nd the optimal hyperparameters for S CIBERT-\nBASE VOCAB often coincide with those of S CIB-\nERT-SCIVOCAB .\nAveraged across datasets, we observe +0.60 F1\nwhen using S CIVOCAB . For each scienti\ufb01c do-\nmain, we observe +0.76 F1 for biomedical tasks,\n+0.61 F1 for computer science tasks, and +0.11 F1\nfor multidomain tasks.\nGiven the disjoint vocabularies (Section\n2) and\nthe magnitude of improvement over B ERT-Base\n(Section 4), we suspect that while an in-domain\nvocabulary is helpful, S CIBERT bene\ufb01ts most\nfrom the scienti\ufb01c corpus pretraining.",
+      "parent_section_id": null,
+      "section_type": "results",
+      "confidence": 0.94
+    },
+    {
+      "section_id": "s12",
+      "heading": "Related Work",
+      "level": 1,
+      "page_start": 5,
+      "page_end": 5,
+      "text": "Recent work on domain adaptation of BERT in-\ncludes B IOBERT (\nLee et al. , 2019) and C LIN -\nICAL BERT (Alsentzer et al. , 2019; Huang et al. ,\n2019). B IOBERT is trained on PubMed ab-\nstracts and PMC full text articles, and C LIN -\nICAL BERT is trained on clinical text from the\nMIMIC-III database ( Johnson et al., 2016). In\ncontrast, S CIBERT is trained on the full text of\n1.14M biomedical and computer science papers\nfrom the Semantic Scholar corpus (\nAmmar et al.,\n2018). Furthermore, S CIBERT uses an in-domain\nvocabulary (S CIVOCAB ) while the other above-\nmentioned models use the original B ERT vocab-\nulary (B ASE VOCAB ).\n7 Conclusion and Future Work\nWe released S CIBERT, a pretrained language\nmodel for scienti\ufb01c text based on B ERT. We evalu-\nated SCIBERT on a suite of tasks and datasets from\nscienti\ufb01c domains. S CIBERT signi\ufb01cantly outper-\nformed B ERT-Base and achieves new SOTA re-\nsults on several of these tasks, even compared to\nsome reported B IOBERT (\nLee et al. , 2019) results\non biomedical tasks.\nFor future work, we will release a version of\nSCIBERT analogous to B ERT-Large, as well as ex-\nperiment with different proportions of papers from\neach domain. Because these language models are\ncostly to train, we aim to build a single resource\nthat\u2019s useful across multiple domains.\nAcknowledgment\nWe thank the anonymous reviewers for their com-\nments and suggestions. We also thank Waleed\nAmmar, Noah Smith, Y oav Goldberg, Daniel\nKing, Doug Downey, and Dan Weld for their help-\nful discussions and feedback. All experiments\nwere performed on\nbeaker.org and supported\nin part by credits from Google Cloud.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s13",
+      "heading": "References",
+      "level": 1,
+      "page_start": 5,
+      "page_end": 6,
+      "text": "Emily Alsentzer, John R. Murphy, Willie Boag, Wei-\nHung Weng, Di Jin, Tristan Naumann, and Matthew\nB. A. McDermott. 2019. Publicly available clini-\ncal bert embeddings. In ClinicalNLP workshop at\nNAACL.\nWaleed Ammar, Dirk Groeneveld, Chandra Bhagavat-\nula, Iz Beltagy, Miles Crawford, Doug Downey, Ja-\nson Dunkelberger, Ahmed Elgohary, Sergey Feld-\nman, Vu Ha, Rodney Kinney, Sebastian Kohlmeier,\nKyle Lo, Tyler Murray, Hsu-Han Ooi, Matthew Pe-\nters, Joanna Power, Sam Skjonsberg, Lucy Lu Wang,\nChris Wilhelm, Zheng Y uan, Madeleine van Zuylen,\nand Oren Etzioni. 2018. Construction of the litera-\nture graph in semantic scholar. In NAACL.\nArman Cohan, Waleed Ammar, Madeleine\nvan Zuylen, and Field Cady. 2019.\nStructural scaffolds for citation intent classi\ufb01cation in scienti\ufb01c publications .\nIn NAACL-HLT, pages 3586\u20133596, Minneapolis,\nMinnesota. Association for Computational Linguis-\ntics.\nNigel Collier and Jin-Dong Kim. 2004. Introduction\nto the bio-entity recognition task at jnlpba. In NLP-\nBA/BioNLP.\nTim Dettmers. 2019. TPUs vs\nGPUs for Transformers (BERT).\nhttp://timdettmers.com/2018/10/17/tpus-vs-gpus-for- transformers-bert/.\nAccessed: 2019-02-22.\nJacob Devlin, Ming-Wei Chang, Kenton Lee, and\nKristina Toutanova. 2019. BERT: Pre-training of\ndeep bidirectional transformers for language under-\nstanding. In NAACL-HLT.\nRezarta Islamaj Dogan, Robert Leaman, and Zhiyong\nLu. 2014. NCBI disease corpus: A resource for dis-\nease name recognition and concept normalization.\nJournal of biomedical informatics , 47:1\u201310.\nTimothy Dozat and Christopher D. Manning. 2017.\nDeep biaf\ufb01ne attention for neural dependency pars-\ning. ICLR.\nMatt Gardner, Joel Grus, Mark Neumann, Oyvind\nTafjord, Pradeep Dasigi, Nelson F. Liu, Matthew\nPeters, Michael Schmitz, and Luke S. Zettlemoyer.\n2017. Allennlp: A deep semantic natural language\nprocessing platform. In arXiv:1803.07640.\nJeremy Howard and Sebastian Ruder. 2018. Universal\nlanguage model \ufb01ne-tuning for text classi\ufb01cation. In\nACL.\nKexin Huang, Jaan Altosaar, and Rajesh Ranganath.\n2019. Clinicalbert: Modeling clinical notes and pre-\ndicting hospital readmission. arXiv:1904.05342.\nAlistair E. W . Johnson, Tom J. Pollard aand Lu Shen,\nLiwei H. Lehman, Mengling Feng, Moham-\nmad Ghassemi, Benjamin Moody, Peter Szolovits,\nLeo Anthony Celi, , and Roger G. Mark. 2016.\nMimic-iii, a freely accessible critical care database.\nIn Scienti\ufb01c Data, 3:160035 .\nDavid Jurgens, Srijan Kumar, Raine Hoover, Daniel A.\nMcFarland, and Daniel Jurafsky. 2018. Measuring\nthe evolution of a scienti\ufb01c \ufb01eld through citation\nframes. TACL, 06:391\u2013406.\nJin-Dong Kim, Tomoko Ohta, Y uka Tateisi, and\nJun\u2019ichi Tsujii. 2003. GENIA corpus - a semanti-\ncally annotated corpus for bio-textmining. Bioinfor-\nmatics, 19:i180i182.\nSu Kim, David Mart\u00b4 \u0131nez, Lawrence Cavedon, and Lars\nY encken. 2011. Automatic classi\ufb01cation of sen-\ntences to support evidence based medicine. In BMC\nBioinformatics.\nDiederik P . Kingma and Jimmy Ba. 2015. Adam: A\nmethod for stochastic optimization. ICLR.\nJens Kringelum, Sonny Kim Kj\u00e6rulff, S\u00f8ren Brunak,\nOle Lund, Tudor I. Oprea, and Olivier Taboureau.\n2016. ChemProt-3.0: a global chemical biology dis-\neases mapping. In Database.\nJinhyuk Lee, Wonjin Y oon, Sungdong Kim,\nDonghyeon Kim, Sunkyu Kim, Chan Ho So,\nand Jaewoo Kang. 2019. BioBERT: a pre-trained\nbiomedical language representation model for\nbiomedical text mining. In arXiv:1901.08746.\nJiao Li, Y ueping Sun, Robin J. Johnson, Daniela Sci-\naky, Chih-Hsuan Wei, Robert Leaman, Allan Peter\nDavis, Carolyn J. Mattingly, Thomas C. Wiegers,\nand Zhiyong Lu. 2016. BioCreative V CDR task\ncorpus: a resource for chemical disease relation\nextraction. Database : the journal of biological\ndatabases and curation .\nYi Luan, Luheng He, Mari Ostendorf, and Hannaneh\nHajishirzi. 2018. Multi-task identi\ufb01cation of enti-\nties, relations, and coreference for scienti\ufb01c knowl-\nedge graph construction. In EMNLP.\nMark Neumann, Daniel King, Iz Beltagy, and Waleed\nAmmar. 2019. ScispaCy: Fast and robust mod-\nels for biomedical natural language processing. In\narXiv:1902.07669.\nDat Quoc Nguyen and Karin M. V erspoor. 2019. From\npos tagging to dependency parsing for biomedical\nevent extraction. BMC Bioinformatics, 20:1\u201313.\nBenjamin Nye, Junyi Jessy Li, Roma Patel, Yinfei\nY ang, Iain James Marshall, Ani Nenkova, and By-\nron C. Wallace. 2018. A corpus with multi-level an-\nnotations of patients, interventions and outcomes to\nsupport language processing for medical literature.\nIn ACL.\nMatthew E. Peters, Mark Neumann, Mohit Iyyer,\nMatt Gardner, Christopher Clark, Kenton Lee, and\nLuke S. Zettlemoyer. 2018. Deep contextualized\nword representations. In NAACL-HLT.\nAlec Radford, Karthik Narasimhan, Tim Salimans, and\nIlya Sutskever. 2018. Improving language under-\nstanding by generative pre-training.\nNils Reimers and Iryna Gurevych. 2017. Optimal hy-\nperparameters for deep lstm-networks for sequence\nlabeling tasks. In EMNLP.\nArnab Sinha, Zhihong Shen, Y ang Song, Hao Ma, Dar-\nrin Eide, Bo-June Paul Hsu, and Kuansan Wang.\n2015. An overview of microsoft academic service\n(MAS) and applications. In WWW.\nAshish V aswani, Noam Shazeer, Niki Parmar, Jakob\nUszkoreit, Llion Jones, Aidan N. Gomez, Lukasz\nKaiser, and Illia Polosukhin. 2017. Attention is all\nyou need. In NIPS.\nY onghui Wu, Mike Schuster, Zhifeng Chen, Quoc V .\nLe, Mohammad Norouzi, Wolfgang Macherey,\nMaxim Krikun, Y uan Cao, Qin Gao, Jeff Klingner,\nApurva Shah, Melvin Johnson, Xiaobing Liu,\nLukasz Kaiser, Stephan Gouws, Y oshikiyo Kato,\nTaku Kudo, Hideto Kazawa, Keith Stevens, George\nKurian, Nishant Patil, Wei Wang, Cliff Y oung, Jason\nSmith, Jason Riesa, Alex Rudnick, Oriol Vinyals,\nGregory S. Corrado, Macduff Hughes, and Jeffrey\nDean. 2016. Google\u2019s neural machine translation\nsystem: Bridging the gap between human and ma-\nchine translation. abs/1609.08144.\nWonjin Y oon, Chan Ho So, Jinhyuk Lee, and Jaewoo\nKang. 2018. CollaboNet: collaboration of deep neu-\nral networks for biomedical named entity recogni-\ntion. In DTMBio workshop at CIKM .",
+      "parent_section_id": null,
+      "section_type": "references",
+      "confidence": 0.99
+    }
+  ],
+  "definitions": [],
+  "theorems": [],
+  "lemmas": [],
+  "corollaries": [],
+  "proofs": [],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Emily Alsentzer, John R. Murphy, Willie Boag, Wei- Hung Weng, Di Jin, Tristan Naumann, and Matthew B. A. McDermott. 2019. Publicly available clini- cal bert embeddings. In ClinicalNLP workshop at NAACL. Waleed Ammar, Dirk Groeneveld, Chandra Bhagavat- ula, Iz Beltagy, Miles Crawford, Doug Downey, Ja- son Dunkelberger, Ahmed Elgohary, Sergey Feld- man, Vu Ha, Rodney Kinney, Sebastian Kohlmeier, Kyle Lo, Tyler Murray, Hsu-Han Ooi, Matthew Pe- ters, Joanna Power, Sam Skjonsberg, Lucy Lu Wang, Chris Wilhelm, Zheng Y uan, Madeleine van Zuylen, and Oren Etzioni. 2018. Construction of the litera- ture graph in semantic scholar. In NAACL. Arman Cohan, Waleed Ammar, Madeleine van Zuylen, and Field Cady. 2019. Structural scaffolds for citation intent classi\ufb01cation in scienti\ufb01c publications . In NAACL-HLT, pages 3586\u20133596, Minneapolis, Minnesota. Association for Computational Linguis- tics. Nigel Collier and Jin-Dong Kim. 2004. Introduction to the bio-entity recognition task at jnlpba. In NLP- BA/BioNLP. Tim Dettmers. 2019. TPUs vs GPUs for Transformers (BERT). http://timdettmers.com/2018/10/17/tpus-vs-gpus-for- transformers-bert/. Accessed: 2019-02-22. Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of deep bidirectional transformers for language under- standing. In NAACL-HLT. Rezarta Islamaj Dogan, Robert Leaman, and Zhiyong Lu. 2014. NCBI disease corpus: A resource for dis- ease name recognition and concept normalization. Journal of biomedical informatics , 47:1\u201310. Timothy Dozat and Christopher D. Manning. 2017. Deep biaf\ufb01ne attention for neural dependency pars- ing. ICLR. Matt Gardner, Joel Grus, Mark Neumann, Oyvind Tafjord, Pradeep Dasigi, Nelson F. Liu, Matthew Peters, Michael Schmitz, and Luke S. Zettlemoyer.",
+      "title": "Murphy, Willie Boag, Wei- Hung Weng, Di Jin, Tristan Naumann, and Matthew B",
+      "authors": [
+        "Emily Alsentzer",
+        "John R"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": null,
+      "url": "http://timdettmers.com/2018/10/17/tpus-vs-gpus-for-"
+    },
+    {
+      "reference_id": "ref_002",
+      "raw_text": "Allennlp: A deep semantic natural language processing platform. In arXiv:1803.07640. Jeremy Howard and Sebastian Ruder. 2018. Universal language model \ufb01ne-tuning for text classi\ufb01cation. In ACL. Kexin Huang, Jaan Altosaar, and Rajesh Ranganath.",
+      "title": "In arXiv:1803",
+      "authors": [
+        "Allennlp: A deep semantic natural language processing platform"
+      ],
+      "year": 2018,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_003",
+      "raw_text": "Clinicalbert: Modeling clinical notes and pre- dicting hospital readmission. arXiv:1904.05342. Alistair E. W . Johnson, Tom J. Pollard aand Lu Shen, Liwei H. Lehman, Mengling Feng, Moham- mad Ghassemi, Benjamin Moody, Peter Szolovits, Leo Anthony Celi, , and Roger G. Mark. 2016. Mimic-iii, a freely accessible critical care database. In Scienti\ufb01c Data, 3:160035 . David Jurgens, Srijan Kumar, Raine Hoover, Daniel A. McFarland, and Daniel Jurafsky. 2018. Measuring the evolution of a scienti\ufb01c \ufb01eld through citation frames. TACL, 06:391\u2013406. Jin-Dong Kim, Tomoko Ohta, Y uka Tateisi, and Jun\u2019ichi Tsujii. 2003. GENIA corpus - a semanti- cally annotated corpus for bio-textmining. Bioinfor- matics, 19:i180i182. Su Kim, David Mart\u00b4 \u0131nez, Lawrence Cavedon, and Lars Y encken. 2011. Automatic classi\ufb01cation of sen- tences to support evidence based medicine. In BMC Bioinformatics. Diederik P . Kingma and Jimmy Ba. 2015. Adam: A method for stochastic optimization. ICLR. Jens Kringelum, Sonny Kim Kj\u00e6rulff, S\u00f8ren Brunak, Ole Lund, Tudor I. Oprea, and Olivier Taboureau.",
+      "title": "arXiv:1904",
+      "authors": [
+        "Clinicalbert: Modeling clinical notes",
+        "pre- dicting hospital readmission"
+      ],
+      "year": 1904,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_004",
+      "raw_text": "ChemProt-3.0: a global chemical biology dis- eases mapping. In Database. Jinhyuk Lee, Wonjin Y oon, Sungdong Kim, Donghyeon Kim, Sunkyu Kim, Chan Ho So, and Jaewoo Kang. 2019. BioBERT: a pre-trained biomedical language representation model for biomedical text mining. In arXiv:1901.08746. Jiao Li, Y ueping Sun, Robin J. Johnson, Daniela Sci- aky, Chih-Hsuan Wei, Robert Leaman, Allan Peter Davis, Carolyn J. Mattingly, Thomas C. Wiegers, and Zhiyong Lu. 2016. BioCreative V CDR task corpus: a resource for chemical disease relation extraction. Database : the journal of biological databases and curation . Yi Luan, Luheng He, Mari Ostendorf, and Hannaneh Hajishirzi. 2018. Multi-task identi\ufb01cation of enti- ties, relations, and coreference for scienti\ufb01c knowl- edge graph construction. In EMNLP. Mark Neumann, Daniel King, Iz Beltagy, and Waleed Ammar. 2019. ScispaCy: Fast and robust mod- els for biomedical natural language processing. In arXiv:1902.07669. Dat Quoc Nguyen and Karin M. V erspoor. 2019. From pos tagging to dependency parsing for biomedical event extraction. BMC Bioinformatics, 20:1\u201313. Benjamin Nye, Junyi Jessy Li, Roma Patel, Yinfei Y ang, Iain James Marshall, Ani Nenkova, and By- ron C. Wallace. 2018. A corpus with multi-level an- notations of patients, interventions and outcomes to support language processing for medical literature. In ACL. Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke S. Zettlemoyer. 2018. Deep contextualized word representations. In NAACL-HLT. Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. Improving language under- standing by generative pre-training. Nils Reimers and Iryna Gurevych. 2017. Optimal hy- perparameters for deep lstm-networks for sequence labeling tasks. In EMNLP. Arnab Sinha, Zhihong Shen, Y ang Song, Hao Ma, Dar- rin Eide, Bo-June Paul Hsu, and Kuansan Wang.",
+      "title": "0: a global chemical biology dis- eases mapping",
+      "authors": [
+        "ChemProt-3"
+      ],
+      "year": 2019,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_005",
+      "raw_text": "An overview of microsoft academic service (MAS) and applications. In WWW. Ashish V aswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In NIPS. Y onghui Wu, Mike Schuster, Zhifeng Chen, Quoc V . Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Y uan Cao, Qin Gao, Jeff Klingner, Apurva Shah, Melvin Johnson, Xiaobing Liu, Lukasz Kaiser, Stephan Gouws, Y oshikiyo Kato, Taku Kudo, Hideto Kazawa, Keith Stevens, George Kurian, Nishant Patil, Wei Wang, Cliff Y oung, Jason Smith, Jason Riesa, Alex Rudnick, Oriol Vinyals, Gregory S. Corrado, Macduff Hughes, and Jeffrey Dean. 2016. Google\u2019s neural machine translation system: Bridging the gap between human and ma- chine translation. abs/1609.08144. Wonjin Y oon, Chan Ho So, Jinhyuk Lee, and Jaewoo Kang. 2018. CollaboNet: collaboration of deep neu- ral networks for biomedical named entity recogni- tion. In DTMBio workshop at CIKM .",
+      "title": "In WWW",
+      "authors": [
+        "An overview of microsoft academic service (MAS)",
+        "applications"
+      ],
+      "year": 2017,
+      "venue": null,
+      "doi": null,
+      "url": null
+    }
+  ],
+  "equations": [],
+  "figures": [],
+  "tables": [],
+  "metadata": {
+    "parser_version": "0.1.0",
+    "extraction_mode": "text_pdf",
+    "extraction_confidence": 0.8,
+    "language": "en",
+    "page_count": 6,
+    "ocr_used": false,
+    "processing_time_ms": 2291,
+    "warnings": [
+      "[META_DOI_MISSING] (metadata) DOI not detected."
+    ],
+    "source": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+    "year": 1903,
+    "doi": null,
+    "diagnostics": [
+      {
+        "code": "META_DOI_MISSING",
+        "severity": "warning",
+        "stage": "metadata",
+        "message": "DOI not detected."
+      }
+    ],
+    "parse_state": "success"
+  }
+}

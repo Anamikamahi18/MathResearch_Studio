@@ -22,6 +22,14 @@ MathResearch Studio addresses this gap by focusing on literature understanding, 
 - Enable search and question answering grounded only in uploaded sources.
 - Export research notes in a reusable structured format.
 
+## Current Milestone Status
+
+Current development is focused on Day 2: reliable scientific document parsing.
+
+- Implemented now: PDF extraction, metadata extraction, section detection, and structured JSON export.
+- Explicitly out of scope for Day 2: AI assistant and question answering.
+- Day 3 focus: embeddings, vector database setup, and semantic search foundation.
+
 ## Problem Statement
 
 Researchers need a system that helps them understand, organize, and query mathematical literature efficiently. The challenge is to convert dense academic papers into a structured knowledge workflow that preserves definitions, theorems, lemmas, proofs, notation, and dependencies without attempting to replace mathematical reasoning itself.
@@ -101,7 +109,20 @@ Create a local `.env` file for API keys or runtime configuration when the applic
 
 ## Usage
 
-The intended Version 1 workflow is:
+Day 2 pipeline usage (current runnable workflow):
+
+```bash
+python -m src.parser.pipeline tests/sample_papers --output-dir exports/parser_outputs
+```
+
+Current Day 2 scope:
+
+1. Upload one or more mathematics research papers in PDF format.
+2. Extract raw text and basic metadata.
+3. Detect structural sections.
+4. Export normalized parser JSON output.
+
+Full Version 1 target workflow:
 
 1. Upload one or more mathematics research papers in PDF format.
 2. Extract raw text and structural sections.
@@ -109,7 +130,15 @@ The intended Version 1 workflow is:
 4. Query the paper collection using the AI assistant.
 5. Review extracted concepts and export structured notes.
 
-Implementation of the full runtime workflow is planned as the next development phase.
+Implementation of search and AI assistant layers is planned after parsing milestones.
+
+## Testing
+
+Run parser validation tests (section detection, JSON export schema, and reliability policy):
+
+```bash
+python -m unittest tests.test_section_detector tests.test_json_export tests.test_reliability -v
+```
 
 ## Roadmap
 

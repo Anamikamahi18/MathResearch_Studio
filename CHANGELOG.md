@@ -18,6 +18,9 @@ The project follows Semantic Versioning.
 - Day 2 Session 2 completed: parser submodule folder structure and JSON schema specification
 - Day 2 Session 3 completed: document pipeline workflow, sample paper test set, and parser test-case tracking
 - Day 2 Session 4 completed: parser-focused gap analysis update and parser limitations documentation
+- Day 2 pipeline implementation completed with parser modules for PDF loading, metadata extraction, section detection, reference parsing, equation detection, and schema-normalized JSON export
+- Centralized parser reliability policy enforcement in code constants and helper functions (warning codes, confidence deltas, quality thresholds, parse-state resolution)
+- Parser reliability and schema tests expanded and validated for Day 2 behavior
 
 ### Planned
 

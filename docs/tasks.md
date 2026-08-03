@@ -48,3 +48,8 @@
 - Documentation
 - Folder structure
 - Environment setup
+- Parser architecture
+- Document pipeline
+- JSON schema
+- Sample paper collection
+- Parser documentation

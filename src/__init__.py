@@ -1,0 +1,1 @@
+"""MathResearch Studio source package."""

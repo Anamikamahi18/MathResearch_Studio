@@ -121,6 +121,9 @@ Primary output is a structured JSON document per paper.
 10. Quality scorer adds confidence and warnings.
 11. Structured JSON is passed to embeddings and RAG modules.
 
+For concrete reliability behavior, warning codes, and confidence-impact rules,
+see `docs/parser_error_policy.md`.
+
 ## Limitations
 
 - Mathematical notation extraction remains imperfect in v1.
