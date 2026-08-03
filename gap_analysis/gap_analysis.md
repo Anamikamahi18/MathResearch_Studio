@@ -239,3 +239,50 @@ These errors directly affect trust, because a small notation error can change th
 - Build small gold-standard test sets from mathematics papers for regression checks
 - Track parser failure modes in `tests/test_cases.md` and iterate by error category
 
+---
+
+## Day 3: Embedding & Vector Retrieval Gap Analysis
+
+### Why is keyword search insufficient for mathematics?
+
+Traditional keyword search (e.g., BM25, exact substring matching) fails significantly in mathematical research workflows:
+
+* **Vocabulary & Terminology Mismatch**: Mathematicians frequently describe the same underlying conceptual structure using different terms across subfields (e.g., *"compact manifold"* vs. *"closed bounded smooth manifold"*, or *"isomorphism"* vs. *"bijective structure-preserving map"*).
+* **Paraphrased Queries**: Researchers search by high-level conceptual questions (e.g., *"methods for bounding eigenvalues of Laplacian operators"*) rather than exact paper phrasing.
+* **Notation Discrepancies**: Latex string variations (e.g., `\frac{a}{b}`, `a/b`, `a b^{-1}`) frustrate keyword indexing engines, rendering string matching fragile for mathematical search.
+
+### What are the main problems with embeddings for mathematical content?
+
+Dense vector embeddings represent text as continuous vectors in floating-point space, but encounter distinct challenges when applied to symbolic mathematics:
+
+* **Loss of Exact Symbol Precision**: Dense embeddings map text into continuous semantic space, which excels at broad topical matching but often blurs fine-grained symbolic differences (e.g., confusing `$x > 0$` with `$x \ge 0$`, or `$f(x)$` with `$f'(x)$`).
+* **General-Domain Bias**: Models like `all-MiniLM-L6-v2` or `text-embedding-3-small` are pre-trained primarily on web text and Wikipedia, lacking specialized pre-training on raw LaTeX syntax, complex mathematical proofs, and abstract notation.
+* **Context Length Truncation**: Standard embedding encoders impose fixed token limits (e.g., 256–512 tokens). Long proofs or extensive mathematical derivations must be chunked, risking loss of broader contextual premises.
+
+### What unique challenges does mathematical notation present to vector retrieval?
+
+* **Spatial and 2D Layout Semantics**: Mathematical formulas depend on 2D spatial relationships (superscripts, subscripts, fractions, matrices, summation limits) that generic linear text embedders flatten into 1D strings, losing mathematical semantics.
+* **Notation Overload & Variable Re-use**: Variable names are reused constantly across different papers and subdomains (e.g., $E$ representing energy, expectation, or an elliptic curve depending on context), creating embedding ambiguity without surrounding context.
+* **LaTeX Syntactic Noise**: Variations in command syntax, formatting macros, and whitespace introduce vector noise that degrades cosine similarity scoring.
+
+### Why do theorems with identical mathematical meaning have low vector similarity under different notation?
+
+When two authors prove the exact same theorem using different variable conventions (e.g., Author A proving $A^2 + B^2 = C^2$ for right triangles, while Author B proves $x^2 + y^2 = z^2$), standard embedding models treat the differing character tokens as separate semantic concepts:
+
+* **Token-Level Disparities**: WordPiece and BPE tokenizers split unrecognized notation into separate subword tokens, driving the embedding vectors apart.
+* **Lack of Structural Isomorphism Awareness**: Standard sentence transformers measure surface-level linguistic co-occurrence rather than structural mathematical isomorphism.
+* **Symbol Variable Instantiation**: Embeddings fail to recognize alpha-equivalence (renaming bound variables) without explicit symbolic normalization or AST parsing.
+
+### What are the primary limitations of dense retrieval in technical literature?
+
+* **Inability to Enforce Exact Formula Matching**: Dense retrieval cannot guarantee exact matches for specific mathematical formulas, variable constraints, or citation IDs.
+* **Lack of Logical Deduction Ability**: Vector similarity search measures semantic proximity, not logical validity. It retrieves text that *sounds* related, regardless of whether the mathematical argument is logically sound or relevant to a proof step.
+* **Uncertain Similarity Thresholds**: Cosine similarity scores vary across paper domains, making it difficult to establish a single universal threshold for "relevant" vs. "irrelevant" mathematical chunks.
+
+### Ideas for Version 2 & Future Enhancements
+
+1. **Hybrid Retrieval (BM25 + FAISS Dense Search)**: Combine BM25 sparse keyword indexing for exact symbol/variable matching with FAISS dense vector search for conceptual discovery, merged via Reciprocal Rank Fusion (RRF).
+2. **LaTeX & Notation Normalization Engine**: Pre-process mathematical text using a notation canonicalizer (e.g., converting equivalent LaTeX expressions into a standard canonical form before chunking and embedding).
+3. **Formula-Aware & AST Embeddings**: Incorporate formula Abstract Syntax Tree (AST) representations alongside text embeddings to enable structural formula matching.
+4. **Cross-Encoder Re-Ranking Layer**: Implement a secondary Cross-Encoder re-ranker trained on scientific query-passage pairs to re-score top-20 retrieved candidates for high-precision mathematical ranking.
+5. **Theorem-Proof Entity Filtering**: Extend search endpoints to allow explicit filtering by `entity_type` (`definition`, `theorem`, `lemma`, `proof`) to narrow results to formal statement objects.

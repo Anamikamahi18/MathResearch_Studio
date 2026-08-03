@@ -300,3 +300,130 @@ Add optional multimodal parsing mode for PDFs where section detection confidence
 - Add confidence scores and warning flags to all parser outputs.
 - Separate concerns: extraction, sectioning, entity detection, and chunking should remain independent stages.
 - Keep JSON schema stable so RAG and graph modules can evolve without parser rewrites.
+
+---
+
+## Day 3: Dense Retrieval & Semantic Search Focus
+
+### Focus Topics
+
+- Dense Retrieval
+- Sentence Transformers
+- FAISS
+- Scientific Search
+- Mathematical Information Retrieval
+- Embedding Models for Scientific Documents
+
+---
+
+### Topic 1: Dense Retrieval
+
+**Summary**  
+Dense retrieval maps queries and documents into a shared continuous vector space using deep neural encoders (e.g., dual-encoders), replacing token-matching with vector similarity search (e.g., inner product or cosine distance).
+
+**Strengths**  
+Captures semantic intent and paraphrasing, overcomes vocabulary mismatch, handles non-verbatim query formulations, and supports dense similarity search algorithms.
+
+**Weaknesses**  
+Struggles with exact keyword/symbol matching, out-of-vocabulary technical jargon, rare variable names, and requires high computational resources for index generation.
+
+**Research Gap**  
+Optimal hybrid fusion techniques combining dense semantic vectors with exact sparse lexical signals (BM25) for specialized technical domains.
+
+**Ideas for MathResearch Studio**  
+Integrate dense semantic retrieval as the core search mechanism for conceptual queries, while preparing a hybrid sparse-dense re-ranking stage for exact symbol and formula lookups.
+
+---
+
+### Topic 2: Sentence Transformers
+
+**Summary**  
+Sentence Transformers (using Siamese or triplet network architectures) fine-tune pre-trained Transformer language models to generate dense, semantically meaningful sentence- and passage-level embeddings suitable for fast vector comparison.
+
+**Strengths**  
+Generates fixed-size dense vectors ($L_2$-normalized), enables rapid cosine similarity search, runs efficiently on standard hardware (e.g., `all-MiniLM-L6-v2`), and integrates easily with local Python environments.
+
+**Weaknesses**  
+Fixed sequence length truncation limits context window capacity; standard general-domain models lack deep pre-training on complex LaTeX mathematical syntax.
+
+**Research Gap**  
+Fine-tuning sentence-transformer architectures specifically on mathematical definition-theorem pairs and LaTeX formulas to improve mathematical similarity representation.
+
+**Ideas for MathResearch Studio**  
+Use `sentence-transformers` with an abstract `EmbeddingProvider` interface, defaulting to `all-MiniLM-L6-v2` for MVP, with a seamless extension path to fine-tuned mathematical sentence models.
+
+---
+
+### Topic 3: FAISS (Facebook AI Similarity Search)
+
+**Summary**  
+FAISS is an open-source library for efficient dense vector similarity search and clustering. It supports hardware-accelerated matrix operations and indexing structures (e.g., `IndexFlatIP`, `IndexHNSW`, `IndexIVFFlat`) over high-dimensional vector spaces.
+
+**Strengths**  
+Extremely fast similarity search (sub-millisecond $k$-NN lookup over millions of vectors), supports $L_2$-normalized Inner Product search for exact Cosine Similarity, and provides simple disk serialization (`write_index`, `read_index`).
+
+**Weaknesses**  
+FAISS indices store only numeric vector arrays and integer IDs without internal payload storage for document metadata, requiring external metadata synchronization.
+
+**Research Gap**  
+Dynamic payload mapping and atomic transactional index updates for multi-tenant, streaming document ingestion pipelines.
+
+**Ideas for MathResearch Studio**  
+Implement `FAISSVectorStore` using `faiss.IndexFlatIP` paired with a synchronized JSON metadata store (`exports/vector_store/metadata.json`) preserving full paper provenance and section hierarchy.
+
+---
+
+### Topic 4: Scientific Search
+
+**Summary**  
+Scientific search focuses on discovery, retrieval, and contextual exploration across academic paper collections, moving beyond standard web search to handle metadata graphs, citations, and scholarly structure.
+
+**Strengths**  
+Organizes literature by section structure, author networks, and citations; enables targeted search within specific paper sections (e.g., abstract, methodology, results).
+
+**Weaknesses**  
+Traditional scientific search engines rely heavily on metadata or abstracts, failing to index deep mathematical statement entities (definitions, theorems, proofs) within paper bodies.
+
+**Research Gap**  
+Granular, entity-aware scientific search that indexes mathematical statement blocks as first-class searchable domain objects.
+
+**Ideas for MathResearch Studio**  
+Combine document section detection with entity preservation so researchers can filter scientific search specifically by `entity_type` (e.g., searching only for definitions or theorems).
+
+---
+
+### Topic 5: Mathematical Information Retrieval (MIR)
+
+**Summary**  
+Mathematical Information Retrieval is a specialized domain focused on indexing, searching, and retrieving mathematical expressions, LaTeX formulas, and formal mathematical statements across technical literature.
+
+**Strengths**  
+Preserves formula syntax, handles structural expression matching, and respects mathematical statement boundaries (definitions, theorems, lemmas, proofs).
+
+**Weaknesses**  
+Formula-only search misses surrounding natural language context, while text-only search ignores symbolic formula equivalences; current MIR tools lack unified RAG capabilities.
+
+**Research Gap**  
+Unified dual-representation retrieval models that embed natural language text and LaTeX formula expressions into a single aligned vector space.
+
+**Ideas for MathResearch Studio**  
+Enforce atomic entity-preserving chunking in `MathDocumentChunker` so definitions, theorems, lemmas, and proofs remain complete, unbroken units during vector indexing.
+
+---
+
+### Topic 6: Embedding Models for Scientific Documents
+
+**Summary**  
+Embedding models specialized for scientific literature (e.g., SciBERT, SPECTER, MathBERT, Specter2) leverage domain-specific pre-training on academic publications (such as Semantic Scholar or arXiv) to capture scientific vocabulary and citation context.
+
+**Strengths**  
+Captures academic terminology, multi-word technical concepts, and scholarly syntax better than general web-trained models.
+
+**Weaknesses**  
+Higher computational overhead, larger model weights, and potential dependency on domain-specific tokenizers (`SCIVOCAB`).
+
+**Research Gap**  
+Lightweight scientific embedding models optimized for edge/local developer execution that balance mathematical formula understanding with fast inference latency.
+
+**Ideas for MathResearch Studio**  
+Design `src/embeddings/provider.py` with an abstract interface so users can easily toggle between lightweight general models (`all-MiniLM-L6-v2`) and domain-specialized models (`SciBERT` / `MathBERT`).

@@ -1,0 +1,887 @@
+{
+  "dimension": 384,
+  "chunk_ids": [
+    "paper_6cd768c13674_s1_c001",
+    "paper_6cd768c13674_s1_c002",
+    "paper_6cd768c13674_s2_c001",
+    "paper_6cd768c13674_s2_c002",
+    "paper_6cd768c13674_s2_c003",
+    "paper_6cd768c13674_s3_c001",
+    "paper_6cd768c13674_s3_c002",
+    "paper_6cd768c13674_s3_c003",
+    "paper_6cd768c13674_s5_c001",
+    "paper_6cd768c13674_s6_c001",
+    "paper_6cd768c13674_s6_c002",
+    "paper_6cd768c13674_s6_c003",
+    "paper_6cd768c13674_s6_c004",
+    "paper_6cd768c13674_s6_c005",
+    "paper_6cd768c13674_s6_c006",
+    "paper_6cd768c13674_s6_c007",
+    "paper_6cd768c13674_s6_c008",
+    "paper_6cd768c13674_s6_c009",
+    "paper_6cd768c13674_s6_c010",
+    "paper_6cd768c13674_s7_c001",
+    "paper_6cd768c13674_s8_c001",
+    "paper_6cd768c13674_s8_c002",
+    "paper_6cd768c13674_s8_c003",
+    "paper_6cd768c13674_s8_c004",
+    "paper_6cd768c13674_s8_c005",
+    "paper_6cd768c13674_s8_c006",
+    "paper_6cd768c13674_s9_c001",
+    "paper_6cd768c13674_s10_c001",
+    "paper_6cd768c13674_s11_c001",
+    "paper_6cd768c13674_s11_c002",
+    "paper_6cd768c13674_s11_c003",
+    "paper_6cd768c13674_s12_c001",
+    "paper_6cd768c13674_s12_c002",
+    "paper_6cd768c13674_s12_c003",
+    "paper_6cd768c13674_s13_c001",
+    "paper_6cd768c13674_s13_c002",
+    "paper_6cd768c13674_s13_c003",
+    "paper_6cd768c13674_s13_c004",
+    "paper_6cd768c13674_s13_c005",
+    "paper_6cd768c13674_s13_c006",
+    "paper_6cd768c13674_s13_c007",
+    "paper_6cd768c13674_s13_c008",
+    "paper_6cd768c13674_s13_c009",
+    "paper_6cd768c13674_s13_c010"
+  ],
+  "metadata_store": {
+    "paper_6cd768c13674_s1_c001": {
+      "chunk_id": "paper_6cd768c13674_s1_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s1",
+        "section_title": "Abstract",
+        "section_type": "abstract",
+        "page_start": 1,
+        "page_end": 1,
+        "entity_type": "abstract"
+      }
+    },
+    "paper_6cd768c13674_s1_c002": {
+      "chunk_id": "paper_6cd768c13674_s1_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s1",
+        "section_title": "Abstract",
+        "section_type": "abstract",
+        "page_start": 1,
+        "page_end": 1,
+        "entity_type": "abstract"
+      }
+    },
+    "paper_6cd768c13674_s2_c001": {
+      "chunk_id": "paper_6cd768c13674_s2_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s2",
+        "section_title": "Introduction",
+        "section_type": "introduction",
+        "page_start": 1,
+        "page_end": 1,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s2_c002": {
+      "chunk_id": "paper_6cd768c13674_s2_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s2",
+        "section_title": "Introduction",
+        "section_type": "introduction",
+        "page_start": 1,
+        "page_end": 1,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s2_c003": {
+      "chunk_id": "paper_6cd768c13674_s2_c003",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s2",
+        "section_title": "Introduction",
+        "section_type": "introduction",
+        "page_start": 1,
+        "page_end": 1,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s3_c001": {
+      "chunk_id": "paper_6cd768c13674_s3_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s3",
+        "section_title": "Methods",
+        "section_type": "other",
+        "page_start": 1,
+        "page_end": 2,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s3_c002": {
+      "chunk_id": "paper_6cd768c13674_s3_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s3",
+        "section_title": "Methods",
+        "section_type": "other",
+        "page_start": 1,
+        "page_end": 2,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s3_c003": {
+      "chunk_id": "paper_6cd768c13674_s3_c003",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s3",
+        "section_title": "Methods",
+        "section_type": "other",
+        "page_start": 1,
+        "page_end": 2,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s5_c001": {
+      "chunk_id": "paper_6cd768c13674_s5_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s5",
+        "section_title": "Tasks",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 2,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c001": {
+      "chunk_id": "paper_6cd768c13674_s6_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c002": {
+      "chunk_id": "paper_6cd768c13674_s6_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c003": {
+      "chunk_id": "paper_6cd768c13674_s6_c003",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c004": {
+      "chunk_id": "paper_6cd768c13674_s6_c004",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c005": {
+      "chunk_id": "paper_6cd768c13674_s6_c005",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c006": {
+      "chunk_id": "paper_6cd768c13674_s6_c006",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c007": {
+      "chunk_id": "paper_6cd768c13674_s6_c007",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c008": {
+      "chunk_id": "paper_6cd768c13674_s6_c008",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c009": {
+      "chunk_id": "paper_6cd768c13674_s6_c009",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s6_c010": {
+      "chunk_id": "paper_6cd768c13674_s6_c010",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s6",
+        "section_title": "Datasets",
+        "section_type": "other",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s7_c001": {
+      "chunk_id": "paper_6cd768c13674_s7_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s7",
+        "section_title": "Results",
+        "section_type": "results",
+        "page_start": 3,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s8_c001": {
+      "chunk_id": "paper_6cd768c13674_s8_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s8",
+        "section_title": "Biomedical Domain",
+        "section_type": "other",
+        "page_start": 3,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s8_c002": {
+      "chunk_id": "paper_6cd768c13674_s8_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s8",
+        "section_title": "Biomedical Domain",
+        "section_type": "other",
+        "page_start": 3,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s8_c003": {
+      "chunk_id": "paper_6cd768c13674_s8_c003",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s8",
+        "section_title": "Biomedical Domain",
+        "section_type": "other",
+        "page_start": 3,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s8_c004": {
+      "chunk_id": "paper_6cd768c13674_s8_c004",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s8",
+        "section_title": "Biomedical Domain",
+        "section_type": "other",
+        "page_start": 3,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s8_c005": {
+      "chunk_id": "paper_6cd768c13674_s8_c005",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s8",
+        "section_title": "Biomedical Domain",
+        "section_type": "other",
+        "page_start": 3,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s8_c006": {
+      "chunk_id": "paper_6cd768c13674_s8_c006",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s8",
+        "section_title": "Biomedical Domain",
+        "section_type": "other",
+        "page_start": 3,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s9_c001": {
+      "chunk_id": "paper_6cd768c13674_s9_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s9",
+        "section_title": "Computer Science Domain",
+        "section_type": "other",
+        "page_start": 4,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s10_c001": {
+      "chunk_id": "paper_6cd768c13674_s10_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s10",
+        "section_title": "Multiple Domains",
+        "section_type": "other",
+        "page_start": 4,
+        "page_end": 4,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s11_c001": {
+      "chunk_id": "paper_6cd768c13674_s11_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s11",
+        "section_title": "Discussion",
+        "section_type": "results",
+        "page_start": 4,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s11_c002": {
+      "chunk_id": "paper_6cd768c13674_s11_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s11",
+        "section_title": "Discussion",
+        "section_type": "results",
+        "page_start": 4,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s11_c003": {
+      "chunk_id": "paper_6cd768c13674_s11_c003",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s11",
+        "section_title": "Discussion",
+        "section_type": "results",
+        "page_start": 4,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s12_c001": {
+      "chunk_id": "paper_6cd768c13674_s12_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s12",
+        "section_title": "Related Work",
+        "section_type": "other",
+        "page_start": 5,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s12_c002": {
+      "chunk_id": "paper_6cd768c13674_s12_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s12",
+        "section_title": "Related Work",
+        "section_type": "other",
+        "page_start": 5,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s12_c003": {
+      "chunk_id": "paper_6cd768c13674_s12_c003",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s12",
+        "section_title": "Related Work",
+        "section_type": "other",
+        "page_start": 5,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c001": {
+      "chunk_id": "paper_6cd768c13674_s13_c001",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c002": {
+      "chunk_id": "paper_6cd768c13674_s13_c002",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c003": {
+      "chunk_id": "paper_6cd768c13674_s13_c003",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c004": {
+      "chunk_id": "paper_6cd768c13674_s13_c004",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c005": {
+      "chunk_id": "paper_6cd768c13674_s13_c005",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c006": {
+      "chunk_id": "paper_6cd768c13674_s13_c006",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c007": {
+      "chunk_id": "paper_6cd768c13674_s13_c007",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c008": {
+      "chunk_id": "paper_6cd768c13674_s13_c008",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c009": {
+      "chunk_id": "paper_6cd768c13674_s13_c009",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_6cd768c13674_s13_c010": {
+      "chunk_id": "paper_6cd768c13674_s13_c010",
+      "metadata": {
+        "paper_id": "paper_6cd768c13674",
+        "paper_title": "SCIBERT: A Pretrained Language Model for Scientiﬁc Text",
+        "authors": [
+          "Allen Institute for Artiﬁcial Intelligence",
+          "Seattle",
+          "W A",
+          "U SA"
+        ],
+        "section_id": "s13",
+        "section_title": "References",
+        "section_type": "references",
+        "page_start": 5,
+        "page_end": 6,
+        "entity_type": "section_text"
+      }
+    }
+  }
+}

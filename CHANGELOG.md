@@ -21,11 +21,11 @@ The project follows Semantic Versioning.
 - Day 2 pipeline implementation completed with parser modules for PDF loading, metadata extraction, section detection, reference parsing, equation detection, and schema-normalized JSON export
 - Centralized parser reliability policy enforcement in code constants and helper functions (warning codes, confidence deltas, quality thresholds, parse-state resolution)
 - Parser reliability and schema tests expanded and validated for Day 2 behavior
-
-### Planned
-
-- Scientific document parsing pipeline implementation
-- First functional PDF ingestion workflow
+- Day 3 Session 1 completed: embedding data models (`ChunkMetadata`, `TextChunk`, `EmbeddedChunk`), embedding architecture documentation (`docs/embedding_design.md`), literature review update for dense retrieval and MIR (`literature/literature_review.md`)
+- Day 3 Session 2 completed: `EmbeddingProvider` abstract interface and `SentenceTransformerEmbeddingProvider` implementation (`src/embeddings/provider.py`), section-aware and math entity-preserving chunker (`src/embeddings/chunker.py`), chunking strategy specification (`docs/chunking_strategy.md`)
+- Day 3 Session 3 completed: embedding pipeline orchestrator (`src/embeddings/pipeline.py`), FAISS vector store with L2 normalized cosine similarity (`src/rag/vector_store.py`), vector database architecture documentation (`architecture/vector_database.md`), semantic search test cases (`tests/search_tests.md`)
+- Day 3 Session 4 completed: semantic retriever layer (`src/rag/retriever.py`), search API specification (`docs/search_api.md`), Day 3 retrieval gap analysis update (`gap_analysis/gap_analysis.md`)
+- Day 3 Session 5 completed: Day 3 summary report (`docs/day3_report.md`), unit tests for semantic retrieval (`tests/test_retriever.py`), Kanban updates (`docs/tasks.md`)
 
 ## [1.0.0] - Planned
 

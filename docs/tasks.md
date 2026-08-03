@@ -4,12 +4,6 @@
 
 ### Version 1.0.0
 
-- PDF parser
-- Text extraction
-- Basic section detection
-- Embeddings
-- Vector database
-- Semantic search
 - RAG assistant
 - Export notes
 - Streamlit and FastAPI integration
@@ -53,3 +47,12 @@
 - JSON schema
 - Sample paper collection
 - Parser documentation
+- Scientific document parsing pipeline (Day 2)
+- Chunking strategy (Day 3)
+- Embedding module & provider (Day 3)
+- Embedding pipeline orchestrator (Day 3)
+- FAISS vector database design & implementation (Day 3)
+- Search API specification & Semantic Retriever (Day 3)
+- Semantic search testing & documentation (Day 3)
+- Literature review update (Day 3)
+- Gap analysis update (Day 3)
