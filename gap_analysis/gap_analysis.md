@@ -201,3 +201,41 @@ Recommended use:
 - Use the short-answer prompts for open feedback and follow-up contact details.
 - After collecting responses, feed the results back into this gap analysis to refine the opportunity list and the MVP scope.
 
+## Day 2 Session 4: Parsing Reliability Gap Update
+
+### Why do existing PDF parsers struggle with mathematical notation?
+
+Most generic PDF parsers are optimized for linear prose, not symbolic mathematics. Mathematical notation depends on 2D layout, super/subscripts, equation alignment, and operator precedence that are often flattened or reordered during extraction. Multi-column papers and mixed text-equation regions further break token ordering, making extracted output unreliable for downstream theorem or proof analysis.
+
+### How are equations represented differently from plain text?
+
+Plain text is usually sequential and can be represented as a simple token stream. Equations, in contrast, are spatial structures where position carries meaning. For example, fractions, matrices, limits, and nested expressions depend on vertical and horizontal layout relationships, not just token sequence. A parser that treats equations as plain text often loses semantics and mathematical correctness.
+
+### Which parsing errors matter most to mathematicians?
+
+- Symbol corruption (for example, confusing similar symbols)
+- Loss of subscript/superscript structure
+- Broken theorem-proof boundaries
+- Incorrect section assignment for statements
+- Equation token order errors
+- Missing references and citation links
+- Page provenance loss (cannot trace extracted claim to source location)
+
+These errors directly affect trust, because a small notation error can change the meaning of a statement.
+
+### What could make MathResearch Studio more reliable than generic PDF readers?
+
+- Use a multi-path extraction strategy: text-layer first, OCR/multimodal fallback when needed
+- Preserve provenance metadata for every extracted unit (page, section, offsets, confidence)
+- Separate extraction stages (metadata, sections, entities, equations, references) for targeted quality control
+- Add confidence scoring and warning flags to surface uncertain outputs
+- Keep schema-stable JSON contracts so validation and QA tooling can be consistent
+- Support human-in-the-loop correction for low-confidence or high-impact fields
+
+### Reliability Opportunities for Version 1
+
+- Prioritize correctness for core fields before broad feature expansion
+- Expose parser quality indicators in the UI
+- Build small gold-standard test sets from mathematics papers for regression checks
+- Track parser failure modes in `tests/test_cases.md` and iterate by error category
+

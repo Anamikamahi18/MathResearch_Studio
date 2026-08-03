@@ -14,6 +14,10 @@ The project follows Semantic Versioning.
 - Initial project folder structure created
 - Documentation scaffolding added for README, MVP scope, tasks, literature review, gap analysis, and architecture
 - MIT License, `.gitignore`, and `CHANGELOG.md` added
+- Day 2 Session 1 completed: scientific document parsing literature update and parser architecture design
+- Day 2 Session 2 completed: parser submodule folder structure and JSON schema specification
+- Day 2 Session 3 completed: document pipeline workflow, sample paper test set, and parser test-case tracking
+- Day 2 Session 4 completed: parser-focused gap analysis update and parser limitations documentation
 
 ### Planned
 

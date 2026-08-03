@@ -8,6 +8,9 @@ This folder contains the core planning and research documentation for MathResear
 - [Project Kanban](tasks.md)
 - [Release Plan](release_plan.md)
 - [Documentation Structure](documentation_structure.md)
+- [Parser Design](parser_design.md)
+- [JSON Schema Design](json_schema.md)
+- [Parser Limitations](parser_limitations.md)
 
 ## Research Documents
 

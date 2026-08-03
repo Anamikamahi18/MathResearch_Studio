@@ -208,3 +208,95 @@ High-precision equation and theorem boundary extraction from heterogeneous math 
 
 **Ideas**  
 Build a parser fallback chain: text-based extraction first, OCR/vision-based fallback second, then confidence scoring and manual correction queue.
+
+---
+
+## Day 2 Session 1: Scientific Document Parsing Focus
+
+### Focus Topics
+
+- Scientific Document Understanding
+- PDF Parsing
+- Mathematical OCR
+- Digital Libraries
+- Scientific NLP
+
+### 5 Additional Papers Reviewed (Parsing Pipeline)
+
+#### Paper A
+
+**Title**  
+PubLayNet: Largest Dataset Ever for Document Layout Analysis
+
+**Source**  
+ICDAR 2019 / arXiv
+
+**Key Insight**  
+Large-scale layout datasets significantly improve section and block detection quality in scholarly documents.
+
+**Possible Improvement for MathResearch Studio**  
+Add layout-aware section segmentation as a second-stage refinement after text extraction.
+
+#### Paper B
+
+**Title**  
+DocBank: A Benchmark Dataset for Document Layout Analysis
+
+**Source**  
+COLING 2020 / arXiv
+
+**Key Insight**  
+Token-level layout labels help with fine-grained scientific document parsing, not just page-level block detection.
+
+**Possible Improvement for MathResearch Studio**  
+Keep token/page metadata in parser outputs so downstream extraction can use position-aware heuristics.
+
+#### Paper C
+
+**Title**  
+Donut: Document Understanding Transformer without OCR
+
+**Source**  
+ECCV 2022 / arXiv
+
+**Key Insight**  
+OCR-free models can handle complex documents end-to-end and reduce errors introduced by separate OCR pipelines.
+
+**Possible Improvement for MathResearch Studio**  
+Prototype an OCR-free fallback for image-heavy PDFs and compare against text plus OCR pipeline quality.
+
+#### Paper D
+
+**Title**  
+Im2LaTeX: Translating Math Formula Images to LaTeX Sequences
+
+**Source**  
+ICML 2017 / arXiv
+
+**Key Insight**  
+Formula-specific sequence modeling is crucial for preserving mathematical meaning in extracted text.
+
+**Possible Improvement for MathResearch Studio**  
+Flag equation-heavy regions and route them through formula-aware extraction before final JSON serialization.
+
+#### Paper E
+
+**Title**  
+LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking
+
+**Source**  
+ACM MM 2022 / arXiv
+
+**Key Insight**  
+Joint text-image pretraining provides better robustness for mixed-layout documents than text-only approaches.
+
+**Possible Improvement for MathResearch Studio**  
+Add optional multimodal parsing mode for PDFs where section detection confidence is low.
+
+### Day 2 Extraction Design Insights
+
+- Treat parser as a multi-path pipeline, not a single extractor.
+- Preserve page and section provenance for every extracted entity.
+- Add confidence scores and warning flags to all parser outputs.
+- Separate concerns: extraction, sectioning, entity detection, and chunking should remain independent stages.
+- Keep JSON schema stable so RAG and graph modules can evolve without parser rewrites.
