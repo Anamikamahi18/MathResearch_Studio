@@ -427,3 +427,45 @@ Lightweight scientific embedding models optimized for edge/local developer execu
 
 **Ideas for MathResearch Studio**  
 Design `src/embeddings/provider.py` with an abstract interface so users can easily toggle between lightweight general models (`all-MiniLM-L6-v2`) and domain-specialized models (`SciBERT` / `MathBERT`).
+
+---
+
+## Day 4 Focus: Mathematical Knowledge Graphs & Statement Dependency Networks
+
+### Topic 7: Mathematical Knowledge Management (MKM) & Knowledge Graphs
+
+**Summary**  
+Mathematical Knowledge Management (MKM) focuses on representing, organizing, and querying mathematical knowledge across formal and informal literature (Kohlhase, 2006). Mathematical Knowledge Graphs (MKGs) model mathematical statements as discrete graph nodes and logical dependencies as directed edges.
+
+**Strengths**  
+- Enables multi-hop logical dependency tracking (`Definition` $\rightarrow$ `Lemma` $\rightarrow$ `Theorem` $\rightarrow$ `Proof`).
+- Allows topological traversal of proof antecedents and consequents.
+
+**Weaknesses**  
+- Manual graph creation requires expensive expert annotation; automated extraction on unformatted PDFs must handle noisy LaTeX and OCR text.
+
+**Research Gap**  
+- Automated end-to-end pipelines that parse unformatted PDFs into fine-grained statement nodes and directed dependency multigraphs.
+
+**Ideas for MathResearch Studio**  
+- Build `ResearchGraphBuilder` using NetworkX `MultiDiGraph` to represent fine-grained mathematical statement nodes (`definition`, `theorem`, `lemma`, `proof`) connected by semantic dependency edges (`uses_definition`, `depends_on`, `proves`).
+
+---
+
+### Topic 8: Scientific Entity and Relation Extraction (NER & RE)
+
+**Summary**  
+Scientific Named Entity Recognition (NER) and Relation Extraction (RE) extract domain concepts and typed relations from scientific publications (Luan et al., 2018 - *SciERC*). In mathematical literature, entity extraction identifies definitions, theorems, lemmas, corollaries, and proofs, while relation extraction classifies dependencies (`proves`, `extends`, `uses_definition`, `cites`).
+
+**Strengths**  
+- Discovers non-trivial cross-paper relationships and structural citation networks.
+- Enables graph-augmented retrieval (Graph-RAG) combining topological graph walk with semantic search.
+
+**Weaknesses**  
+- Pure regex extraction can miss informal or unnumbered statements; pure ML extractors require domain-specific training data.
+
+**Research Gap**  
+- Hybrid extraction pipelines combining metadata-first parsing with fallback rule-based regex and pluggable ML strategy patterns.
+
+**Ideas for MathResearch Studio**  
+- Implement `BaseRelationExtractor` strategy interface so rule-based extractors can be seamlessly replaced or enhanced with LLM/NER classifiers without altering downstream graph components.

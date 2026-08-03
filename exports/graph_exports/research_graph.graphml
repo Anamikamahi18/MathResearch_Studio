@@ -1,0 +1,3979 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d17" for="edge" attr.name="metadata" attr.type="string" />
+  <key id="d16" for="edge" attr.name="source_paper" attr.type="string" />
+  <key id="d15" for="edge" attr.name="evidence_text" attr.type="string" />
+  <key id="d14" for="edge" attr.name="confidence" attr.type="double" />
+  <key id="d13" for="edge" attr.name="relation_type" attr.type="string" />
+  <key id="d12" for="edge" attr.name="relation_id" attr.type="string" />
+  <key id="d11" for="node" attr.name="dependencies" attr.type="string" />
+  <key id="d10" for="node" attr.name="references" attr.type="string" />
+  <key id="d9" for="node" attr.name="symbols" attr.type="string" />
+  <key id="d8" for="node" attr.name="page_end" attr.type="long" />
+  <key id="d7" for="node" attr.name="page_start" attr.type="long" />
+  <key id="d6" for="node" attr.name="section_title" attr.type="string" />
+  <key id="d5" for="node" attr.name="section_id" attr.type="string" />
+  <key id="d4" for="node" attr.name="source_paper" attr.type="string" />
+  <key id="d3" for="node" attr.name="text" attr.type="string" />
+  <key id="d2" for="node" attr.name="title" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="paper_math_001_definition_def_001">
+      <data key="d0">paper_math_001_definition_def_001</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.1</data>
+      <data key="d3">A topological space X is compact if every open cover has a finite subcover.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Introduction and Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_theorem_thm_001">
+      <data key="d0">paper_math_001_theorem_thm_001</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 3.2</data>
+      <data key="d3">Theorem 3.2 follows from Lemma 2.1. Every continuous map f on a compact metric space has a fixed point.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Main Results</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_lemma_lem_001">
+      <data key="d0">paper_math_001_lemma_lem_001</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.1</data>
+      <data key="d3">Closed subsets of compact spaces are compact.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Main Results</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_corollary_cor_001">
+      <data key="d0">paper_math_001_corollary_cor_001</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 3.3</data>
+      <data key="d3">By Theorem 3.2, closed bounded sets in R^n have fixed points.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Main Results</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_proof_prf_001">
+      <data key="d0">paper_math_001_proof_prf_001</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof of Theorem 3.2</data>
+      <data key="d3">Proof of Theorem 3.2. Apply Lemma 2.1 and Definition 1.1 directly.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Main Results</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_definition_def_002">
+      <data key="d0">paper_math_001_definition_def_002</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.1.</data>
+      <data key="d3">A topological space X is compact if every open cover has a finite subcover.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Introduction and Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_example_ex_001">
+      <data key="d0">paper_math_001_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">Example 1.</data>
+      <data key="d3">The unit sphere S^n is a compact manifold.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Introduction and Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_remark_rmk_001">
+      <data key="d0">paper_math_001_remark_rmk_001</data>
+      <data key="d1">remark</data>
+      <data key="d2">Remark 1.</data>
+      <data key="d3">Compactness is preserved under continuous maps.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Introduction and Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_lemma_lem_002">
+      <data key="d0">paper_math_001_lemma_lem_002</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.1.</data>
+      <data key="d3">Closed subsets of compact spaces are compact.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Main Results</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_theorem_thm_002">
+      <data key="d0">paper_math_001_theorem_thm_002</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 3.2.</data>
+      <data key="d3">Theorem 3.2 follows from Lemma 2.1. Every continuous map f on a compact metric space has a fixed point.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Main Results</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_corollary_cor_002">
+      <data key="d0">paper_math_001_corollary_cor_002</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 3.3.</data>
+      <data key="d3">By Theorem 3.2, closed bounded sets in R^n have fixed points.</data>
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Main Results</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_math_001">
+      <data key="d0">paper_paper_math_001</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_math_001</data>
+      <data key="d3" />
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_math_001_ref_001">
+      <data key="d0">paper_math_001_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_math_001_ref_001</data>
+      <data key="d3" />
+      <data key="d4">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_example_ex_001">
+      <data key="d0">paper_23e3249e9a1e_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">example</data>
+      <data key="d3">s/rag/. An interactive demo of RAG models can be found at https://huggingface.co/rag/</data>
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5">s3</data>
+      <data key="d6">Methods</data>
+      <data key="d7">2</data>
+      <data key="d8">3</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_23e3249e9a1e">
+      <data key="d0">paper_paper_23e3249e9a1e</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_23e3249e9a1e</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_001">
+      <data key="d0">paper_23e3249e9a1e_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_001</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_002">
+      <data key="d0">paper_23e3249e9a1e_ref_002</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_002</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_003">
+      <data key="d0">paper_23e3249e9a1e_ref_003</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_003</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_004">
+      <data key="d0">paper_23e3249e9a1e_ref_004</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_004</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_005">
+      <data key="d0">paper_23e3249e9a1e_ref_005</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_005</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_006">
+      <data key="d0">paper_23e3249e9a1e_ref_006</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_006</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_007">
+      <data key="d0">paper_23e3249e9a1e_ref_007</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_007</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_008">
+      <data key="d0">paper_23e3249e9a1e_ref_008</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_008</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_009">
+      <data key="d0">paper_23e3249e9a1e_ref_009</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_009</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_010">
+      <data key="d0">paper_23e3249e9a1e_ref_010</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_010</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_011">
+      <data key="d0">paper_23e3249e9a1e_ref_011</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_011</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_012">
+      <data key="d0">paper_23e3249e9a1e_ref_012</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_012</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_013">
+      <data key="d0">paper_23e3249e9a1e_ref_013</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_013</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_014">
+      <data key="d0">paper_23e3249e9a1e_ref_014</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_014</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_015">
+      <data key="d0">paper_23e3249e9a1e_ref_015</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_015</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_016">
+      <data key="d0">paper_23e3249e9a1e_ref_016</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_016</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_017">
+      <data key="d0">paper_23e3249e9a1e_ref_017</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_017</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_018">
+      <data key="d0">paper_23e3249e9a1e_ref_018</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_018</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_019">
+      <data key="d0">paper_23e3249e9a1e_ref_019</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_019</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_020">
+      <data key="d0">paper_23e3249e9a1e_ref_020</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_020</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_021">
+      <data key="d0">paper_23e3249e9a1e_ref_021</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_021</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_022">
+      <data key="d0">paper_23e3249e9a1e_ref_022</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_022</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_023">
+      <data key="d0">paper_23e3249e9a1e_ref_023</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_023</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_024">
+      <data key="d0">paper_23e3249e9a1e_ref_024</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_024</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_025">
+      <data key="d0">paper_23e3249e9a1e_ref_025</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_025</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_026">
+      <data key="d0">paper_23e3249e9a1e_ref_026</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_026</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_027">
+      <data key="d0">paper_23e3249e9a1e_ref_027</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_027</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_028">
+      <data key="d0">paper_23e3249e9a1e_ref_028</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_028</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_029">
+      <data key="d0">paper_23e3249e9a1e_ref_029</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_029</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_030">
+      <data key="d0">paper_23e3249e9a1e_ref_030</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_030</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_031">
+      <data key="d0">paper_23e3249e9a1e_ref_031</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_031</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_032">
+      <data key="d0">paper_23e3249e9a1e_ref_032</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_032</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_033">
+      <data key="d0">paper_23e3249e9a1e_ref_033</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_033</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_034">
+      <data key="d0">paper_23e3249e9a1e_ref_034</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_034</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_035">
+      <data key="d0">paper_23e3249e9a1e_ref_035</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_035</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_036">
+      <data key="d0">paper_23e3249e9a1e_ref_036</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_036</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_037">
+      <data key="d0">paper_23e3249e9a1e_ref_037</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_037</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_038">
+      <data key="d0">paper_23e3249e9a1e_ref_038</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_038</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_039">
+      <data key="d0">paper_23e3249e9a1e_ref_039</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_039</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_040">
+      <data key="d0">paper_23e3249e9a1e_ref_040</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_040</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_041">
+      <data key="d0">paper_23e3249e9a1e_ref_041</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_041</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_042">
+      <data key="d0">paper_23e3249e9a1e_ref_042</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_042</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_043">
+      <data key="d0">paper_23e3249e9a1e_ref_043</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_043</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_044">
+      <data key="d0">paper_23e3249e9a1e_ref_044</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_044</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_045">
+      <data key="d0">paper_23e3249e9a1e_ref_045</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_045</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_046">
+      <data key="d0">paper_23e3249e9a1e_ref_046</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_046</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_047">
+      <data key="d0">paper_23e3249e9a1e_ref_047</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_047</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_048">
+      <data key="d0">paper_23e3249e9a1e_ref_048</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_048</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_049">
+      <data key="d0">paper_23e3249e9a1e_ref_049</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_049</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_050">
+      <data key="d0">paper_23e3249e9a1e_ref_050</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_050</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_051">
+      <data key="d0">paper_23e3249e9a1e_ref_051</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_051</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_052">
+      <data key="d0">paper_23e3249e9a1e_ref_052</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_052</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_053">
+      <data key="d0">paper_23e3249e9a1e_ref_053</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_053</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_054">
+      <data key="d0">paper_23e3249e9a1e_ref_054</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_054</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_055">
+      <data key="d0">paper_23e3249e9a1e_ref_055</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_055</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_056">
+      <data key="d0">paper_23e3249e9a1e_ref_056</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_056</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_057">
+      <data key="d0">paper_23e3249e9a1e_ref_057</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_057</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_058">
+      <data key="d0">paper_23e3249e9a1e_ref_058</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_058</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_059">
+      <data key="d0">paper_23e3249e9a1e_ref_059</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_059</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_060">
+      <data key="d0">paper_23e3249e9a1e_ref_060</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_060</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_061">
+      <data key="d0">paper_23e3249e9a1e_ref_061</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_061</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_062">
+      <data key="d0">paper_23e3249e9a1e_ref_062</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_062</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_063">
+      <data key="d0">paper_23e3249e9a1e_ref_063</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_063</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_064">
+      <data key="d0">paper_23e3249e9a1e_ref_064</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_064</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_065">
+      <data key="d0">paper_23e3249e9a1e_ref_065</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_065</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_066">
+      <data key="d0">paper_23e3249e9a1e_ref_066</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_066</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_067">
+      <data key="d0">paper_23e3249e9a1e_ref_067</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_067</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_068">
+      <data key="d0">paper_23e3249e9a1e_ref_068</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_068</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_069">
+      <data key="d0">paper_23e3249e9a1e_ref_069</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_069</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_070">
+      <data key="d0">paper_23e3249e9a1e_ref_070</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_070</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_071">
+      <data key="d0">paper_23e3249e9a1e_ref_071</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_071</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_072">
+      <data key="d0">paper_23e3249e9a1e_ref_072</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_072</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_073">
+      <data key="d0">paper_23e3249e9a1e_ref_073</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_073</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_23e3249e9a1e_ref_074">
+      <data key="d0">paper_23e3249e9a1e_ref_074</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_23e3249e9a1e_ref_074</data>
+      <data key="d3" />
+      <data key="d4">Retrieval-Augmented Generation for</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_example_ex_001">
+      <data key="d0">paper_5bec7f495a9e_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">example</data>
+      <data key="d3">s of business documents include purchase orders, financial</data>
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5">s2</data>
+      <data key="d6">INTRODUCTION</data>
+      <data key="d7">1</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_5bec7f495a9e">
+      <data key="d0">paper_paper_5bec7f495a9e</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_5bec7f495a9e</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_001">
+      <data key="d0">paper_5bec7f495a9e_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_001</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_002">
+      <data key="d0">paper_5bec7f495a9e_ref_002</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_002</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_003">
+      <data key="d0">paper_5bec7f495a9e_ref_003</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_003</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_004">
+      <data key="d0">paper_5bec7f495a9e_ref_004</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_004</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_005">
+      <data key="d0">paper_5bec7f495a9e_ref_005</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_005</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_006">
+      <data key="d0">paper_5bec7f495a9e_ref_006</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_006</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_007">
+      <data key="d0">paper_5bec7f495a9e_ref_007</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_007</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_008">
+      <data key="d0">paper_5bec7f495a9e_ref_008</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_008</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_009">
+      <data key="d0">paper_5bec7f495a9e_ref_009</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_009</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_010">
+      <data key="d0">paper_5bec7f495a9e_ref_010</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_010</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_011">
+      <data key="d0">paper_5bec7f495a9e_ref_011</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_011</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_012">
+      <data key="d0">paper_5bec7f495a9e_ref_012</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_012</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_013">
+      <data key="d0">paper_5bec7f495a9e_ref_013</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_013</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_014">
+      <data key="d0">paper_5bec7f495a9e_ref_014</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_014</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_015">
+      <data key="d0">paper_5bec7f495a9e_ref_015</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_015</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_016">
+      <data key="d0">paper_5bec7f495a9e_ref_016</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_016</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_017">
+      <data key="d0">paper_5bec7f495a9e_ref_017</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_017</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_018">
+      <data key="d0">paper_5bec7f495a9e_ref_018</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_018</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_019">
+      <data key="d0">paper_5bec7f495a9e_ref_019</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_019</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_020">
+      <data key="d0">paper_5bec7f495a9e_ref_020</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_020</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_021">
+      <data key="d0">paper_5bec7f495a9e_ref_021</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_021</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_022">
+      <data key="d0">paper_5bec7f495a9e_ref_022</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_022</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_023">
+      <data key="d0">paper_5bec7f495a9e_ref_023</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_023</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_024">
+      <data key="d0">paper_5bec7f495a9e_ref_024</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_024</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_025">
+      <data key="d0">paper_5bec7f495a9e_ref_025</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_025</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_026">
+      <data key="d0">paper_5bec7f495a9e_ref_026</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_026</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_027">
+      <data key="d0">paper_5bec7f495a9e_ref_027</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_027</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_028">
+      <data key="d0">paper_5bec7f495a9e_ref_028</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_028</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_029">
+      <data key="d0">paper_5bec7f495a9e_ref_029</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_029</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_030">
+      <data key="d0">paper_5bec7f495a9e_ref_030</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_030</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_031">
+      <data key="d0">paper_5bec7f495a9e_ref_031</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_031</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_5bec7f495a9e_ref_032">
+      <data key="d0">paper_5bec7f495a9e_ref_032</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_5bec7f495a9e_ref_032</data>
+      <data key="d3" />
+      <data key="d4">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_example_ex_001">
+      <data key="d0">paper_679be336ce80_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">Example</data>
+      <data key="d3">Example</data>
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5">s2</data>
+      <data key="d6">Introduction</data>
+      <data key="d7">1</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_679be336ce80">
+      <data key="d0">paper_paper_679be336ce80</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_679be336ce80</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_001">
+      <data key="d0">paper_679be336ce80_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_001</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_002">
+      <data key="d0">paper_679be336ce80_ref_002</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_002</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_003">
+      <data key="d0">paper_679be336ce80_ref_003</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_003</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_004">
+      <data key="d0">paper_679be336ce80_ref_004</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_004</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_005">
+      <data key="d0">paper_679be336ce80_ref_005</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_005</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_006">
+      <data key="d0">paper_679be336ce80_ref_006</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_006</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_007">
+      <data key="d0">paper_679be336ce80_ref_007</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_007</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_008">
+      <data key="d0">paper_679be336ce80_ref_008</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_008</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_009">
+      <data key="d0">paper_679be336ce80_ref_009</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_009</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_010">
+      <data key="d0">paper_679be336ce80_ref_010</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_010</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_011">
+      <data key="d0">paper_679be336ce80_ref_011</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_011</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_012">
+      <data key="d0">paper_679be336ce80_ref_012</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_012</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_013">
+      <data key="d0">paper_679be336ce80_ref_013</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_013</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_014">
+      <data key="d0">paper_679be336ce80_ref_014</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_014</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_015">
+      <data key="d0">paper_679be336ce80_ref_015</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_015</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_016">
+      <data key="d0">paper_679be336ce80_ref_016</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_016</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_017">
+      <data key="d0">paper_679be336ce80_ref_017</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_017</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_018">
+      <data key="d0">paper_679be336ce80_ref_018</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_018</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_019">
+      <data key="d0">paper_679be336ce80_ref_019</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_019</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_020">
+      <data key="d0">paper_679be336ce80_ref_020</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_020</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_021">
+      <data key="d0">paper_679be336ce80_ref_021</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_021</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_022">
+      <data key="d0">paper_679be336ce80_ref_022</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_022</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_023">
+      <data key="d0">paper_679be336ce80_ref_023</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_023</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_024">
+      <data key="d0">paper_679be336ce80_ref_024</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_024</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_025">
+      <data key="d0">paper_679be336ce80_ref_025</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_025</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_026">
+      <data key="d0">paper_679be336ce80_ref_026</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_026</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_027">
+      <data key="d0">paper_679be336ce80_ref_027</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_027</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_028">
+      <data key="d0">paper_679be336ce80_ref_028</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_028</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_029">
+      <data key="d0">paper_679be336ce80_ref_029</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_029</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_030">
+      <data key="d0">paper_679be336ce80_ref_030</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_030</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_031">
+      <data key="d0">paper_679be336ce80_ref_031</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_031</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_032">
+      <data key="d0">paper_679be336ce80_ref_032</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_032</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_033">
+      <data key="d0">paper_679be336ce80_ref_033</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_033</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_034">
+      <data key="d0">paper_679be336ce80_ref_034</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_034</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_035">
+      <data key="d0">paper_679be336ce80_ref_035</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_035</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_036">
+      <data key="d0">paper_679be336ce80_ref_036</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_036</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_037">
+      <data key="d0">paper_679be336ce80_ref_037</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_037</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_038">
+      <data key="d0">paper_679be336ce80_ref_038</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_038</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_039">
+      <data key="d0">paper_679be336ce80_ref_039</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_039</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_040">
+      <data key="d0">paper_679be336ce80_ref_040</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_040</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_041">
+      <data key="d0">paper_679be336ce80_ref_041</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_041</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_042">
+      <data key="d0">paper_679be336ce80_ref_042</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_042</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_043">
+      <data key="d0">paper_679be336ce80_ref_043</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_043</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_044">
+      <data key="d0">paper_679be336ce80_ref_044</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_044</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_045">
+      <data key="d0">paper_679be336ce80_ref_045</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_045</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_046">
+      <data key="d0">paper_679be336ce80_ref_046</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_046</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_047">
+      <data key="d0">paper_679be336ce80_ref_047</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_047</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_048">
+      <data key="d0">paper_679be336ce80_ref_048</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_048</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_049">
+      <data key="d0">paper_679be336ce80_ref_049</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_049</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_050">
+      <data key="d0">paper_679be336ce80_ref_050</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_050</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_051">
+      <data key="d0">paper_679be336ce80_ref_051</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_051</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_052">
+      <data key="d0">paper_679be336ce80_ref_052</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_052</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_053">
+      <data key="d0">paper_679be336ce80_ref_053</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_053</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_054">
+      <data key="d0">paper_679be336ce80_ref_054</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_054</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_055">
+      <data key="d0">paper_679be336ce80_ref_055</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_055</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_056">
+      <data key="d0">paper_679be336ce80_ref_056</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_056</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_679be336ce80_ref_057">
+      <data key="d0">paper_679be336ce80_ref_057</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_679be336ce80_ref_057</data>
+      <data key="d3" />
+      <data key="d4">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <edge source="paper_math_001_theorem_thm_001" target="paper_math_001_lemma_lem_002" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.1</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_theorem_thm_001" target="paper_math_001_lemma_lem_002" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.1</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_theorem_thm_001" target="paper_math_001_theorem_thm_002" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 3.2</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_corollary_cor_001" target="paper_math_001_theorem_thm_002" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 3.2</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_proof_prf_001" target="paper_math_001_theorem_thm_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.95</data>
+      <data key="d15">Proof of Theorem 3.2. Apply Lemma 2.1 and Definition 1.1 directly.</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"source": "explicit_parser_metadata"}</data>
+    </edge>
+    <edge source="paper_math_001_proof_prf_001" target="paper_math_001_theorem_thm_002" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.88</data>
+      <data key="d15">Proof of Theorem 3.2</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "PROVES_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_proof_prf_001" target="paper_math_001_theorem_thm_002" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 3.2</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_proof_prf_001" target="paper_math_001_lemma_lem_002" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Apply Lemma 2.1</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "USES_LEM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_proof_prf_001" target="paper_math_001_definition_def_002" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Definition 1.1</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_theorem_thm_002" target="paper_math_001_lemma_lem_002" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.1</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_theorem_thm_002" target="paper_math_001_lemma_lem_002" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.1</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_math_001_corollary_cor_002" target="paper_math_001_theorem_thm_002" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 3.2</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_paper_math_001" target="paper_math_001_ref_001" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Stefan Banach. 1922. Sur les opérations dans les ensembles abstract. Fundamenta Mathematicae.</data>
+      <data key="d16">On Compact Topological Spaces and Fixed Point Theorems</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu, Rangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, Mir Rosen</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_002" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Petr Baudiš and Jan Šediv`y. Modeling of the question answering task in the yodaqa system. In International Conference of the Cross-Language Evaluatio</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_003" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jonathan Berant, Andrew Chou, Roy Frostig, and Percy Liang. Semantic Parsing on Freebase from Question-Answer Pairs. In Proceedings of the 2013 Confer</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_004" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Bin Bi, Chenliang Li, Chen Wu, Ming Yan, and Wei Wang. Palm: Pre-training an autoencod- ing&amp;autoregressive language model for context-conditioned gene</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_005" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">URL https://arxiv.org/abs/2004.07159.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_006" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Danqi Chen, Adam Fisch, Jason Weston, and Antoine Bordes. Reading Wikipedia to Answer Open-Domain Questions. In Proceedings of the 55th Annual Meeting</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_007" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Eunsol Choi, Daniel Hewlett, Jakob Uszkoreit, Illia Polosukhin, Alexandre Lacoste, and Jonathan Berant. Coarse-to-ﬁne question answering for long docu</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_008" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Christopher Clark and Matt Gardner. Simple and Effective Multi-Paragraph Reading Compre- hension. arXiv:1710.10723 [cs], October 2017. URL http://arxi</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_009" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_010" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Emily Dinan, Stephen Roller, Kurt Shuster, Angela Fan, Michael Auli, and Jason Weston. Wiz- ard of wikipedia: Knowledge-powered conversational agents.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_011" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Matthew Dunn, Levent Sagun, Mike Higgins, V . Ugur Guney, V olkan Cirik, and Kyunghyun Cho. SearchQA: A New Q&amp;A Dataset Augmented with Context from a </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_012" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Angela Fan, Mike Lewis, and Yann Dauphin. Hierarchical neural story generation. In Proceed- ings of the 56th Annual Meeting of the Association for Com</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_013" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Angela Fan, Yacine Jernite, Ethan Perez, David Grangier, Jason Weston, and Michael Auli. ELI5: Long form question answering. In Proceedings of the 57t</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_014" id="rel_0014">
+      <data key="d12">rel_0014</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Angela Fan, Claire Gardent, Chloe Braud, and Antoine Bordes. Augmenting transformers with KNN-based composite memory, 2020. URL https://openreview.net</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_015" id="rel_0015">
+      <data key="d12">rel_0015</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Thibault Févry, Livio Baldini Soares, Nicholas FitzGerald, Eunsol Choi, and Tom Kwiatkowski. Entities as experts: Sparse memory access with entity sup</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_016" id="rel_0016">
+      <data key="d12">rel_0016</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">URL https://arxiv.org/abs/2004.07202.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_017" id="rel_0017">
+      <data key="d12">rel_0017</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Marjan Ghazvininejad, Chris Brockett, Ming-Wei Chang, Bill Dolan, Jianfeng Gao, Wen tau Yih, and Michel Galley. A knowledge-grounded neural conversati</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_018" id="rel_0018">
+      <data key="d12">rel_0018</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Katja Grace, John Salvatier, Allan Dafoe, Baobao Zhang, and Owain Evans. When will AI exceed human performance? evidence from AI experts. CoRR, abs/17</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_019" id="rel_0019">
+      <data key="d12">rel_0019</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jiatao Gu, Yong Wang, Kyunghyun Cho, and Victor O.K. Li. Search engine guided neural machine translation. In AAAI Conference on Artiﬁcial Intelligence</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_020" id="rel_0020">
+      <data key="d12">rel_0020</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jiatao Gu, Yong Wang, Kyunghyun Cho, and Victor O.K. Li. Search engine guided neural machine translation. In 32nd AAAI Conference on Artiﬁcial Intelli</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_021" id="rel_0021">
+      <data key="d12">rel_0021</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kelvin Guu, Tatsunori B. Hashimoto, Yonatan Oren, and Percy Liang. Generating sentences by editing prototypes. Transactions of the Association for Com</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_022" id="rel_0022">
+      <data key="d12">rel_0022</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">doi: 10.1162/tacl_a_00030. URL https://www.aclweb.org/anthology/Q18-1031. 11</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_023" id="rel_0023">
+      <data key="d12">rel_0023</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. REALM: Retrieval-augmented language model pre-training. ArXiv, abs/2002.08909</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_024" id="rel_0024">
+      <data key="d12">rel_0024</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Tatsunori B Hashimoto, Kelvin Guu, Yonatan Oren, and Percy S Liang. A retrieve-and-edit framework for predicting structured outputs. In S. Bengio, H. </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_025" id="rel_0025">
+      <data key="d12">rel_0025</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Curran Associates, Inc., 2018. URL http://papers.nips.cc/paper/ 8209-a-retrieve-and-edit-framework-for-predicting-structured-outputs. pdf.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_026" id="rel_0026">
+      <data key="d12">rel_0026</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Nabil Hossain, Marjan Ghazvininejad, and Luke Zettlemoyer. Simple and effective retrieve- edit-rerank text generation. In Proceedings of the 58th Annu</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_027" id="rel_0027">
+      <data key="d12">rel_0027</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jeff Johnson, Matthijs Douze, and Hervé Jégou. Billion-scale similarity search with gpus. arXiv preprint arXiv:1702.08734, 2017. URL https://arxiv.org</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_028" id="rel_0028">
+      <data key="d12">rel_0028</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Mandar Joshi, Eunsol Choi, Daniel Weld, and Luke Zettlemoyer. TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_029" id="rel_0029">
+      <data key="d12">rel_0029</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Armand Joulin and Tomas Mikolov. Inferring algorithmic patterns with stack- augmented recurrent nets. In Proceedings of the 28th International Confere</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_030" id="rel_0030">
+      <data key="d12">rel_0030</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Vladimir Karpukhin, Barlas Oguz, Sewon Min, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih. Dense passage retrieval for open-domain question an</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_031" id="rel_0031">
+      <data key="d12">rel_0031</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Urvashi Khandelwal, Omer Levy, Dan Jurafsky, Luke Zettlemoyer, and Mike Lewis. Generaliza- tion through memorization: Nearest neighbor language models</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_032" id="rel_0032">
+      <data key="d12">rel_0032</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In Yoshua Bengio and Yann LeCun, editors, 3rd International Conference on</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_033" id="rel_0033">
+      <data key="d12">rel_0033</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redﬁeld, Michael Collins, Ankur Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Matthew Kelcey</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_034" id="rel_0034">
+      <data key="d12">rel_0034</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Guillaume Lample, Alexandre Sablayrolles, Marc’ Aurelio Ranzato, Ludovic Denoyer, and Herve Jegou. Large memory layers with product keys. In H. Wallac</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_035" id="rel_0035">
+      <data key="d12">rel_0035</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kenton Lee, Ming-Wei Chang, and Kristina Toutanova. Latent retrieval for weakly supervised open domain question answering. In Proceedings of the 57th </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_036" id="rel_0036">
+      <data key="d12">rel_0036</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Veselin Stoyanov, and Luke Zettlemoyer. BART: Denoising seq</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_037" id="rel_0037">
+      <data key="d12">rel_0037</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, and Bill Dolan. A diversity-promoting objective function for neural conversation models. In Pro</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_038" id="rel_0038">
+      <data key="d12">rel_0038</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Margaret Li, Jason Weston, and Stephen Roller. Acute-eval: Improved dialogue evaluation with optimized questions and multi-turn comparisons. ArXiv, ab</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_039" id="rel_0039">
+      <data key="d12">rel_0039</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Hairong Liu, Mingbo Ma, Liang Huang, Hao Xiong, and Zhongjun He. Robust neural machine translation with joint textual and phonetic embedding. In Proce</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_040" id="rel_0040">
+      <data key="d12">rel_0040</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Peter J. Liu*, Mohammad Saleh*, Etienne Pot, Ben Goodrich, Ryan Sepassi, Lukasz Kaiser, and Noam Shazeer. Generating wikipedia by summarizing long seq</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_041" id="rel_0041">
+      <data key="d12">rel_0041</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Yury A. Malkov and D. A. Yashunin. Efﬁcient and robust approximate nearest neighbor search using hierarchical navigable small world graphs. IEEE Trans</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_042" id="rel_0042">
+      <data key="d12">rel_0042</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Gary Marcus. The next decade in ai: four steps towards robust artiﬁcial intelligence. arXiv preprint arXiv:2002.06177, 2020. URL https://arxiv.org/abs</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_043" id="rel_0043">
+      <data key="d12">rel_0043</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Luca Massarelli, Fabio Petroni, Aleksandra Piktus, Myle Ott, Tim Rocktäschel, Vassilis Plachouras, Fabrizio Silvestri, and Sebastian Riedel. How decod</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_044" id="rel_0044">
+      <data key="d12">rel_0044</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Paulius Micikevicius, Sharan Narang, Jonah Alben, Gregory Diamos, Erich Elsen, David Garcia, Boris Ginsburg, Michael Houston, Oleksii Kuchaiev, Ganesh</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_045" id="rel_0045">
+      <data key="d12">rel_0045</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Nikita Moghe, Siddhartha Arora, Suman Banerjee, and Mitesh M. Khapra. Towards exploit- ing background knowledge for building conversation systems. In </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_046" id="rel_0046">
+      <data key="d12">rel_0046</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Preksha Nema and Mitesh M. Khapra. Towards a better metric for evaluating question generation systems. In Proceedings of the 2018 Conference on Empiri</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_047" id="rel_0047">
+      <data key="d12">rel_0047</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Tri Nguyen, Mir Rosenberg, Xia Song, Jianfeng Gao, Saurabh Tiwary, Rangan Majumder, and Li Deng. MS MARCO: A human generated machine reading comprehen</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_048" id="rel_0048">
+      <data key="d12">rel_0048</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Rodrigo Nogueira and Kyunghyun Cho. Passage re-ranking with BERT. arXiv preprint arXiv:1901.04085, 2019. URL https://arxiv.org/abs/1901.04085.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_049" id="rel_0049">
+      <data key="d12">rel_0049</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Myle Ott, Sergey Edunov, Alexei Baevski, Angela Fan, Sam Gross, Nathan Ng, David Grangier, and Michael Auli. fairseq: A fast, extensible toolkit for s</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_050" id="rel_0050">
+      <data key="d12">rel_0050</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ethan Perez, Siddharth Karamcheti, Rob Fergus, Jason Weston, Douwe Kiela, and Kyunghyun Cho. Finding generalizable evidence by learning to convince q&amp;</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_051" id="rel_0051">
+      <data key="d12">rel_0051</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Fabio Petroni, Tim Rocktäschel, Sebastian Riedel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, and Alexander Miller. Language models as knowledge bases? </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_052" id="rel_0052">
+      <data key="d12">rel_0052</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Fabio Petroni, Patrick Lewis, Aleksandra Piktus, Tim Rocktäschel, Yuxiang Wu, Alexander H. Miller, and Sebastian Riedel. How context affects language </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_053" id="rel_0053">
+      <data key="d12">rel_0053</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. Im- proving Language Understanding by Generative Pre-Training, 2018. URL https://s</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_054" id="rel_0054">
+      <data key="d12">rel_0054</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. Language models are unsupervised multitask learners, 2019. URL https</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_055" id="rel_0055">
+      <data key="d12">rel_0055</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. Exploring the limits of </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_056" id="rel_0056">
+      <data key="d12">rel_0056</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Adam Roberts, Colin Raffel, and Noam Shazeer. How much knowledge can you pack into the parameters of a language model? arXiv e-prints, 2020. URL https</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_057" id="rel_0057">
+      <data key="d12">rel_0057</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Stephen Robertson and Hugo Zaragoza. The probabilistic relevance framework: Bm25 and beyond. Found. Trends Inf. Retr., 3(4):333–389, April 2009. ISSN </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_058" id="rel_0058">
+      <data key="d12">rel_0058</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">URL https://doi.org/10.1561/1500000019.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_059" id="rel_0059">
+      <data key="d12">rel_0059</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Irene Solaiman, Miles Brundage, Jack Clark, Amanda Askell, Ariel Herbert-V oss, Jeff Wu, Alec Radford, and Jian-Bing Wang. Release strategies and the </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_060" id="rel_0060">
+      <data key="d12">rel_0060</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, and Rob Fergus. End-to-end memory net- works. In C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_061" id="rel_0061">
+      <data key="d12">rel_0061</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">James Thorne, Andreas Vlachos, Christos Christodoulopoulos, and Arpit Mittal. FEVER: a large-scale dataset for fact extraction and VERiﬁcation. In Pro</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_062" id="rel_0062">
+      <data key="d12">rel_0062</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">James H. Thorne and Andreas Vlachos. Avoiding catastrophic forgetting in mitigating model biases in sentence-pair classiﬁcation with elastic weight co</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_063" id="rel_0063">
+      <data key="d12">rel_0063</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">URL https://arxiv.org/abs/2004.14366.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_064" id="rel_0064">
+      <data key="d12">rel_0064</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Ł ukasz Kaiser, and Illia Polosukhin. Attention is all you nee</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_065" id="rel_0065">
+      <data key="d12">rel_0065</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ashwin Vijayakumar, Michael Cogswell, Ramprasaath Selvaraju, Qing Sun, Stefan Lee, David Crandall, and Dhruv Batra. Diverse beam search for improved d</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_066" id="rel_0066">
+      <data key="d12">rel_0066</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. GLUE: A multi-task benchmark and analysis platform for natural l</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_067" id="rel_0067">
+      <data key="d12">rel_0067</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Alex Wang, Yada Pruksachatkun, Nikita Nangia, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. SuperGLUE: A Stickier Benchma</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_068" id="rel_0068">
+      <data key="d12">rel_0068</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Shuohang Wang, Mo Yu, Xiaoxiao Guo, Zhiguo Wang, Tim Klinger, Wei Zhang, Shiyu Chang, Gerry Tesauro, Bowen Zhou, and Jing Jiang. R3: Reinforced ranker</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_069" id="rel_0069">
+      <data key="d12">rel_0069</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Shuohang Wang, Mo Yu, Jing Jiang, Wei Zhang, Xiaoxiao Guo, Shiyu Chang, Zhiguo Wang, Tim Klinger, Gerald Tesauro, and Murray Campbell. Evidence aggreg</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_070" id="rel_0070">
+      <data key="d12">rel_0070</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jason Weston, Sumit Chopra, and Antoine Bordes. Memory networks. In Yoshua Bengio and Yann LeCun, editors, 3rd International Conference on Learning Re</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_071" id="rel_0071">
+      <data key="d12">rel_0071</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jason Weston, Emily Dinan, and Alexander Miller. Retrieve and reﬁne: Improved sequence generation models for dialogue. In Proceedings of the 2018 EMNL</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_072" id="rel_0072">
+      <data key="d12">rel_0072</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, Joe </data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_073" id="rel_0073">
+      <data key="d12">rel_0073</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Shiyue Zhang and Mohit Bansal. Addressing semantic drift in question generation for semi- supervised question answering. In Proceedings of the 2019 Co</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_23e3249e9a1e" target="paper_23e3249e9a1e_ref_074" id="rel_0074">
+      <data key="d12">rel_0074</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Wanjun Zhong, Jingjing Xu, Duyu Tang, Zenan Xu, Nan Duan, Ming Zhou, Jiahai Wang, and Jian Yin. Reasoning over semantic-level graph for fact checking.</data>
+      <data key="d16">Retrieval-Augmented Generation for</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Muhammad Zeshan Afzal, Andreas Kölsch, Sheraz Ahmed, and Marcus Liwicki.</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_002" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification. 2017 14th IAPR Inter- na</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_003" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Arindam Das, Saikat Roy, and Ujjwal Bhattacharya. 2018. Document Image Classification with Intra-Domain Transfer Learning and Stacked Generalization o</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_004" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Tyler Dauphinee, Nikunj Patel, and Mohammad Mehdi Rashidi. 2019. Modular Multimodal Architecture for Document Classification. ArXiv abs/1912.04376 (20</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_005" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understandi</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_006" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Document page decomposition by the bounding-box project. In Proceedings of 3rd International</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_007" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Recursive XY cut using bounding boxes of connected components. In Proceedings of 3rd Interna</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_008" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Leipeng Hao, Liangcai Gao, Xiaohan Yi, and Zhi Tang. 2016. A Table Detection Method for PDF Documents Based on Convolutional Neural Networks. 2016 12t</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_009" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Adam W. Harley, Alex Ufkes, and Konstantinos G. Derpanis. 2015. Evaluation of deep convolutional nets for document image classification and retrieval.</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_010" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kaiming He, Georgia Gkioxari, Piotr Dollár, and Ross B. Girshick. 2017. Mask R-CNN. CoRR abs/1703.06870 (2017). arXiv:1703.06870 http://arxiv.org/abs/</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_011" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Guillaume Jaume, Hazim Kemal Ekenel, and Jean-Philippe Thiran. 2019. FUNSD: A Dataset for Form Understanding in Noisy Scanned Documents. 2019 Interna-</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_012" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Anoop R Katti, Christian Reisswig, Cordula Guder, Sebastian Brarda, Steffen Bickel, Johannes Höhne, and Jean Baptiste Faddoul. 2018. Chargrid: Towards</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_013" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua Kravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David A Shamma, Mich</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_014" id="rel_0014">
+      <data key="d12">rel_0014</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Frank Lebourgeois, Z Bublinski, and H Emptoz. 1992. A fast and efficient method for extracting text paragraphs and graphics from unconstrained documen</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_015" id="rel_0015">
+      <data key="d12">rel_0015</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">D. Lewis, G. Agam, S. Argamon, O. Frieder, D. Grossman, and J. Heard. 2006. Building a Test Collection for Complex Document Information Processing. In</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_016" id="rel_0016">
+      <data key="d12">rel_0016</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Xiaojing Liu, Feiyu Gao, Qiong Zhang, and Huasha Zhao. 2019. Graph Convolu- tion for Multimodal Information Extraction from Visually Rich Documents. I</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_017" id="rel_0017">
+      <data key="d12">rel_0017</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke S. Zettlemoyer, and Veselin Stoyanov. 2019. RoBER</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_018" id="rel_0018">
+      <data key="d12">rel_0018</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">S. Marinai, M. Gori, and G. Soda. 2005. Artificial neural networks for document analysis and recognition. IEEE Transactions on Pattern Analysis and Ma</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_019" id="rel_0019">
+      <data key="d12">rel_0019</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">L. O’Gorman. 1993. The document spectrum for page layout analysis. IEEE Transactions on Pattern Analysis and Machine Intelligence 15, 11 (Nov 1993), 1</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_020" id="rel_0020">
+      <data key="d12">rel_0020</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">https://doi.org/10.1109/34.244677</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_021" id="rel_0021">
+      <data key="d12">rel_0021</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Shaoqing Ren, Kaiming He, Ross B. Girshick, and Jian Sun. 2015. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks. IEEE T</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_022" id="rel_0022">
+      <data key="d12">rel_0022</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ritesh Sarkhel and Arnab Nandi. 2019. Deterministic Routing between Lay- out Abstractions for Multi-Scale Classification of Visually Rich Documents. I</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_023" id="rel_0023">
+      <data key="d12">rel_0023</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Sebastian Schreiber, Stefan Agne, Ivo Wolf, Andreas Dengel, and Sheraz Ahmed.</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_024" id="rel_0024">
+      <data key="d12">rel_0024</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">DeepDeSRT: Deep Learning for Detection and Structure Recognition of Tables in Document Images. 2017 14th IAPR International Conference on Document Ana</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_025" id="rel_0025">
+      <data key="d12">rel_0025</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Michael Shilman, Percy Liang, and Paul Viola. 2005. Learning nongenerative grammatical models for document analysis. InTenth IEEE International Confer</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_026" id="rel_0026">
+      <data key="d12">rel_0026</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Anikó Simon, J-C Pret, and A Peter Johnson. 1997. A fast algorithm for bottom-up document layout analysis. IEEE Transactions on Pattern Analysis and M</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_027" id="rel_0027">
+      <data key="d12">rel_0027</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Carlos Soto and Shinjae Yoo. 2019. Visual Detection with Context for Document Layout Analysis. In Proceedings of the 2019 Conference on Empirical Meth</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_028" id="rel_0028">
+      <data key="d12">rel_0028</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi. 2016. Inception-v4, Inception-ResNet and the Impact of Residual Connections on Lea</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_029" id="rel_0029">
+      <data key="d12">rel_0029</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Matheus Palhares Viana and Dário Augusto Borges Oliveira. 2017. Fast CNN- Based Document Layout Analysis.2017 IEEE International Conference on Compute</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_030" id="rel_0030">
+      <data key="d12">rel_0030</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">H. Wei, M. Baechler, F. Slimane, and R. Ingold. 2013. Evaluation of SVM, MLP and GMM Classifiers for Layout Analysis of Historical Documents. In 2013 </data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_031" id="rel_0031">
+      <data key="d12">rel_0031</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Xiaowei Yang, Ersin Yumer, Paul Asente, Mike Kraley, Daniel Kifer, and C. Lee Giles. 2017. Learning to Extract Semantic Structure from Documents Using</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_5bec7f495a9e" target="paper_5bec7f495a9e_ref_032" id="rel_0032">
+      <data key="d12">rel_0032</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Xu Zhong, Jianbin Tang, and Antonio Jimeno-Yepes. 2019. PubLayNet: largest dataset ever for document layout analysis. ArXiv abs/1908.07836 (2019).</data>
+      <data key="d16">LayoutLM: Pre-training of Text and Layout for Document Image Understanding</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Sebastian Spiegler. Statistics of the Common Crawl Corpus 2012, June 2013. URL https://docs.google.com/file/d/ 1 9698uglerxB9nAglvaHkEgU-iZNm1TvVGuCW7</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_002" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">R. Smith. An Overview of the Tesseract OCR Engine. In Ninth International Conference on Document Analysis and Recognition (ICDAR 2007) V ol 2, pages 6</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_003" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kyle Lo, Lucy Lu Wang, Mark Neumann, Rodney Kinney, and Daniel Weld. S2ORC: The Semantic Scholar Open Research Corpus. In Proceedings of the 58th Annu</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_004" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">URL https://aclanthology.org/2020.acl-main.447.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_005" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Patrice Lopez. GROBID, February 2023. URL https://github.com/kermitt2/grobid. original-date: 2012-09- 13T15:48:54Z.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_006" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Bastien Moysset, Christopher Kermorvant, and Christian Wolf. Full-Page Text Recognition: Learning Where to Start and When to Stop, April 2017. URL htt</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_007" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Darwin Bautista and Rowel Atienza. Scene Text Recognition with Permuted Autoregressive Sequence Models, July 2022. URL http://arxiv.org/abs/2207.06966</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_008" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Minghao Li, Tengchao Lv, Jingye Chen, Lei Cui, Yijuan Lu, Dinei Florencio, Cha Zhang, Zhoujun Li, and Furu Wei. TrOCR: Transformer-based Optical Chara</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_009" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Daniel Hernandez Diaz, Siyang Qin, Reeve Ingle, Yasuhisa Fujii, and Alessandro Bissacco. Rethinking Text Line Recognition Models, April 2021. URL http</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_010" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Scott MacLean and George Labahn. A new approach for recognizing handwritten mathematics using relational grammars and fuzzy sets. International Journa</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_011" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ahmad-Montaser Awal, Harold Mouchre, and Christian Viard-Gaudin. A global learning approach for an online handwritten mathematical expression recognit</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_012" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">ISSN 0167-8655.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_013" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Francisco ´Alvaro, Joan-Andreu S ´anchez, and Jos ´e-Miguel Bened ´ı. Recognition of on-line handwritten mathematical expressions using 2D stochastic </data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_014" id="rel_0014">
+      <data key="d12">rel_0014</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Zuoyu Yan, Xiaode Zhang, Liangcai Gao, Ke Yuan, and Zhi Tang. ConvMath: A Convolutional Sequence Network for Mathematical Expression Recognition, Dece</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_015" id="rel_0015">
+      <data key="d12">rel_0015</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Yuntian Deng, Anssi Kanervisto, Jeffrey Ling, and Alexander M. Rush. Image-to-Markup Generation with Coarse-to-Fine Attention, September 2016. URL htt</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_016" id="rel_0016">
+      <data key="d12">rel_0016</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">[14] Anh Duc Le and Masaki Nakagawa. Training an End-to-End System for Handwritten Mathematical Expression Recognition by Generated Patterns. In 2017 </data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_017" id="rel_0017">
+      <data key="d12">rel_0017</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Sumeet S. Singh. Teaching Machines to Code: Neural Markup Generation with Visual Attention, June 2018. URL http://arxiv.org/abs/1802.05415. arXiv:1802</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_018" id="rel_0018">
+      <data key="d12">rel_0018</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jianshu Zhang, Jun Du, and Lirong Dai. Multi-Scale Attention with Dense Encoder for Handwritten Mathematical Expression Recognition, January 2018. URL</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_019" id="rel_0019">
+      <data key="d12">rel_0019</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Zelun Wang and Jyh-Charn Liu. Translating Math Formula Images to LaTeX Sequences Using Deep Neural Networks with Sequence-level Training, September 20</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_020" id="rel_0020">
+      <data key="d12">rel_0020</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Wenqi Zhao, Liangcai Gao, Zuoyu Yan, Shuai Peng, Lin Du, and Ziyin Zhang. Handwritten Mathematical Expression Recognition with Bidirectionally Trained</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_021" id="rel_0021">
+      <data key="d12">rel_0021</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">arXiv:2105.02412 [cs].</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_022" id="rel_0022">
+      <data key="d12">rel_0022</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Mahshad Mahdavi, Richard Zanibbi, Harold Mouchere, Christian Viard-Gaudin, and Utpal Garain. ICDAR 2019 CROHME + TFD: Competition on Recognition of Ha</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_023" id="rel_0023">
+      <data key="d12">rel_0023</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Lukas Blecher. pix2tex - LaTeX OCR, February 2023. URL https://github.com/lukas-blecher/LaTeX-OCR. original-date: 2020-12-11T16:35:13Z.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_024" id="rel_0024">
+      <data key="d12">rel_0024</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. Attention Is All You Nee</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_025" id="rel_0025">
+      <data key="d12">rel_0025</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Yiheng Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, and Ming Zhou. LayoutLM: Pre-training of Text and Layout for Document Image Understanding. In</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_026" id="rel_0026">
+      <data key="d12">rel_0026</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Yang Xu, Yiheng Xu, Tengchao Lv, Lei Cui, Furu Wei, Guoxin Wang, Yijuan Lu, Dinei Florencio, Cha Zhang, Wanxiang Che, Min Zhang, and Lidong Zhou. Layo</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_027" id="rel_0027">
+      <data key="d12">rel_0027</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Yupan Huang, Tengchao Lv, Lei Cui, Yutong Lu, and Furu Wei. LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking, July 2022. U</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_028" id="rel_0028">
+      <data key="d12">rel_0028</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Lu Wang and Wanmin Liu. Online publishing via pdf2htmlEX, 2013. URL https://www.tug.org/TUGboat/tb34-3/ tb108wang.pdf.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_029" id="rel_0029">
+      <data key="d12">rel_0029</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Srikar Appalaraju, Bhavan Jasani, Bhargava Urala Kota, Yusheng Xie, and R. Manmatha. DocFormer: End- to-End Transformer for Document Understanding, Se</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_030" id="rel_0030">
+      <data key="d12">rel_0030</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Bodhisattwa Prasad Majumder, Navneet Potti, Sandeep Tata, James Bradley Wendt, Qi Zhao, and Marc Najork. Representation Learning for Information Extra</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_031" id="rel_0031">
+      <data key="d12">rel_0031</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">[28] Geewook Kim, Teakgyu Hong, Moonbin Yim, Jeongyeon Nam, Jinyoung Park, Jinyeong Yim, Wonseok Hwang, Sangdoo Yun, Dongyoon Han, and Seunghyun Park.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_032" id="rel_0032">
+      <data key="d12">rel_0032</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">URL http://arxiv.org/abs/2111.15664. arXiv:2111.15664 [cs].</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_033" id="rel_0033">
+      <data key="d12">rel_0033</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Brian Davis, Bryan Morse, Bryan Price, Chris Tensmeyer, Curtis Wigington, and Vlad Morariu. End-to-end Document Recognition and Understanding with Des</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_034" id="rel_0034">
+      <data key="d12">rel_0034</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, Zheng Zhang, Stephen Lin, and Baining Guo. Swin Transformer: Hierarchical Vision Transformer using Sh</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_035" id="rel_0035">
+      <data key="d12">rel_0035</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg </data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_036" id="rel_0036">
+      <data key="d12">rel_0036</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoy- anov, and Luke Zettlemoyer. BART: Denoising Seque</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_037" id="rel_0037">
+      <data key="d12">rel_0037</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ross Taylor, Marcin Kardas, Guillem Cucurull, Thomas Scialom, Anthony Hartshorn, Elvis Saravia, Andrew Poulton, Viktor Kerkez, and Robert Stojnic. Gal</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_038" id="rel_0038">
+      <data key="d12">rel_0038</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ilya Loshchilov and Frank Hutter. Decoupled Weight Decay Regularization, January 2019. URL http://arxiv.org/ abs/1711.05101. arXiv:1711.05101 [cs, mat</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_039" id="rel_0039">
+      <data key="d12">rel_0039</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">P.Y . Simard, D. Steinkraus, and J.C. Platt. Best practices for convolutional neural networks applied to visual document analysis. In Seventh Internat</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_040" id="rel_0040">
+      <data key="d12">rel_0040</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Alexander Buslaev, Vladimir I. Iglovikov, Eugene Khvedchenya, Alex Parinov, Mikhail Druzhinin, and Alexandr A. Kalinin. Albumentations: Fast and Flexi</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_041" id="rel_0041">
+      <data key="d12">rel_0041</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ali Furkan Biten, Rub `en Tito, Lluis Gomez, Ernest Valveny, and Dimosthenis Karatzas. OCR-IDL: OCR Annotations for Industry Document Library Dataset,</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_042" id="rel_0042">
+      <data key="d12">rel_0042</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Christopher Clark and Santosh Divvala. PDFFigures 2.0: Mining Figures from Research Papers. In Proceedings of the 16th ACM/IEEE-CS on Joint Conference</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_043" id="rel_0043">
+      <data key="d12">rel_0043</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">V . Levenshtein. Binary codes capable of correcting deletions, insertions, and reversals. Soviet physics. Doklady, 1965. URL https://www.semanticschol</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_044" id="rel_0044">
+      <data key="d12">rel_0044</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Zellig S. Harris. Distributional Structure. WORD, 10(2-3):146–162, 1954. doi: 10.1080/00437956. 1954.11659520. URL https://doi.org/10.1080/00437956.19</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_045" id="rel_0045">
+      <data key="d12">rel_0045</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ben Sorscher, Robert Geirhos, Shashank Shekhar, Surya Ganguli, and Ari S. Morcos. Beyond neural scaling laws: beating power law scaling via data pruni</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_046" id="rel_0046">
+      <data key="d12">rel_0046</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. Bleu: a Method for Automatic Evaluation of Machine Translation. In Proceedings of the 40t</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_047" id="rel_0047">
+      <data key="d12">rel_0047</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Satanjeev Banerjee and Alon Lavie. METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments. In Proceedings of the</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_048" id="rel_0048">
+      <data key="d12">rel_0048</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Ari Holtzman, Jan Buys, Li Du, Maxwell Forbes, and Yejin Choi. The Curious Case of Neural Text Degeneration, February 2020. URL http://arxiv.org/abs/1</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_049" id="rel_0049">
+      <data key="d12">rel_0049</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Herman W. (Herman William) March and Henry C. (Henry Charles) Wolff. Calculus. New York : McGraw-Hill,</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_050" id="rel_0050">
+      <data key="d12">rel_0050</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">URL http://archive.org/details/calculus00marciala.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_051" id="rel_0051">
+      <data key="d12">rel_0051</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kinetics and Thermodynamics in High-Temperature Gases, January 1970. URL https://ntrs.nasa.gov/citations/</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_052" id="rel_0052">
+      <data key="d12">rel_0052</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">NTRS Report/Patent Number: N70-32106-116 NTRS Document ID: 19700022795 NTRS Research Center: Glenn Research Center (GRC).</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_053" id="rel_0053">
+      <data key="d12">rel_0053</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Angela Fan, Mike Lewis, and Yann Dauphin. Hierarchical Neural Story Generation. In Proceedings of the 56th Annual Meeting of the Association for Compu</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_054" id="rel_0054">
+      <data key="d12">rel_0054</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Meet Shah, Xinlei Chen, Marcus Rohrbach, and Devi Parikh. Cycle-Consistency for Robust Visual Question Answering, February 2019. URL http://arxiv.org/</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_055" id="rel_0055">
+      <data key="d12">rel_0055</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Find the pressure on the vertical parabolic gate, Fig. 51: (a) if the edge AB lies in the surface of the water; (b) if the edge AB lies 5 feet below t</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_056" id="rel_0056">
+      <data key="d12">rel_0056</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Find the pressure on a vertical semicircular gate whose diameter, 10 feet long, lies in the surface of the water.</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_paper_679be336ce80" target="paper_679be336ce80_ref_057" id="rel_0057">
+      <data key="d12">rel_0057</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Arithmetic Mean. The arithmetic mean,A, of a series ofn numbers,a1,a2,a3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, Figure B.1: Example of an o</data>
+      <data key="d16">Nougat: Neural Optical Understanding for Academic Documents</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+  </graph>
+</graphml>

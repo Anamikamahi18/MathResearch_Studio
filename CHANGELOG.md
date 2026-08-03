@@ -26,6 +26,11 @@ The project follows Semantic Versioning.
 - Day 3 Session 3 completed: embedding pipeline orchestrator (`src/embeddings/pipeline.py`), FAISS vector store with L2 normalized cosine similarity (`src/rag/vector_store.py`), vector database architecture documentation (`architecture/vector_database.md`), semantic search test cases (`tests/search_tests.md`)
 - Day 3 Session 4 completed: semantic retriever layer (`src/rag/retriever.py`), search API specification (`docs/search_api.md`), Day 3 retrieval gap analysis update (`gap_analysis/gap_analysis.md`)
 - Day 3 Session 5 completed: Day 3 summary report (`docs/day3_report.md`), unit tests for semantic retrieval (`tests/test_retriever.py`), Kanban updates (`docs/tasks.md`)
+- Day 4 Session 1 completed: Literature review update for MKM, scientific NER, and relation extraction (`literature/literature_review.md`); research graph design specification (`docs/research_graph_design.md`)
+- Day 4 Session 2 completed: Graph package module structure (`src/graph/`); mathematical entity schema specification (`docs/entity_schema.md`); entity extraction layer (`src/graph/entity_extraction/`)
+- Day 4 Session 3 completed: Research graph architecture specification (`architecture/research_graph.md`); pluggable relation extraction layer (`src/graph/relation_extraction/`); graph testing plan and test scenario matrix (`tests/graph_tests.md`)
+- Day 4 Session 4 completed: Graph API specification (`docs/graph_api.md`); research gap analysis update for mathematical dependency networks (`gap_analysis/gap_analysis.md`); NetworkX dependency graph builder (`src/graph/dependency_graph/`)
+- Day 4 Session 5 completed: Interactive PyVis graph visualizer (`src/graph/visualization/`); multi-format graph exporters for HTML, JSON, Cytoscape JSON, GraphML, GEXF, and Pickle (`src/graph/graph_export/`); mathematics literature benchmark validation report (`reports/day4_validation_report.md`); full test suite expanded (60/60 tests passing); Kanban updated to Done (`docs/tasks.md`)
 
 ## [1.0.0] - Planned
 

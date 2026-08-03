@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_bm02_linear_algebra",
+  "source_file": {
+    "file_name": "paper_bm02_linear_algebra.pdf",
+    "file_path": "tests/benchmark_papers/paper_bm02_linear_algebra.pdf",
+    "file_hash": "b2b2c3d4e5f67890123456789012345678901234567890123456789012345678",
+    "ingested_at": "2026-08-04T00:00:00.000000+00:00"
+  },
+  "title": "Spectral Decomposition of Normal and Hermitian Operators",
+  "authors": [{"name": "Gilbert Strang", "affiliation": "MIT"}],
+  "abstract": "We establish spectral theorems for Hermitian matrices and unitary diagonalizability.",
+  "keywords": ["linear algebra", "spectral theorem", "hermitian matrix", "eigenvalues"],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "1. Vector Spaces and Operators",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Definition 1.2. An n x n matrix A is Hermitian if A^* = A.\nRemark 2. Hermitian matrices have real eigenvalues.",
+      "parent_section_id": null,
+      "section_type": "preliminaries",
+      "confidence": 0.95
+    },
+    {
+      "section_id": "s2",
+      "heading": "2. Spectral Theorems",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Lemma 2.2. Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal.\nTheorem 4.1. Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable.\nProof of Theorem 4.1. Apply Definition 1.2 and Lemma 2.2.",
+      "parent_section_id": null,
+      "section_type": "theorems",
+      "confidence": 0.96
+    }
+  ],
+  "definitions": [
+    {
+      "def_id": "def_001",
+      "label": "Definition 1.2",
+      "text": "An n x n matrix A is Hermitian if A^* = A.",
+      "section_id": "s1",
+      "page": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "confidence": 0.9
+    }
+  ],
+  "theorems": [
+    {
+      "thm_id": "thm_001",
+      "label": "Theorem 4.1",
+      "text": "Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.95
+    }
+  ],
+  "lemmas": [
+    {
+      "lem_id": "lem_001",
+      "label": "Lemma 2.2",
+      "text": "Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.92
+    }
+  ],
+  "corollaries": [],
+  "proofs": [
+    {
+      "proof_id": "prf_001",
+      "label": "Proof of Theorem 4.1",
+      "related_to": {"theorem_id": "thm_001", "lemma_id": null, "corollary_id": null},
+      "text": "Apply Definition 1.2 and Lemma 2.2.",
+      "section_id": "s2",
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.85
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Gene H. Golub and Charles F. Van Loan. 1996. Matrix Computations. Johns Hopkins University Press.",
+      "title": "Matrix Computations",
+      "authors": ["Gene H. Golub", "Charles F. Van Loan"],
+      "year": 1996
+    }
+  ],
+  "equations": []
+}

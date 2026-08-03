@@ -1,0 +1,1751 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d17" for="edge" attr.name="metadata" attr.type="string" />
+  <key id="d16" for="edge" attr.name="source_paper" attr.type="string" />
+  <key id="d15" for="edge" attr.name="evidence_text" attr.type="string" />
+  <key id="d14" for="edge" attr.name="confidence" attr.type="double" />
+  <key id="d13" for="edge" attr.name="relation_type" attr.type="string" />
+  <key id="d12" for="edge" attr.name="relation_id" attr.type="string" />
+  <key id="d11" for="node" attr.name="dependencies" attr.type="string" />
+  <key id="d10" for="node" attr.name="references" attr.type="string" />
+  <key id="d9" for="node" attr.name="symbols" attr.type="string" />
+  <key id="d8" for="node" attr.name="page_end" attr.type="long" />
+  <key id="d7" for="node" attr.name="page_start" attr.type="long" />
+  <key id="d6" for="node" attr.name="section_title" attr.type="string" />
+  <key id="d5" for="node" attr.name="section_id" attr.type="string" />
+  <key id="d4" for="node" attr.name="source_paper" attr.type="string" />
+  <key id="d3" for="node" attr.name="text" attr.type="string" />
+  <key id="d2" for="node" attr.name="title" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="paper_bm01_graph_theory_definition_def_001">
+      <data key="d0">paper_bm01_graph_theory_definition_def_001</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.1</data>
+      <data key="d3">A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Graph Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_theorem_thm_001">
+      <data key="d0">paper_bm01_graph_theory_theorem_thm_001</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 3.1</data>
+      <data key="d3">Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_lemma_lem_001">
+      <data key="d0">paper_bm01_graph_theory_lemma_lem_001</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.1</data>
+      <data key="d3">Every planar graph contains a vertex of degree at most 5.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_corollary_cor_001">
+      <data key="d0">paper_bm01_graph_theory_corollary_cor_001</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 3.2</data>
+      <data key="d3">By Theorem 3.1, planar graphs have chromatic number chi(G) &lt;= 5.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_proof_prf_001">
+      <data key="d0">paper_bm01_graph_theory_proof_prf_001</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof of Theorem 3.1</data>
+      <data key="d3">Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_definition_def_002">
+      <data key="d0">paper_bm01_graph_theory_definition_def_002</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.1.</data>
+      <data key="d3">A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Graph Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_example_ex_001">
+      <data key="d0">paper_bm01_graph_theory_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">Example 1.</data>
+      <data key="d3">The complete bipartite graph K_{3,3} is non-planar.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Graph Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_remark_rmk_001">
+      <data key="d0">paper_bm01_graph_theory_remark_rmk_001</data>
+      <data key="d1">remark</data>
+      <data key="d2">Remark 1.</data>
+      <data key="d3">Planar graphs satisfy Euler's formula V - E + F = 2.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Graph Preliminaries</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_lemma_lem_002">
+      <data key="d0">paper_bm01_graph_theory_lemma_lem_002</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.1.</data>
+      <data key="d3">Every planar graph contains a vertex of degree at most 5.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_theorem_thm_002">
+      <data key="d0">paper_bm01_graph_theory_theorem_thm_002</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 3.1.</data>
+      <data key="d3">Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_proof_prf_002">
+      <data key="d0">paper_bm01_graph_theory_proof_prf_002</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof</data>
+      <data key="d3">of Theorem 3.1. Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_corollary_cor_002">
+      <data key="d0">paper_bm01_graph_theory_corollary_cor_002</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 3.2.</data>
+      <data key="d3">By Theorem 3.1, planar graphs have chromatic number chi(G) &lt;= 5.</data>
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Coloring Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_bm01_graph_theory">
+      <data key="d0">paper_paper_bm01_graph_theory</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_bm01_graph_theory</data>
+      <data key="d3" />
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm01_graph_theory_ref_001">
+      <data key="d0">paper_bm01_graph_theory_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_bm01_graph_theory_ref_001</data>
+      <data key="d3" />
+      <data key="d4">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_definition_def_001">
+      <data key="d0">paper_bm02_linear_algebra_definition_def_001</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.2</data>
+      <data key="d3">An n x n matrix A is Hermitian if A^* = A.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Vector Spaces and Operators</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_theorem_thm_001">
+      <data key="d0">paper_bm02_linear_algebra_theorem_thm_001</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 4.1</data>
+      <data key="d3">Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Spectral Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_lemma_lem_001">
+      <data key="d0">paper_bm02_linear_algebra_lemma_lem_001</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.2</data>
+      <data key="d3">Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Spectral Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_proof_prf_001">
+      <data key="d0">paper_bm02_linear_algebra_proof_prf_001</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof of Theorem 4.1</data>
+      <data key="d3">Apply Definition 1.2 and Lemma 2.2.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Spectral Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_definition_def_002">
+      <data key="d0">paper_bm02_linear_algebra_definition_def_002</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.2.</data>
+      <data key="d3">An n x n matrix A is Hermitian if A^* = A.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Vector Spaces and Operators</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_remark_rmk_001">
+      <data key="d0">paper_bm02_linear_algebra_remark_rmk_001</data>
+      <data key="d1">remark</data>
+      <data key="d2">Remark 2.</data>
+      <data key="d3">Hermitian matrices have real eigenvalues.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Vector Spaces and Operators</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_lemma_lem_002">
+      <data key="d0">paper_bm02_linear_algebra_lemma_lem_002</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.2.</data>
+      <data key="d3">Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Spectral Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_theorem_thm_002">
+      <data key="d0">paper_bm02_linear_algebra_theorem_thm_002</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 4.1.</data>
+      <data key="d3">Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Spectral Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_proof_prf_002">
+      <data key="d0">paper_bm02_linear_algebra_proof_prf_002</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof</data>
+      <data key="d3">of Theorem 4.1. Apply Definition 1.2 and Lemma 2.2.</data>
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Spectral Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_bm02_linear_algebra">
+      <data key="d0">paper_paper_bm02_linear_algebra</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_bm02_linear_algebra</data>
+      <data key="d3" />
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm02_linear_algebra_ref_001">
+      <data key="d0">paper_bm02_linear_algebra_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_bm02_linear_algebra_ref_001</data>
+      <data key="d3" />
+      <data key="d4">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_definition_def_001">
+      <data key="d0">paper_bm03_functional_analysis_definition_def_001</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.3</data>
+      <data key="d3">A Banach space is a complete normed vector space.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Normed Linear Spaces</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_theorem_thm_001">
+      <data key="d0">paper_bm03_functional_analysis_theorem_thm_001</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 5.1</data>
+      <data key="d3">Theorem 5.1 follows from Lemma 2.3. Every bounded linear functional f defined on a subspace M of a normed space X can be extended to X preserving the norm.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_lemma_lem_001">
+      <data key="d0">paper_bm03_functional_analysis_lemma_lem_001</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.3</data>
+      <data key="d3">Sublinear functionals admit 1-dimensional bounded linear extensions.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_corollary_cor_001">
+      <data key="d0">paper_bm03_functional_analysis_corollary_cor_001</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 5.2</data>
+      <data key="d3">By Theorem 5.1, the dual space X* separates points of X.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_proof_prf_001">
+      <data key="d0">paper_bm03_functional_analysis_proof_prf_001</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof of Theorem 5.1</data>
+      <data key="d3">Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_definition_def_002">
+      <data key="d0">paper_bm03_functional_analysis_definition_def_002</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.3.</data>
+      <data key="d3">A Banach space is a complete normed vector space.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Normed Linear Spaces</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_example_ex_001">
+      <data key="d0">paper_bm03_functional_analysis_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">Example 2.</data>
+      <data key="d3">The space L^p([0,1]) is a Banach space for 1 &lt;= p &lt;= infty.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Normed Linear Spaces</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">["[0,1]"]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_lemma_lem_002">
+      <data key="d0">paper_bm03_functional_analysis_lemma_lem_002</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.3.</data>
+      <data key="d3">Sublinear functionals admit 1-dimensional bounded linear extensions.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_theorem_thm_002">
+      <data key="d0">paper_bm03_functional_analysis_theorem_thm_002</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 5.1.</data>
+      <data key="d3">Theorem 5.1 follows from Lemma 2.3. Every bounded linear functional f defined on a subspace M of a normed space X can be extended to X preserving the norm.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_proof_prf_002">
+      <data key="d0">paper_bm03_functional_analysis_proof_prf_002</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof</data>
+      <data key="d3">of Theorem 5.1. Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_corollary_cor_002">
+      <data key="d0">paper_bm03_functional_analysis_corollary_cor_002</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 5.2.</data>
+      <data key="d3">By Theorem 5.1, the dual space X* separates points of X.</data>
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Extension Theorems</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_bm03_functional_analysis">
+      <data key="d0">paper_paper_bm03_functional_analysis</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_bm03_functional_analysis</data>
+      <data key="d3" />
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm03_functional_analysis_ref_001">
+      <data key="d0">paper_bm03_functional_analysis_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_bm03_functional_analysis_ref_001</data>
+      <data key="d3" />
+      <data key="d4">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="[0,1]">
+      <data key="d0">[0,1]</data>
+      <data key="d1">reference</data>
+      <data key="d2">[0,1]</data>
+      <data key="d3" />
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_definition_def_001">
+      <data key="d0">paper_bm04_number_theory_definition_def_001</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.4</data>
+      <data key="d3">The Riemann zeta function zeta(s) is defined for Re(s) &gt; 1 by the Dirichlet series sum n^{-s}.</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Zeta Function Definition</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_theorem_thm_001">
+      <data key="d0">paper_bm04_number_theory_theorem_thm_001</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 6.1</data>
+      <data key="d3">Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x).</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Prime Number Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_lemma_lem_001">
+      <data key="d0">paper_bm04_number_theory_lemma_lem_001</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.4</data>
+      <data key="d3">The zeta function zeta(s) has no zeros on the line Re(s) = 1.</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Prime Number Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_proof_prf_001">
+      <data key="d0">paper_bm04_number_theory_proof_prf_001</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof of Theorem 6.1</data>
+      <data key="d3">Apply Definition 1.4 and Lemma 2.4 using contour integration.</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Prime Number Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_definition_def_002">
+      <data key="d0">paper_bm04_number_theory_definition_def_002</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.4.</data>
+      <data key="d3">The Riemann zeta function zeta(s) is defined for Re(s) &gt; 1 by the Dirichlet series sum n^{-s}.</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Zeta Function Definition</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_remark_rmk_001">
+      <data key="d0">paper_bm04_number_theory_remark_rmk_001</data>
+      <data key="d1">remark</data>
+      <data key="d2">Remark 3.</data>
+      <data key="d3">The non-trivial zeros lie in the critical strip 0 &lt;= Re(s) &lt;= 1.</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Zeta Function Definition</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_lemma_lem_002">
+      <data key="d0">paper_bm04_number_theory_lemma_lem_002</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.4.</data>
+      <data key="d3">The zeta function zeta(s) has no zeros on the line Re(s) = 1.</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Prime Number Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_theorem_thm_002">
+      <data key="d0">paper_bm04_number_theory_theorem_thm_002</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 6.1.</data>
+      <data key="d3">Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x).</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Prime Number Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_proof_prf_002">
+      <data key="d0">paper_bm04_number_theory_proof_prf_002</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof</data>
+      <data key="d3">of Theorem 6.1. Apply Definition 1.4 and Lemma 2.4 using contour integration.</data>
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Prime Number Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_bm04_number_theory">
+      <data key="d0">paper_paper_bm04_number_theory</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_bm04_number_theory</data>
+      <data key="d3" />
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm04_number_theory_ref_001">
+      <data key="d0">paper_bm04_number_theory_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_bm04_number_theory_ref_001</data>
+      <data key="d3" />
+      <data key="d4">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_definition_def_001">
+      <data key="d0">paper_bm05_optimization_definition_def_001</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.5</data>
+      <data key="d3">A function f: R^n -&gt; R is convex if f(tx + (1-t)y) &lt;= t f(x) + (1-t) f(y) for all t in [0,1].</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Convex Functions and Sets</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">["[0,1]"]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_theorem_thm_001">
+      <data key="d0">paper_bm05_optimization_theorem_thm_001</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 7.1</data>
+      <data key="d3">Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_lemma_lem_001">
+      <data key="d0">paper_bm05_optimization_lemma_lem_001</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.5</data>
+      <data key="d3">For convex differentiable f, local minima are global minima.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_corollary_cor_001">
+      <data key="d0">paper_bm05_optimization_corollary_cor_001</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 7.2</data>
+      <data key="d3">By Theorem 7.1, strong duality holds for strictly feasible convex problems.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_proof_prf_001">
+      <data key="d0">paper_bm05_optimization_proof_prf_001</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof of Theorem 7.1</data>
+      <data key="d3">Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_definition_def_002">
+      <data key="d0">paper_bm05_optimization_definition_def_002</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.5.</data>
+      <data key="d3">A function f: R^n -&gt; R is convex if f(tx + (1-t)y) &lt;= t f(x) + (1-t) f(y) for all t in [0,1].</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Convex Functions and Sets</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">["[0,1]"]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_example_ex_001">
+      <data key="d0">paper_bm05_optimization_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">Example 3.</data>
+      <data key="d3">The norm function f(x) = ||x|| is convex.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Convex Functions and Sets</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_lemma_lem_002">
+      <data key="d0">paper_bm05_optimization_lemma_lem_002</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.5.</data>
+      <data key="d3">For convex differentiable f, local minima are global minima.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_theorem_thm_002">
+      <data key="d0">paper_bm05_optimization_theorem_thm_002</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 7.1.</data>
+      <data key="d3">Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_proof_prf_002">
+      <data key="d0">paper_bm05_optimization_proof_prf_002</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof</data>
+      <data key="d3">of Theorem 7.1. Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_corollary_cor_002">
+      <data key="d0">paper_bm05_optimization_corollary_cor_002</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 7.2.</data>
+      <data key="d3">By Theorem 7.1, strong duality holds for strictly feasible convex problems.</data>
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Optimality Conditions</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_bm05_optimization">
+      <data key="d0">paper_paper_bm05_optimization</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_bm05_optimization</data>
+      <data key="d3" />
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm05_optimization_ref_001">
+      <data key="d0">paper_bm05_optimization_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_bm05_optimization_ref_001</data>
+      <data key="d3" />
+      <data key="d4">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_definition_def_001">
+      <data key="d0">paper_bm06_differential_equations_definition_def_001</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.6</data>
+      <data key="d3">A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Function Spaces and Weak Derivatives</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_theorem_thm_001">
+      <data key="d0">paper_bm06_differential_equations_theorem_thm_001</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 8.1</data>
+      <data key="d3">Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_lemma_lem_001">
+      <data key="d0">paper_bm06_differential_equations_lemma_lem_001</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.6</data>
+      <data key="d3">Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_corollary_cor_001">
+      <data key="d0">paper_bm06_differential_equations_corollary_cor_001</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 8.2</data>
+      <data key="d3">By Theorem 8.1, the energy inequality integral |u(t)|^2 dx &lt;= integral |u_0|^2 dx holds for almost all t.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_proof_prf_001">
+      <data key="d0">paper_bm06_differential_equations_proof_prf_001</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof of Theorem 8.1</data>
+      <data key="d3">Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_definition_def_002">
+      <data key="d0">paper_bm06_differential_equations_definition_def_002</data>
+      <data key="d1">definition</data>
+      <data key="d2">Definition 1.6.</data>
+      <data key="d3">A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Function Spaces and Weak Derivatives</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_example_ex_001">
+      <data key="d0">paper_bm06_differential_equations_example_ex_001</data>
+      <data key="d1">example</data>
+      <data key="d2">Example 4.</data>
+      <data key="d3">The absolute value function u(x) = |x| has weak derivative sgn(x).</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s1</data>
+      <data key="d6">1. Function Spaces and Weak Derivatives</data>
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_lemma_lem_002">
+      <data key="d0">paper_bm06_differential_equations_lemma_lem_002</data>
+      <data key="d1">lemma</data>
+      <data key="d2">Lemma 2.6.</data>
+      <data key="d3">Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_theorem_thm_002">
+      <data key="d0">paper_bm06_differential_equations_theorem_thm_002</data>
+      <data key="d1">theorem</data>
+      <data key="d2">Theorem 8.1.</data>
+      <data key="d3">Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_proof_prf_002">
+      <data key="d0">paper_bm06_differential_equations_proof_prf_002</data>
+      <data key="d1">proof</data>
+      <data key="d2">Proof</data>
+      <data key="d3">of Theorem 8.1. Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_corollary_cor_002">
+      <data key="d0">paper_bm06_differential_equations_corollary_cor_002</data>
+      <data key="d1">corollary</data>
+      <data key="d2">Corollary 8.2.</data>
+      <data key="d3">By Theorem 8.1, the energy inequality integral |u(t)|^2 dx &lt;= integral |u_0|^2 dx holds for almost all t.</data>
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5">s2</data>
+      <data key="d6">2. Existence Theorem</data>
+      <data key="d7">2</data>
+      <data key="d8">2</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_paper_bm06_differential_equations">
+      <data key="d0">paper_paper_bm06_differential_equations</data>
+      <data key="d1">stub</data>
+      <data key="d2">paper_paper_bm06_differential_equations</data>
+      <data key="d3" />
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <node id="paper_bm06_differential_equations_ref_001">
+      <data key="d0">paper_bm06_differential_equations_ref_001</data>
+      <data key="d1">reference</data>
+      <data key="d2">paper_bm06_differential_equations_ref_001</data>
+      <data key="d3" />
+      <data key="d4">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d5" />
+      <data key="d6" />
+      <data key="d7">1</data>
+      <data key="d8">1</data>
+      <data key="d9">[]</data>
+      <data key="d10">[]</data>
+      <data key="d11">[]</data>
+    </node>
+    <edge source="paper_bm01_graph_theory_theorem_thm_001" target="paper_bm01_graph_theory_lemma_lem_002" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_theorem_thm_001" target="paper_bm01_graph_theory_lemma_lem_002" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_theorem_thm_001" target="paper_bm01_graph_theory_theorem_thm_002" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 3.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_corollary_cor_001" target="paper_bm01_graph_theory_theorem_thm_002" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 3.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_proof_prf_001" target="paper_bm01_graph_theory_theorem_thm_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.95</data>
+      <data key="d15">Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"source": "explicit_parser_metadata"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_proof_prf_001" target="paper_bm01_graph_theory_definition_def_002" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Using Definition 1.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_proof_prf_001" target="paper_bm01_graph_theory_lemma_lem_002" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_theorem_thm_002" target="paper_bm01_graph_theory_lemma_lem_002" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_theorem_thm_002" target="paper_bm01_graph_theory_lemma_lem_002" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_proof_prf_002" target="paper_bm01_graph_theory_definition_def_002" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Using Definition 1.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_proof_prf_002" target="paper_bm01_graph_theory_theorem_thm_002" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 3.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_proof_prf_002" target="paper_bm01_graph_theory_lemma_lem_002" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm01_graph_theory_corollary_cor_002" target="paper_bm01_graph_theory_theorem_thm_002" id="rel_0014">
+      <data key="d12">rel_0014</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 3.1</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_paper_bm01_graph_theory" target="paper_bm01_graph_theory_ref_001" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Kenneth Appel and Wolfgang Haken. 1977. Every Planar Map is Four Colorable. Illinois J. Math.</data>
+      <data key="d16">Chromatic Polynomials and Planar Graph Colorability</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_theorem_thm_001" target="paper_bm02_linear_algebra_lemma_lem_002" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_theorem_thm_001" target="paper_bm02_linear_algebra_lemma_lem_002" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_theorem_thm_001" target="paper_bm02_linear_algebra_theorem_thm_002" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 4.1</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_proof_prf_001" target="paper_bm02_linear_algebra_theorem_thm_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.95</data>
+      <data key="d15">Apply Definition 1.2 and Lemma 2.2.</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"source": "explicit_parser_metadata"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_proof_prf_001" target="paper_bm02_linear_algebra_definition_def_002" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Apply Definition 1.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_proof_prf_001" target="paper_bm02_linear_algebra_lemma_lem_002" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_theorem_thm_002" target="paper_bm02_linear_algebra_lemma_lem_002" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_theorem_thm_002" target="paper_bm02_linear_algebra_lemma_lem_002" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_proof_prf_002" target="paper_bm02_linear_algebra_definition_def_002" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Apply Definition 1.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_proof_prf_002" target="paper_bm02_linear_algebra_theorem_thm_002" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 4.1</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm02_linear_algebra_proof_prf_002" target="paper_bm02_linear_algebra_lemma_lem_002" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.2</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_paper_bm02_linear_algebra" target="paper_bm02_linear_algebra_ref_001" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Gene H. Golub and Charles F. Van Loan. 1996. Matrix Computations. Johns Hopkins University Press.</data>
+      <data key="d16">Spectral Decomposition of Normal and Hermitian Operators</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_theorem_thm_001" target="paper_bm03_functional_analysis_lemma_lem_002" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_theorem_thm_001" target="paper_bm03_functional_analysis_lemma_lem_002" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_theorem_thm_001" target="paper_bm03_functional_analysis_theorem_thm_002" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 5.1</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_corollary_cor_001" target="paper_bm03_functional_analysis_theorem_thm_002" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 5.1</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_proof_prf_001" target="paper_bm03_functional_analysis_theorem_thm_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.95</data>
+      <data key="d15">Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma.</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"source": "explicit_parser_metadata"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_proof_prf_001" target="paper_bm03_functional_analysis_definition_def_002" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Using Definition 1.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_proof_prf_001" target="paper_bm03_functional_analysis_lemma_lem_002" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_example_ex_001" target="[0,1]" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">references</data>
+      <data key="d14">0.8</data>
+      <data key="d15">[0,1]</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "ENTITY_REFERENCES"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_theorem_thm_002" target="paper_bm03_functional_analysis_lemma_lem_002" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_theorem_thm_002" target="paper_bm03_functional_analysis_lemma_lem_002" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_proof_prf_002" target="paper_bm03_functional_analysis_definition_def_002" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Using Definition 1.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_proof_prf_002" target="paper_bm03_functional_analysis_theorem_thm_002" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 5.1</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_proof_prf_002" target="paper_bm03_functional_analysis_lemma_lem_002" id="rel_0014">
+      <data key="d12">rel_0014</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.3</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm03_functional_analysis_corollary_cor_002" target="paper_bm03_functional_analysis_theorem_thm_002" id="rel_0015">
+      <data key="d12">rel_0015</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 5.1</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_paper_bm03_functional_analysis" target="paper_bm03_functional_analysis_ref_001" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Hans Hahn. 1927. Über lineare Funktionaloperationen. Monatshefte für Mathematik und Physik.</data>
+      <data key="d16">Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_theorem_thm_001" target="paper_bm04_number_theory_lemma_lem_002" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_theorem_thm_001" target="paper_bm04_number_theory_lemma_lem_002" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_theorem_thm_001" target="paper_bm04_number_theory_theorem_thm_002" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 6.1</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_proof_prf_001" target="paper_bm04_number_theory_theorem_thm_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.95</data>
+      <data key="d15">Apply Definition 1.4 and Lemma 2.4 using contour integration.</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"source": "explicit_parser_metadata"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_proof_prf_001" target="paper_bm04_number_theory_definition_def_002" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Apply Definition 1.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_proof_prf_001" target="paper_bm04_number_theory_lemma_lem_002" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_theorem_thm_002" target="paper_bm04_number_theory_lemma_lem_002" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_theorem_thm_002" target="paper_bm04_number_theory_lemma_lem_002" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_proof_prf_002" target="paper_bm04_number_theory_definition_def_002" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Apply Definition 1.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_proof_prf_002" target="paper_bm04_number_theory_theorem_thm_002" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 6.1</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm04_number_theory_proof_prf_002" target="paper_bm04_number_theory_lemma_lem_002" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.4</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_paper_bm04_number_theory" target="paper_bm04_number_theory_ref_001" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jacques Hadamard. 1896. Sur la distribution des zéros de la fonction zeta. Bull. Soc. Math. France.</data>
+      <data key="d16">On the Distribution of Primes and Zeros of the Riemann Zeta Function</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_definition_def_001" target="[0,1]" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">references</data>
+      <data key="d14">0.8</data>
+      <data key="d15">[0,1]</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "ENTITY_REFERENCES"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_theorem_thm_001" target="paper_bm05_optimization_lemma_lem_002" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_theorem_thm_001" target="paper_bm05_optimization_lemma_lem_002" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_theorem_thm_001" target="paper_bm05_optimization_theorem_thm_002" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 7.1</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_corollary_cor_001" target="paper_bm05_optimization_theorem_thm_002" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 7.1</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_proof_prf_001" target="paper_bm05_optimization_theorem_thm_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.95</data>
+      <data key="d15">Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"source": "explicit_parser_metadata"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_proof_prf_001" target="paper_bm05_optimization_definition_def_002" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Apply Definition 1.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_proof_prf_001" target="paper_bm05_optimization_lemma_lem_002" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_definition_def_002" target="[0,1]" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">references</data>
+      <data key="d14">0.8</data>
+      <data key="d15">[0,1]</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "ENTITY_REFERENCES"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_theorem_thm_002" target="paper_bm05_optimization_lemma_lem_002" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_theorem_thm_002" target="paper_bm05_optimization_lemma_lem_002" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_proof_prf_002" target="paper_bm05_optimization_definition_def_002" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Apply Definition 1.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_proof_prf_002" target="paper_bm05_optimization_theorem_thm_002" id="rel_0014">
+      <data key="d12">rel_0014</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 7.1</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_proof_prf_002" target="paper_bm05_optimization_lemma_lem_002" id="rel_0015">
+      <data key="d12">rel_0015</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.5</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm05_optimization_corollary_cor_002" target="paper_bm05_optimization_theorem_thm_002" id="rel_0016">
+      <data key="d12">rel_0016</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 7.1</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_paper_bm05_optimization" target="paper_bm05_optimization_ref_001" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Stephen Boyd and Lieven Vandenberghe. 2004. Convex Optimization. Cambridge University Press.</data>
+      <data key="d16">Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_theorem_thm_001" target="paper_bm06_differential_equations_lemma_lem_002" id="rel_0003">
+      <data key="d12">rel_0003</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_theorem_thm_001" target="paper_bm06_differential_equations_lemma_lem_002" id="rel_0005">
+      <data key="d12">rel_0005</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_theorem_thm_001" target="paper_bm06_differential_equations_theorem_thm_002" id="rel_0004">
+      <data key="d12">rel_0004</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 8.1</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_corollary_cor_001" target="paper_bm06_differential_equations_theorem_thm_002" id="rel_0006">
+      <data key="d12">rel_0006</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 8.1</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_proof_prf_001" target="paper_bm06_differential_equations_theorem_thm_001" id="rel_0001">
+      <data key="d12">rel_0001</data>
+      <data key="d13">proves</data>
+      <data key="d14">0.95</data>
+      <data key="d15">Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"source": "explicit_parser_metadata"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_proof_prf_001" target="paper_bm06_differential_equations_definition_def_002" id="rel_0007">
+      <data key="d12">rel_0007</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Using Definition 1.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_proof_prf_001" target="paper_bm06_differential_equations_lemma_lem_002" id="rel_0008">
+      <data key="d12">rel_0008</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_theorem_thm_002" target="paper_bm06_differential_equations_lemma_lem_002" id="rel_0009">
+      <data key="d12">rel_0009</data>
+      <data key="d13">depends_on</data>
+      <data key="d14">0.85</data>
+      <data key="d15">follows from Lemma 2.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "DEPENDS_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_theorem_thm_002" target="paper_bm06_differential_equations_lemma_lem_002" id="rel_0010">
+      <data key="d12">rel_0010</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_proof_prf_002" target="paper_bm06_differential_equations_definition_def_002" id="rel_0011">
+      <data key="d12">rel_0011</data>
+      <data key="d13">uses_definition</data>
+      <data key="d14">0.85</data>
+      <data key="d15">Using Definition 1.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "USES_DEF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_proof_prf_002" target="paper_bm06_differential_equations_theorem_thm_002" id="rel_0012">
+      <data key="d12">rel_0012</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Theorem 8.1</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_proof_prf_002" target="paper_bm06_differential_equations_lemma_lem_002" id="rel_0013">
+      <data key="d12">rel_0013</data>
+      <data key="d13">uses_lemma</data>
+      <data key="d14">0.75</data>
+      <data key="d15">Lemma 2.6</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "STATEMENT_REF_PATTERN"}</data>
+    </edge>
+    <edge source="paper_bm06_differential_equations_corollary_cor_002" target="paper_bm06_differential_equations_theorem_thm_002" id="rel_0014">
+      <data key="d12">rel_0014</data>
+      <data key="d13">uses_theorem</data>
+      <data key="d14">0.85</data>
+      <data key="d15">By Theorem 8.1</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"rule": "USES_THM_PATTERN"}</data>
+    </edge>
+    <edge source="paper_paper_bm06_differential_equations" target="paper_bm06_differential_equations_ref_001" id="rel_0002">
+      <data key="d12">rel_0002</data>
+      <data key="d13">cites</data>
+      <data key="d14">0.9</data>
+      <data key="d15">Jean Leray. 1934. Sur le mouvement d'un liquide visqueux emplissant l'espace. Acta Mathematica.</data>
+      <data key="d16">Global Existence of Weak Solutions for Non-Linear Partial Differential Equations</data>
+      <data key="d17">{"source": "explicit_parser_references"}</data>
+    </edge>
+  </graph>
+</graphml>

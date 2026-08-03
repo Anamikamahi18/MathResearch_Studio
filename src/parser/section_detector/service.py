@@ -264,32 +264,37 @@ def detect_sections(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 ENTITY_PATTERNS = {
     "definitions": re.compile(
-        r"^\s*(Definition)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
+        r"^(?:(?:\d+\.)*\d+\s+)?(?:Definition|Def\.)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
         re.IGNORECASE,
     ),
     "theorems": re.compile(
-        r"^\s*(Theorem)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
+        r"^(?:(?:\d+\.)*\d+\s+)?(?:Theorem|Thm\.)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
         re.IGNORECASE,
     ),
     "lemmas": re.compile(
-        r"^\s*(Lemma)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
+        r"^(?:(?:\d+\.)*\d+\s+)?(?:Lemma|Lem\.)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
         re.IGNORECASE,
     ),
     "corollaries": re.compile(
-        r"^\s*(Corollary)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
+        r"^(?:(?:\d+\.)*\d+\s+)?(?:Corollary|Cor\.)\s*(\d+[\w\.]*)?\s*[:.\-]?\s*(.*)$",
         re.IGNORECASE,
     ),
     "proofs": re.compile(
-        r"^\s*(Proof)\s*[:.\-]?\s*(.*)$",
+        r"^(?:(?:\d+\.)*\d+\s+)?(?:Proof|Pf\.)(?:\s+of\s+(?P<target>(?:Theorem|Thm\.|Lemma|Lem\.|Corollary|Cor\.)\s*\d+[\w\.]*))?\s*[:.\-]?\s*(.*)$",
         re.IGNORECASE,
     ),
 }
+
+ANY_ENTITY_HEADER = re.compile(
+    r"^(?:(?:\d+\.)*\d+\s+)?(?:Definition|Def\.|Theorem|Thm\.|Lemma|Lem\.|Corollary|Cor\.|Proof|Pf\.|Example|Ex\.|Remark|Rmk\.)\b",
+    re.IGNORECASE,
+)
 
 
 def extract_math_entities(
     sections: list[dict[str, Any]],
 ) -> dict[str, list[dict[str, Any]]]:
-    """Extract candidate definition/theorem/lemma/corollary/proof blocks."""
+    """Extract candidate definition/theorem/lemma/corollary/proof blocks with multi-line bodies."""
     output: dict[str, list[dict[str, Any]]] = {
         "definitions": [],
         "theorems": [],
@@ -298,58 +303,117 @@ def extract_math_entities(
         "proofs": [],
     }
     counters = {key: 1 for key in output}
+    last_statement_id: dict[str, str | None] = {
+        "theorem": None,
+        "lemma": None,
+        "corollary": None,
+    }
 
     for section in sections:
         lines = (section.get("text") or "").splitlines()
-        for idx, line in enumerate(lines):
+        num_lines = len(lines)
+        idx = 0
+
+        while idx < num_lines:
+            line = lines[idx]
             clean = clean_line(line)
             if not clean:
+                idx += 1
                 continue
+
+            matched_type = None
+            matched_pattern = None
+            matched_match = None
 
             for entity_type, pattern in ENTITY_PATTERNS.items():
                 match = pattern.match(clean)
-                if not match:
+                if match:
+                    matched_type = entity_type
+                    matched_pattern = pattern
+                    matched_match = match
+                    break
+
+            if not matched_type or not matched_match:
+                idx += 1
+                continue
+
+            entity_id_prefix = matched_type[:-1]
+            if entity_id_prefix == "proof":
+                entity_id_prefix = "prf"
+
+            entity_id = f"{entity_id_prefix}_{counters[matched_type]:03d}"
+            counters[matched_type] += 1
+
+            num_str = matched_match.group(1) if matched_type != "proofs" else None
+            singular_name = matched_type[:-1].capitalize()
+            canonical_label = f"{singular_name} {num_str}" if num_str else f"{singular_name} {counters[matched_type] - 1}"
+
+            # Accumulate multi-line body text until next entity header or double blank line
+            body_lines: list[str] = [clean]
+            lookahead = idx + 1
+            while lookahead < num_lines:
+                nxt = clean_line(lines[lookahead])
+                if not nxt:
+                    if lookahead + 1 < num_lines and not clean_line(lines[lookahead + 1]):
+                        break
+                    lookahead += 1
                     continue
+                if ANY_ENTITY_HEADER.match(nxt):
+                    break
+                body_lines.append(nxt)
+                lookahead += 1
 
-                entity_id_prefix = entity_type[:-1]
-                entity_id = f"{entity_id_prefix}_{counters[entity_type]:03d}"
-                counters[entity_type] += 1
+            text_body = "\n".join(body_lines)
+            start_span = idx
+            end_span = max(idx, lookahead - 1)
+            idx = lookahead
 
-                text_body = clean
-                label = None
-                if entity_type == "proofs":
-                    text_body = match.group(2) or clean
-                else:
-                    label = match.group(2) or None
-                    remainder = match.group(3) or ""
-                    text_body = remainder or clean
-
-                payload: dict[str, Any] = {
-                    f"{entity_id_prefix}_id": entity_id,
-                    "label": label,
-                    "text": text_body,
-                    "section_id": section["section_id"],
-                    "page": section["page_start"],
-                    "span": {"start": idx, "end": idx},
-                    "confidence": 0.7,
+            if matched_type == "proofs":
+                target_str = matched_match.groupdict().get("target")
+                related_to = {
+                    "theorem_id": last_statement_id["theorem"],
+                    "lemma_id": last_statement_id["lemma"],
+                    "corollary_id": last_statement_id["corollary"],
                 }
+                if target_str:
+                    t_low = target_str.lower()
+                    if "thm" in t_low or "theorem" in t_low:
+                        related_to["theorem_id"] = last_statement_id["theorem"]
+                    elif "lem" in t_low or "lemma" in t_low:
+                        related_to["lemma_id"] = last_statement_id["lemma"]
+                    elif "cor" in t_low or "corollary" in t_low:
+                        related_to["corollary_id"] = last_statement_id["corollary"]
 
-                if entity_type == "proofs":
-                    payload = {
+                output["proofs"].append(
+                    {
                         "proof_id": entity_id,
-                        "related_to": {
-                            "theorem_id": None,
-                            "lemma_id": None,
-                            "corollary_id": None,
-                        },
+                        "label": canonical_label,
+                        "related_to": related_to,
                         "text": text_body,
                         "section_id": section["section_id"],
-                        "page_start": section["page_start"],
-                        "page_end": section["page_end"],
-                        "confidence": 0.65,
+                        "page_start": section.get("page_start", 1),
+                        "page_end": section.get("page_end", section.get("page_start", 1)),
+                        "confidence": 0.75,
                     }
+                )
+            else:
+                singular_key = matched_type[:-1]
+                if singular_key in last_statement_id:
+                    last_statement_id[singular_key] = entity_id
 
-                output[entity_type].append(payload)
-                break
+                output[matched_type].append(
+                    {
+                        f"{entity_id_prefix}_id": entity_id,
+                        "entity_id": entity_id,
+                        "label": canonical_label,
+                        "text": text_body,
+                        "section_id": section["section_id"],
+                        "page": section.get("page_start", 1),
+                        "page_start": section.get("page_start", 1),
+                        "page_end": section.get("page_end", section.get("page_start", 1)),
+                        "span": {"start": start_span, "end": end_span},
+                        "confidence": 0.8,
+                    }
+                )
 
     return output

@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_bm06_differential_equations",
+  "source_file": {
+    "file_name": "paper_bm06_differential_equations.pdf",
+    "file_path": "tests/benchmark_papers/paper_bm06_differential_equations.pdf",
+    "file_hash": "b6b2c3d4e5f67890123456789012345678901234567890123456789012345678",
+    "ingested_at": "2026-08-04T00:00:00.000000+00:00"
+  },
+  "title": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+  "authors": [{"name": "Jean Leray", "affiliation": "Collège de France"}],
+  "abstract": "We prove global existence of weak solutions for the incompressible Navier-Stokes equations.",
+  "keywords": ["differential equations", "Navier-Stokes", "Sobolev space", "weak solutions"],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "1. Function Spaces and Weak Derivatives",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Definition 1.6. A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi.\nExample 4. The absolute value function u(x) = |x| has weak derivative sgn(x).",
+      "parent_section_id": null,
+      "section_type": "preliminaries",
+      "confidence": 0.95
+    },
+    {
+      "section_id": "s2",
+      "heading": "2. Existence Theorem",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Lemma 2.6. Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous.\nTheorem 8.1. Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations.\nProof of Theorem 8.1. Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.\nCorollary 8.2. By Theorem 8.1, the energy inequality integral |u(t)|^2 dx <= integral |u_0|^2 dx holds for almost all t.",
+      "parent_section_id": null,
+      "section_type": "theorems",
+      "confidence": 0.97
+    }
+  ],
+  "definitions": [
+    {
+      "def_id": "def_001",
+      "label": "Definition 1.6",
+      "text": "A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi.",
+      "section_id": "s1",
+      "page": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "confidence": 0.9
+    }
+  ],
+  "theorems": [
+    {
+      "thm_id": "thm_001",
+      "label": "Theorem 8.1",
+      "text": "Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.95
+    }
+  ],
+  "lemmas": [
+    {
+      "lem_id": "lem_001",
+      "label": "Lemma 2.6",
+      "text": "Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.92
+    }
+  ],
+  "corollaries": [
+    {
+      "cor_id": "cor_001",
+      "label": "Corollary 8.2",
+      "text": "By Theorem 8.1, the energy inequality integral |u(t)|^2 dx <= integral |u_0|^2 dx holds for almost all t.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.91
+    }
+  ],
+  "proofs": [
+    {
+      "proof_id": "prf_001",
+      "label": "Proof of Theorem 8.1",
+      "related_to": {"theorem_id": "thm_001", "lemma_id": null, "corollary_id": null},
+      "text": "Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.",
+      "section_id": "s2",
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.85
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Jean Leray. 1934. Sur le mouvement d'un liquide visqueux emplissant l'espace. Acta Mathematica.",
+      "title": "Sur le mouvement d'un liquide visqueux emplissant l'espace",
+      "authors": ["Jean Leray"],
+      "year": 1934
+    }
+  ],
+  "equations": []
+}

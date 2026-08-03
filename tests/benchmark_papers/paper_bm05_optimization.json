@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_bm05_optimization",
+  "source_file": {
+    "file_name": "paper_bm05_optimization.pdf",
+    "file_path": "tests/benchmark_papers/paper_bm05_optimization.pdf",
+    "file_hash": "b5b2c3d4e5f67890123456789012345678901234567890123456789012345678",
+    "ingested_at": "2026-08-04T00:00:00.000000+00:00"
+  },
+  "title": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+  "authors": [{"name": "Stephen Boyd", "affiliation": "Stanford University"}],
+  "abstract": "We analyze necessary and sufficient conditions for constrained convex optimization.",
+  "keywords": ["optimization", "convex optimization", "KKT conditions", "duality"],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "1. Convex Functions and Sets",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Definition 1.5. A function f: R^n -> R is convex if f(tx + (1-t)y) <= t f(x) + (1-t) f(y) for all t in [0,1].\nExample 3. The norm function f(x) = ||x|| is convex.",
+      "parent_section_id": null,
+      "section_type": "preliminaries",
+      "confidence": 0.95
+    },
+    {
+      "section_id": "s2",
+      "heading": "2. Optimality Conditions",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Lemma 2.5. For convex differentiable f, local minima are global minima.\nTheorem 7.1. Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility.\nProof of Theorem 7.1. Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.\nCorollary 7.2. By Theorem 7.1, strong duality holds for strictly feasible convex problems.",
+      "parent_section_id": null,
+      "section_type": "theorems",
+      "confidence": 0.97
+    }
+  ],
+  "definitions": [
+    {
+      "def_id": "def_001",
+      "label": "Definition 1.5",
+      "text": "A function f: R^n -> R is convex if f(tx + (1-t)y) <= t f(x) + (1-t) f(y) for all t in [0,1].",
+      "section_id": "s1",
+      "page": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "confidence": 0.9
+    }
+  ],
+  "theorems": [
+    {
+      "thm_id": "thm_001",
+      "label": "Theorem 7.1",
+      "text": "Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.95
+    }
+  ],
+  "lemmas": [
+    {
+      "lem_id": "lem_001",
+      "label": "Lemma 2.5",
+      "text": "For convex differentiable f, local minima are global minima.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.92
+    }
+  ],
+  "corollaries": [
+    {
+      "cor_id": "cor_001",
+      "label": "Corollary 7.2",
+      "text": "By Theorem 7.1, strong duality holds for strictly feasible convex problems.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.91
+    }
+  ],
+  "proofs": [
+    {
+      "proof_id": "prf_001",
+      "label": "Proof of Theorem 7.1",
+      "related_to": {"theorem_id": "thm_001", "lemma_id": null, "corollary_id": null},
+      "text": "Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.",
+      "section_id": "s2",
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.85
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Stephen Boyd and Lieven Vandenberghe. 2004. Convex Optimization. Cambridge University Press.",
+      "title": "Convex Optimization",
+      "authors": ["Stephen Boyd", "Lieven Vandenberghe"],
+      "year": 2004
+    }
+  ],
+  "equations": []
+}

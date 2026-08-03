@@ -286,3 +286,33 @@ When two authors prove the exact same theorem using different variable conventio
 3. **Formula-Aware & AST Embeddings**: Incorporate formula Abstract Syntax Tree (AST) representations alongside text embeddings to enable structural formula matching.
 4. **Cross-Encoder Re-Ranking Layer**: Implement a secondary Cross-Encoder re-ranker trained on scientific query-passage pairs to re-score top-20 retrieved candidates for high-precision mathematical ranking.
 5. **Theorem-Proof Entity Filtering**: Extend search endpoints to allow explicit filtering by `entity_type` (`definition`, `theorem`, `lemma`, `proof`) to narrow results to formal statement objects.
+
+---
+
+## Day 4: Research Graph and Mathematical Knowledge Gap Analysis
+
+### Why do current literature tools fail to visualize mathematical dependencies?
+* **Monolithic Text Treatment**: Traditional academic search engines (Google Scholar, PubMed, Semantic Scholar) treat research papers as flat text documents or simple citation nodes. They fail to parse individual definitions, theorems, lemmas, and proofs within paper text.
+* **Lack of Statement Granularity**: Standard citation networks only show that Paper A cites Paper B, but cannot reveal *which specific theorem* in Paper B is used by Paper A or *which lemma* was required to prove Theorem 3.2.
+* **Surface-Level Metadata Focus**: Tools focus on author names, publication year, and abstract keywords rather than logical proof dependencies and mathematical statement hierarchies.
+
+### How can graph representations improve research?
+* **Topological Proof Chain Traversal**: Graph representations model statements as nodes and logical dependencies as directed edges, enabling automated traversal of antecedents (`get_all_antecedents`) and consequents (`get_all_consequents`).
+* **Instant Premise Discovery**: Researchers can instantly trace all definitions and lemmas required to verify a complex theorem without reading pages of unrelated narrative text.
+* **Concept Dependency Mapping**: Students and researchers can visualize the logical learning path of a new mathematical field before diving into paper reading.
+
+### What relationships are unique to mathematical writing?
+* `proves`: Connects a proof block directly to its target theorem, lemma, or corollary ($P \xrightarrow{\text{PROVES}} T$).
+* `uses_definition`: Indicates that a theorem or proof depends on a formal definition ($T \xrightarrow{\text{USES\_DEF}} D$).
+* `uses_lemma` & `uses_theorem`: Expresses logical invocation of prior auxiliary results within a new proof.
+* `extends`: Captures generalization of an existing theorem to broader spaces (e.g. extending fixed point theorems from metric spaces to topological spaces).
+
+### How could cross-paper dependency graphs benefit researchers?
+* **Literature Lineage & Derivative Work Tracking**: Allows researchers to trace how a seminal theorem in 1922 was reused, generalized, or applied across decades of follow-up literature.
+* **Elimination of Redundant Proofs**: Helps mathematicians verify whether a proposed auxiliary lemma has already been proven under different variable names in another subfield.
+* **Integrated Graph-Augmented RAG**: Enhances vector search by augmenting retrieved text chunks with their topological graph neighbors, ensuring LLM answers include necessary definitions and lemmas.
+
+### What future graph analytics could be added?
+1. **Node Centrality Analytics**: PageRank and Betweenness Centrality on mathematical knowledge graphs to automatically identify "foundational theorems" and "core definitions" in a corpus.
+2. **Proof Cycle & Inconsistency Detection**: Graph validation algorithms that flag circular reasoning loops ($A \text{ depends on } B \text{ depends on } A$) or invalid proof assumptions.
+3. **Automated Theorem Proof AST Alignment**: Aligning informal LaTeX proof graphs with formal interactive theorem provers (Lean 4, Coq, Isabelle) for automated proof verification.

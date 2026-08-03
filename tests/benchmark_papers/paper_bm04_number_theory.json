@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_bm04_number_theory",
+  "source_file": {
+    "file_name": "paper_bm04_number_theory.pdf",
+    "file_path": "tests/benchmark_papers/paper_bm04_number_theory.pdf",
+    "file_hash": "b4b2c3d4e5f67890123456789012345678901234567890123456789012345678",
+    "ingested_at": "2026-08-04T00:00:00.000000+00:00"
+  },
+  "title": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+  "authors": [{"name": "Bernhard Riemann", "affiliation": "University of Göttingen"}],
+  "abstract": "We establish analytic continuation of the zeta function and prove the Prime Number Theorem.",
+  "keywords": ["number theory", "Riemann zeta function", "prime number theorem", "analytic continuation"],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "1. Zeta Function Definition",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Definition 1.4. The Riemann zeta function zeta(s) is defined for Re(s) > 1 by the Dirichlet series sum n^{-s}.\nRemark 3. The non-trivial zeros lie in the critical strip 0 <= Re(s) <= 1.",
+      "parent_section_id": null,
+      "section_type": "preliminaries",
+      "confidence": 0.95
+    },
+    {
+      "section_id": "s2",
+      "heading": "2. Prime Number Theorem",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Lemma 2.4. The zeta function zeta(s) has no zeros on the line Re(s) = 1.\nTheorem 6.1. Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x).\nProof of Theorem 6.1. Apply Definition 1.4 and Lemma 2.4 using contour integration.",
+      "parent_section_id": null,
+      "section_type": "theorems",
+      "confidence": 0.97
+    }
+  ],
+  "definitions": [
+    {
+      "def_id": "def_001",
+      "label": "Definition 1.4",
+      "text": "The Riemann zeta function zeta(s) is defined for Re(s) > 1 by the Dirichlet series sum n^{-s}.",
+      "section_id": "s1",
+      "page": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "confidence": 0.9
+    }
+  ],
+  "theorems": [
+    {
+      "thm_id": "thm_001",
+      "label": "Theorem 6.1",
+      "text": "Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x).",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.95
+    }
+  ],
+  "lemmas": [
+    {
+      "lem_id": "lem_001",
+      "label": "Lemma 2.4",
+      "text": "The zeta function zeta(s) has no zeros on the line Re(s) = 1.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.92
+    }
+  ],
+  "corollaries": [],
+  "proofs": [
+    {
+      "proof_id": "prf_001",
+      "label": "Proof of Theorem 6.1",
+      "related_to": {"theorem_id": "thm_001", "lemma_id": null, "corollary_id": null},
+      "text": "Apply Definition 1.4 and Lemma 2.4 using contour integration.",
+      "section_id": "s2",
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.85
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Jacques Hadamard. 1896. Sur la distribution des zéros de la fonction zeta. Bull. Soc. Math. France.",
+      "title": "Sur la distribution des zéros de la fonction zeta",
+      "authors": ["Jacques Hadamard"],
+      "year": 1896
+    }
+  ],
+  "equations": []
+}

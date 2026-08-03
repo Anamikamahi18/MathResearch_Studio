@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_math_001",
+  "source_file": {
+    "file_name": "paper_06_topology_theorems.pdf",
+    "file_path": "tests/sample_papers/paper_06_topology_theorems.pdf",
+    "file_hash": "a1b2c3d4e5f67890123456789012345678901234567890123456789012345678",
+    "ingested_at": "2026-08-04T00:00:00.000000+00:00"
+  },
+  "title": "On Compact Topological Spaces and Fixed Point Theorems",
+  "authors": [
+    {
+      "name": "Alex Mathematics",
+      "affiliation": "Institute for Advanced Study",
+      "email": "alex@ias.edu"
+    }
+  ],
+  "abstract": "We investigate compact topological spaces and prove several fixed point theorems using auxiliary lemmas.",
+  "keywords": ["topology", "compactness", "fixed point theorem", "de Rham cohomology"],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "1. Introduction and Preliminaries",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "In this paper we review topological spaces.\nDefinition 1.1. A topological space X is compact if every open cover has a finite subcover.\nExample 1. The unit sphere S^n is a compact manifold.\nRemark 1. Compactness is preserved under continuous maps.",
+      "parent_section_id": null,
+      "section_type": "preliminaries",
+      "confidence": 0.95
+    },
+    {
+      "section_id": "s2",
+      "heading": "2. Main Results",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "We present the main lemmas and theorems.\nLemma 2.1. Closed subsets of compact spaces are compact.\nTheorem 3.2. Theorem 3.2 follows from Lemma 2.1. Every continuous map f on a compact metric space has a fixed point.\nProof of Theorem 3.2. Apply Lemma 2.1 and Definition 1.1 directly.\nCorollary 3.3. By Theorem 3.2, closed bounded sets in R^n have fixed points.\nWe extend Theorem 3.2 to non-metric spaces.",
+      "parent_section_id": null,
+      "section_type": "theorems",
+      "confidence": 0.97
+    }
+  ],
+  "definitions": [
+    {
+      "def_id": "def_001",
+      "label": "Definition 1.1",
+      "text": "A topological space X is compact if every open cover has a finite subcover.",
+      "section_id": "s1",
+      "page": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "span": {"start": 1, "end": 1},
+      "confidence": 0.8
+    }
+  ],
+  "theorems": [
+    {
+      "thm_id": "thm_001",
+      "label": "Theorem 3.2",
+      "text": "Theorem 3.2 follows from Lemma 2.1. Every continuous map f on a compact metric space has a fixed point.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "span": {"start": 2, "end": 2},
+      "confidence": 0.8
+    }
+  ],
+  "lemmas": [
+    {
+      "lem_id": "lem_001",
+      "label": "Lemma 2.1",
+      "text": "Closed subsets of compact spaces are compact.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "span": {"start": 1, "end": 1},
+      "confidence": 0.8
+    }
+  ],
+  "corollaries": [
+    {
+      "cor_id": "cor_001",
+      "label": "Corollary 3.3",
+      "text": "By Theorem 3.2, closed bounded sets in R^n have fixed points.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "span": {"start": 4, "end": 4},
+      "confidence": 0.8
+    }
+  ],
+  "proofs": [
+    {
+      "proof_id": "prf_001",
+      "label": "Proof of Theorem 3.2",
+      "related_to": {
+        "theorem_id": "thm_001",
+        "lemma_id": null,
+        "corollary_id": null
+      },
+      "text": "Proof of Theorem 3.2. Apply Lemma 2.1 and Definition 1.1 directly.",
+      "section_id": "s2",
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.75
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Stefan Banach. 1922. Sur les opérations dans les ensembles abstract. Fundamenta Mathematicae.",
+      "title": "Sur les opérations dans les ensembles abstract",
+      "authors": ["Stefan Banach"],
+      "year": 1922,
+      "venue": "Fundamenta Mathematicae",
+      "doi": null,
+      "url": null
+    }
+  ],
+  "equations": [
+    {
+      "equation_id": "eq_001",
+      "latex_text": "f(x) = x",
+      "raw_text": "f(x) = x",
+      "section_id": "s2",
+      "page": 2,
+      "is_numbered": true,
+      "eq_number": "1",
+      "confidence": 0.9
+    }
+  ],
+  "figures": [],
+  "tables": [],
+  "metadata": {
+    "parser_version": "0.1.0",
+    "extraction_mode": "text_pdf",
+    "extraction_confidence": 0.92,
+    "language": "en",
+    "page_count": 2,
+    "ocr_used": false,
+    "processing_time_ms": 120,
+    "warnings": [],
+    "parse_state": "success"
+  }
+}

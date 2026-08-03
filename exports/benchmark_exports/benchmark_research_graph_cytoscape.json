@@ -1,0 +1,2710 @@
+{
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_definition_def_001",
+          "name": "Definition 1.1",
+          "entity_id": "paper_bm01_graph_theory_definition_def_001",
+          "entity_type": "definition",
+          "title": "Definition 1.1",
+          "text": "A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s1",
+          "section_title": "1. Graph Preliminaries",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_theorem_thm_001",
+          "name": "Theorem 3.1",
+          "entity_id": "paper_bm01_graph_theory_theorem_thm_001",
+          "entity_type": "theorem",
+          "title": "Theorem 3.1",
+          "text": "Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_lemma_lem_001",
+          "name": "Lemma 2.1",
+          "entity_id": "paper_bm01_graph_theory_lemma_lem_001",
+          "entity_type": "lemma",
+          "title": "Lemma 2.1",
+          "text": "Every planar graph contains a vertex of degree at most 5.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_corollary_cor_001",
+          "name": "Corollary 3.2",
+          "entity_id": "paper_bm01_graph_theory_corollary_cor_001",
+          "entity_type": "corollary",
+          "title": "Corollary 3.2",
+          "text": "By Theorem 3.1, planar graphs have chromatic number chi(G) <= 5.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_proof_prf_001",
+          "name": "Proof of Theorem 3.1",
+          "entity_id": "paper_bm01_graph_theory_proof_prf_001",
+          "entity_type": "proof",
+          "title": "Proof of Theorem 3.1",
+          "text": "Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_definition_def_002",
+          "name": "Definition 1.1.",
+          "entity_id": "paper_bm01_graph_theory_definition_def_002",
+          "entity_type": "definition",
+          "title": "Definition 1.1.",
+          "text": "A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s1",
+          "section_title": "1. Graph Preliminaries",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_example_ex_001",
+          "name": "Example 1.",
+          "entity_id": "paper_bm01_graph_theory_example_ex_001",
+          "entity_type": "example",
+          "title": "Example 1.",
+          "text": "The complete bipartite graph K_{3,3} is non-planar.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s1",
+          "section_title": "1. Graph Preliminaries",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_remark_rmk_001",
+          "name": "Remark 1.",
+          "entity_id": "paper_bm01_graph_theory_remark_rmk_001",
+          "entity_type": "remark",
+          "title": "Remark 1.",
+          "text": "Planar graphs satisfy Euler's formula V - E + F = 2.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s1",
+          "section_title": "1. Graph Preliminaries",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_lemma_lem_002",
+          "name": "Lemma 2.1.",
+          "entity_id": "paper_bm01_graph_theory_lemma_lem_002",
+          "entity_type": "lemma",
+          "title": "Lemma 2.1.",
+          "text": "Every planar graph contains a vertex of degree at most 5.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_theorem_thm_002",
+          "name": "Theorem 3.1.",
+          "entity_id": "paper_bm01_graph_theory_theorem_thm_002",
+          "entity_type": "theorem",
+          "title": "Theorem 3.1.",
+          "text": "Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_proof_prf_002",
+          "name": "Proof",
+          "entity_id": "paper_bm01_graph_theory_proof_prf_002",
+          "entity_type": "proof",
+          "title": "Proof",
+          "text": "of Theorem 3.1. Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_corollary_cor_002",
+          "name": "Corollary 3.2.",
+          "entity_id": "paper_bm01_graph_theory_corollary_cor_002",
+          "entity_type": "corollary",
+          "title": "Corollary 3.2.",
+          "text": "By Theorem 3.1, planar graphs have chromatic number chi(G) <= 5.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "s2",
+          "section_title": "2. Coloring Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_paper_bm01_graph_theory",
+          "name": "paper_paper_bm01_graph_theory",
+          "entity_id": "paper_paper_bm01_graph_theory",
+          "entity_type": "stub",
+          "title": "paper_paper_bm01_graph_theory",
+          "text": "",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm01_graph_theory_ref_001",
+          "name": "paper_bm01_graph_theory_ref_001",
+          "entity_id": "paper_bm01_graph_theory_ref_001",
+          "entity_type": "reference",
+          "title": "paper_bm01_graph_theory_ref_001",
+          "text": "",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_definition_def_001",
+          "name": "Definition 1.2",
+          "entity_id": "paper_bm02_linear_algebra_definition_def_001",
+          "entity_type": "definition",
+          "title": "Definition 1.2",
+          "text": "An n x n matrix A is Hermitian if A^* = A.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s1",
+          "section_title": "1. Vector Spaces and Operators",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_theorem_thm_001",
+          "name": "Theorem 4.1",
+          "entity_id": "paper_bm02_linear_algebra_theorem_thm_001",
+          "entity_type": "theorem",
+          "title": "Theorem 4.1",
+          "text": "Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s2",
+          "section_title": "2. Spectral Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_lemma_lem_001",
+          "name": "Lemma 2.2",
+          "entity_id": "paper_bm02_linear_algebra_lemma_lem_001",
+          "entity_type": "lemma",
+          "title": "Lemma 2.2",
+          "text": "Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s2",
+          "section_title": "2. Spectral Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_proof_prf_001",
+          "name": "Proof of Theorem 4.1",
+          "entity_id": "paper_bm02_linear_algebra_proof_prf_001",
+          "entity_type": "proof",
+          "title": "Proof of Theorem 4.1",
+          "text": "Apply Definition 1.2 and Lemma 2.2.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s2",
+          "section_title": "2. Spectral Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_definition_def_002",
+          "name": "Definition 1.2.",
+          "entity_id": "paper_bm02_linear_algebra_definition_def_002",
+          "entity_type": "definition",
+          "title": "Definition 1.2.",
+          "text": "An n x n matrix A is Hermitian if A^* = A.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s1",
+          "section_title": "1. Vector Spaces and Operators",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_remark_rmk_001",
+          "name": "Remark 2.",
+          "entity_id": "paper_bm02_linear_algebra_remark_rmk_001",
+          "entity_type": "remark",
+          "title": "Remark 2.",
+          "text": "Hermitian matrices have real eigenvalues.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s1",
+          "section_title": "1. Vector Spaces and Operators",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_lemma_lem_002",
+          "name": "Lemma 2.2.",
+          "entity_id": "paper_bm02_linear_algebra_lemma_lem_002",
+          "entity_type": "lemma",
+          "title": "Lemma 2.2.",
+          "text": "Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s2",
+          "section_title": "2. Spectral Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_theorem_thm_002",
+          "name": "Theorem 4.1.",
+          "entity_id": "paper_bm02_linear_algebra_theorem_thm_002",
+          "entity_type": "theorem",
+          "title": "Theorem 4.1.",
+          "text": "Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s2",
+          "section_title": "2. Spectral Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_proof_prf_002",
+          "name": "Proof",
+          "entity_id": "paper_bm02_linear_algebra_proof_prf_002",
+          "entity_type": "proof",
+          "title": "Proof",
+          "text": "of Theorem 4.1. Apply Definition 1.2 and Lemma 2.2.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "s2",
+          "section_title": "2. Spectral Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_paper_bm02_linear_algebra",
+          "name": "paper_paper_bm02_linear_algebra",
+          "entity_id": "paper_paper_bm02_linear_algebra",
+          "entity_type": "stub",
+          "title": "paper_paper_bm02_linear_algebra",
+          "text": "",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm02_linear_algebra_ref_001",
+          "name": "paper_bm02_linear_algebra_ref_001",
+          "entity_id": "paper_bm02_linear_algebra_ref_001",
+          "entity_type": "reference",
+          "title": "paper_bm02_linear_algebra_ref_001",
+          "text": "",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_definition_def_001",
+          "name": "Definition 1.3",
+          "entity_id": "paper_bm03_functional_analysis_definition_def_001",
+          "entity_type": "definition",
+          "title": "Definition 1.3",
+          "text": "A Banach space is a complete normed vector space.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s1",
+          "section_title": "1. Normed Linear Spaces",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_theorem_thm_001",
+          "name": "Theorem 5.1",
+          "entity_id": "paper_bm03_functional_analysis_theorem_thm_001",
+          "entity_type": "theorem",
+          "title": "Theorem 5.1",
+          "text": "Theorem 5.1 follows from Lemma 2.3. Every bounded linear functional f defined on a subspace M of a normed space X can be extended to X preserving the norm.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_lemma_lem_001",
+          "name": "Lemma 2.3",
+          "entity_id": "paper_bm03_functional_analysis_lemma_lem_001",
+          "entity_type": "lemma",
+          "title": "Lemma 2.3",
+          "text": "Sublinear functionals admit 1-dimensional bounded linear extensions.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_corollary_cor_001",
+          "name": "Corollary 5.2",
+          "entity_id": "paper_bm03_functional_analysis_corollary_cor_001",
+          "entity_type": "corollary",
+          "title": "Corollary 5.2",
+          "text": "By Theorem 5.1, the dual space X* separates points of X.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_proof_prf_001",
+          "name": "Proof of Theorem 5.1",
+          "entity_id": "paper_bm03_functional_analysis_proof_prf_001",
+          "entity_type": "proof",
+          "title": "Proof of Theorem 5.1",
+          "text": "Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_definition_def_002",
+          "name": "Definition 1.3.",
+          "entity_id": "paper_bm03_functional_analysis_definition_def_002",
+          "entity_type": "definition",
+          "title": "Definition 1.3.",
+          "text": "A Banach space is a complete normed vector space.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s1",
+          "section_title": "1. Normed Linear Spaces",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_example_ex_001",
+          "name": "Example 2.",
+          "entity_id": "paper_bm03_functional_analysis_example_ex_001",
+          "entity_type": "example",
+          "title": "Example 2.",
+          "text": "The space L^p([0,1]) is a Banach space for 1 <= p <= infty.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s1",
+          "section_title": "1. Normed Linear Spaces",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [
+            "[0,1]"
+          ],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_lemma_lem_002",
+          "name": "Lemma 2.3.",
+          "entity_id": "paper_bm03_functional_analysis_lemma_lem_002",
+          "entity_type": "lemma",
+          "title": "Lemma 2.3.",
+          "text": "Sublinear functionals admit 1-dimensional bounded linear extensions.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_theorem_thm_002",
+          "name": "Theorem 5.1.",
+          "entity_id": "paper_bm03_functional_analysis_theorem_thm_002",
+          "entity_type": "theorem",
+          "title": "Theorem 5.1.",
+          "text": "Theorem 5.1 follows from Lemma 2.3. Every bounded linear functional f defined on a subspace M of a normed space X can be extended to X preserving the norm.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_proof_prf_002",
+          "name": "Proof",
+          "entity_id": "paper_bm03_functional_analysis_proof_prf_002",
+          "entity_type": "proof",
+          "title": "Proof",
+          "text": "of Theorem 5.1. Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_corollary_cor_002",
+          "name": "Corollary 5.2.",
+          "entity_id": "paper_bm03_functional_analysis_corollary_cor_002",
+          "entity_type": "corollary",
+          "title": "Corollary 5.2.",
+          "text": "By Theorem 5.1, the dual space X* separates points of X.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "s2",
+          "section_title": "2. Extension Theorems",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_paper_bm03_functional_analysis",
+          "name": "paper_paper_bm03_functional_analysis",
+          "entity_id": "paper_paper_bm03_functional_analysis",
+          "entity_type": "stub",
+          "title": "paper_paper_bm03_functional_analysis",
+          "text": "",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm03_functional_analysis_ref_001",
+          "name": "paper_bm03_functional_analysis_ref_001",
+          "entity_id": "paper_bm03_functional_analysis_ref_001",
+          "entity_type": "reference",
+          "title": "paper_bm03_functional_analysis_ref_001",
+          "text": "",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "[0,1]",
+          "name": "[0,1]",
+          "entity_id": "[0,1]",
+          "entity_type": "reference",
+          "title": "[0,1]",
+          "text": "",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_definition_def_001",
+          "name": "Definition 1.4",
+          "entity_id": "paper_bm04_number_theory_definition_def_001",
+          "entity_type": "definition",
+          "title": "Definition 1.4",
+          "text": "The Riemann zeta function zeta(s) is defined for Re(s) > 1 by the Dirichlet series sum n^{-s}.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s1",
+          "section_title": "1. Zeta Function Definition",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_theorem_thm_001",
+          "name": "Theorem 6.1",
+          "entity_id": "paper_bm04_number_theory_theorem_thm_001",
+          "entity_type": "theorem",
+          "title": "Theorem 6.1",
+          "text": "Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x).",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s2",
+          "section_title": "2. Prime Number Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_lemma_lem_001",
+          "name": "Lemma 2.4",
+          "entity_id": "paper_bm04_number_theory_lemma_lem_001",
+          "entity_type": "lemma",
+          "title": "Lemma 2.4",
+          "text": "The zeta function zeta(s) has no zeros on the line Re(s) = 1.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s2",
+          "section_title": "2. Prime Number Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_proof_prf_001",
+          "name": "Proof of Theorem 6.1",
+          "entity_id": "paper_bm04_number_theory_proof_prf_001",
+          "entity_type": "proof",
+          "title": "Proof of Theorem 6.1",
+          "text": "Apply Definition 1.4 and Lemma 2.4 using contour integration.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s2",
+          "section_title": "2. Prime Number Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_definition_def_002",
+          "name": "Definition 1.4.",
+          "entity_id": "paper_bm04_number_theory_definition_def_002",
+          "entity_type": "definition",
+          "title": "Definition 1.4.",
+          "text": "The Riemann zeta function zeta(s) is defined for Re(s) > 1 by the Dirichlet series sum n^{-s}.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s1",
+          "section_title": "1. Zeta Function Definition",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_remark_rmk_001",
+          "name": "Remark 3.",
+          "entity_id": "paper_bm04_number_theory_remark_rmk_001",
+          "entity_type": "remark",
+          "title": "Remark 3.",
+          "text": "The non-trivial zeros lie in the critical strip 0 <= Re(s) <= 1.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s1",
+          "section_title": "1. Zeta Function Definition",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_lemma_lem_002",
+          "name": "Lemma 2.4.",
+          "entity_id": "paper_bm04_number_theory_lemma_lem_002",
+          "entity_type": "lemma",
+          "title": "Lemma 2.4.",
+          "text": "The zeta function zeta(s) has no zeros on the line Re(s) = 1.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s2",
+          "section_title": "2. Prime Number Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_theorem_thm_002",
+          "name": "Theorem 6.1.",
+          "entity_id": "paper_bm04_number_theory_theorem_thm_002",
+          "entity_type": "theorem",
+          "title": "Theorem 6.1.",
+          "text": "Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x).",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s2",
+          "section_title": "2. Prime Number Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_proof_prf_002",
+          "name": "Proof",
+          "entity_id": "paper_bm04_number_theory_proof_prf_002",
+          "entity_type": "proof",
+          "title": "Proof",
+          "text": "of Theorem 6.1. Apply Definition 1.4 and Lemma 2.4 using contour integration.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "s2",
+          "section_title": "2. Prime Number Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_paper_bm04_number_theory",
+          "name": "paper_paper_bm04_number_theory",
+          "entity_id": "paper_paper_bm04_number_theory",
+          "entity_type": "stub",
+          "title": "paper_paper_bm04_number_theory",
+          "text": "",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm04_number_theory_ref_001",
+          "name": "paper_bm04_number_theory_ref_001",
+          "entity_id": "paper_bm04_number_theory_ref_001",
+          "entity_type": "reference",
+          "title": "paper_bm04_number_theory_ref_001",
+          "text": "",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_definition_def_001",
+          "name": "Definition 1.5",
+          "entity_id": "paper_bm05_optimization_definition_def_001",
+          "entity_type": "definition",
+          "title": "Definition 1.5",
+          "text": "A function f: R^n -> R is convex if f(tx + (1-t)y) <= t f(x) + (1-t) f(y) for all t in [0,1].",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s1",
+          "section_title": "1. Convex Functions and Sets",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [
+            "[0,1]"
+          ],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_theorem_thm_001",
+          "name": "Theorem 7.1",
+          "entity_id": "paper_bm05_optimization_theorem_thm_001",
+          "entity_type": "theorem",
+          "title": "Theorem 7.1",
+          "text": "Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_lemma_lem_001",
+          "name": "Lemma 2.5",
+          "entity_id": "paper_bm05_optimization_lemma_lem_001",
+          "entity_type": "lemma",
+          "title": "Lemma 2.5",
+          "text": "For convex differentiable f, local minima are global minima.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_corollary_cor_001",
+          "name": "Corollary 7.2",
+          "entity_id": "paper_bm05_optimization_corollary_cor_001",
+          "entity_type": "corollary",
+          "title": "Corollary 7.2",
+          "text": "By Theorem 7.1, strong duality holds for strictly feasible convex problems.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_proof_prf_001",
+          "name": "Proof of Theorem 7.1",
+          "entity_id": "paper_bm05_optimization_proof_prf_001",
+          "entity_type": "proof",
+          "title": "Proof of Theorem 7.1",
+          "text": "Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_definition_def_002",
+          "name": "Definition 1.5.",
+          "entity_id": "paper_bm05_optimization_definition_def_002",
+          "entity_type": "definition",
+          "title": "Definition 1.5.",
+          "text": "A function f: R^n -> R is convex if f(tx + (1-t)y) <= t f(x) + (1-t) f(y) for all t in [0,1].",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s1",
+          "section_title": "1. Convex Functions and Sets",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [
+            "[0,1]"
+          ],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_example_ex_001",
+          "name": "Example 3.",
+          "entity_id": "paper_bm05_optimization_example_ex_001",
+          "entity_type": "example",
+          "title": "Example 3.",
+          "text": "The norm function f(x) = ||x|| is convex.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s1",
+          "section_title": "1. Convex Functions and Sets",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_lemma_lem_002",
+          "name": "Lemma 2.5.",
+          "entity_id": "paper_bm05_optimization_lemma_lem_002",
+          "entity_type": "lemma",
+          "title": "Lemma 2.5.",
+          "text": "For convex differentiable f, local minima are global minima.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_theorem_thm_002",
+          "name": "Theorem 7.1.",
+          "entity_id": "paper_bm05_optimization_theorem_thm_002",
+          "entity_type": "theorem",
+          "title": "Theorem 7.1.",
+          "text": "Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_proof_prf_002",
+          "name": "Proof",
+          "entity_id": "paper_bm05_optimization_proof_prf_002",
+          "entity_type": "proof",
+          "title": "Proof",
+          "text": "of Theorem 7.1. Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_corollary_cor_002",
+          "name": "Corollary 7.2.",
+          "entity_id": "paper_bm05_optimization_corollary_cor_002",
+          "entity_type": "corollary",
+          "title": "Corollary 7.2.",
+          "text": "By Theorem 7.1, strong duality holds for strictly feasible convex problems.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "s2",
+          "section_title": "2. Optimality Conditions",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_paper_bm05_optimization",
+          "name": "paper_paper_bm05_optimization",
+          "entity_id": "paper_paper_bm05_optimization",
+          "entity_type": "stub",
+          "title": "paper_paper_bm05_optimization",
+          "text": "",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm05_optimization_ref_001",
+          "name": "paper_bm05_optimization_ref_001",
+          "entity_id": "paper_bm05_optimization_ref_001",
+          "entity_type": "reference",
+          "title": "paper_bm05_optimization_ref_001",
+          "text": "",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_definition_def_001",
+          "name": "Definition 1.6",
+          "entity_id": "paper_bm06_differential_equations_definition_def_001",
+          "entity_type": "definition",
+          "title": "Definition 1.6",
+          "text": "A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s1",
+          "section_title": "1. Function Spaces and Weak Derivatives",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_theorem_thm_001",
+          "name": "Theorem 8.1",
+          "entity_id": "paper_bm06_differential_equations_theorem_thm_001",
+          "entity_type": "theorem",
+          "title": "Theorem 8.1",
+          "text": "Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_lemma_lem_001",
+          "name": "Lemma 2.6",
+          "entity_id": "paper_bm06_differential_equations_lemma_lem_001",
+          "entity_type": "lemma",
+          "title": "Lemma 2.6",
+          "text": "Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_corollary_cor_001",
+          "name": "Corollary 8.2",
+          "entity_id": "paper_bm06_differential_equations_corollary_cor_001",
+          "entity_type": "corollary",
+          "title": "Corollary 8.2",
+          "text": "By Theorem 8.1, the energy inequality integral |u(t)|^2 dx <= integral |u_0|^2 dx holds for almost all t.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_proof_prf_001",
+          "name": "Proof of Theorem 8.1",
+          "entity_id": "paper_bm06_differential_equations_proof_prf_001",
+          "entity_type": "proof",
+          "title": "Proof of Theorem 8.1",
+          "text": "Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_definition_def_002",
+          "name": "Definition 1.6.",
+          "entity_id": "paper_bm06_differential_equations_definition_def_002",
+          "entity_type": "definition",
+          "title": "Definition 1.6.",
+          "text": "A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s1",
+          "section_title": "1. Function Spaces and Weak Derivatives",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_example_ex_001",
+          "name": "Example 4.",
+          "entity_id": "paper_bm06_differential_equations_example_ex_001",
+          "entity_type": "example",
+          "title": "Example 4.",
+          "text": "The absolute value function u(x) = |x| has weak derivative sgn(x).",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s1",
+          "section_title": "1. Function Spaces and Weak Derivatives",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_lemma_lem_002",
+          "name": "Lemma 2.6.",
+          "entity_id": "paper_bm06_differential_equations_lemma_lem_002",
+          "entity_type": "lemma",
+          "title": "Lemma 2.6.",
+          "text": "Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_theorem_thm_002",
+          "name": "Theorem 8.1.",
+          "entity_id": "paper_bm06_differential_equations_theorem_thm_002",
+          "entity_type": "theorem",
+          "title": "Theorem 8.1.",
+          "text": "Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_proof_prf_002",
+          "name": "Proof",
+          "entity_id": "paper_bm06_differential_equations_proof_prf_002",
+          "entity_type": "proof",
+          "title": "Proof",
+          "text": "of Theorem 8.1. Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_corollary_cor_002",
+          "name": "Corollary 8.2.",
+          "entity_id": "paper_bm06_differential_equations_corollary_cor_002",
+          "entity_type": "corollary",
+          "title": "Corollary 8.2.",
+          "text": "By Theorem 8.1, the energy inequality integral |u(t)|^2 dx <= integral |u_0|^2 dx holds for almost all t.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "s2",
+          "section_title": "2. Existence Theorem",
+          "page_start": 2,
+          "page_end": 2,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_paper_bm06_differential_equations",
+          "name": "paper_paper_bm06_differential_equations",
+          "entity_id": "paper_paper_bm06_differential_equations",
+          "entity_type": "stub",
+          "title": "paper_paper_bm06_differential_equations",
+          "text": "",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      },
+      {
+        "data": {
+          "id": "paper_bm06_differential_equations_ref_001",
+          "name": "paper_bm06_differential_equations_ref_001",
+          "entity_id": "paper_bm06_differential_equations_ref_001",
+          "entity_type": "reference",
+          "title": "paper_bm06_differential_equations_ref_001",
+          "text": "",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "section_id": "",
+          "section_title": "",
+          "page_start": 1,
+          "page_end": 1,
+          "symbols": [],
+          "references": [],
+          "dependencies": []
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "rel_0003",
+          "source": "paper_bm01_graph_theory_theorem_thm_001",
+          "target": "paper_bm01_graph_theory_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0003",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0005",
+          "source": "paper_bm01_graph_theory_theorem_thm_001",
+          "target": "paper_bm01_graph_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0005",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0004",
+          "source": "paper_bm01_graph_theory_theorem_thm_001",
+          "target": "paper_bm01_graph_theory_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0004",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 3.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0006",
+          "source": "paper_bm01_graph_theory_corollary_cor_001",
+          "target": "paper_bm01_graph_theory_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0006",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 3.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0001",
+          "source": "paper_bm01_graph_theory_proof_prf_001",
+          "target": "paper_bm01_graph_theory_theorem_thm_001",
+          "interaction": "proves",
+          "relation_id": "rel_0001",
+          "relation_type": "proves",
+          "confidence": 0.95,
+          "evidence_text": "Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "source": "explicit_parser_metadata"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0007",
+          "source": "paper_bm01_graph_theory_proof_prf_001",
+          "target": "paper_bm01_graph_theory_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0007",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Using Definition 1.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0008",
+          "source": "paper_bm01_graph_theory_proof_prf_001",
+          "target": "paper_bm01_graph_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0008",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0009",
+          "source": "paper_bm01_graph_theory_theorem_thm_002",
+          "target": "paper_bm01_graph_theory_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0009",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0010",
+          "source": "paper_bm01_graph_theory_theorem_thm_002",
+          "target": "paper_bm01_graph_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0010",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0011",
+          "source": "paper_bm01_graph_theory_proof_prf_002",
+          "target": "paper_bm01_graph_theory_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0011",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Using Definition 1.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0012",
+          "source": "paper_bm01_graph_theory_proof_prf_002",
+          "target": "paper_bm01_graph_theory_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0012",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 3.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0013",
+          "source": "paper_bm01_graph_theory_proof_prf_002",
+          "target": "paper_bm01_graph_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0013",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0014",
+          "source": "paper_bm01_graph_theory_corollary_cor_002",
+          "target": "paper_bm01_graph_theory_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0014",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 3.1",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0002",
+          "source": "paper_paper_bm01_graph_theory",
+          "target": "paper_bm01_graph_theory_ref_001",
+          "interaction": "cites",
+          "relation_id": "rel_0002",
+          "relation_type": "cites",
+          "confidence": 0.9,
+          "evidence_text": "Kenneth Appel and Wolfgang Haken. 1977. Every Planar Map is Four Colorable. Illinois J. Math.",
+          "source_paper": "Chromatic Polynomials and Planar Graph Colorability",
+          "metadata": {
+            "source": "explicit_parser_references"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0003",
+          "source": "paper_bm02_linear_algebra_theorem_thm_001",
+          "target": "paper_bm02_linear_algebra_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0003",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0005",
+          "source": "paper_bm02_linear_algebra_theorem_thm_001",
+          "target": "paper_bm02_linear_algebra_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0005",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0004",
+          "source": "paper_bm02_linear_algebra_theorem_thm_001",
+          "target": "paper_bm02_linear_algebra_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0004",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 4.1",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0001",
+          "source": "paper_bm02_linear_algebra_proof_prf_001",
+          "target": "paper_bm02_linear_algebra_theorem_thm_001",
+          "interaction": "proves",
+          "relation_id": "rel_0001",
+          "relation_type": "proves",
+          "confidence": 0.95,
+          "evidence_text": "Apply Definition 1.2 and Lemma 2.2.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "source": "explicit_parser_metadata"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0006",
+          "source": "paper_bm02_linear_algebra_proof_prf_001",
+          "target": "paper_bm02_linear_algebra_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0006",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Apply Definition 1.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0007",
+          "source": "paper_bm02_linear_algebra_proof_prf_001",
+          "target": "paper_bm02_linear_algebra_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0007",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0008",
+          "source": "paper_bm02_linear_algebra_theorem_thm_002",
+          "target": "paper_bm02_linear_algebra_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0008",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0009",
+          "source": "paper_bm02_linear_algebra_theorem_thm_002",
+          "target": "paper_bm02_linear_algebra_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0009",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0010",
+          "source": "paper_bm02_linear_algebra_proof_prf_002",
+          "target": "paper_bm02_linear_algebra_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0010",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Apply Definition 1.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0011",
+          "source": "paper_bm02_linear_algebra_proof_prf_002",
+          "target": "paper_bm02_linear_algebra_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0011",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 4.1",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0012",
+          "source": "paper_bm02_linear_algebra_proof_prf_002",
+          "target": "paper_bm02_linear_algebra_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0012",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.2",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0002",
+          "source": "paper_paper_bm02_linear_algebra",
+          "target": "paper_bm02_linear_algebra_ref_001",
+          "interaction": "cites",
+          "relation_id": "rel_0002",
+          "relation_type": "cites",
+          "confidence": 0.9,
+          "evidence_text": "Gene H. Golub and Charles F. Van Loan. 1996. Matrix Computations. Johns Hopkins University Press.",
+          "source_paper": "Spectral Decomposition of Normal and Hermitian Operators",
+          "metadata": {
+            "source": "explicit_parser_references"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0003",
+          "source": "paper_bm03_functional_analysis_theorem_thm_001",
+          "target": "paper_bm03_functional_analysis_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0003",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0005",
+          "source": "paper_bm03_functional_analysis_theorem_thm_001",
+          "target": "paper_bm03_functional_analysis_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0005",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0004",
+          "source": "paper_bm03_functional_analysis_theorem_thm_001",
+          "target": "paper_bm03_functional_analysis_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0004",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 5.1",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0006",
+          "source": "paper_bm03_functional_analysis_corollary_cor_001",
+          "target": "paper_bm03_functional_analysis_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0006",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 5.1",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0001",
+          "source": "paper_bm03_functional_analysis_proof_prf_001",
+          "target": "paper_bm03_functional_analysis_theorem_thm_001",
+          "interaction": "proves",
+          "relation_id": "rel_0001",
+          "relation_type": "proves",
+          "confidence": 0.95,
+          "evidence_text": "Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "source": "explicit_parser_metadata"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0007",
+          "source": "paper_bm03_functional_analysis_proof_prf_001",
+          "target": "paper_bm03_functional_analysis_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0007",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Using Definition 1.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0008",
+          "source": "paper_bm03_functional_analysis_proof_prf_001",
+          "target": "paper_bm03_functional_analysis_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0008",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0009",
+          "source": "paper_bm03_functional_analysis_example_ex_001",
+          "target": "[0,1]",
+          "interaction": "references",
+          "relation_id": "rel_0009",
+          "relation_type": "references",
+          "confidence": 0.8,
+          "evidence_text": "[0,1]",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "ENTITY_REFERENCES"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0010",
+          "source": "paper_bm03_functional_analysis_theorem_thm_002",
+          "target": "paper_bm03_functional_analysis_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0010",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0011",
+          "source": "paper_bm03_functional_analysis_theorem_thm_002",
+          "target": "paper_bm03_functional_analysis_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0011",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0012",
+          "source": "paper_bm03_functional_analysis_proof_prf_002",
+          "target": "paper_bm03_functional_analysis_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0012",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Using Definition 1.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0013",
+          "source": "paper_bm03_functional_analysis_proof_prf_002",
+          "target": "paper_bm03_functional_analysis_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0013",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 5.1",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0014",
+          "source": "paper_bm03_functional_analysis_proof_prf_002",
+          "target": "paper_bm03_functional_analysis_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0014",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.3",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0015",
+          "source": "paper_bm03_functional_analysis_corollary_cor_002",
+          "target": "paper_bm03_functional_analysis_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0015",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 5.1",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0002",
+          "source": "paper_paper_bm03_functional_analysis",
+          "target": "paper_bm03_functional_analysis_ref_001",
+          "interaction": "cites",
+          "relation_id": "rel_0002",
+          "relation_type": "cites",
+          "confidence": 0.9,
+          "evidence_text": "Hans Hahn. 1927. \u00dcber lineare Funktionaloperationen. Monatshefte f\u00fcr Mathematik und Physik.",
+          "source_paper": "Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces",
+          "metadata": {
+            "source": "explicit_parser_references"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0003",
+          "source": "paper_bm04_number_theory_theorem_thm_001",
+          "target": "paper_bm04_number_theory_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0003",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0005",
+          "source": "paper_bm04_number_theory_theorem_thm_001",
+          "target": "paper_bm04_number_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0005",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0004",
+          "source": "paper_bm04_number_theory_theorem_thm_001",
+          "target": "paper_bm04_number_theory_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0004",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 6.1",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0001",
+          "source": "paper_bm04_number_theory_proof_prf_001",
+          "target": "paper_bm04_number_theory_theorem_thm_001",
+          "interaction": "proves",
+          "relation_id": "rel_0001",
+          "relation_type": "proves",
+          "confidence": 0.95,
+          "evidence_text": "Apply Definition 1.4 and Lemma 2.4 using contour integration.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "source": "explicit_parser_metadata"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0006",
+          "source": "paper_bm04_number_theory_proof_prf_001",
+          "target": "paper_bm04_number_theory_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0006",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Apply Definition 1.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0007",
+          "source": "paper_bm04_number_theory_proof_prf_001",
+          "target": "paper_bm04_number_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0007",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0008",
+          "source": "paper_bm04_number_theory_theorem_thm_002",
+          "target": "paper_bm04_number_theory_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0008",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0009",
+          "source": "paper_bm04_number_theory_theorem_thm_002",
+          "target": "paper_bm04_number_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0009",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0010",
+          "source": "paper_bm04_number_theory_proof_prf_002",
+          "target": "paper_bm04_number_theory_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0010",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Apply Definition 1.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0011",
+          "source": "paper_bm04_number_theory_proof_prf_002",
+          "target": "paper_bm04_number_theory_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0011",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 6.1",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0012",
+          "source": "paper_bm04_number_theory_proof_prf_002",
+          "target": "paper_bm04_number_theory_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0012",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.4",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0002",
+          "source": "paper_paper_bm04_number_theory",
+          "target": "paper_bm04_number_theory_ref_001",
+          "interaction": "cites",
+          "relation_id": "rel_0002",
+          "relation_type": "cites",
+          "confidence": 0.9,
+          "evidence_text": "Jacques Hadamard. 1896. Sur la distribution des z\u00e9ros de la fonction zeta. Bull. Soc. Math. France.",
+          "source_paper": "On the Distribution of Primes and Zeros of the Riemann Zeta Function",
+          "metadata": {
+            "source": "explicit_parser_references"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0003",
+          "source": "paper_bm05_optimization_definition_def_001",
+          "target": "[0,1]",
+          "interaction": "references",
+          "relation_id": "rel_0003",
+          "relation_type": "references",
+          "confidence": 0.8,
+          "evidence_text": "[0,1]",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "ENTITY_REFERENCES"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0004",
+          "source": "paper_bm05_optimization_theorem_thm_001",
+          "target": "paper_bm05_optimization_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0004",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0006",
+          "source": "paper_bm05_optimization_theorem_thm_001",
+          "target": "paper_bm05_optimization_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0006",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0005",
+          "source": "paper_bm05_optimization_theorem_thm_001",
+          "target": "paper_bm05_optimization_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0005",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 7.1",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0007",
+          "source": "paper_bm05_optimization_corollary_cor_001",
+          "target": "paper_bm05_optimization_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0007",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 7.1",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0001",
+          "source": "paper_bm05_optimization_proof_prf_001",
+          "target": "paper_bm05_optimization_theorem_thm_001",
+          "interaction": "proves",
+          "relation_id": "rel_0001",
+          "relation_type": "proves",
+          "confidence": 0.95,
+          "evidence_text": "Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "source": "explicit_parser_metadata"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0008",
+          "source": "paper_bm05_optimization_proof_prf_001",
+          "target": "paper_bm05_optimization_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0008",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Apply Definition 1.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0009",
+          "source": "paper_bm05_optimization_proof_prf_001",
+          "target": "paper_bm05_optimization_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0009",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0010",
+          "source": "paper_bm05_optimization_definition_def_002",
+          "target": "[0,1]",
+          "interaction": "references",
+          "relation_id": "rel_0010",
+          "relation_type": "references",
+          "confidence": 0.8,
+          "evidence_text": "[0,1]",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "ENTITY_REFERENCES"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0011",
+          "source": "paper_bm05_optimization_theorem_thm_002",
+          "target": "paper_bm05_optimization_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0011",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0012",
+          "source": "paper_bm05_optimization_theorem_thm_002",
+          "target": "paper_bm05_optimization_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0012",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0013",
+          "source": "paper_bm05_optimization_proof_prf_002",
+          "target": "paper_bm05_optimization_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0013",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Apply Definition 1.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0014",
+          "source": "paper_bm05_optimization_proof_prf_002",
+          "target": "paper_bm05_optimization_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0014",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 7.1",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0015",
+          "source": "paper_bm05_optimization_proof_prf_002",
+          "target": "paper_bm05_optimization_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0015",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.5",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0016",
+          "source": "paper_bm05_optimization_corollary_cor_002",
+          "target": "paper_bm05_optimization_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0016",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 7.1",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0002",
+          "source": "paper_paper_bm05_optimization",
+          "target": "paper_bm05_optimization_ref_001",
+          "interaction": "cites",
+          "relation_id": "rel_0002",
+          "relation_type": "cites",
+          "confidence": 0.9,
+          "evidence_text": "Stephen Boyd and Lieven Vandenberghe. 2004. Convex Optimization. Cambridge University Press.",
+          "source_paper": "Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming",
+          "metadata": {
+            "source": "explicit_parser_references"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0003",
+          "source": "paper_bm06_differential_equations_theorem_thm_001",
+          "target": "paper_bm06_differential_equations_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0003",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0005",
+          "source": "paper_bm06_differential_equations_theorem_thm_001",
+          "target": "paper_bm06_differential_equations_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0005",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0004",
+          "source": "paper_bm06_differential_equations_theorem_thm_001",
+          "target": "paper_bm06_differential_equations_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0004",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 8.1",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0006",
+          "source": "paper_bm06_differential_equations_corollary_cor_001",
+          "target": "paper_bm06_differential_equations_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0006",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 8.1",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0001",
+          "source": "paper_bm06_differential_equations_proof_prf_001",
+          "target": "paper_bm06_differential_equations_theorem_thm_001",
+          "interaction": "proves",
+          "relation_id": "rel_0001",
+          "relation_type": "proves",
+          "confidence": 0.95,
+          "evidence_text": "Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "source": "explicit_parser_metadata"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0007",
+          "source": "paper_bm06_differential_equations_proof_prf_001",
+          "target": "paper_bm06_differential_equations_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0007",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Using Definition 1.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0008",
+          "source": "paper_bm06_differential_equations_proof_prf_001",
+          "target": "paper_bm06_differential_equations_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0008",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0009",
+          "source": "paper_bm06_differential_equations_theorem_thm_002",
+          "target": "paper_bm06_differential_equations_lemma_lem_002",
+          "interaction": "depends_on",
+          "relation_id": "rel_0009",
+          "relation_type": "depends_on",
+          "confidence": 0.85,
+          "evidence_text": "follows from Lemma 2.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "DEPENDS_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0010",
+          "source": "paper_bm06_differential_equations_theorem_thm_002",
+          "target": "paper_bm06_differential_equations_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0010",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0011",
+          "source": "paper_bm06_differential_equations_proof_prf_002",
+          "target": "paper_bm06_differential_equations_definition_def_002",
+          "interaction": "uses_definition",
+          "relation_id": "rel_0011",
+          "relation_type": "uses_definition",
+          "confidence": 0.85,
+          "evidence_text": "Using Definition 1.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "USES_DEF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0012",
+          "source": "paper_bm06_differential_equations_proof_prf_002",
+          "target": "paper_bm06_differential_equations_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0012",
+          "relation_type": "uses_theorem",
+          "confidence": 0.75,
+          "evidence_text": "Theorem 8.1",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0013",
+          "source": "paper_bm06_differential_equations_proof_prf_002",
+          "target": "paper_bm06_differential_equations_lemma_lem_002",
+          "interaction": "uses_lemma",
+          "relation_id": "rel_0013",
+          "relation_type": "uses_lemma",
+          "confidence": 0.75,
+          "evidence_text": "Lemma 2.6",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "STATEMENT_REF_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0014",
+          "source": "paper_bm06_differential_equations_corollary_cor_002",
+          "target": "paper_bm06_differential_equations_theorem_thm_002",
+          "interaction": "uses_theorem",
+          "relation_id": "rel_0014",
+          "relation_type": "uses_theorem",
+          "confidence": 0.85,
+          "evidence_text": "By Theorem 8.1",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "rule": "USES_THM_PATTERN"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "rel_0002",
+          "source": "paper_paper_bm06_differential_equations",
+          "target": "paper_bm06_differential_equations_ref_001",
+          "interaction": "cites",
+          "relation_id": "rel_0002",
+          "relation_type": "cites",
+          "confidence": 0.9,
+          "evidence_text": "Jean Leray. 1934. Sur le mouvement d'un liquide visqueux emplissant l'espace. Acta Mathematica.",
+          "source_paper": "Global Existence of Weak Solutions for Non-Linear Partial Differential Equations",
+          "metadata": {
+            "source": "explicit_parser_references"
+          }
+        }
+      }
+    ]
+  }
+}

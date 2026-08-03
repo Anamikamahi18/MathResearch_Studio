@@ -1,0 +1,2164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-08-04">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="12" title="relation_id" type="string" />
+      <attribute id="13" title="relation_type" type="string" />
+      <attribute id="14" title="confidence" type="double" />
+      <attribute id="15" title="evidence_text" type="string" />
+      <attribute id="16" title="source_paper" type="string" />
+      <attribute id="17" title="metadata" type="string" />
+      <attribute id="18" title="networkx_key" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="entity_id" type="string" />
+      <attribute id="1" title="entity_type" type="string" />
+      <attribute id="2" title="title" type="string" />
+      <attribute id="3" title="text" type="string" />
+      <attribute id="4" title="source_paper" type="string" />
+      <attribute id="5" title="section_id" type="string" />
+      <attribute id="6" title="section_title" type="string" />
+      <attribute id="7" title="page_start" type="long" />
+      <attribute id="8" title="page_end" type="long" />
+      <attribute id="9" title="symbols" type="string" />
+      <attribute id="10" title="references" type="string" />
+      <attribute id="11" title="dependencies" type="string" />
+    </attributes>
+    <nodes>
+      <node id="paper_bm01_graph_theory_definition_def_001" label="paper_bm01_graph_theory_definition_def_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_definition_def_001" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.1" />
+          <attvalue for="3" value="A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Graph Preliminaries" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_theorem_thm_001" label="paper_bm01_graph_theory_theorem_thm_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_theorem_thm_001" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 3.1" />
+          <attvalue for="3" value="Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_lemma_lem_001" label="paper_bm01_graph_theory_lemma_lem_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_lemma_lem_001" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.1" />
+          <attvalue for="3" value="Every planar graph contains a vertex of degree at most 5." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_corollary_cor_001" label="paper_bm01_graph_theory_corollary_cor_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_corollary_cor_001" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 3.2" />
+          <attvalue for="3" value="By Theorem 3.1, planar graphs have chromatic number chi(G) &lt;= 5." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_proof_prf_001" label="paper_bm01_graph_theory_proof_prf_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_proof_prf_001" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof of Theorem 3.1" />
+          <attvalue for="3" value="Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_definition_def_002" label="paper_bm01_graph_theory_definition_def_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_definition_def_002" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.1." />
+          <attvalue for="3" value="A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Graph Preliminaries" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_example_ex_001" label="paper_bm01_graph_theory_example_ex_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_example_ex_001" />
+          <attvalue for="1" value="example" />
+          <attvalue for="2" value="Example 1." />
+          <attvalue for="3" value="The complete bipartite graph K_{3,3} is non-planar." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Graph Preliminaries" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_remark_rmk_001" label="paper_bm01_graph_theory_remark_rmk_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_remark_rmk_001" />
+          <attvalue for="1" value="remark" />
+          <attvalue for="2" value="Remark 1." />
+          <attvalue for="3" value="Planar graphs satisfy Euler's formula V - E + F = 2." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Graph Preliminaries" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_lemma_lem_002" label="paper_bm01_graph_theory_lemma_lem_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_lemma_lem_002" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.1." />
+          <attvalue for="3" value="Every planar graph contains a vertex of degree at most 5." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_theorem_thm_002" label="paper_bm01_graph_theory_theorem_thm_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_theorem_thm_002" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 3.1." />
+          <attvalue for="3" value="Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_proof_prf_002" label="paper_bm01_graph_theory_proof_prf_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_proof_prf_002" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof" />
+          <attvalue for="3" value="of Theorem 3.1. Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_corollary_cor_002" label="paper_bm01_graph_theory_corollary_cor_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_corollary_cor_002" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 3.2." />
+          <attvalue for="3" value="By Theorem 3.1, planar graphs have chromatic number chi(G) &lt;= 5." />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Coloring Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_paper_bm01_graph_theory" label="paper_paper_bm01_graph_theory">
+        <attvalues>
+          <attvalue for="0" value="paper_paper_bm01_graph_theory" />
+          <attvalue for="1" value="stub" />
+          <attvalue for="2" value="paper_paper_bm01_graph_theory" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm01_graph_theory_ref_001" label="paper_bm01_graph_theory_ref_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm01_graph_theory_ref_001" />
+          <attvalue for="1" value="reference" />
+          <attvalue for="2" value="paper_bm01_graph_theory_ref_001" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_definition_def_001" label="paper_bm02_linear_algebra_definition_def_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_definition_def_001" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.2" />
+          <attvalue for="3" value="An n x n matrix A is Hermitian if A^* = A." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Vector Spaces and Operators" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_theorem_thm_001" label="paper_bm02_linear_algebra_theorem_thm_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_theorem_thm_001" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 4.1" />
+          <attvalue for="3" value="Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Spectral Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_lemma_lem_001" label="paper_bm02_linear_algebra_lemma_lem_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_lemma_lem_001" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.2" />
+          <attvalue for="3" value="Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Spectral Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_proof_prf_001" label="paper_bm02_linear_algebra_proof_prf_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_proof_prf_001" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof of Theorem 4.1" />
+          <attvalue for="3" value="Apply Definition 1.2 and Lemma 2.2." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Spectral Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_definition_def_002" label="paper_bm02_linear_algebra_definition_def_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_definition_def_002" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.2." />
+          <attvalue for="3" value="An n x n matrix A is Hermitian if A^* = A." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Vector Spaces and Operators" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_remark_rmk_001" label="paper_bm02_linear_algebra_remark_rmk_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_remark_rmk_001" />
+          <attvalue for="1" value="remark" />
+          <attvalue for="2" value="Remark 2." />
+          <attvalue for="3" value="Hermitian matrices have real eigenvalues." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Vector Spaces and Operators" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_lemma_lem_002" label="paper_bm02_linear_algebra_lemma_lem_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_lemma_lem_002" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.2." />
+          <attvalue for="3" value="Eigenvectors corresponding to distinct eigenvalues of a Hermitian matrix are orthogonal." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Spectral Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_theorem_thm_002" label="paper_bm02_linear_algebra_theorem_thm_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_theorem_thm_002" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 4.1." />
+          <attvalue for="3" value="Theorem 4.1 follows from Lemma 2.2. Every Hermitian matrix A is unitarily diagonalizable." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Spectral Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_proof_prf_002" label="paper_bm02_linear_algebra_proof_prf_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_proof_prf_002" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof" />
+          <attvalue for="3" value="of Theorem 4.1. Apply Definition 1.2 and Lemma 2.2." />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Spectral Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_paper_bm02_linear_algebra" label="paper_paper_bm02_linear_algebra">
+        <attvalues>
+          <attvalue for="0" value="paper_paper_bm02_linear_algebra" />
+          <attvalue for="1" value="stub" />
+          <attvalue for="2" value="paper_paper_bm02_linear_algebra" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm02_linear_algebra_ref_001" label="paper_bm02_linear_algebra_ref_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm02_linear_algebra_ref_001" />
+          <attvalue for="1" value="reference" />
+          <attvalue for="2" value="paper_bm02_linear_algebra_ref_001" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_definition_def_001" label="paper_bm03_functional_analysis_definition_def_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_definition_def_001" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.3" />
+          <attvalue for="3" value="A Banach space is a complete normed vector space." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Normed Linear Spaces" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_theorem_thm_001" label="paper_bm03_functional_analysis_theorem_thm_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_theorem_thm_001" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 5.1" />
+          <attvalue for="3" value="Theorem 5.1 follows from Lemma 2.3. Every bounded linear functional f defined on a subspace M of a normed space X can be extended to X preserving the norm." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_lemma_lem_001" label="paper_bm03_functional_analysis_lemma_lem_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_lemma_lem_001" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.3" />
+          <attvalue for="3" value="Sublinear functionals admit 1-dimensional bounded linear extensions." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_corollary_cor_001" label="paper_bm03_functional_analysis_corollary_cor_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_corollary_cor_001" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 5.2" />
+          <attvalue for="3" value="By Theorem 5.1, the dual space X* separates points of X." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_proof_prf_001" label="paper_bm03_functional_analysis_proof_prf_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_proof_prf_001" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof of Theorem 5.1" />
+          <attvalue for="3" value="Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_definition_def_002" label="paper_bm03_functional_analysis_definition_def_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_definition_def_002" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.3." />
+          <attvalue for="3" value="A Banach space is a complete normed vector space." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Normed Linear Spaces" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_example_ex_001" label="paper_bm03_functional_analysis_example_ex_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_example_ex_001" />
+          <attvalue for="1" value="example" />
+          <attvalue for="2" value="Example 2." />
+          <attvalue for="3" value="The space L^p([0,1]) is a Banach space for 1 &lt;= p &lt;= infty." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Normed Linear Spaces" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[&quot;[0,1]&quot;]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_lemma_lem_002" label="paper_bm03_functional_analysis_lemma_lem_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_lemma_lem_002" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.3." />
+          <attvalue for="3" value="Sublinear functionals admit 1-dimensional bounded linear extensions." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_theorem_thm_002" label="paper_bm03_functional_analysis_theorem_thm_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_theorem_thm_002" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 5.1." />
+          <attvalue for="3" value="Theorem 5.1 follows from Lemma 2.3. Every bounded linear functional f defined on a subspace M of a normed space X can be extended to X preserving the norm." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_proof_prf_002" label="paper_bm03_functional_analysis_proof_prf_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_proof_prf_002" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof" />
+          <attvalue for="3" value="of Theorem 5.1. Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_corollary_cor_002" label="paper_bm03_functional_analysis_corollary_cor_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_corollary_cor_002" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 5.2." />
+          <attvalue for="3" value="By Theorem 5.1, the dual space X* separates points of X." />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Extension Theorems" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_paper_bm03_functional_analysis" label="paper_paper_bm03_functional_analysis">
+        <attvalues>
+          <attvalue for="0" value="paper_paper_bm03_functional_analysis" />
+          <attvalue for="1" value="stub" />
+          <attvalue for="2" value="paper_paper_bm03_functional_analysis" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm03_functional_analysis_ref_001" label="paper_bm03_functional_analysis_ref_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm03_functional_analysis_ref_001" />
+          <attvalue for="1" value="reference" />
+          <attvalue for="2" value="paper_bm03_functional_analysis_ref_001" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="[0,1]" label="[0,1]">
+        <attvalues>
+          <attvalue for="0" value="[0,1]" />
+          <attvalue for="1" value="reference" />
+          <attvalue for="2" value="[0,1]" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_definition_def_001" label="paper_bm04_number_theory_definition_def_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_definition_def_001" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.4" />
+          <attvalue for="3" value="The Riemann zeta function zeta(s) is defined for Re(s) &gt; 1 by the Dirichlet series sum n^{-s}." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Zeta Function Definition" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_theorem_thm_001" label="paper_bm04_number_theory_theorem_thm_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_theorem_thm_001" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 6.1" />
+          <attvalue for="3" value="Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x)." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Prime Number Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_lemma_lem_001" label="paper_bm04_number_theory_lemma_lem_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_lemma_lem_001" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.4" />
+          <attvalue for="3" value="The zeta function zeta(s) has no zeros on the line Re(s) = 1." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Prime Number Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_proof_prf_001" label="paper_bm04_number_theory_proof_prf_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_proof_prf_001" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof of Theorem 6.1" />
+          <attvalue for="3" value="Apply Definition 1.4 and Lemma 2.4 using contour integration." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Prime Number Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_definition_def_002" label="paper_bm04_number_theory_definition_def_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_definition_def_002" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.4." />
+          <attvalue for="3" value="The Riemann zeta function zeta(s) is defined for Re(s) &gt; 1 by the Dirichlet series sum n^{-s}." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Zeta Function Definition" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_remark_rmk_001" label="paper_bm04_number_theory_remark_rmk_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_remark_rmk_001" />
+          <attvalue for="1" value="remark" />
+          <attvalue for="2" value="Remark 3." />
+          <attvalue for="3" value="The non-trivial zeros lie in the critical strip 0 &lt;= Re(s) &lt;= 1." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Zeta Function Definition" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_lemma_lem_002" label="paper_bm04_number_theory_lemma_lem_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_lemma_lem_002" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.4." />
+          <attvalue for="3" value="The zeta function zeta(s) has no zeros on the line Re(s) = 1." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Prime Number Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_theorem_thm_002" label="paper_bm04_number_theory_theorem_thm_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_theorem_thm_002" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 6.1." />
+          <attvalue for="3" value="Theorem 6.1 follows from Lemma 2.4. The prime counting function pi(x) is asymptotic to x / log(x)." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Prime Number Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_proof_prf_002" label="paper_bm04_number_theory_proof_prf_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_proof_prf_002" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof" />
+          <attvalue for="3" value="of Theorem 6.1. Apply Definition 1.4 and Lemma 2.4 using contour integration." />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Prime Number Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_paper_bm04_number_theory" label="paper_paper_bm04_number_theory">
+        <attvalues>
+          <attvalue for="0" value="paper_paper_bm04_number_theory" />
+          <attvalue for="1" value="stub" />
+          <attvalue for="2" value="paper_paper_bm04_number_theory" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm04_number_theory_ref_001" label="paper_bm04_number_theory_ref_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm04_number_theory_ref_001" />
+          <attvalue for="1" value="reference" />
+          <attvalue for="2" value="paper_bm04_number_theory_ref_001" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_definition_def_001" label="paper_bm05_optimization_definition_def_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_definition_def_001" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.5" />
+          <attvalue for="3" value="A function f: R^n -&gt; R is convex if f(tx + (1-t)y) &lt;= t f(x) + (1-t) f(y) for all t in [0,1]." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Convex Functions and Sets" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[&quot;[0,1]&quot;]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_theorem_thm_001" label="paper_bm05_optimization_theorem_thm_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_theorem_thm_001" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 7.1" />
+          <attvalue for="3" value="Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_lemma_lem_001" label="paper_bm05_optimization_lemma_lem_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_lemma_lem_001" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.5" />
+          <attvalue for="3" value="For convex differentiable f, local minima are global minima." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_corollary_cor_001" label="paper_bm05_optimization_corollary_cor_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_corollary_cor_001" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 7.2" />
+          <attvalue for="3" value="By Theorem 7.1, strong duality holds for strictly feasible convex problems." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_proof_prf_001" label="paper_bm05_optimization_proof_prf_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_proof_prf_001" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof of Theorem 7.1" />
+          <attvalue for="3" value="Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_definition_def_002" label="paper_bm05_optimization_definition_def_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_definition_def_002" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.5." />
+          <attvalue for="3" value="A function f: R^n -&gt; R is convex if f(tx + (1-t)y) &lt;= t f(x) + (1-t) f(y) for all t in [0,1]." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Convex Functions and Sets" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[&quot;[0,1]&quot;]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_example_ex_001" label="paper_bm05_optimization_example_ex_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_example_ex_001" />
+          <attvalue for="1" value="example" />
+          <attvalue for="2" value="Example 3." />
+          <attvalue for="3" value="The norm function f(x) = ||x|| is convex." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Convex Functions and Sets" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_lemma_lem_002" label="paper_bm05_optimization_lemma_lem_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_lemma_lem_002" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.5." />
+          <attvalue for="3" value="For convex differentiable f, local minima are global minima." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_theorem_thm_002" label="paper_bm05_optimization_theorem_thm_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_theorem_thm_002" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 7.1." />
+          <attvalue for="3" value="Theorem 7.1 follows from Lemma 2.5. Under Slater's condition, x* is optimal if and only if there exist KKT multipliers satisfying primal and dual feasibility." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_proof_prf_002" label="paper_bm05_optimization_proof_prf_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_proof_prf_002" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof" />
+          <attvalue for="3" value="of Theorem 7.1. Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_corollary_cor_002" label="paper_bm05_optimization_corollary_cor_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_corollary_cor_002" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 7.2." />
+          <attvalue for="3" value="By Theorem 7.1, strong duality holds for strictly feasible convex problems." />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Optimality Conditions" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_paper_bm05_optimization" label="paper_paper_bm05_optimization">
+        <attvalues>
+          <attvalue for="0" value="paper_paper_bm05_optimization" />
+          <attvalue for="1" value="stub" />
+          <attvalue for="2" value="paper_paper_bm05_optimization" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm05_optimization_ref_001" label="paper_bm05_optimization_ref_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm05_optimization_ref_001" />
+          <attvalue for="1" value="reference" />
+          <attvalue for="2" value="paper_bm05_optimization_ref_001" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_definition_def_001" label="paper_bm06_differential_equations_definition_def_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_definition_def_001" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.6" />
+          <attvalue for="3" value="A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Function Spaces and Weak Derivatives" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_theorem_thm_001" label="paper_bm06_differential_equations_theorem_thm_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_theorem_thm_001" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 8.1" />
+          <attvalue for="3" value="Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_lemma_lem_001" label="paper_bm06_differential_equations_lemma_lem_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_lemma_lem_001" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.6" />
+          <attvalue for="3" value="Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_corollary_cor_001" label="paper_bm06_differential_equations_corollary_cor_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_corollary_cor_001" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 8.2" />
+          <attvalue for="3" value="By Theorem 8.1, the energy inequality integral |u(t)|^2 dx &lt;= integral |u_0|^2 dx holds for almost all t." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_proof_prf_001" label="paper_bm06_differential_equations_proof_prf_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_proof_prf_001" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof of Theorem 8.1" />
+          <attvalue for="3" value="Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_definition_def_002" label="paper_bm06_differential_equations_definition_def_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_definition_def_002" />
+          <attvalue for="1" value="definition" />
+          <attvalue for="2" value="Definition 1.6." />
+          <attvalue for="3" value="A function u in L^2(Omega) has weak derivative v = d^alpha u if integral u D^alpha phi = (-1)^{|alpha|} integral v phi for all smooth test functions phi." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Function Spaces and Weak Derivatives" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_example_ex_001" label="paper_bm06_differential_equations_example_ex_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_example_ex_001" />
+          <attvalue for="1" value="example" />
+          <attvalue for="2" value="Example 4." />
+          <attvalue for="3" value="The absolute value function u(x) = |x| has weak derivative sgn(x)." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s1" />
+          <attvalue for="6" value="1. Function Spaces and Weak Derivatives" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_lemma_lem_002" label="paper_bm06_differential_equations_lemma_lem_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_lemma_lem_002" />
+          <attvalue for="1" value="lemma" />
+          <attvalue for="2" value="Lemma 2.6." />
+          <attvalue for="3" value="Sobolev embedding H^1(R^3) embedded into L^6(R^3) is continuous." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_theorem_thm_002" label="paper_bm06_differential_equations_theorem_thm_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_theorem_thm_002" />
+          <attvalue for="1" value="theorem" />
+          <attvalue for="2" value="Theorem 8.1." />
+          <attvalue for="3" value="Theorem 8.1 follows from Lemma 2.6. For any initial velocity u_0 in L^2(R^3), there exists a global weak solution u(t,x) to the Navier-Stokes equations." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_proof_prf_002" label="paper_bm06_differential_equations_proof_prf_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_proof_prf_002" />
+          <attvalue for="1" value="proof" />
+          <attvalue for="2" value="Proof" />
+          <attvalue for="3" value="of Theorem 8.1. Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_corollary_cor_002" label="paper_bm06_differential_equations_corollary_cor_002">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_corollary_cor_002" />
+          <attvalue for="1" value="corollary" />
+          <attvalue for="2" value="Corollary 8.2." />
+          <attvalue for="3" value="By Theorem 8.1, the energy inequality integral |u(t)|^2 dx &lt;= integral |u_0|^2 dx holds for almost all t." />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="s2" />
+          <attvalue for="6" value="2. Existence Theorem" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_paper_bm06_differential_equations" label="paper_paper_bm06_differential_equations">
+        <attvalues>
+          <attvalue for="0" value="paper_paper_bm06_differential_equations" />
+          <attvalue for="1" value="stub" />
+          <attvalue for="2" value="paper_paper_bm06_differential_equations" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+      <node id="paper_bm06_differential_equations_ref_001" label="paper_bm06_differential_equations_ref_001">
+        <attvalues>
+          <attvalue for="0" value="paper_bm06_differential_equations_ref_001" />
+          <attvalue for="1" value="reference" />
+          <attvalue for="2" value="paper_bm06_differential_equations_ref_001" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="5" value="" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="[]" />
+          <attvalue for="10" value="[]" />
+          <attvalue for="11" value="[]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="paper_bm01_graph_theory_theorem_thm_001" target="paper_bm01_graph_theory_lemma_lem_002" id="0">
+        <attvalues>
+          <attvalue for="12" value="rel_0003" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0003" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_theorem_thm_001" target="paper_bm01_graph_theory_lemma_lem_002" id="1">
+        <attvalues>
+          <attvalue for="12" value="rel_0005" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0005" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_theorem_thm_001" target="paper_bm01_graph_theory_theorem_thm_002" id="2">
+        <attvalues>
+          <attvalue for="12" value="rel_0004" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 3.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0004" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_corollary_cor_001" target="paper_bm01_graph_theory_theorem_thm_002" id="3">
+        <attvalues>
+          <attvalue for="12" value="rel_0006" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 3.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0006" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_proof_prf_001" target="paper_bm01_graph_theory_theorem_thm_001" id="4">
+        <attvalues>
+          <attvalue for="12" value="rel_0001" />
+          <attvalue for="13" value="proves" />
+          <attvalue for="14" value="0.95" />
+          <attvalue for="15" value="Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices." />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_metadata&quot;}" />
+          <attvalue for="18" value="rel_0001" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_proof_prf_001" target="paper_bm01_graph_theory_definition_def_002" id="5">
+        <attvalues>
+          <attvalue for="12" value="rel_0007" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Using Definition 1.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0007" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_proof_prf_001" target="paper_bm01_graph_theory_lemma_lem_002" id="6">
+        <attvalues>
+          <attvalue for="12" value="rel_0008" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0008" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_theorem_thm_002" target="paper_bm01_graph_theory_lemma_lem_002" id="7">
+        <attvalues>
+          <attvalue for="12" value="rel_0009" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0009" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_theorem_thm_002" target="paper_bm01_graph_theory_lemma_lem_002" id="8">
+        <attvalues>
+          <attvalue for="12" value="rel_0010" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0010" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_proof_prf_002" target="paper_bm01_graph_theory_definition_def_002" id="9">
+        <attvalues>
+          <attvalue for="12" value="rel_0011" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Using Definition 1.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0011" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_proof_prf_002" target="paper_bm01_graph_theory_theorem_thm_002" id="10">
+        <attvalues>
+          <attvalue for="12" value="rel_0012" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 3.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0012" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_proof_prf_002" target="paper_bm01_graph_theory_lemma_lem_002" id="11">
+        <attvalues>
+          <attvalue for="12" value="rel_0013" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0013" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm01_graph_theory_corollary_cor_002" target="paper_bm01_graph_theory_theorem_thm_002" id="12">
+        <attvalues>
+          <attvalue for="12" value="rel_0014" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 3.1" />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0014" />
+        </attvalues>
+      </edge>
+      <edge source="paper_paper_bm01_graph_theory" target="paper_bm01_graph_theory_ref_001" id="13">
+        <attvalues>
+          <attvalue for="12" value="rel_0002" />
+          <attvalue for="13" value="cites" />
+          <attvalue for="14" value="0.9" />
+          <attvalue for="15" value="Kenneth Appel and Wolfgang Haken. 1977. Every Planar Map is Four Colorable. Illinois J. Math." />
+          <attvalue for="16" value="Chromatic Polynomials and Planar Graph Colorability" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_references&quot;}" />
+          <attvalue for="18" value="rel_0002" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_theorem_thm_001" target="paper_bm02_linear_algebra_lemma_lem_002" id="14">
+        <attvalues>
+          <attvalue for="12" value="rel_0003" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0003" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_theorem_thm_001" target="paper_bm02_linear_algebra_lemma_lem_002" id="15">
+        <attvalues>
+          <attvalue for="12" value="rel_0005" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0005" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_theorem_thm_001" target="paper_bm02_linear_algebra_theorem_thm_002" id="16">
+        <attvalues>
+          <attvalue for="12" value="rel_0004" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 4.1" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0004" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_proof_prf_001" target="paper_bm02_linear_algebra_theorem_thm_001" id="17">
+        <attvalues>
+          <attvalue for="12" value="rel_0001" />
+          <attvalue for="13" value="proves" />
+          <attvalue for="14" value="0.95" />
+          <attvalue for="15" value="Apply Definition 1.2 and Lemma 2.2." />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_metadata&quot;}" />
+          <attvalue for="18" value="rel_0001" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_proof_prf_001" target="paper_bm02_linear_algebra_definition_def_002" id="18">
+        <attvalues>
+          <attvalue for="12" value="rel_0006" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Apply Definition 1.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0006" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_proof_prf_001" target="paper_bm02_linear_algebra_lemma_lem_002" id="19">
+        <attvalues>
+          <attvalue for="12" value="rel_0007" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0007" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_theorem_thm_002" target="paper_bm02_linear_algebra_lemma_lem_002" id="20">
+        <attvalues>
+          <attvalue for="12" value="rel_0008" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0008" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_theorem_thm_002" target="paper_bm02_linear_algebra_lemma_lem_002" id="21">
+        <attvalues>
+          <attvalue for="12" value="rel_0009" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0009" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_proof_prf_002" target="paper_bm02_linear_algebra_definition_def_002" id="22">
+        <attvalues>
+          <attvalue for="12" value="rel_0010" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Apply Definition 1.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0010" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_proof_prf_002" target="paper_bm02_linear_algebra_theorem_thm_002" id="23">
+        <attvalues>
+          <attvalue for="12" value="rel_0011" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 4.1" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0011" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm02_linear_algebra_proof_prf_002" target="paper_bm02_linear_algebra_lemma_lem_002" id="24">
+        <attvalues>
+          <attvalue for="12" value="rel_0012" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.2" />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0012" />
+        </attvalues>
+      </edge>
+      <edge source="paper_paper_bm02_linear_algebra" target="paper_bm02_linear_algebra_ref_001" id="25">
+        <attvalues>
+          <attvalue for="12" value="rel_0002" />
+          <attvalue for="13" value="cites" />
+          <attvalue for="14" value="0.9" />
+          <attvalue for="15" value="Gene H. Golub and Charles F. Van Loan. 1996. Matrix Computations. Johns Hopkins University Press." />
+          <attvalue for="16" value="Spectral Decomposition of Normal and Hermitian Operators" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_references&quot;}" />
+          <attvalue for="18" value="rel_0002" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_theorem_thm_001" target="paper_bm03_functional_analysis_lemma_lem_002" id="26">
+        <attvalues>
+          <attvalue for="12" value="rel_0003" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0003" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_theorem_thm_001" target="paper_bm03_functional_analysis_lemma_lem_002" id="27">
+        <attvalues>
+          <attvalue for="12" value="rel_0005" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0005" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_theorem_thm_001" target="paper_bm03_functional_analysis_theorem_thm_002" id="28">
+        <attvalues>
+          <attvalue for="12" value="rel_0004" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 5.1" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0004" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_corollary_cor_001" target="paper_bm03_functional_analysis_theorem_thm_002" id="29">
+        <attvalues>
+          <attvalue for="12" value="rel_0006" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 5.1" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0006" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_proof_prf_001" target="paper_bm03_functional_analysis_theorem_thm_001" id="30">
+        <attvalues>
+          <attvalue for="12" value="rel_0001" />
+          <attvalue for="13" value="proves" />
+          <attvalue for="14" value="0.95" />
+          <attvalue for="15" value="Using Definition 1.3 and Lemma 2.3, we apply Zorn's lemma." />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_metadata&quot;}" />
+          <attvalue for="18" value="rel_0001" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_proof_prf_001" target="paper_bm03_functional_analysis_definition_def_002" id="31">
+        <attvalues>
+          <attvalue for="12" value="rel_0007" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Using Definition 1.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0007" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_proof_prf_001" target="paper_bm03_functional_analysis_lemma_lem_002" id="32">
+        <attvalues>
+          <attvalue for="12" value="rel_0008" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0008" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_example_ex_001" target="[0,1]" id="33">
+        <attvalues>
+          <attvalue for="12" value="rel_0009" />
+          <attvalue for="13" value="references" />
+          <attvalue for="14" value="0.8" />
+          <attvalue for="15" value="[0,1]" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;ENTITY_REFERENCES&quot;}" />
+          <attvalue for="18" value="rel_0009" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_theorem_thm_002" target="paper_bm03_functional_analysis_lemma_lem_002" id="34">
+        <attvalues>
+          <attvalue for="12" value="rel_0010" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0010" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_theorem_thm_002" target="paper_bm03_functional_analysis_lemma_lem_002" id="35">
+        <attvalues>
+          <attvalue for="12" value="rel_0011" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0011" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_proof_prf_002" target="paper_bm03_functional_analysis_definition_def_002" id="36">
+        <attvalues>
+          <attvalue for="12" value="rel_0012" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Using Definition 1.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0012" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_proof_prf_002" target="paper_bm03_functional_analysis_theorem_thm_002" id="37">
+        <attvalues>
+          <attvalue for="12" value="rel_0013" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 5.1" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0013" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_proof_prf_002" target="paper_bm03_functional_analysis_lemma_lem_002" id="38">
+        <attvalues>
+          <attvalue for="12" value="rel_0014" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.3" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0014" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm03_functional_analysis_corollary_cor_002" target="paper_bm03_functional_analysis_theorem_thm_002" id="39">
+        <attvalues>
+          <attvalue for="12" value="rel_0015" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 5.1" />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0015" />
+        </attvalues>
+      </edge>
+      <edge source="paper_paper_bm03_functional_analysis" target="paper_bm03_functional_analysis_ref_001" id="40">
+        <attvalues>
+          <attvalue for="12" value="rel_0002" />
+          <attvalue for="13" value="cites" />
+          <attvalue for="14" value="0.9" />
+          <attvalue for="15" value="Hans Hahn. 1927. Über lineare Funktionaloperationen. Monatshefte für Mathematik und Physik." />
+          <attvalue for="16" value="Hahn-Banach Extension Theorem and Convex Sets in Banach Spaces" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_references&quot;}" />
+          <attvalue for="18" value="rel_0002" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_theorem_thm_001" target="paper_bm04_number_theory_lemma_lem_002" id="41">
+        <attvalues>
+          <attvalue for="12" value="rel_0003" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0003" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_theorem_thm_001" target="paper_bm04_number_theory_lemma_lem_002" id="42">
+        <attvalues>
+          <attvalue for="12" value="rel_0005" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0005" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_theorem_thm_001" target="paper_bm04_number_theory_theorem_thm_002" id="43">
+        <attvalues>
+          <attvalue for="12" value="rel_0004" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 6.1" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0004" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_proof_prf_001" target="paper_bm04_number_theory_theorem_thm_001" id="44">
+        <attvalues>
+          <attvalue for="12" value="rel_0001" />
+          <attvalue for="13" value="proves" />
+          <attvalue for="14" value="0.95" />
+          <attvalue for="15" value="Apply Definition 1.4 and Lemma 2.4 using contour integration." />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_metadata&quot;}" />
+          <attvalue for="18" value="rel_0001" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_proof_prf_001" target="paper_bm04_number_theory_definition_def_002" id="45">
+        <attvalues>
+          <attvalue for="12" value="rel_0006" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Apply Definition 1.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0006" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_proof_prf_001" target="paper_bm04_number_theory_lemma_lem_002" id="46">
+        <attvalues>
+          <attvalue for="12" value="rel_0007" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0007" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_theorem_thm_002" target="paper_bm04_number_theory_lemma_lem_002" id="47">
+        <attvalues>
+          <attvalue for="12" value="rel_0008" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0008" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_theorem_thm_002" target="paper_bm04_number_theory_lemma_lem_002" id="48">
+        <attvalues>
+          <attvalue for="12" value="rel_0009" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0009" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_proof_prf_002" target="paper_bm04_number_theory_definition_def_002" id="49">
+        <attvalues>
+          <attvalue for="12" value="rel_0010" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Apply Definition 1.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0010" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_proof_prf_002" target="paper_bm04_number_theory_theorem_thm_002" id="50">
+        <attvalues>
+          <attvalue for="12" value="rel_0011" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 6.1" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0011" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm04_number_theory_proof_prf_002" target="paper_bm04_number_theory_lemma_lem_002" id="51">
+        <attvalues>
+          <attvalue for="12" value="rel_0012" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.4" />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0012" />
+        </attvalues>
+      </edge>
+      <edge source="paper_paper_bm04_number_theory" target="paper_bm04_number_theory_ref_001" id="52">
+        <attvalues>
+          <attvalue for="12" value="rel_0002" />
+          <attvalue for="13" value="cites" />
+          <attvalue for="14" value="0.9" />
+          <attvalue for="15" value="Jacques Hadamard. 1896. Sur la distribution des zéros de la fonction zeta. Bull. Soc. Math. France." />
+          <attvalue for="16" value="On the Distribution of Primes and Zeros of the Riemann Zeta Function" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_references&quot;}" />
+          <attvalue for="18" value="rel_0002" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_definition_def_001" target="[0,1]" id="53">
+        <attvalues>
+          <attvalue for="12" value="rel_0003" />
+          <attvalue for="13" value="references" />
+          <attvalue for="14" value="0.8" />
+          <attvalue for="15" value="[0,1]" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;ENTITY_REFERENCES&quot;}" />
+          <attvalue for="18" value="rel_0003" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_theorem_thm_001" target="paper_bm05_optimization_lemma_lem_002" id="54">
+        <attvalues>
+          <attvalue for="12" value="rel_0004" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0004" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_theorem_thm_001" target="paper_bm05_optimization_lemma_lem_002" id="55">
+        <attvalues>
+          <attvalue for="12" value="rel_0006" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0006" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_theorem_thm_001" target="paper_bm05_optimization_theorem_thm_002" id="56">
+        <attvalues>
+          <attvalue for="12" value="rel_0005" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 7.1" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0005" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_corollary_cor_001" target="paper_bm05_optimization_theorem_thm_002" id="57">
+        <attvalues>
+          <attvalue for="12" value="rel_0007" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 7.1" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0007" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_proof_prf_001" target="paper_bm05_optimization_theorem_thm_001" id="58">
+        <attvalues>
+          <attvalue for="12" value="rel_0001" />
+          <attvalue for="13" value="proves" />
+          <attvalue for="14" value="0.95" />
+          <attvalue for="15" value="Apply Definition 1.5 and Lemma 2.5 via hyper-plane separation." />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_metadata&quot;}" />
+          <attvalue for="18" value="rel_0001" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_proof_prf_001" target="paper_bm05_optimization_definition_def_002" id="59">
+        <attvalues>
+          <attvalue for="12" value="rel_0008" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Apply Definition 1.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0008" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_proof_prf_001" target="paper_bm05_optimization_lemma_lem_002" id="60">
+        <attvalues>
+          <attvalue for="12" value="rel_0009" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0009" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_definition_def_002" target="[0,1]" id="61">
+        <attvalues>
+          <attvalue for="12" value="rel_0010" />
+          <attvalue for="13" value="references" />
+          <attvalue for="14" value="0.8" />
+          <attvalue for="15" value="[0,1]" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;ENTITY_REFERENCES&quot;}" />
+          <attvalue for="18" value="rel_0010" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_theorem_thm_002" target="paper_bm05_optimization_lemma_lem_002" id="62">
+        <attvalues>
+          <attvalue for="12" value="rel_0011" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0011" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_theorem_thm_002" target="paper_bm05_optimization_lemma_lem_002" id="63">
+        <attvalues>
+          <attvalue for="12" value="rel_0012" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0012" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_proof_prf_002" target="paper_bm05_optimization_definition_def_002" id="64">
+        <attvalues>
+          <attvalue for="12" value="rel_0013" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Apply Definition 1.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0013" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_proof_prf_002" target="paper_bm05_optimization_theorem_thm_002" id="65">
+        <attvalues>
+          <attvalue for="12" value="rel_0014" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 7.1" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0014" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_proof_prf_002" target="paper_bm05_optimization_lemma_lem_002" id="66">
+        <attvalues>
+          <attvalue for="12" value="rel_0015" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.5" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0015" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm05_optimization_corollary_cor_002" target="paper_bm05_optimization_theorem_thm_002" id="67">
+        <attvalues>
+          <attvalue for="12" value="rel_0016" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 7.1" />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0016" />
+        </attvalues>
+      </edge>
+      <edge source="paper_paper_bm05_optimization" target="paper_bm05_optimization_ref_001" id="68">
+        <attvalues>
+          <attvalue for="12" value="rel_0002" />
+          <attvalue for="13" value="cites" />
+          <attvalue for="14" value="0.9" />
+          <attvalue for="15" value="Stephen Boyd and Lieven Vandenberghe. 2004. Convex Optimization. Cambridge University Press." />
+          <attvalue for="16" value="Karush-Kuhn-Tucker Conditions and Convex Duality in Non-Linear Programming" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_references&quot;}" />
+          <attvalue for="18" value="rel_0002" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_theorem_thm_001" target="paper_bm06_differential_equations_lemma_lem_002" id="69">
+        <attvalues>
+          <attvalue for="12" value="rel_0003" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0003" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_theorem_thm_001" target="paper_bm06_differential_equations_lemma_lem_002" id="70">
+        <attvalues>
+          <attvalue for="12" value="rel_0005" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0005" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_theorem_thm_001" target="paper_bm06_differential_equations_theorem_thm_002" id="71">
+        <attvalues>
+          <attvalue for="12" value="rel_0004" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 8.1" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0004" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_corollary_cor_001" target="paper_bm06_differential_equations_theorem_thm_002" id="72">
+        <attvalues>
+          <attvalue for="12" value="rel_0006" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 8.1" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0006" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_proof_prf_001" target="paper_bm06_differential_equations_theorem_thm_001" id="73">
+        <attvalues>
+          <attvalue for="12" value="rel_0001" />
+          <attvalue for="13" value="proves" />
+          <attvalue for="14" value="0.95" />
+          <attvalue for="15" value="Using Definition 1.6 and Lemma 2.6, we construct energy bounds via Galerkin approximations." />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_metadata&quot;}" />
+          <attvalue for="18" value="rel_0001" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_proof_prf_001" target="paper_bm06_differential_equations_definition_def_002" id="74">
+        <attvalues>
+          <attvalue for="12" value="rel_0007" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Using Definition 1.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0007" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_proof_prf_001" target="paper_bm06_differential_equations_lemma_lem_002" id="75">
+        <attvalues>
+          <attvalue for="12" value="rel_0008" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0008" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_theorem_thm_002" target="paper_bm06_differential_equations_lemma_lem_002" id="76">
+        <attvalues>
+          <attvalue for="12" value="rel_0009" />
+          <attvalue for="13" value="depends_on" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="follows from Lemma 2.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;DEPENDS_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0009" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_theorem_thm_002" target="paper_bm06_differential_equations_lemma_lem_002" id="77">
+        <attvalues>
+          <attvalue for="12" value="rel_0010" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0010" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_proof_prf_002" target="paper_bm06_differential_equations_definition_def_002" id="78">
+        <attvalues>
+          <attvalue for="12" value="rel_0011" />
+          <attvalue for="13" value="uses_definition" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="Using Definition 1.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_DEF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0011" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_proof_prf_002" target="paper_bm06_differential_equations_theorem_thm_002" id="79">
+        <attvalues>
+          <attvalue for="12" value="rel_0012" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Theorem 8.1" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0012" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_proof_prf_002" target="paper_bm06_differential_equations_lemma_lem_002" id="80">
+        <attvalues>
+          <attvalue for="12" value="rel_0013" />
+          <attvalue for="13" value="uses_lemma" />
+          <attvalue for="14" value="0.75" />
+          <attvalue for="15" value="Lemma 2.6" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;STATEMENT_REF_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0013" />
+        </attvalues>
+      </edge>
+      <edge source="paper_bm06_differential_equations_corollary_cor_002" target="paper_bm06_differential_equations_theorem_thm_002" id="81">
+        <attvalues>
+          <attvalue for="12" value="rel_0014" />
+          <attvalue for="13" value="uses_theorem" />
+          <attvalue for="14" value="0.85" />
+          <attvalue for="15" value="By Theorem 8.1" />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;rule&quot;: &quot;USES_THM_PATTERN&quot;}" />
+          <attvalue for="18" value="rel_0014" />
+        </attvalues>
+      </edge>
+      <edge source="paper_paper_bm06_differential_equations" target="paper_bm06_differential_equations_ref_001" id="82">
+        <attvalues>
+          <attvalue for="12" value="rel_0002" />
+          <attvalue for="13" value="cites" />
+          <attvalue for="14" value="0.9" />
+          <attvalue for="15" value="Jean Leray. 1934. Sur le mouvement d'un liquide visqueux emplissant l'espace. Acta Mathematica." />
+          <attvalue for="16" value="Global Existence of Weak Solutions for Non-Linear Partial Differential Equations" />
+          <attvalue for="17" value="{&quot;source&quot;: &quot;explicit_parser_references&quot;}" />
+          <attvalue for="18" value="rel_0002" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

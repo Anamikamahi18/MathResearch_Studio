@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_bm01_graph_theory",
+  "source_file": {
+    "file_name": "paper_bm01_graph_theory.pdf",
+    "file_path": "tests/benchmark_papers/paper_bm01_graph_theory.pdf",
+    "file_hash": "b1b2c3d4e5f67890123456789012345678901234567890123456789012345678",
+    "ingested_at": "2026-08-04T00:00:00.000000+00:00"
+  },
+  "title": "Chromatic Polynomials and Planar Graph Colorability",
+  "authors": [{"name": "Paul Erdős", "affiliation": "Hungarian Academy of Sciences"}],
+  "abstract": "We prove bounds on the chromatic number of planar graphs using vertex degree lemmas.",
+  "keywords": ["graph theory", "planar graphs", "four color theorem", "chromatic polynomial"],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "1. Graph Preliminaries",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "Definition 1.1. A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings.\nExample 1. The complete bipartite graph K_{3,3} is non-planar.\nRemark 1. Planar graphs satisfy Euler's formula V - E + F = 2.",
+      "parent_section_id": null,
+      "section_type": "preliminaries",
+      "confidence": 0.95
+    },
+    {
+      "section_id": "s2",
+      "heading": "2. Coloring Theorems",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "Lemma 2.1. Every planar graph contains a vertex of degree at most 5.\nTheorem 3.1. Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable.\nProof of Theorem 3.1. Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.\nCorollary 3.2. By Theorem 3.1, planar graphs have chromatic number chi(G) <= 5.",
+      "parent_section_id": null,
+      "section_type": "theorems",
+      "confidence": 0.97
+    }
+  ],
+  "definitions": [
+    {
+      "def_id": "def_001",
+      "label": "Definition 1.1",
+      "text": "A graph G = (V, E) is planar if it can be embedded in the plane without edge crossings.",
+      "section_id": "s1",
+      "page": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "confidence": 0.9
+    }
+  ],
+  "theorems": [
+    {
+      "thm_id": "thm_001",
+      "label": "Theorem 3.1",
+      "text": "Theorem 3.1 follows from Lemma 2.1. Every loopless planar graph is 5-colorable.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.95
+    }
+  ],
+  "lemmas": [
+    {
+      "lem_id": "lem_001",
+      "label": "Lemma 2.1",
+      "text": "Every planar graph contains a vertex of degree at most 5.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.92
+    }
+  ],
+  "corollaries": [
+    {
+      "cor_id": "cor_001",
+      "label": "Corollary 3.2",
+      "text": "By Theorem 3.1, planar graphs have chromatic number chi(G) <= 5.",
+      "section_id": "s2",
+      "page": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.9
+    }
+  ],
+  "proofs": [
+    {
+      "proof_id": "prf_001",
+      "label": "Proof of Theorem 3.1",
+      "related_to": {"theorem_id": "thm_001", "lemma_id": null, "corollary_id": null},
+      "text": "Using Definition 1.1 and Lemma 2.1, we perform induction on the number of vertices.",
+      "section_id": "s2",
+      "page_start": 2,
+      "page_end": 2,
+      "confidence": 0.85
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Kenneth Appel and Wolfgang Haken. 1977. Every Planar Map is Four Colorable. Illinois J. Math.",
+      "title": "Every Planar Map is Four Colorable",
+      "authors": ["Kenneth Appel", "Wolfgang Haken"],
+      "year": 1977
+    }
+  ],
+  "equations": []
+}

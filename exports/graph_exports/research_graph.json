@@ -1,0 +1,5027 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "entity_id": "paper_math_001_definition_def_001",
+      "entity_type": "definition",
+      "title": "Definition 1.1",
+      "text": "A topological space X is compact if every open cover has a finite subcover.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s1",
+      "section_title": "1. Introduction and Preliminaries",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_definition_def_001"
+    },
+    {
+      "entity_id": "paper_math_001_theorem_thm_001",
+      "entity_type": "theorem",
+      "title": "Theorem 3.2",
+      "text": "Theorem 3.2 follows from Lemma 2.1. Every continuous map f on a compact metric space has a fixed point.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s2",
+      "section_title": "2. Main Results",
+      "page_start": 2,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_theorem_thm_001"
+    },
+    {
+      "entity_id": "paper_math_001_lemma_lem_001",
+      "entity_type": "lemma",
+      "title": "Lemma 2.1",
+      "text": "Closed subsets of compact spaces are compact.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s2",
+      "section_title": "2. Main Results",
+      "page_start": 2,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_lemma_lem_001"
+    },
+    {
+      "entity_id": "paper_math_001_corollary_cor_001",
+      "entity_type": "corollary",
+      "title": "Corollary 3.3",
+      "text": "By Theorem 3.2, closed bounded sets in R^n have fixed points.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s2",
+      "section_title": "2. Main Results",
+      "page_start": 2,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_corollary_cor_001"
+    },
+    {
+      "entity_id": "paper_math_001_proof_prf_001",
+      "entity_type": "proof",
+      "title": "Proof of Theorem 3.2",
+      "text": "Proof of Theorem 3.2. Apply Lemma 2.1 and Definition 1.1 directly.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s2",
+      "section_title": "2. Main Results",
+      "page_start": 2,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_proof_prf_001"
+    },
+    {
+      "entity_id": "paper_math_001_definition_def_002",
+      "entity_type": "definition",
+      "title": "Definition 1.1.",
+      "text": "A topological space X is compact if every open cover has a finite subcover.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s1",
+      "section_title": "1. Introduction and Preliminaries",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_definition_def_002"
+    },
+    {
+      "entity_id": "paper_math_001_example_ex_001",
+      "entity_type": "example",
+      "title": "Example 1.",
+      "text": "The unit sphere S^n is a compact manifold.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s1",
+      "section_title": "1. Introduction and Preliminaries",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_example_ex_001"
+    },
+    {
+      "entity_id": "paper_math_001_remark_rmk_001",
+      "entity_type": "remark",
+      "title": "Remark 1.",
+      "text": "Compactness is preserved under continuous maps.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s1",
+      "section_title": "1. Introduction and Preliminaries",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_remark_rmk_001"
+    },
+    {
+      "entity_id": "paper_math_001_lemma_lem_002",
+      "entity_type": "lemma",
+      "title": "Lemma 2.1.",
+      "text": "Closed subsets of compact spaces are compact.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s2",
+      "section_title": "2. Main Results",
+      "page_start": 2,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_lemma_lem_002"
+    },
+    {
+      "entity_id": "paper_math_001_theorem_thm_002",
+      "entity_type": "theorem",
+      "title": "Theorem 3.2.",
+      "text": "Theorem 3.2 follows from Lemma 2.1. Every continuous map f on a compact metric space has a fixed point.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s2",
+      "section_title": "2. Main Results",
+      "page_start": 2,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_theorem_thm_002"
+    },
+    {
+      "entity_id": "paper_math_001_corollary_cor_002",
+      "entity_type": "corollary",
+      "title": "Corollary 3.3.",
+      "text": "By Theorem 3.2, closed bounded sets in R^n have fixed points.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "s2",
+      "section_title": "2. Main Results",
+      "page_start": 2,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_corollary_cor_002"
+    },
+    {
+      "entity_id": "paper_paper_math_001",
+      "entity_type": "stub",
+      "title": "paper_paper_math_001",
+      "text": "",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_paper_math_001"
+    },
+    {
+      "entity_id": "paper_math_001_ref_001",
+      "entity_type": "reference",
+      "title": "paper_math_001_ref_001",
+      "text": "",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_math_001_ref_001"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_example_ex_001",
+      "entity_type": "example",
+      "title": "example",
+      "text": "s/rag/. An interactive demo of RAG models can be found at https://huggingface.co/rag/",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "s3",
+      "section_title": "Methods",
+      "page_start": 2,
+      "page_end": 3,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_example_ex_001"
+    },
+    {
+      "entity_id": "paper_paper_23e3249e9a1e",
+      "entity_type": "stub",
+      "title": "paper_paper_23e3249e9a1e",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_paper_23e3249e9a1e"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_001",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_001",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_001"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_002",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_002",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_002"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_003",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_003",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_003"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_004",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_004",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_004"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_005",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_005",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_005"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_006",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_006",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_006"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_007",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_007",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_007"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_008",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_008",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_008"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_009",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_009",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_009"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_010",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_010",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_010"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_011",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_011",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_011"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_012",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_012",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_012"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_013",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_013",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_013"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_014",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_014",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_014"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_015",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_015",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_015"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_016",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_016",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_016"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_017",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_017",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_017"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_018",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_018",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_018"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_019",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_019",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_019"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_020",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_020",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_020"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_021",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_021",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_021"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_022",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_022",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_022"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_023",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_023",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_023"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_024",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_024",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_024"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_025",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_025",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_025"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_026",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_026",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_026"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_027",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_027",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_027"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_028",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_028",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_028"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_029",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_029",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_029"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_030",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_030",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_030"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_031",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_031",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_031"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_032",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_032",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_032"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_033",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_033",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_033"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_034",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_034",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_034"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_035",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_035",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_035"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_036",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_036",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_036"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_037",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_037",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_037"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_038",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_038",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_038"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_039",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_039",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_039"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_040",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_040",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_040"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_041",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_041",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_041"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_042",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_042",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_042"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_043",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_043",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_043"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_044",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_044",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_044"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_045",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_045",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_045"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_046",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_046",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_046"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_047",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_047",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_047"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_048",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_048",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_048"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_049",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_049",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_049"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_050",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_050",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_050"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_051",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_051",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_051"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_052",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_052",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_052"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_053",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_053",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_053"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_054",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_054",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_054"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_055",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_055",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_055"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_056",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_056",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_056"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_057",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_057",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_057"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_058",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_058",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_058"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_059",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_059",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_059"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_060",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_060",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_060"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_061",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_061",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_061"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_062",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_062",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_062"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_063",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_063",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_063"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_064",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_064",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_064"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_065",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_065",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_065"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_066",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_066",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_066"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_067",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_067",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_067"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_068",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_068",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_068"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_069",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_069",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_069"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_070",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_070",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_070"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_071",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_071",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_071"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_072",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_072",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_072"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_073",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_073",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_073"
+    },
+    {
+      "entity_id": "paper_23e3249e9a1e_ref_074",
+      "entity_type": "reference",
+      "title": "paper_23e3249e9a1e_ref_074",
+      "text": "",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_23e3249e9a1e_ref_074"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_example_ex_001",
+      "entity_type": "example",
+      "title": "example",
+      "text": "s of business documents include purchase orders, financial",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "s2",
+      "section_title": "INTRODUCTION",
+      "page_start": 1,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_example_ex_001"
+    },
+    {
+      "entity_id": "paper_paper_5bec7f495a9e",
+      "entity_type": "stub",
+      "title": "paper_paper_5bec7f495a9e",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_paper_5bec7f495a9e"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_001",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_001",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_001"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_002",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_002",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_002"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_003",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_003",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_003"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_004",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_004",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_004"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_005",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_005",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_005"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_006",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_006",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_006"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_007",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_007",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_007"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_008",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_008",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_008"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_009",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_009",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_009"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_010",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_010",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_010"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_011",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_011",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_011"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_012",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_012",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_012"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_013",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_013",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_013"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_014",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_014",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_014"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_015",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_015",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_015"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_016",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_016",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_016"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_017",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_017",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_017"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_018",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_018",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_018"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_019",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_019",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_019"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_020",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_020",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_020"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_021",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_021",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_021"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_022",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_022",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_022"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_023",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_023",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_023"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_024",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_024",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_024"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_025",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_025",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_025"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_026",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_026",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_026"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_027",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_027",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_027"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_028",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_028",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_028"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_029",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_029",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_029"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_030",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_030",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_030"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_031",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_031",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_031"
+    },
+    {
+      "entity_id": "paper_5bec7f495a9e_ref_032",
+      "entity_type": "reference",
+      "title": "paper_5bec7f495a9e_ref_032",
+      "text": "",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_5bec7f495a9e_ref_032"
+    },
+    {
+      "entity_id": "paper_679be336ce80_example_ex_001",
+      "entity_type": "example",
+      "title": "Example",
+      "text": "Example",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "s2",
+      "section_title": "Introduction",
+      "page_start": 1,
+      "page_end": 2,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_example_ex_001"
+    },
+    {
+      "entity_id": "paper_paper_679be336ce80",
+      "entity_type": "stub",
+      "title": "paper_paper_679be336ce80",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_paper_679be336ce80"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_001",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_001",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_001"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_002",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_002",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_002"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_003",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_003",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_003"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_004",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_004",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_004"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_005",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_005",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_005"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_006",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_006",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_006"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_007",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_007",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_007"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_008",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_008",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_008"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_009",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_009",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_009"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_010",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_010",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_010"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_011",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_011",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_011"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_012",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_012",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_012"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_013",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_013",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_013"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_014",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_014",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_014"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_015",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_015",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_015"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_016",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_016",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_016"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_017",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_017",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_017"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_018",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_018",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_018"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_019",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_019",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_019"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_020",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_020",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_020"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_021",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_021",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_021"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_022",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_022",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_022"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_023",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_023",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_023"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_024",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_024",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_024"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_025",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_025",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_025"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_026",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_026",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_026"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_027",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_027",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_027"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_028",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_028",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_028"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_029",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_029",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_029"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_030",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_030",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_030"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_031",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_031",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_031"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_032",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_032",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_032"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_033",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_033",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_033"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_034",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_034",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_034"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_035",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_035",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_035"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_036",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_036",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_036"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_037",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_037",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_037"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_038",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_038",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_038"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_039",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_039",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_039"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_040",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_040",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_040"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_041",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_041",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_041"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_042",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_042",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_042"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_043",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_043",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_043"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_044",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_044",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_044"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_045",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_045",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_045"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_046",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_046",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_046"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_047",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_047",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_047"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_048",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_048",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_048"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_049",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_049",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_049"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_050",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_050",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_050"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_051",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_051",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_051"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_052",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_052",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_052"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_053",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_053",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_053"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_054",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_054",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_054"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_055",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_055",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_055"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_056",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_056",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_056"
+    },
+    {
+      "entity_id": "paper_679be336ce80_ref_057",
+      "entity_type": "reference",
+      "title": "paper_679be336ce80_ref_057",
+      "text": "",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "section_id": "",
+      "section_title": "",
+      "page_start": 1,
+      "page_end": 1,
+      "symbols": [],
+      "references": [],
+      "dependencies": [],
+      "id": "paper_679be336ce80_ref_057"
+    }
+  ],
+  "edges": [
+    {
+      "relation_id": "rel_0003",
+      "relation_type": "depends_on",
+      "confidence": 0.85,
+      "evidence_text": "follows from Lemma 2.1",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "DEPENDS_PATTERN"
+      },
+      "source": "paper_math_001_theorem_thm_001",
+      "target": "paper_math_001_lemma_lem_002",
+      "key": "rel_0003"
+    },
+    {
+      "relation_id": "rel_0005",
+      "relation_type": "uses_lemma",
+      "confidence": 0.75,
+      "evidence_text": "Lemma 2.1",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "STATEMENT_REF_PATTERN"
+      },
+      "source": "paper_math_001_theorem_thm_001",
+      "target": "paper_math_001_lemma_lem_002",
+      "key": "rel_0005"
+    },
+    {
+      "relation_id": "rel_0004",
+      "relation_type": "uses_theorem",
+      "confidence": 0.75,
+      "evidence_text": "Theorem 3.2",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "STATEMENT_REF_PATTERN"
+      },
+      "source": "paper_math_001_theorem_thm_001",
+      "target": "paper_math_001_theorem_thm_002",
+      "key": "rel_0004"
+    },
+    {
+      "relation_id": "rel_0006",
+      "relation_type": "uses_theorem",
+      "confidence": 0.85,
+      "evidence_text": "By Theorem 3.2",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "USES_THM_PATTERN"
+      },
+      "source": "paper_math_001_corollary_cor_001",
+      "target": "paper_math_001_theorem_thm_002",
+      "key": "rel_0006"
+    },
+    {
+      "relation_id": "rel_0001",
+      "relation_type": "proves",
+      "confidence": 0.95,
+      "evidence_text": "Proof of Theorem 3.2. Apply Lemma 2.1 and Definition 1.1 directly.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "source": "explicit_parser_metadata"
+      },
+      "source": "paper_math_001_proof_prf_001",
+      "target": "paper_math_001_theorem_thm_001",
+      "key": "rel_0001"
+    },
+    {
+      "relation_id": "rel_0007",
+      "relation_type": "proves",
+      "confidence": 0.88,
+      "evidence_text": "Proof of Theorem 3.2",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "PROVES_PATTERN"
+      },
+      "source": "paper_math_001_proof_prf_001",
+      "target": "paper_math_001_theorem_thm_002",
+      "key": "rel_0007"
+    },
+    {
+      "relation_id": "rel_0009",
+      "relation_type": "uses_theorem",
+      "confidence": 0.75,
+      "evidence_text": "Theorem 3.2",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "STATEMENT_REF_PATTERN"
+      },
+      "source": "paper_math_001_proof_prf_001",
+      "target": "paper_math_001_theorem_thm_002",
+      "key": "rel_0009"
+    },
+    {
+      "relation_id": "rel_0008",
+      "relation_type": "uses_lemma",
+      "confidence": 0.85,
+      "evidence_text": "Apply Lemma 2.1",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "USES_LEM_PATTERN"
+      },
+      "source": "paper_math_001_proof_prf_001",
+      "target": "paper_math_001_lemma_lem_002",
+      "key": "rel_0008"
+    },
+    {
+      "relation_id": "rel_0010",
+      "relation_type": "uses_definition",
+      "confidence": 0.75,
+      "evidence_text": "Definition 1.1",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "STATEMENT_REF_PATTERN"
+      },
+      "source": "paper_math_001_proof_prf_001",
+      "target": "paper_math_001_definition_def_002",
+      "key": "rel_0010"
+    },
+    {
+      "relation_id": "rel_0011",
+      "relation_type": "depends_on",
+      "confidence": 0.85,
+      "evidence_text": "follows from Lemma 2.1",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "DEPENDS_PATTERN"
+      },
+      "source": "paper_math_001_theorem_thm_002",
+      "target": "paper_math_001_lemma_lem_002",
+      "key": "rel_0011"
+    },
+    {
+      "relation_id": "rel_0012",
+      "relation_type": "uses_lemma",
+      "confidence": 0.75,
+      "evidence_text": "Lemma 2.1",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "STATEMENT_REF_PATTERN"
+      },
+      "source": "paper_math_001_theorem_thm_002",
+      "target": "paper_math_001_lemma_lem_002",
+      "key": "rel_0012"
+    },
+    {
+      "relation_id": "rel_0013",
+      "relation_type": "uses_theorem",
+      "confidence": 0.85,
+      "evidence_text": "By Theorem 3.2",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "rule": "USES_THM_PATTERN"
+      },
+      "source": "paper_math_001_corollary_cor_002",
+      "target": "paper_math_001_theorem_thm_002",
+      "key": "rel_0013"
+    },
+    {
+      "relation_id": "rel_0002",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Stefan Banach. 1922. Sur les op\u00e9rations dans les ensembles abstract. Fundamenta Mathematicae.",
+      "source_paper": "On Compact Topological Spaces and Fixed Point Theorems",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_math_001",
+      "target": "paper_math_001_ref_001",
+      "key": "rel_0002"
+    },
+    {
+      "relation_id": "rel_0001",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Payal Bajaj, Daniel Campos, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu, Rangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, Mir Rosen",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_001",
+      "key": "rel_0001"
+    },
+    {
+      "relation_id": "rel_0002",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Petr Baudi\u0161 and Jan \u0160ediv`y. Modeling of the question answering task in the yodaqa system. In International Conference of the Cross-Language Evaluatio",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_002",
+      "key": "rel_0002"
+    },
+    {
+      "relation_id": "rel_0003",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jonathan Berant, Andrew Chou, Roy Frostig, and Percy Liang. Semantic Parsing on Freebase from Question-Answer Pairs. In Proceedings of the 2013 Confer",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_003",
+      "key": "rel_0003"
+    },
+    {
+      "relation_id": "rel_0004",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Bin Bi, Chenliang Li, Chen Wu, Ming Yan, and Wei Wang. Palm: Pre-training an autoencod- ing&autoregressive language model for context-conditioned gene",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_004",
+      "key": "rel_0004"
+    },
+    {
+      "relation_id": "rel_0005",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "URL https://arxiv.org/abs/2004.07159.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_005",
+      "key": "rel_0005"
+    },
+    {
+      "relation_id": "rel_0006",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Danqi Chen, Adam Fisch, Jason Weston, and Antoine Bordes. Reading Wikipedia to Answer Open-Domain Questions. In Proceedings of the 55th Annual Meeting",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_006",
+      "key": "rel_0006"
+    },
+    {
+      "relation_id": "rel_0007",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Eunsol Choi, Daniel Hewlett, Jakob Uszkoreit, Illia Polosukhin, Alexandre Lacoste, and Jonathan Berant. Coarse-to-\ufb01ne question answering for long docu",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_007",
+      "key": "rel_0007"
+    },
+    {
+      "relation_id": "rel_0008",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Christopher Clark and Matt Gardner. Simple and Effective Multi-Paragraph Reading Compre- hension. arXiv:1710.10723 [cs], October 2017. URL http://arxi",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_008",
+      "key": "rel_0008"
+    },
+    {
+      "relation_id": "rel_0009",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_009",
+      "key": "rel_0009"
+    },
+    {
+      "relation_id": "rel_0010",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Emily Dinan, Stephen Roller, Kurt Shuster, Angela Fan, Michael Auli, and Jason Weston. Wiz- ard of wikipedia: Knowledge-powered conversational agents.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_010",
+      "key": "rel_0010"
+    },
+    {
+      "relation_id": "rel_0011",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Matthew Dunn, Levent Sagun, Mike Higgins, V . Ugur Guney, V olkan Cirik, and Kyunghyun Cho. SearchQA: A New Q&A Dataset Augmented with Context from a ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_011",
+      "key": "rel_0011"
+    },
+    {
+      "relation_id": "rel_0012",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Angela Fan, Mike Lewis, and Yann Dauphin. Hierarchical neural story generation. In Proceed- ings of the 56th Annual Meeting of the Association for Com",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_012",
+      "key": "rel_0012"
+    },
+    {
+      "relation_id": "rel_0013",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Angela Fan, Yacine Jernite, Ethan Perez, David Grangier, Jason Weston, and Michael Auli. ELI5: Long form question answering. In Proceedings of the 57t",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_013",
+      "key": "rel_0013"
+    },
+    {
+      "relation_id": "rel_0014",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Angela Fan, Claire Gardent, Chloe Braud, and Antoine Bordes. Augmenting transformers with KNN-based composite memory, 2020. URL https://openreview.net",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_014",
+      "key": "rel_0014"
+    },
+    {
+      "relation_id": "rel_0015",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Thibault F\u00e9vry, Livio Baldini Soares, Nicholas FitzGerald, Eunsol Choi, and Tom Kwiatkowski. Entities as experts: Sparse memory access with entity sup",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_015",
+      "key": "rel_0015"
+    },
+    {
+      "relation_id": "rel_0016",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "URL https://arxiv.org/abs/2004.07202.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_016",
+      "key": "rel_0016"
+    },
+    {
+      "relation_id": "rel_0017",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Marjan Ghazvininejad, Chris Brockett, Ming-Wei Chang, Bill Dolan, Jianfeng Gao, Wen tau Yih, and Michel Galley. A knowledge-grounded neural conversati",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_017",
+      "key": "rel_0017"
+    },
+    {
+      "relation_id": "rel_0018",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Katja Grace, John Salvatier, Allan Dafoe, Baobao Zhang, and Owain Evans. When will AI exceed human performance? evidence from AI experts. CoRR, abs/17",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_018",
+      "key": "rel_0018"
+    },
+    {
+      "relation_id": "rel_0019",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jiatao Gu, Yong Wang, Kyunghyun Cho, and Victor O.K. Li. Search engine guided neural machine translation. In AAAI Conference on Arti\ufb01cial Intelligence",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_019",
+      "key": "rel_0019"
+    },
+    {
+      "relation_id": "rel_0020",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jiatao Gu, Yong Wang, Kyunghyun Cho, and Victor O.K. Li. Search engine guided neural machine translation. In 32nd AAAI Conference on Arti\ufb01cial Intelli",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_020",
+      "key": "rel_0020"
+    },
+    {
+      "relation_id": "rel_0021",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Kelvin Guu, Tatsunori B. Hashimoto, Yonatan Oren, and Percy Liang. Generating sentences by editing prototypes. Transactions of the Association for Com",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_021",
+      "key": "rel_0021"
+    },
+    {
+      "relation_id": "rel_0022",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "doi: 10.1162/tacl_a_00030. URL https://www.aclweb.org/anthology/Q18-1031. 11",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_022",
+      "key": "rel_0022"
+    },
+    {
+      "relation_id": "rel_0023",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Kelvin Guu, Kenton Lee, Zora Tung, Panupong Pasupat, and Ming-Wei Chang. REALM: Retrieval-augmented language model pre-training. ArXiv, abs/2002.08909",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_023",
+      "key": "rel_0023"
+    },
+    {
+      "relation_id": "rel_0024",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Tatsunori B Hashimoto, Kelvin Guu, Yonatan Oren, and Percy S Liang. A retrieve-and-edit framework for predicting structured outputs. In S. Bengio, H. ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_024",
+      "key": "rel_0024"
+    },
+    {
+      "relation_id": "rel_0025",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Curran Associates, Inc., 2018. URL http://papers.nips.cc/paper/ 8209-a-retrieve-and-edit-framework-for-predicting-structured-outputs. pdf.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_025",
+      "key": "rel_0025"
+    },
+    {
+      "relation_id": "rel_0026",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Nabil Hossain, Marjan Ghazvininejad, and Luke Zettlemoyer. Simple and effective retrieve- edit-rerank text generation. In Proceedings of the 58th Annu",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_026",
+      "key": "rel_0026"
+    },
+    {
+      "relation_id": "rel_0027",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jeff Johnson, Matthijs Douze, and Herv\u00e9 J\u00e9gou. Billion-scale similarity search with gpus. arXiv preprint arXiv:1702.08734, 2017. URL https://arxiv.org",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_027",
+      "key": "rel_0027"
+    },
+    {
+      "relation_id": "rel_0028",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Mandar Joshi, Eunsol Choi, Daniel Weld, and Luke Zettlemoyer. TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_028",
+      "key": "rel_0028"
+    },
+    {
+      "relation_id": "rel_0029",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Armand Joulin and Tomas Mikolov. Inferring algorithmic patterns with stack- augmented recurrent nets. In Proceedings of the 28th International Confere",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_029",
+      "key": "rel_0029"
+    },
+    {
+      "relation_id": "rel_0030",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Vladimir Karpukhin, Barlas Oguz, Sewon Min, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih. Dense passage retrieval for open-domain question an",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_030",
+      "key": "rel_0030"
+    },
+    {
+      "relation_id": "rel_0031",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Urvashi Khandelwal, Omer Levy, Dan Jurafsky, Luke Zettlemoyer, and Mike Lewis. Generaliza- tion through memorization: Nearest neighbor language models",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_031",
+      "key": "rel_0031"
+    },
+    {
+      "relation_id": "rel_0032",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In Yoshua Bengio and Yann LeCun, editors, 3rd International Conference on",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_032",
+      "key": "rel_0032"
+    },
+    {
+      "relation_id": "rel_0033",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Tom Kwiatkowski, Jennimaria Palomaki, Olivia Red\ufb01eld, Michael Collins, Ankur Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Matthew Kelcey",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_033",
+      "key": "rel_0033"
+    },
+    {
+      "relation_id": "rel_0034",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Guillaume Lample, Alexandre Sablayrolles, Marc\u2019 Aurelio Ranzato, Ludovic Denoyer, and Herve Jegou. Large memory layers with product keys. In H. Wallac",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_034",
+      "key": "rel_0034"
+    },
+    {
+      "relation_id": "rel_0035",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Kenton Lee, Ming-Wei Chang, and Kristina Toutanova. Latent retrieval for weakly supervised open domain question answering. In Proceedings of the 57th ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_035",
+      "key": "rel_0035"
+    },
+    {
+      "relation_id": "rel_0036",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Veselin Stoyanov, and Luke Zettlemoyer. BART: Denoising seq",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_036",
+      "key": "rel_0036"
+    },
+    {
+      "relation_id": "rel_0037",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, and Bill Dolan. A diversity-promoting objective function for neural conversation models. In Pro",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_037",
+      "key": "rel_0037"
+    },
+    {
+      "relation_id": "rel_0038",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Margaret Li, Jason Weston, and Stephen Roller. Acute-eval: Improved dialogue evaluation with optimized questions and multi-turn comparisons. ArXiv, ab",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_038",
+      "key": "rel_0038"
+    },
+    {
+      "relation_id": "rel_0039",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Hairong Liu, Mingbo Ma, Liang Huang, Hao Xiong, and Zhongjun He. Robust neural machine translation with joint textual and phonetic embedding. In Proce",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_039",
+      "key": "rel_0039"
+    },
+    {
+      "relation_id": "rel_0040",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Peter J. Liu*, Mohammad Saleh*, Etienne Pot, Ben Goodrich, Ryan Sepassi, Lukasz Kaiser, and Noam Shazeer. Generating wikipedia by summarizing long seq",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_040",
+      "key": "rel_0040"
+    },
+    {
+      "relation_id": "rel_0041",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Yury A. Malkov and D. A. Yashunin. Ef\ufb01cient and robust approximate nearest neighbor search using hierarchical navigable small world graphs. IEEE Trans",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_041",
+      "key": "rel_0041"
+    },
+    {
+      "relation_id": "rel_0042",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Gary Marcus. The next decade in ai: four steps towards robust arti\ufb01cial intelligence. arXiv preprint arXiv:2002.06177, 2020. URL https://arxiv.org/abs",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_042",
+      "key": "rel_0042"
+    },
+    {
+      "relation_id": "rel_0043",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Luca Massarelli, Fabio Petroni, Aleksandra Piktus, Myle Ott, Tim Rockt\u00e4schel, Vassilis Plachouras, Fabrizio Silvestri, and Sebastian Riedel. How decod",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_043",
+      "key": "rel_0043"
+    },
+    {
+      "relation_id": "rel_0044",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Paulius Micikevicius, Sharan Narang, Jonah Alben, Gregory Diamos, Erich Elsen, David Garcia, Boris Ginsburg, Michael Houston, Oleksii Kuchaiev, Ganesh",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_044",
+      "key": "rel_0044"
+    },
+    {
+      "relation_id": "rel_0045",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Nikita Moghe, Siddhartha Arora, Suman Banerjee, and Mitesh M. Khapra. Towards exploit- ing background knowledge for building conversation systems. In ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_045",
+      "key": "rel_0045"
+    },
+    {
+      "relation_id": "rel_0046",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Preksha Nema and Mitesh M. Khapra. Towards a better metric for evaluating question generation systems. In Proceedings of the 2018 Conference on Empiri",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_046",
+      "key": "rel_0046"
+    },
+    {
+      "relation_id": "rel_0047",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Tri Nguyen, Mir Rosenberg, Xia Song, Jianfeng Gao, Saurabh Tiwary, Rangan Majumder, and Li Deng. MS MARCO: A human generated machine reading comprehen",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_047",
+      "key": "rel_0047"
+    },
+    {
+      "relation_id": "rel_0048",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Rodrigo Nogueira and Kyunghyun Cho. Passage re-ranking with BERT. arXiv preprint arXiv:1901.04085, 2019. URL https://arxiv.org/abs/1901.04085.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_048",
+      "key": "rel_0048"
+    },
+    {
+      "relation_id": "rel_0049",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Myle Ott, Sergey Edunov, Alexei Baevski, Angela Fan, Sam Gross, Nathan Ng, David Grangier, and Michael Auli. fairseq: A fast, extensible toolkit for s",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_049",
+      "key": "rel_0049"
+    },
+    {
+      "relation_id": "rel_0050",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ethan Perez, Siddharth Karamcheti, Rob Fergus, Jason Weston, Douwe Kiela, and Kyunghyun Cho. Finding generalizable evidence by learning to convince q&",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_050",
+      "key": "rel_0050"
+    },
+    {
+      "relation_id": "rel_0051",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Fabio Petroni, Tim Rockt\u00e4schel, Sebastian Riedel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, and Alexander Miller. Language models as knowledge bases? ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_051",
+      "key": "rel_0051"
+    },
+    {
+      "relation_id": "rel_0052",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Fabio Petroni, Patrick Lewis, Aleksandra Piktus, Tim Rockt\u00e4schel, Yuxiang Wu, Alexander H. Miller, and Sebastian Riedel. How context affects language ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_052",
+      "key": "rel_0052"
+    },
+    {
+      "relation_id": "rel_0053",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. Im- proving Language Understanding by Generative Pre-Training, 2018. URL https://s",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_053",
+      "key": "rel_0053"
+    },
+    {
+      "relation_id": "rel_0054",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. Language models are unsupervised multitask learners, 2019. URL https",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_054",
+      "key": "rel_0054"
+    },
+    {
+      "relation_id": "rel_0055",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. Exploring the limits of ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_055",
+      "key": "rel_0055"
+    },
+    {
+      "relation_id": "rel_0056",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Adam Roberts, Colin Raffel, and Noam Shazeer. How much knowledge can you pack into the parameters of a language model? arXiv e-prints, 2020. URL https",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_056",
+      "key": "rel_0056"
+    },
+    {
+      "relation_id": "rel_0057",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Stephen Robertson and Hugo Zaragoza. The probabilistic relevance framework: Bm25 and beyond. Found. Trends Inf. Retr., 3(4):333\u2013389, April 2009. ISSN ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_057",
+      "key": "rel_0057"
+    },
+    {
+      "relation_id": "rel_0058",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "URL https://doi.org/10.1561/1500000019.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_058",
+      "key": "rel_0058"
+    },
+    {
+      "relation_id": "rel_0059",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Irene Solaiman, Miles Brundage, Jack Clark, Amanda Askell, Ariel Herbert-V oss, Jeff Wu, Alec Radford, and Jian-Bing Wang. Release strategies and the ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_059",
+      "key": "rel_0059"
+    },
+    {
+      "relation_id": "rel_0060",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, and Rob Fergus. End-to-end memory net- works. In C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_060",
+      "key": "rel_0060"
+    },
+    {
+      "relation_id": "rel_0061",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "James Thorne, Andreas Vlachos, Christos Christodoulopoulos, and Arpit Mittal. FEVER: a large-scale dataset for fact extraction and VERi\ufb01cation. In Pro",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_061",
+      "key": "rel_0061"
+    },
+    {
+      "relation_id": "rel_0062",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "James H. Thorne and Andreas Vlachos. Avoiding catastrophic forgetting in mitigating model biases in sentence-pair classi\ufb01cation with elastic weight co",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_062",
+      "key": "rel_0062"
+    },
+    {
+      "relation_id": "rel_0063",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "URL https://arxiv.org/abs/2004.14366.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_063",
+      "key": "rel_0063"
+    },
+    {
+      "relation_id": "rel_0064",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, \u0141 ukasz Kaiser, and Illia Polosukhin. Attention is all you nee",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_064",
+      "key": "rel_0064"
+    },
+    {
+      "relation_id": "rel_0065",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ashwin Vijayakumar, Michael Cogswell, Ramprasaath Selvaraju, Qing Sun, Stefan Lee, David Crandall, and Dhruv Batra. Diverse beam search for improved d",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_065",
+      "key": "rel_0065"
+    },
+    {
+      "relation_id": "rel_0066",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. GLUE: A multi-task benchmark and analysis platform for natural l",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_066",
+      "key": "rel_0066"
+    },
+    {
+      "relation_id": "rel_0067",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Alex Wang, Yada Pruksachatkun, Nikita Nangia, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. SuperGLUE: A Stickier Benchma",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_067",
+      "key": "rel_0067"
+    },
+    {
+      "relation_id": "rel_0068",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Shuohang Wang, Mo Yu, Xiaoxiao Guo, Zhiguo Wang, Tim Klinger, Wei Zhang, Shiyu Chang, Gerry Tesauro, Bowen Zhou, and Jing Jiang. R3: Reinforced ranker",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_068",
+      "key": "rel_0068"
+    },
+    {
+      "relation_id": "rel_0069",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Shuohang Wang, Mo Yu, Jing Jiang, Wei Zhang, Xiaoxiao Guo, Shiyu Chang, Zhiguo Wang, Tim Klinger, Gerald Tesauro, and Murray Campbell. Evidence aggreg",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_069",
+      "key": "rel_0069"
+    },
+    {
+      "relation_id": "rel_0070",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jason Weston, Sumit Chopra, and Antoine Bordes. Memory networks. In Yoshua Bengio and Yann LeCun, editors, 3rd International Conference on Learning Re",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_070",
+      "key": "rel_0070"
+    },
+    {
+      "relation_id": "rel_0071",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jason Weston, Emily Dinan, and Alexander Miller. Retrieve and re\ufb01ne: Improved sequence generation models for dialogue. In Proceedings of the 2018 EMNL",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_071",
+      "key": "rel_0071"
+    },
+    {
+      "relation_id": "rel_0072",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue, Anthony Moi, Pierric Cistac, Tim Rault, R\u00e9mi Louf, Morgan Funtowicz, Joe ",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_072",
+      "key": "rel_0072"
+    },
+    {
+      "relation_id": "rel_0073",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Shiyue Zhang and Mohit Bansal. Addressing semantic drift in question generation for semi- supervised question answering. In Proceedings of the 2019 Co",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_073",
+      "key": "rel_0073"
+    },
+    {
+      "relation_id": "rel_0074",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Wanjun Zhong, Jingjing Xu, Duyu Tang, Zenan Xu, Nan Duan, Ming Zhou, Jiahai Wang, and Jian Yin. Reasoning over semantic-level graph for fact checking.",
+      "source_paper": "Retrieval-Augmented Generation for",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_23e3249e9a1e",
+      "target": "paper_23e3249e9a1e_ref_074",
+      "key": "rel_0074"
+    },
+    {
+      "relation_id": "rel_0001",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Muhammad Zeshan Afzal, Andreas K\u00f6lsch, Sheraz Ahmed, and Marcus Liwicki.",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_001",
+      "key": "rel_0001"
+    },
+    {
+      "relation_id": "rel_0002",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification. 2017 14th IAPR Inter- na",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_002",
+      "key": "rel_0002"
+    },
+    {
+      "relation_id": "rel_0003",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Arindam Das, Saikat Roy, and Ujjwal Bhattacharya. 2018. Document Image Classification with Intra-Domain Transfer Learning and Stacked Generalization o",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_003",
+      "key": "rel_0003"
+    },
+    {
+      "relation_id": "rel_0004",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Tyler Dauphinee, Nikunj Patel, and Mohammad Mehdi Rashidi. 2019. Modular Multimodal Architecture for Document Classification. ArXiv abs/1912.04376 (20",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_004",
+      "key": "rel_0004"
+    },
+    {
+      "relation_id": "rel_0005",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understandi",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_005",
+      "key": "rel_0005"
+    },
+    {
+      "relation_id": "rel_0006",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Document page decomposition by the bounding-box project. In Proceedings of 3rd International",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_006",
+      "key": "rel_0006"
+    },
+    {
+      "relation_id": "rel_0007",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jaekyu Ha, Robert M Haralick, and Ihsin T Phillips. 1995. Recursive XY cut using bounding boxes of connected components. In Proceedings of 3rd Interna",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_007",
+      "key": "rel_0007"
+    },
+    {
+      "relation_id": "rel_0008",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Leipeng Hao, Liangcai Gao, Xiaohan Yi, and Zhi Tang. 2016. A Table Detection Method for PDF Documents Based on Convolutional Neural Networks. 2016 12t",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_008",
+      "key": "rel_0008"
+    },
+    {
+      "relation_id": "rel_0009",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Adam W. Harley, Alex Ufkes, and Konstantinos G. Derpanis. 2015. Evaluation of deep convolutional nets for document image classification and retrieval.",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_009",
+      "key": "rel_0009"
+    },
+    {
+      "relation_id": "rel_0010",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Kaiming He, Georgia Gkioxari, Piotr Doll\u00e1r, and Ross B. Girshick. 2017. Mask R-CNN. CoRR abs/1703.06870 (2017). arXiv:1703.06870 http://arxiv.org/abs/",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_010",
+      "key": "rel_0010"
+    },
+    {
+      "relation_id": "rel_0011",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Guillaume Jaume, Hazim Kemal Ekenel, and Jean-Philippe Thiran. 2019. FUNSD: A Dataset for Form Understanding in Noisy Scanned Documents. 2019 Interna-",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_011",
+      "key": "rel_0011"
+    },
+    {
+      "relation_id": "rel_0012",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Anoop R Katti, Christian Reisswig, Cordula Guder, Sebastian Brarda, Steffen Bickel, Johannes H\u00f6hne, and Jean Baptiste Faddoul. 2018. Chargrid: Towards",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_012",
+      "key": "rel_0012"
+    },
+    {
+      "relation_id": "rel_0013",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua Kravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David A Shamma, Mich",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_013",
+      "key": "rel_0013"
+    },
+    {
+      "relation_id": "rel_0014",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Frank Lebourgeois, Z Bublinski, and H Emptoz. 1992. A fast and efficient method for extracting text paragraphs and graphics from unconstrained documen",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_014",
+      "key": "rel_0014"
+    },
+    {
+      "relation_id": "rel_0015",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "D. Lewis, G. Agam, S. Argamon, O. Frieder, D. Grossman, and J. Heard. 2006. Building a Test Collection for Complex Document Information Processing. In",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_015",
+      "key": "rel_0015"
+    },
+    {
+      "relation_id": "rel_0016",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Xiaojing Liu, Feiyu Gao, Qiong Zhang, and Huasha Zhao. 2019. Graph Convolu- tion for Multimodal Information Extraction from Visually Rich Documents. I",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_016",
+      "key": "rel_0016"
+    },
+    {
+      "relation_id": "rel_0017",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke S. Zettlemoyer, and Veselin Stoyanov. 2019. RoBER",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_017",
+      "key": "rel_0017"
+    },
+    {
+      "relation_id": "rel_0018",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "S. Marinai, M. Gori, and G. Soda. 2005. Artificial neural networks for document analysis and recognition. IEEE Transactions on Pattern Analysis and Ma",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_018",
+      "key": "rel_0018"
+    },
+    {
+      "relation_id": "rel_0019",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "L. O\u2019Gorman. 1993. The document spectrum for page layout analysis. IEEE Transactions on Pattern Analysis and Machine Intelligence 15, 11 (Nov 1993), 1",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_019",
+      "key": "rel_0019"
+    },
+    {
+      "relation_id": "rel_0020",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "https://doi.org/10.1109/34.244677",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_020",
+      "key": "rel_0020"
+    },
+    {
+      "relation_id": "rel_0021",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Shaoqing Ren, Kaiming He, Ross B. Girshick, and Jian Sun. 2015. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks. IEEE T",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_021",
+      "key": "rel_0021"
+    },
+    {
+      "relation_id": "rel_0022",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ritesh Sarkhel and Arnab Nandi. 2019. Deterministic Routing between Lay- out Abstractions for Multi-Scale Classification of Visually Rich Documents. I",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_022",
+      "key": "rel_0022"
+    },
+    {
+      "relation_id": "rel_0023",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Sebastian Schreiber, Stefan Agne, Ivo Wolf, Andreas Dengel, and Sheraz Ahmed.",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_023",
+      "key": "rel_0023"
+    },
+    {
+      "relation_id": "rel_0024",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "DeepDeSRT: Deep Learning for Detection and Structure Recognition of Tables in Document Images. 2017 14th IAPR International Conference on Document Ana",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_024",
+      "key": "rel_0024"
+    },
+    {
+      "relation_id": "rel_0025",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Michael Shilman, Percy Liang, and Paul Viola. 2005. Learning nongenerative grammatical models for document analysis. InTenth IEEE International Confer",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_025",
+      "key": "rel_0025"
+    },
+    {
+      "relation_id": "rel_0026",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Anik\u00f3 Simon, J-C Pret, and A Peter Johnson. 1997. A fast algorithm for bottom-up document layout analysis. IEEE Transactions on Pattern Analysis and M",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_026",
+      "key": "rel_0026"
+    },
+    {
+      "relation_id": "rel_0027",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Carlos Soto and Shinjae Yoo. 2019. Visual Detection with Context for Document Layout Analysis. In Proceedings of the 2019 Conference on Empirical Meth",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_027",
+      "key": "rel_0027"
+    },
+    {
+      "relation_id": "rel_0028",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi. 2016. Inception-v4, Inception-ResNet and the Impact of Residual Connections on Lea",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_028",
+      "key": "rel_0028"
+    },
+    {
+      "relation_id": "rel_0029",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Matheus Palhares Viana and D\u00e1rio Augusto Borges Oliveira. 2017. Fast CNN- Based Document Layout Analysis.2017 IEEE International Conference on Compute",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_029",
+      "key": "rel_0029"
+    },
+    {
+      "relation_id": "rel_0030",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "H. Wei, M. Baechler, F. Slimane, and R. Ingold. 2013. Evaluation of SVM, MLP and GMM Classifiers for Layout Analysis of Historical Documents. In 2013 ",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_030",
+      "key": "rel_0030"
+    },
+    {
+      "relation_id": "rel_0031",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Xiaowei Yang, Ersin Yumer, Paul Asente, Mike Kraley, Daniel Kifer, and C. Lee Giles. 2017. Learning to Extract Semantic Structure from Documents Using",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_031",
+      "key": "rel_0031"
+    },
+    {
+      "relation_id": "rel_0032",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Xu Zhong, Jianbin Tang, and Antonio Jimeno-Yepes. 2019. PubLayNet: largest dataset ever for document layout analysis. ArXiv abs/1908.07836 (2019).",
+      "source_paper": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_5bec7f495a9e",
+      "target": "paper_5bec7f495a9e_ref_032",
+      "key": "rel_0032"
+    },
+    {
+      "relation_id": "rel_0001",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Sebastian Spiegler. Statistics of the Common Crawl Corpus 2012, June 2013. URL https://docs.google.com/file/d/ 1 9698uglerxB9nAglvaHkEgU-iZNm1TvVGuCW7",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_001",
+      "key": "rel_0001"
+    },
+    {
+      "relation_id": "rel_0002",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "R. Smith. An Overview of the Tesseract OCR Engine. In Ninth International Conference on Document Analysis and Recognition (ICDAR 2007) V ol 2, pages 6",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_002",
+      "key": "rel_0002"
+    },
+    {
+      "relation_id": "rel_0003",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Kyle Lo, Lucy Lu Wang, Mark Neumann, Rodney Kinney, and Daniel Weld. S2ORC: The Semantic Scholar Open Research Corpus. In Proceedings of the 58th Annu",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_003",
+      "key": "rel_0003"
+    },
+    {
+      "relation_id": "rel_0004",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "URL https://aclanthology.org/2020.acl-main.447.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_004",
+      "key": "rel_0004"
+    },
+    {
+      "relation_id": "rel_0005",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Patrice Lopez. GROBID, February 2023. URL https://github.com/kermitt2/grobid. original-date: 2012-09- 13T15:48:54Z.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_005",
+      "key": "rel_0005"
+    },
+    {
+      "relation_id": "rel_0006",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Bastien Moysset, Christopher Kermorvant, and Christian Wolf. Full-Page Text Recognition: Learning Where to Start and When to Stop, April 2017. URL htt",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_006",
+      "key": "rel_0006"
+    },
+    {
+      "relation_id": "rel_0007",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Darwin Bautista and Rowel Atienza. Scene Text Recognition with Permuted Autoregressive Sequence Models, July 2022. URL http://arxiv.org/abs/2207.06966",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_007",
+      "key": "rel_0007"
+    },
+    {
+      "relation_id": "rel_0008",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Minghao Li, Tengchao Lv, Jingye Chen, Lei Cui, Yijuan Lu, Dinei Florencio, Cha Zhang, Zhoujun Li, and Furu Wei. TrOCR: Transformer-based Optical Chara",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_008",
+      "key": "rel_0008"
+    },
+    {
+      "relation_id": "rel_0009",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Daniel Hernandez Diaz, Siyang Qin, Reeve Ingle, Yasuhisa Fujii, and Alessandro Bissacco. Rethinking Text Line Recognition Models, April 2021. URL http",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_009",
+      "key": "rel_0009"
+    },
+    {
+      "relation_id": "rel_0010",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Scott MacLean and George Labahn. A new approach for recognizing handwritten mathematics using relational grammars and fuzzy sets. International Journa",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_010",
+      "key": "rel_0010"
+    },
+    {
+      "relation_id": "rel_0011",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ahmad-Montaser Awal, Harold Mouchre, and Christian Viard-Gaudin. A global learning approach for an online handwritten mathematical expression recognit",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_011",
+      "key": "rel_0011"
+    },
+    {
+      "relation_id": "rel_0012",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "ISSN 0167-8655.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_012",
+      "key": "rel_0012"
+    },
+    {
+      "relation_id": "rel_0013",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Francisco \u00b4Alvaro, Joan-Andreu S \u00b4anchez, and Jos \u00b4e-Miguel Bened \u00b4\u0131. Recognition of on-line handwritten mathematical expressions using 2D stochastic ",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_013",
+      "key": "rel_0013"
+    },
+    {
+      "relation_id": "rel_0014",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Zuoyu Yan, Xiaode Zhang, Liangcai Gao, Ke Yuan, and Zhi Tang. ConvMath: A Convolutional Sequence Network for Mathematical Expression Recognition, Dece",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_014",
+      "key": "rel_0014"
+    },
+    {
+      "relation_id": "rel_0015",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Yuntian Deng, Anssi Kanervisto, Jeffrey Ling, and Alexander M. Rush. Image-to-Markup Generation with Coarse-to-Fine Attention, September 2016. URL htt",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_015",
+      "key": "rel_0015"
+    },
+    {
+      "relation_id": "rel_0016",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "[14] Anh Duc Le and Masaki Nakagawa. Training an End-to-End System for Handwritten Mathematical Expression Recognition by Generated Patterns. In 2017 ",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_016",
+      "key": "rel_0016"
+    },
+    {
+      "relation_id": "rel_0017",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Sumeet S. Singh. Teaching Machines to Code: Neural Markup Generation with Visual Attention, June 2018. URL http://arxiv.org/abs/1802.05415. arXiv:1802",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_017",
+      "key": "rel_0017"
+    },
+    {
+      "relation_id": "rel_0018",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Jianshu Zhang, Jun Du, and Lirong Dai. Multi-Scale Attention with Dense Encoder for Handwritten Mathematical Expression Recognition, January 2018. URL",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_018",
+      "key": "rel_0018"
+    },
+    {
+      "relation_id": "rel_0019",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Zelun Wang and Jyh-Charn Liu. Translating Math Formula Images to LaTeX Sequences Using Deep Neural Networks with Sequence-level Training, September 20",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_019",
+      "key": "rel_0019"
+    },
+    {
+      "relation_id": "rel_0020",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Wenqi Zhao, Liangcai Gao, Zuoyu Yan, Shuai Peng, Lin Du, and Ziyin Zhang. Handwritten Mathematical Expression Recognition with Bidirectionally Trained",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_020",
+      "key": "rel_0020"
+    },
+    {
+      "relation_id": "rel_0021",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "arXiv:2105.02412 [cs].",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_021",
+      "key": "rel_0021"
+    },
+    {
+      "relation_id": "rel_0022",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Mahshad Mahdavi, Richard Zanibbi, Harold Mouchere, Christian Viard-Gaudin, and Utpal Garain. ICDAR 2019 CROHME + TFD: Competition on Recognition of Ha",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_022",
+      "key": "rel_0022"
+    },
+    {
+      "relation_id": "rel_0023",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Lukas Blecher. pix2tex - LaTeX OCR, February 2023. URL https://github.com/lukas-blecher/LaTeX-OCR. original-date: 2020-12-11T16:35:13Z.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_023",
+      "key": "rel_0023"
+    },
+    {
+      "relation_id": "rel_0024",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. Attention Is All You Nee",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_024",
+      "key": "rel_0024"
+    },
+    {
+      "relation_id": "rel_0025",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Yiheng Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, and Ming Zhou. LayoutLM: Pre-training of Text and Layout for Document Image Understanding. In",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_025",
+      "key": "rel_0025"
+    },
+    {
+      "relation_id": "rel_0026",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Yang Xu, Yiheng Xu, Tengchao Lv, Lei Cui, Furu Wei, Guoxin Wang, Yijuan Lu, Dinei Florencio, Cha Zhang, Wanxiang Che, Min Zhang, and Lidong Zhou. Layo",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_026",
+      "key": "rel_0026"
+    },
+    {
+      "relation_id": "rel_0027",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Yupan Huang, Tengchao Lv, Lei Cui, Yutong Lu, and Furu Wei. LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking, July 2022. U",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_027",
+      "key": "rel_0027"
+    },
+    {
+      "relation_id": "rel_0028",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Lu Wang and Wanmin Liu. Online publishing via pdf2htmlEX, 2013. URL https://www.tug.org/TUGboat/tb34-3/ tb108wang.pdf.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_028",
+      "key": "rel_0028"
+    },
+    {
+      "relation_id": "rel_0029",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Srikar Appalaraju, Bhavan Jasani, Bhargava Urala Kota, Yusheng Xie, and R. Manmatha. DocFormer: End- to-End Transformer for Document Understanding, Se",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_029",
+      "key": "rel_0029"
+    },
+    {
+      "relation_id": "rel_0030",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Bodhisattwa Prasad Majumder, Navneet Potti, Sandeep Tata, James Bradley Wendt, Qi Zhao, and Marc Najork. Representation Learning for Information Extra",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_030",
+      "key": "rel_0030"
+    },
+    {
+      "relation_id": "rel_0031",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "[28] Geewook Kim, Teakgyu Hong, Moonbin Yim, Jeongyeon Nam, Jinyoung Park, Jinyeong Yim, Wonseok Hwang, Sangdoo Yun, Dongyoon Han, and Seunghyun Park.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_031",
+      "key": "rel_0031"
+    },
+    {
+      "relation_id": "rel_0032",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "URL http://arxiv.org/abs/2111.15664. arXiv:2111.15664 [cs].",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_032",
+      "key": "rel_0032"
+    },
+    {
+      "relation_id": "rel_0033",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Brian Davis, Bryan Morse, Bryan Price, Chris Tensmeyer, Curtis Wigington, and Vlad Morariu. End-to-end Document Recognition and Understanding with Des",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_033",
+      "key": "rel_0033"
+    },
+    {
+      "relation_id": "rel_0034",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, Zheng Zhang, Stephen Lin, and Baining Guo. Swin Transformer: Hierarchical Vision Transformer using Sh",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_034",
+      "key": "rel_0034"
+    },
+    {
+      "relation_id": "rel_0035",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg ",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_035",
+      "key": "rel_0035"
+    },
+    {
+      "relation_id": "rel_0036",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoy- anov, and Luke Zettlemoyer. BART: Denoising Seque",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_036",
+      "key": "rel_0036"
+    },
+    {
+      "relation_id": "rel_0037",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ross Taylor, Marcin Kardas, Guillem Cucurull, Thomas Scialom, Anthony Hartshorn, Elvis Saravia, Andrew Poulton, Viktor Kerkez, and Robert Stojnic. Gal",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_037",
+      "key": "rel_0037"
+    },
+    {
+      "relation_id": "rel_0038",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ilya Loshchilov and Frank Hutter. Decoupled Weight Decay Regularization, January 2019. URL http://arxiv.org/ abs/1711.05101. arXiv:1711.05101 [cs, mat",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_038",
+      "key": "rel_0038"
+    },
+    {
+      "relation_id": "rel_0039",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "P.Y . Simard, D. Steinkraus, and J.C. Platt. Best practices for convolutional neural networks applied to visual document analysis. In Seventh Internat",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_039",
+      "key": "rel_0039"
+    },
+    {
+      "relation_id": "rel_0040",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Alexander Buslaev, Vladimir I. Iglovikov, Eugene Khvedchenya, Alex Parinov, Mikhail Druzhinin, and Alexandr A. Kalinin. Albumentations: Fast and Flexi",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_040",
+      "key": "rel_0040"
+    },
+    {
+      "relation_id": "rel_0041",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ali Furkan Biten, Rub `en Tito, Lluis Gomez, Ernest Valveny, and Dimosthenis Karatzas. OCR-IDL: OCR Annotations for Industry Document Library Dataset,",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_041",
+      "key": "rel_0041"
+    },
+    {
+      "relation_id": "rel_0042",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Christopher Clark and Santosh Divvala. PDFFigures 2.0: Mining Figures from Research Papers. In Proceedings of the 16th ACM/IEEE-CS on Joint Conference",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_042",
+      "key": "rel_0042"
+    },
+    {
+      "relation_id": "rel_0043",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "V . Levenshtein. Binary codes capable of correcting deletions, insertions, and reversals. Soviet physics. Doklady, 1965. URL https://www.semanticschol",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_043",
+      "key": "rel_0043"
+    },
+    {
+      "relation_id": "rel_0044",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Zellig S. Harris. Distributional Structure. WORD, 10(2-3):146\u2013162, 1954. doi: 10.1080/00437956. 1954.11659520. URL https://doi.org/10.1080/00437956.19",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_044",
+      "key": "rel_0044"
+    },
+    {
+      "relation_id": "rel_0045",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ben Sorscher, Robert Geirhos, Shashank Shekhar, Surya Ganguli, and Ari S. Morcos. Beyond neural scaling laws: beating power law scaling via data pruni",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_045",
+      "key": "rel_0045"
+    },
+    {
+      "relation_id": "rel_0046",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. Bleu: a Method for Automatic Evaluation of Machine Translation. In Proceedings of the 40t",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_046",
+      "key": "rel_0046"
+    },
+    {
+      "relation_id": "rel_0047",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Satanjeev Banerjee and Alon Lavie. METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments. In Proceedings of the",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_047",
+      "key": "rel_0047"
+    },
+    {
+      "relation_id": "rel_0048",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Ari Holtzman, Jan Buys, Li Du, Maxwell Forbes, and Yejin Choi. The Curious Case of Neural Text Degeneration, February 2020. URL http://arxiv.org/abs/1",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_048",
+      "key": "rel_0048"
+    },
+    {
+      "relation_id": "rel_0049",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Herman W. (Herman William) March and Henry C. (Henry Charles) Wolff. Calculus. New York : McGraw-Hill,",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_049",
+      "key": "rel_0049"
+    },
+    {
+      "relation_id": "rel_0050",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "URL http://archive.org/details/calculus00marciala.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_050",
+      "key": "rel_0050"
+    },
+    {
+      "relation_id": "rel_0051",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Kinetics and Thermodynamics in High-Temperature Gases, January 1970. URL https://ntrs.nasa.gov/citations/",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_051",
+      "key": "rel_0051"
+    },
+    {
+      "relation_id": "rel_0052",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "NTRS Report/Patent Number: N70-32106-116 NTRS Document ID: 19700022795 NTRS Research Center: Glenn Research Center (GRC).",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_052",
+      "key": "rel_0052"
+    },
+    {
+      "relation_id": "rel_0053",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Angela Fan, Mike Lewis, and Yann Dauphin. Hierarchical Neural Story Generation. In Proceedings of the 56th Annual Meeting of the Association for Compu",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_053",
+      "key": "rel_0053"
+    },
+    {
+      "relation_id": "rel_0054",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Meet Shah, Xinlei Chen, Marcus Rohrbach, and Devi Parikh. Cycle-Consistency for Robust Visual Question Answering, February 2019. URL http://arxiv.org/",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_054",
+      "key": "rel_0054"
+    },
+    {
+      "relation_id": "rel_0055",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Find the pressure on the vertical parabolic gate, Fig. 51: (a) if the edge AB lies in the surface of the water; (b) if the edge AB lies 5 feet below t",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_055",
+      "key": "rel_0055"
+    },
+    {
+      "relation_id": "rel_0056",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Find the pressure on a vertical semicircular gate whose diameter, 10 feet long, lies in the surface of the water.",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_056",
+      "key": "rel_0056"
+    },
+    {
+      "relation_id": "rel_0057",
+      "relation_type": "cites",
+      "confidence": 0.9,
+      "evidence_text": "Arithmetic Mean. The arithmetic mean,A, of a series ofn numbers,a1,a2,a3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, Figure B.1: Example of an o",
+      "source_paper": "Nougat: Neural Optical Understanding for Academic Documents",
+      "metadata": {
+        "source": "explicit_parser_references"
+      },
+      "source": "paper_paper_679be336ce80",
+      "target": "paper_679be336ce80_ref_057",
+      "key": "rel_0057"
+    }
+  ]
+}
