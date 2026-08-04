@@ -24,11 +24,11 @@ MathResearch Studio addresses this gap by focusing on literature understanding, 
 
 ## Current Milestone Status
 
-Current development is focused on Day 2: reliable scientific document parsing.
+Completed Milestones: Day 1 (Foundation), Day 2 (PDF Parsing), Day 3 (Vector Database & Semantic Search), Day 4 (Mathematical Knowledge Graph), and Day 5 (AI Research Assistant RAG Layer).
 
-- Implemented now: PDF extraction, metadata extraction, section detection, and structured JSON export.
-- Explicitly out of scope for Day 2: AI assistant and question answering.
-- Day 3 focus: embeddings, vector database setup, and semantic search foundation.
+- **Day 5 Features**: Query Processing, Hybrid Retrieval (Vector + Keyword + Graph Adjacency), Context Token Budgeting Prompt Builder, Provider-Agnostic LLM Adapters, Formatted Answer Generator, Sentence-Level Evidence Mapper, Multi-Style Citation Engine (`[1]`, `(Author, Year)`, `[Paper, Section, Page]`), Grounding Verification Layer, and Policy Guardrails Decision Engine.
+- **Scope**: Source-grounded scientific QA over uploaded mathematics preprints with zero hallucinations and explicit citations.
+
 
 ## Problem Statement
 

@@ -316,3 +316,34 @@ When two authors prove the exact same theorem using different variable conventio
 1. **Node Centrality Analytics**: PageRank and Betweenness Centrality on mathematical knowledge graphs to automatically identify "foundational theorems" and "core definitions" in a corpus.
 2. **Proof Cycle & Inconsistency Detection**: Graph validation algorithms that flag circular reasoning loops ($A \text{ depends on } B \text{ depends on } A$) or invalid proof assumptions.
 3. **Automated Theorem Proof AST Alignment**: Aligning informal LaTeX proof graphs with formal interactive theorem provers (Lean 4, Coq, Isabelle) for automated proof verification.
+
+---
+
+## Day 5: AI Research Assistant (RAG) & Grounded Question Answering Gap Analysis
+
+### Why do general chatbots struggle with mathematics papers?
+* **Parametric Knowledge Hallucination**: General-purpose LLMs rely on static parametric weights trained on heterogeneous web text. When asked technical questions about complex preprints, they often hallucinate non-existent theorem numbers, false equations, or fictional proof steps.
+* **Notation & LaTeX Syntax Degradation**: Standard chat models often corrupt mathematical notation (e.g. dropping sub/superscripts, misinterpreting matrix dimensions, or failing to preserve LaTeX escapes).
+* **Lack of Source Attribution**: General chatbots provide generic conversational answers without specific section or page citations, making it impossible for researchers to verify claim accuracy against paper text.
+
+### How can citations increase researcher trust?
+* **One-Click Verifiability**: Attaching explicit paper title, section heading, page range, and chunk ID metadata directly to generated statements allows researchers to cross-check assertions in the source PDF immediately.
+* **Academic Integrity & Traceability**: Formal academic citations (`[1]`, `(Smith, 2024)`, `[Paper, Section, Page]`) uphold scientific attribution standards and eliminate ambiguity regarding source passage origin.
+* **Auditability**: Citation mapping allows automated validation engines (`CitationValidator`) to detect missing or generic metadata before answers reach users.
+
+### What causes hallucinations in scientific AI?
+* **Context Window Overload & Distraction**: Passing raw 50-page preprints to LLMs causes attention degradation ("lost-in-the-middle"), leading models to combine disconnected paragraphs into false conclusions.
+* **Over-Generalization of Parametric Knowledge**: When retrieved passages are sparse or ambiguous, un-augmented LLMs default to guessing based on training weights.
+* **Unconstrained Generation Prompts**: Prompts lacking strict grounding boundaries permit LLMs to infer unproven mathematical consequences.
+
+### What guardrails should a research assistant include?
+1. **Zero Evidence Refusal (`INSUFFICIENT_EVIDENCE`)**: Automatically skip generation and refuse to answer when vector retrieval candidate scores fall below minimum confidence thresholds.
+2. **Deterministic Claim Verification (`SUPPORTED`/`PARTIAL`/`UNSUPPORTED`)**: Evaluate sentence-level claim overlap against retrieved passages without relying on expensive LLM self-reflection.
+3. **Ambiguous Query Detection (`ASK_FOR_CLARIFICATION`)**: Prompt researchers for clarification when query intent is unknown or off-topic.
+4. **Strict Grounding Enforcement (`REFUSE`)**: Reject answers exhibiting low grounding scores or severe factual misalignment.
+
+### How can future versions improve factual reliability?
+1. **Lean 4 / Coq Theorem Prover Integration**: Connect informal RAG answers with formal interactive theorem provers for automated symbolic proof verification.
+2. **Cross-Document Proof Chain Traversal**: Combine Graph-RAG (Day 4 Research Graph) with multi-hop vector retrieval to verify multi-paper proof dependencies.
+3. **Fine-Tuned Mathematical LLMs**: Transition from generic adapters to open-weights models fine-tuned on arXiv math preprints (`Llama-3-Math`, `DeepSeek-Math`).
+

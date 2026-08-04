@@ -1,0 +1,214 @@
+"""Unit tests for Day 5 Step 4 Answer Generator Layer."""
+
+from __future__ import annotations
+
+import pytest
+
+from src.rag.answer_generator import (
+    AnswerFormatter,
+    AnswerGenerator,
+    AnswerMetadata,
+    AnswerPostProcessor,
+    AnswerRequest,
+    AnswerResponse,
+    AnswerSection,
+    AnswerValidator,
+    ConfidenceEstimator,
+)
+from src.rag.llm import MockLLMAdapter
+from src.rag.prompt_builder.models import PromptMetadata, PromptResponse
+from src.rag.retrieval.models import RetrievalResult
+
+
+@pytest.fixture
+def sample_prompt_response() -> PromptResponse:
+    """Fixture providing a sample PromptResponse artifact."""
+    chunk1 = RetrievalResult(
+        chunk_id="chunk_def_1",
+        text="Definition 1. A Hilbert space is a complete inner product space.",
+        paper_id="paper_1",
+        paper_title="Hilbert Spaces",
+        section_title="1. Definitions",
+        section_type="definition",
+        final_score=0.95,
+        matched_entities=["Hilbert space"],
+    )
+    chunk2 = RetrievalResult(
+        chunk_id="chunk_thm_1",
+        text="Theorem 1. Every Hilbert space has an orthonormal basis.",
+        paper_id="paper_1",
+        paper_title="Hilbert Spaces",
+        section_title="2. Bases",
+        section_type="theorem",
+        final_score=0.90,
+        matched_entities=["Hilbert space"],
+    )
+    metadata = PromptMetadata(
+        query_text="What is a Hilbert space?",
+        intent="definition",
+        included_chunk_ids=["chunk_def_1", "chunk_thm_1"],
+        estimated_total_tokens=250,
+        context_coverage=1.0,
+        prompt_version="v1.0",
+        template_name="definition",
+    )
+    return PromptResponse(
+        system_prompt="System Prompt Instructions",
+        user_prompt="Question: What is a Hilbert space?",
+        full_prompt="=== SYSTEM INSTRUCTIONS ===\nSystem Prompt Instructions\n\n=== USER REQUEST & CONTEXT ===\nQuestion: What is a Hilbert space?",
+        estimated_tokens=250,
+        included_chunks=[chunk1, chunk2],
+        excluded_chunks=[],
+        context_coverage=1.0,
+        prompt_version="v1.0",
+        metadata=metadata,
+    )
+
+
+class TestAnswerModels:
+    """Test data models and serialization."""
+
+    def test_answer_section_to_dict(self) -> None:
+        sec = AnswerSection(title="Direct Answer", content="Definition 1 holds.", section_type="text")
+        data = sec.to_dict()
+        assert data["title"] == "Direct Answer"
+        assert data["content"] == "Definition 1 holds."
+
+    def test_answer_response_to_dict(self) -> None:
+        meta = AnswerMetadata(query_text="Query", intent="definition", provider="mock", model="mock-model")
+        resp = AnswerResponse(
+            question="Query",
+            direct_answer="Direct",
+            formatted_answer="Formatted",
+            sections=[AnswerSection(title="Direct Answer", content="Direct")],
+            metadata=meta,
+        )
+        data = resp.to_dict()
+        assert data["question"] == "Query"
+        assert data["metadata"]["provider"] == "mock"
+        assert len(data["sections"]) == 1
+
+
+class TestAnswerPostProcessor:
+    """Test text cleaning and paragraph deduplication."""
+
+    def test_clean_and_normalize(self) -> None:
+        processor = AnswerPostProcessor()
+        raw = "* Item 1\r\n* Item 2\n\n\nIdentical paragraph.\nIdentical paragraph."
+        cleaned = processor.clean_and_normalize(raw)
+
+        assert "- Item 1" in cleaned
+        assert "- Item 2" in cleaned
+        # Check deduplication
+        assert cleaned.count("Identical paragraph.") == 1
+        assert "\r" not in cleaned
+
+    def test_empty_string(self) -> None:
+        processor = AnswerPostProcessor()
+        assert processor.clean_and_normalize("") == ""
+
+
+class TestAnswerValidator:
+    """Test validation checks for leakage, placeholders, and short outputs."""
+
+    def test_validate_clean_text(self) -> None:
+        validator = AnswerValidator()
+        text = "Theorem 1 states that every Hilbert space H contains an orthonormal basis."
+        warnings = validator.validate(text, context_chunks_count=1)
+        assert len(warnings) == 0
+
+    def test_detect_prompt_leakage(self) -> None:
+        validator = AnswerValidator()
+        text = "=== SYSTEM INSTRUCTIONS === Answer ONLY using the supplied mathematical context"
+        warnings = validator.validate(text, context_chunks_count=1)
+        assert any("Prompt instruction leakage" in w for w in warnings)
+
+    def test_detect_placeholders(self) -> None:
+        validator = AnswerValidator()
+        text = "The proof steps are TODO: fill in later."
+        warnings = validator.validate(text, context_chunks_count=1)
+        assert any("Placeholder text detected" in w for w in warnings)
+
+    def test_detect_empty_text(self) -> None:
+        validator = AnswerValidator()
+        warnings = validator.validate("")
+        assert "Empty answer text generated by LLM adapter" in warnings
+
+
+class TestConfidenceEstimator:
+    """Test confidence score computation and metric breakdown."""
+
+    def test_estimate_confidence(self, sample_prompt_response: PromptResponse) -> None:
+        estimator = ConfidenceEstimator()
+        text = "A Hilbert space is a complete inner product space."
+        score, breakdown = estimator.estimate_confidence(sample_prompt_response, text, warnings=[])
+
+        assert 0.0 <= score <= 1.0
+        assert breakdown["context_coverage"] == 1.0
+        assert breakdown["retrieval_quality"] > 0.90
+        assert breakdown["warning_penalty"] == 0.0
+
+    def test_confidence_penalty_on_warnings(self, sample_prompt_response: PromptResponse) -> None:
+        estimator = ConfidenceEstimator()
+        text = "Short text."
+        score_clean, _ = estimator.estimate_confidence(sample_prompt_response, text, warnings=[])
+        score_warn, breakdown_warn = estimator.estimate_confidence(
+            sample_prompt_response, text, warnings=["Warning 1", "Warning 2"]
+        )
+
+        assert score_warn < score_clean
+        assert breakdown_warn["warning_penalty"] == 0.30
+
+
+class TestAnswerFormatter:
+    """Test 5-section research output formatting."""
+
+    def test_format_answer(self, sample_prompt_response: PromptResponse) -> None:
+        formatter = AnswerFormatter()
+        raw_text = "Definition 1 confirms H is a complete inner product space."
+        markdown, sections, limitations = formatter.format_answer(
+            raw_text=raw_text,
+            query_text="What is a Hilbert space?",
+            included_chunks=sample_prompt_response.included_chunks,
+        )
+
+        assert len(sections) == 5
+        section_titles = [s.title for s in sections]
+        assert "Direct Answer" in section_titles
+        assert "Supporting Evidence" in section_titles
+        assert "Reasoning" in section_titles
+        assert "Limitations" in section_titles
+        assert "Next Related Topics" in section_titles
+
+        assert "### Direct Answer" in markdown
+        assert "### Supporting Evidence" in markdown
+        assert len(limitations) > 0
+
+
+class TestAnswerGenerator:
+    """Test full AnswerGenerator service orchestration."""
+
+    def test_generate_answer(self, sample_prompt_response: PromptResponse) -> None:
+        generator = AnswerGenerator()
+        response = generator.generate_answer(sample_prompt_response)
+
+        assert isinstance(response, AnswerResponse)
+        assert response.question == "What is a Hilbert space?"
+        assert len(response.sections) == 5
+        assert response.metadata is not None
+        assert response.metadata.provider == "mock"
+        assert response.metadata.confidence_score > 0.0
+        assert response.to_dict()["question"] == "What is a Hilbert space?"
+
+    def test_generate_answer_with_custom_adapter(self, sample_prompt_response: PromptResponse) -> None:
+        mock_adapter = MockLLMAdapter(model_name="custom-mock-v2")
+        generator = AnswerGenerator(llm_adapter=mock_adapter)
+        req = AnswerRequest(prompt_response=sample_prompt_response)
+        response = generator.generate_answer(req)
+
+        assert response.metadata.model == "custom-mock-v2"
+
+    def test_invalid_request_type(self) -> None:
+        generator = AnswerGenerator()
+        with pytest.raises(TypeError):
+            generator.generate_answer("invalid_request")  # type: ignore

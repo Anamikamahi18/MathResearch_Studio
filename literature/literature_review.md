@@ -469,3 +469,89 @@ Scientific Named Entity Recognition (NER) and Relation Extraction (RE) extract d
 
 **Ideas for MathResearch Studio**  
 - Implement `BaseRelationExtractor` strategy interface so rule-based extractors can be seamlessly replaced or enhanced with LLM/NER classifiers without altering downstream graph components.
+
+---
+
+## Day 5 Focus: Retrieval-Augmented Generation (RAG), Scientific QA, Hallucination Reduction, & Citation Grounding
+
+### Topic 9: Retrieval-Augmented Generation for Scientific Question Answering (Scientific RAG)
+
+**Summary**  
+Retrieval-Augmented Generation (Lewis et al., 2020) combines neural passage retrieval with pre-trained generative language models. In scientific QA contexts (e.g. BioASQ, SciQ, arXiv-QA), RAG grounds model generation in authoritative document excerpts, significantly improving factual recall over un-augmented language models.
+
+**Advantages**  
+- Grounds generated answers directly in uploaded scientific paper passages.
+- Eliminates the need to continuously re-train or fine-tune LLMs when literature changes.
+- Limits context window distraction by supplying only top-K relevant chunks.
+
+**Weaknesses**  
+- Basic RAG models rely on pure dense vector similarity, which often fails to capture mathematical symbol definitions ($\lambda$, $\mathcal{H}$) or graph dependency structures.
+- Naive passage chunking splits mathematical definitions across boundaries, breaking logical proofs.
+
+**Research Gap**  
+- Multi-signal hybrid retrieval frameworks that seamlessly combine dense semantic vectors, exact symbol/entity matches, and knowledge graph adjacency weights.
+
+**Ideas for MathResearch Studio**  
+- Implement `HybridRetriever` combining FAISS vector similarity, entity/symbol overlap, intent classification, and Day 4 Research Graph topology scores.
+
+---
+
+### Topic 10: LLM Hallucination Mitigation & Factual Grounding in STEM Literature
+
+**Summary**  
+Large language models frequently hallucinate non-existent mathematical theorems, false proof steps, or fictitious author citations when generating technical text (Ji et al., 2023 - *Survey of Hallucination in Natural Language Generation*). Factual grounding techniques measure sentence-level context alignment to detect unsupported model assertions before returning outputs to researchers.
+
+**Advantages**  
+- Sentence-level claim alignment detects subtle hallucination artifacts in multi-paragraph technical answers.
+- Provides quantitative grounding scores ($\text{GroundingScore} \in [0, 1]$) to evaluate factual confidence.
+
+**Weaknesses**  
+- LLM-based hallucination evaluators are slow, expensive, and subject to self-reflection bias.
+- Pure word-overlap metrics miss mathematical equivalence (e.g. $\text{tr}(A)$ vs $\sum \lambda_i$).
+
+**Research Gap**  
+- Fast, deterministic sentence alignment engines that evaluate mathematical claim support without invoking secondary LLM API calls.
+
+**Ideas for MathResearch Studio**  
+- Build `AlignmentEngine` and `ClaimVerifier` in `src/rag/evidence/` and `src/rag/grounding/` using rule-based token overlap and entity matching to verify answer grounding deterministically in $\le 5\text{ms}$.
+
+---
+
+### Topic 11: Citation Grounding & Traceable Scientific Attribution
+
+**Summary**  
+Citation grounding (Gao et al., 2023 - *RARR: Research-Assembled Retrieval and Repair*) ensures that every generated factual statement is explicitly paired with a verifiable source passage, including paper title, section heading, page range, and chunk identifier.
+
+**Advantages**  
+- Increases researcher trust by providing direct one-click attribution to source PDF passages.
+- Supports multiple academic citation formats (`[1]`, `(Author, Year)`, `[Paper, Section, Page]`).
+
+**Weaknesses**  
+- Naive citation insertion tools frequently attach duplicate citations or hallucinate page numbers not present in source metadata.
+
+**Research Gap**  
+- Automated citation formatters equipped with real-time integrity validators that check for orphan references, missing paper titles, or invalid page boundaries.
+
+**Ideas for MathResearch Studio**  
+- Implement `CitationEngine` and `CitationValidator` in `src/rag/citation_engine/` supporting `INLINE`, `AUTHOR_YEAR`, and `ACADEMIC` styles while enforcing strict metadata validation.
+
+---
+
+### Topic 12: Guardrails & Safe Decision Policies for AI Research Assistants
+
+**Summary**  
+AI safety guardrails (Reaver et al., 2023) act as policy decision filters that evaluate whether an AI assistant's generated response should be returned, annotated with warnings, refused, or deferred for user clarification.
+
+**Advantages**  
+- Prevents fabricated or zero-evidence answers from reaching researchers.
+- Communicates uncertainty clearly when retrieved literature is insufficient.
+
+**Weaknesses**  
+- Hardcoded guardrails can become overly restrictive if thresholds are set arbitrarily without empirical validation.
+
+**Research Gap**  
+- Policy-driven guardrail decision engines that separate rule evaluation from generation, ensuring non-destructive answer handling.
+
+**Ideas for MathResearch Studio**  
+- Create `GuardrailDecisionEngine` in `src/rag/guardrails/` enforcing policy rules (`RETURN`, `RETURN_WITH_WARNING`, `REFUSE`, `ASK_FOR_CLARIFICATION`, `INSUFFICIENT_EVIDENCE`) over upstream RAG outputs.
+
