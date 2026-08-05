@@ -40,6 +40,8 @@ This checklist documents the readiness status of the **MathResearch Studio v1.0.
 - [x] **No regressions** — All 225 pre-existing tests pass after all Day 7 changes
 - [x] **Installation instructions tested** — `pip install -r requirements.txt` + `python -m pytest` confirmed working
 - [x] **Application launches** — `streamlit run src/ui/app.py` runs without errors
+- [x] **Deployment verified** — Local deployment verified: all 10 workflow steps PASS (`python scripts/verify_end_to_end.py`)
+- [x] **Deployment constraints documented** — Cloud deployment constraints (PyTorch size, local disk state, no FastAPI backend) fully documented in `docs/deployment.md` and `reports/day7_step6_deployment.md`
 
 ---
 

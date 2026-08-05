@@ -128,7 +128,10 @@
     "paper_stats_test_01_s1_c001",
     "paper_export_test_01_s1_c001",
     "paper_test_01_s1_c001",
-    "paper_test_02_s1_c001"
+    "paper_test_02_s1_c001",
+    "paper_e2e_topology_01_s1_c001",
+    "paper_e2e_topology_01_s2_c001",
+    "paper_e2e_topology_01_s3_c001"
   ],
   "metadata_store": {
     "paper_6cd768c13674_s1_c001": {
