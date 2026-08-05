@@ -98,7 +98,12 @@ class CitationFormatter:
                 continue
 
             markers = [c.display_text for c in span_citations]
-            markers_str = " ".join(markers)
+            # Deduplicate repeated markers while preserving order
+            unique_markers: list[str] = []
+            for m in markers:
+                if m not in unique_markers:
+                    unique_markers.append(m)
+            markers_str = " ".join(unique_markers)
 
             if sent.endswith("."):
                 annotated_sent = f"{sent[:-1]} {markers_str}."

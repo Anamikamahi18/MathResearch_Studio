@@ -21,28 +21,45 @@ from src.ui.state import (
 logger = logging.getLogger(__name__)
 
 
+def get_ist_now_str() -> str:
+    """Return current timestamp formatted in Indian Standard Time (IST / GMT+5:30)."""
+    from datetime import datetime, timezone, timedelta
+    ist_tz = timezone(timedelta(hours=5, minutes=30))
+    return datetime.now(ist_tz).strftime("%d %b %Y, %H:%M:%S IST")
+
+
+def clean_paper_display_title(paper: dict[str, Any]) -> str:
+    """Clean title string removing embedded HTML tags."""
+    t = paper.get("title") or paper.get("paper_id") or "Untitled Paper"
+    if "<" in t and ">" in t:
+        import re
+        t = re.sub(r"<[^>]+>", "", t).strip()
+    if " • " in t:
+        t = t.split(" • ")[0].strip()
+    return t
+
+
 def render_statistics_page() -> None:
-    """Render the Statistics Dashboard page view."""
+    """Render the Mathematical Research Statistics page view."""
     render_page_title(
         title="Mathematical Research Statistics",
-        subtitle="System overview, mathematical statement distributions, research activity logs, and system health status.",
+        subtitle="System overview, mathematical statement distributions, research activity logs, and library health status.",
         icon="📊",
         badge="Math Analytics",
     )
 
-
     doc_service = get_document_service()
     dash_service = get_dashboard_service()
 
-    # Toolbar with Refresh Button
+    # Toolbar with Sync Button
     c_title, c_ref = st.columns([3, 1])
     with c_ref:
-        if st.button("🔄 Refresh Dashboard", type="primary", use_container_width=True):
-            with st.spinner("Aggregating system statistics and rebuilding graph metrics..."):
+        if st.button("🔄 Sync Analytics Data", type="primary", use_container_width=True):
+            with st.spinner("Aggregating library statistics and rebuilding network metrics..."):
                 doc_service.refresh_library()
                 dash_service.graph_service.build_dependency_graph()
-                st.session_state["last_dashboard_refresh"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
-                st.toast("Dashboard statistics refreshed!")
+                st.session_state["last_dashboard_refresh"] = get_ist_now_str()
+                st.toast("Analytics statistics refreshed!")
                 st.rerun()
 
     stats = dash_service.get_statistics()
@@ -92,15 +109,15 @@ def render_statistics_page() -> None:
         chunks = p.get("chunk_count", 0)
         if chunks >= max_chunks:
             max_chunks = chunks
-            largest_paper_title = p.get("title") or p.get("paper_id")
+            largest_paper_title = clean_paper_display_title(p)
 
     # Overview Metrics Bar (10 System Metrics in 2 Rows)
-    st.markdown("### 📈 High-Level System Metrics")
+    st.markdown("### 📈 Library Overview Metrics")
     r1_c1, r1_c2, r1_c3, r1_c4, r1_c5 = st.columns(5)
     with r1_c1:
-        st.metric("Papers Cataloged", f"{paper_count}")
+        st.metric("Library Papers", f"{paper_count}")
     with r1_c2:
-        st.metric("Est. Total Pages", f"{total_pages}")
+        st.metric("Total Library Pages", f"{total_pages}")
     with r1_c3:
         st.metric("Definitions", f"{stats.get('definition_count', 0)}")
     with r1_c4:
@@ -112,13 +129,13 @@ def render_statistics_page() -> None:
     with r2_c1:
         st.metric("Proofs", f"{total_proofs}")
     with r2_c2:
-        st.metric("Symbols & Notation", f"{total_symbols or len(nodes)}")
+        st.metric("Extracted Symbols & Terms", f"{total_symbols or len(nodes)}")
     with r2_c3:
-        st.metric("Vector Store Chunks", f"{stats.get('total_vector_chunks', 0)}")
+        st.metric("Indexed Passages", f"{stats.get('total_vector_chunks', 0)}")
     with r2_c4:
-        st.metric("Graph Nodes", f"{stats.get('graph_nodes', 0)}")
+        st.metric("Statements & Concepts", f"{stats.get('graph_nodes', 0)}")
     with r2_c5:
-        st.metric("Graph Edges", f"{stats.get('graph_edges', 0)}")
+        st.metric("Statement Connections", f"{stats.get('graph_edges', 0)}")
 
     st.divider()
 
@@ -178,9 +195,9 @@ def render_statistics_page() -> None:
         st.markdown(
             f"""
             <div style="background: #1E293B; border-left: 4px solid #3B82F6; padding: 12px; border-radius: 6px;">
-                <small style="color: #94A3B8;">LARGEST PAPER</small>
-                <h5 style="margin: 4px 0; color: #F8FAFC;">{largest_paper_title[:30]}</h5>
-                <small style="color: #38BDF8;">{max_chunks} chunk(s) indexed</small>
+                <small style="color: #94A3B8;">LARGEST REFERENCE PAPER</small>
+                <h5 style="margin: 4px 0; color: #F8FAFC;">{largest_paper_title[:32]}</h5>
+                <small style="color: #38BDF8;">{max_chunks} passage(s) indexed</small>
             </div>
             """,
             unsafe_allow_html=True,
@@ -190,9 +207,9 @@ def render_statistics_page() -> None:
         st.markdown(
             f"""
             <div style="background: #1E293B; border-left: 4px solid #10B981; padding: 12px; border-radius: 6px;">
-                <small style="color: #94A3B8;">MOST CONNECTED STATEMENT</small>
-                <h5 style="margin: 4px 0; color: #F8FAFC;">{most_connected_lbl[:30]}</h5>
-                <small style="color: #34D399;">{max_degree} dependency edge(s)</small>
+                <small style="color: #94A3B8;">MOST REFERENCED STATEMENT</small>
+                <h5 style="margin: 4px 0; color: #F8FAFC;">{most_connected_lbl[:32]}</h5>
+                <small style="color: #34D399;">{max_degree} statement connection(s)</small>
             </div>
             """,
             unsafe_allow_html=True,
@@ -202,7 +219,7 @@ def render_statistics_page() -> None:
         st.markdown(
             f"""
             <div style="background: #1E293B; border-left: 4px solid #8B5CF6; padding: 12px; border-radius: 6px;">
-                <small style="color: #94A3B8;">GRAPH DENSITY</small>
+                <small style="color: #94A3B8;">NETWORK INTERCONNECTEDNESS</small>
                 <h5 style="margin: 4px 0; color: #F8FAFC;">{stats.get('graph_density', 0.0):.4f}</h5>
                 <small style="color: #A78BFA;">Statement network density</small>
             </div>
@@ -214,8 +231,8 @@ def render_statistics_page() -> None:
         st.markdown(
             f"""
             <div style="background: #1E293B; border-left: 4px solid #F59E0B; padding: 12px; border-radius: 6px;">
-                <small style="color: #94A3B8;">DOMINANT STATEMENT</small>
-                <h5 style="margin: 4px 0; color: #F8FAFC;">Theorem / Definition</h5>
+                <small style="color: #94A3B8;">PRIMARY STATEMENT TYPES</small>
+                <h5 style="margin: 4px 0; color: #F8FAFC;">Theorems & Definitions</h5>
                 <small style="color: #FBBF24;">{stats.get('definition_count', 0) + stats.get('theorem_count', 0)} total statements</small>
             </div>
             """,
@@ -230,9 +247,12 @@ def render_statistics_page() -> None:
 
     with tab_papers:
         for idx, p in enumerate(reversed(papers[-5:]), start=1):
+            c_title_clean = clean_paper_display_title(p)
+            a_author = p.get('authors', ['Unknown'])[0] if p.get('authors') else 'Author not specified'
+            yr_str = str(p.get('year', 'N/A'))
             st.markdown(
-                f"**{idx}. {p.get('title')}** &bull; `<small style='color:#94A3B8;'>{p.get('authors', ['Unknown'])[0] if p.get('authors') else 'Unknown'} ({p.get('year', 'N/A')})</small>` "
-                f"&bull; Chunks: `{p.get('chunk_count', 0)}`"
+                f"**{idx}. {c_title_clean}** &bull; `<small style='color:#94A3B8;'>{a_author} ({yr_str})</small>` "
+                f"&bull; Passages: `{p.get('chunk_count', 0)}`"
             )
 
     with tab_search:
@@ -262,25 +282,25 @@ def render_statistics_page() -> None:
     st.divider()
 
     # System Health Status Panel
-    st.markdown("### 🛡️ System Health & Infrastructure Status")
+    st.markdown("### 🛡️ Library Status & System Health")
     h1, h2, h3, h4 = st.columns(4)
 
-    last_refresh = st.session_state.get("last_dashboard_refresh", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"))
+    last_refresh = st.session_state.get("last_dashboard_refresh", get_ist_now_str())
 
     with h1:
-        st.success("🟢 Vector Store: **ONLINE**")
-        st.caption(f"{stats.get('total_vector_chunks', 0)} vectors indexed")
+        st.success("🟢 Literature Index: **ONLINE**")
+        st.caption(f"{stats.get('total_vector_chunks', 0)} passages indexed")
 
     with h2:
-        st.success("🟢 Research Graph: **ONLINE**")
-        st.caption(f"{stats.get('graph_nodes', 0)} nodes / {stats.get('graph_edges', 0)} edges")
+        st.success("🟢 Statement Network: **ONLINE**")
+        st.caption(f"{stats.get('graph_nodes', 0)} statements / {stats.get('graph_edges', 0)} connections")
 
     with h3:
-        st.info("🔵 Paper Catalog: **READY**")
+        st.info("🔵 Library Catalog: **READY**")
         st.caption(f"{paper_count} papers loaded")
 
     with h4:
-        st.warning("⏱️ Last Refreshed")
+        st.warning("⏱️ Last Synced (IST)")
         st.caption(f"{last_refresh}")
 
 

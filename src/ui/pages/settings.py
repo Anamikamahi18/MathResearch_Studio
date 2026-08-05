@@ -15,7 +15,7 @@ def render_settings_page() -> None:
     """Render the Application Settings page."""
     render_page_title(
         title="Application Settings",
-        subtitle="Configure retrieval parameters, embedding model preferences, and application workspace settings.",
+        subtitle="Customize literature search defaults, AI proof assistant preferences, academic citation formats, and workspace knowledge base settings.",
         icon="⚙️",
         badge="Workspace Configuration",
     )
@@ -27,11 +27,11 @@ def render_settings_page() -> None:
     current_hf_token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN") or ""
 
     with st.form("settings_form"):
-        st.markdown("### 🔑 Hugging Face Hub Authentication")
-        st.caption("Provide an HF Token to enable higher rate limits and faster downloads for SentenceTransformers model weights.")
+        st.markdown("### 🔑 AI Model Hub Access Key (Optional)")
+        st.caption("Provide an optional access key to enable faster model downloads and higher rate limits when fetching mathematical text embedding models.")
         
         hf_token_input = st.text_input(
-            label="Hugging Face Access Token (HF_TOKEN)",
+            label="AI Model Access Token (HF_TOKEN)",
             value=current_hf_token,
             type="password",
             placeholder="hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
@@ -39,54 +39,68 @@ def render_settings_page() -> None:
         )
 
         if current_hf_token:
-            st.success("🔑 **HF_TOKEN active:** Authenticated downloads enabled.")
+            st.success("🔑 **Access Key Active:** Authenticated model downloads enabled.")
         else:
-            st.info("ℹ️ **Unauthenticated mode:** Implicit warnings suppressed. Set HF_TOKEN above for higher rate limits.")
+            st.info("ℹ️ **Standard Mode:** Using cached local mathematical embedding models (No external key required).")
 
-        st.markdown("### 🔍 Retrieval & Search Preferences")
+        st.markdown("### 🔍 Literature Search & Vector Retrieval Preferences")
         c1, c2 = st.columns(2)
 
         with c1:
             st.selectbox(
-                label="Default Embedding Model Provider",
-                options=["all-MiniLM-L6-v2 (SentenceTransformers)", "SciBERT (Academic)", "Mock Embedding Provider"],
+                label="Primary Text & Math Understanding Model",
+                options=[
+                    "MiniLM Academic Semantic Model (Fast & Accurate)",
+                    "SciBERT Domain Model (Mathematics & Computer Science)",
+                    "Local Mock Model (Offline Testing)",
+                ],
                 index=0,
             )
 
         with c2:
             st.slider(
-                label="Default Search Top-K Results",
+                label="Default Matching Passages Returned per Search",
                 min_value=1,
                 max_value=50,
                 value=10,
             )
 
-        st.markdown("### 🤖 AI Assistant & RAG Options")
+        st.markdown("### 🤖 Math AI Assistant & Proof Reasoning Settings")
         c3, c4 = st.columns(2)
 
         with c3:
             st.selectbox(
-                label="LLM Provider Adapter",
-                options=["Mock LLM Adapter (Grounded Offline)", "OpenAI GPT-4o (API Key Required)", "Anthropic Claude 3.5 (API Key Required)"],
+                label="Mathematical Proof Reasoning Provider",
+                options=[
+                    "Offline Grounded Math Adapter (Local & Deterministic)",
+                    "OpenAI GPT-4o (Online API Key Required)",
+                    "Anthropic Claude 3.5 Sonnet (Online API Key Required)",
+                ],
                 index=0,
             )
 
         with c4:
             st.selectbox(
-                label="Default Citation Format",
-                options=["INLINE ([1])", "AUTHOR_YEAR ((Smith, 2024))", "ACADEMIC ([Paper, Section, Page])"],
+                label="Academic Citation Style",
+                options=[
+                    "Inline Bracket References e.g., [1]",
+                    "Author & Year Format e.g., (Galois, 1832)",
+                    "Full Citation Format e.g., [Paper Title, Section, Page]",
+                ],
                 index=0,
             )
 
-        st.markdown("### 📁 System Storage & Vector Index")
+        st.markdown("### 📁 Mathematical Knowledge Base & Vector Index")
         v_store = getattr(doc_service, "vector_store", None)
         v_size = getattr(v_store, "number_of_vectors", lambda: 0)() if v_store else 0
+        if v_size == 0 and doc_service:
+            v_size = sum(p.get("chunk_count", 0) for p in doc_service.list_papers())
         v_dim = getattr(v_store, "dimension", 384) if v_store else 384
 
         st.info(
-            f"**Vector Store Location:** `exports/vector_store/index.faiss` &bull; "
-            f"**Current Index Vectors:** `{v_size}` &bull; "
-            f"**Embedding Dimension:** `{v_dim}`"
+            f"**Knowledge Base Path:** `exports/vector_store/index.faiss` &bull; "
+            f"**Indexed Passage Chunks:** `{v_size}` &bull; "
+            f"**Semantic Vector Dimension:** `{v_dim}`"
         )
 
         save_settings = st.form_submit_button("💾 Save Preferences", type="primary", use_container_width=True)
@@ -102,9 +116,9 @@ def render_settings_page() -> None:
             os.environ.pop("HF_TOKEN", None)
             os.environ.pop("HUGGING_FACE_HUB_TOKEN", None)
             os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN_WARNING"] = "1"
-            st.toast("HF_TOKEN cleared; implicit warning suppression enabled.")
+            st.toast("HF_TOKEN cleared; standard mode active.")
 
-        st.success("✅ Application preferences updated.")
+        st.success("✅ Application preferences updated successfully.")
 
 
 if __name__ == "__main__":

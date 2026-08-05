@@ -272,6 +272,14 @@ def render_library_page() -> None:
                     if len(references) > 10:
                         st.caption(f"*... and {len(references) - 10} more reference(s).*")
 
+                # Delete Paper Action Button
+                st.divider()
+                if st.button(f"🗑️ Delete Paper '{title}'", key=f"del_btn_{pid}_{idx}", type="secondary"):
+                    deleted = doc_service.delete_paper(pid)
+                    if deleted:
+                        st.toast(f"Deleted paper '{title}' from library catalog.")
+                        st.rerun()
+
                 # Developer Collapse Toggle for Raw JSON
                 with st.expander("🛠️ Technical JSON Data (Developer View)"):
                     st.json(raw_doc)

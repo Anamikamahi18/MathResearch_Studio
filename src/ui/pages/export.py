@@ -48,15 +48,43 @@ def format_bytes_to_kb(b_size: int) -> str:
         return f"{b_size / (1024 * 1024):.2f} MB"
 
 
+TARGET_FILENAME_MAP = {
+    "Paper Summaries & Literature Metadata": "paper_summaries",
+    "Literature Search Results & History": "search_history",
+    "Math AI Q&A Conversations": "ai_qna_conversations",
+    "Mathematical Notation Dictionary": "notation_dictionary",
+    "Theorem & Proof Dependency Graph": "theorem_dependency_graph",
+    "Library Research Analytics": "library_analytics",
+}
+
+
+def get_clean_export_filename(export_target: str, file_ext: str, timestamp_suffix: bool = False) -> str:
+    """Generate a clean, safe filename without illegal OS or browser URL characters."""
+    base = TARGET_FILENAME_MAP.get(
+        export_target,
+        export_target.lower().replace(" & ", "_").replace(" ", "_"),
+    )
+    base = base.replace("&", "and").replace("?", "").replace("/", "_")
+    if timestamp_suffix:
+        return f"{base}_{int(time.time())}.{file_ext}"
+    return f"{base}.{file_ext}"
+
+
+def get_ist_now_str() -> str:
+    """Return current timestamp formatted in Indian Standard Time (IST / GMT+5:30)."""
+    from datetime import datetime, timezone, timedelta
+    ist_tz = timezone(timedelta(hours=5, minutes=30))
+    return datetime.now(ist_tz).strftime("%d %b %Y, %H:%M:%S IST")
+
+
 def render_export_page() -> None:
     """Render the Export Center page view."""
     render_page_title(
         title="Mathematics Export Center",
-        subtitle="Export mathematical research notes, theorem summaries, search results, AI Q&A conversations, notation dictionaries, and graph metrics.",
+        subtitle="Export mathematical research notes, theorem summaries, search results, AI Q&A conversations, notation dictionaries, and network metrics.",
         icon="📤",
         badge="Export Center",
     )
-
 
     doc_service = get_document_service()
     export_service = get_export_service()
@@ -80,42 +108,42 @@ def render_export_page() -> None:
 
         with c_target:
             export_target = st.selectbox(
-                label="Select Export Target Data",
+                label="Select Research Material to Export",
                 options=[
-                    "Paper Metadata & Summaries",
-                    "Search Results & History",
-                    "AI Q&A Conversations",
-                    "Notation Dictionary",
-                    "Dependency Graph Metrics",
-                    "Dashboard Statistics",
+                    "Paper Summaries & Literature Metadata",
+                    "Literature Search Results & History",
+                    "Math AI Q&A Conversations",
+                    "Mathematical Notation Dictionary",
+                    "Theorem & Proof Dependency Graph",
+                    "Library Research Analytics",
                 ],
                 index=0,
             )
 
         with c_format:
             export_format = st.radio(
-                label="Target Export Format",
+                label="Choose Export File Format",
                 options=["Markdown (.md)", "JSON (.json)", "CSV (.csv)", "PDF (.pdf)"],
                 index=0,
                 horizontal=True,
             )
 
-        st.markdown("**Export Scope & Options:**")
+        st.markdown("**Export Customization & Content Options:**")
         c_papers, c_toggles = st.columns([2, 2])
 
         with c_papers:
             paper_options = {p.get("title", p.get("paper_id")): p.get("paper_id") for p in papers}
             selected_paper_titles = st.multiselect(
-                label="Scope to Specific Paper(s)",
+                label="Scope to Specific Math Paper(s)",
                 options=list(paper_options.keys()),
                 placeholder="Include all catalog papers...",
             )
 
         with c_toggles:
-            inc_cit = st.checkbox("Include In-Text Citations", value=True)
-            inc_meta = st.checkbox("Include System Metadata", value=True)
-            inc_graph = st.checkbox("Include Graph Density & Degree", value=True)
-            inc_not = st.checkbox("Include Notation & Symbols", value=True)
+            inc_cit = st.checkbox("Include Academic Citation References", value=True)
+            inc_meta = st.checkbox("Include Document & Author Metadata", value=True)
+            inc_graph = st.checkbox("Include Theorem & Proof Step Connections", value=True)
+            inc_not = st.checkbox("Include Mathematical Symbol Dictionary", value=True)
 
         submit_export = st.form_submit_button("🚀 Generate Export File", type="primary", use_container_width=True)
 
@@ -132,28 +160,31 @@ def render_export_page() -> None:
     else:
         target_papers = papers
 
+    # Target Filename Clean Display
+    preview_filename = get_clean_export_filename(export_target, file_ext, timestamp_suffix=False)
+
     # Export Live Preview Card
     st.divider()
-    st.markdown("### 📋 Export Configuration Preview")
+    st.markdown("### 📋 Export Summary & File Preview")
     prev_c1, prev_c2, prev_c3, prev_c4 = st.columns(4)
 
     est_items = len(target_papers)
     est_size_kb = max(1.2, est_items * 1.8)
 
     with prev_c1:
-        st.metric("Target Data", export_target.split()[0])
+        st.metric("Material", export_target.split()[0])
     with prev_c2:
         st.metric("Format", export_format.split()[0])
     with prev_c3:
-        st.metric("Catalog Scope", f"{est_items} paper(s)")
+        st.metric("Included Library Papers", f"{est_items} paper(s)")
     with prev_c4:
-        st.metric("Estimated Size", f"~{est_size_kb:.1f} KB")
+        st.metric("Estimated Export File Size", f"~{est_size_kb:.1f} KB")
 
     st.markdown(
         f"""
-        <div style="background: #1E293B; border-left: 4px solid #6366F1; padding: 12px; border-radius: 4px; font-size: 0.85rem; color: #94A3B8;">
-            <strong>Target Filename:</strong> <code>{export_target.lower().replace(' ', '_')}.{file_ext}</code> &bull; 
-            <strong>Includes:</strong> Citations ({inc_cit}), Metadata ({inc_meta}), Graph ({inc_graph}), Notation ({inc_not})
+        <div style="background: #1E293B; border-left: 4px solid #6366F1; padding: 12px; border-radius: 6px; font-size: 0.88rem; color: #94A3B8;">
+            <strong>Target Filename:</strong> <code>{preview_filename}</code> &bull; 
+            <strong>Includes:</strong> Citations ({inc_cit}), Metadata ({inc_meta}), Graph Connections ({inc_graph}), Symbols ({inc_not})
         </div>
         """,
         unsafe_allow_html=True,
@@ -164,11 +195,11 @@ def render_export_page() -> None:
         start_time = time.perf_counter()
 
         with st.spinner("Generating export file via ExportService..."):
-            out_name = f"{export_target.lower().replace(' ', '_')}_{int(time.time())}.{file_ext}"
+            out_name = get_clean_export_filename(export_target, file_ext, timestamp_suffix=True)
             out_file = export_service.export_dir / out_name
 
             # Assemble data payload based on target
-            if "Paper Metadata" in export_target:
+            if "Paper Summaries" in export_target:
                 exported_path = export_service.export_summaries(
                     documents_or_results=target_papers,
                     format=fmt_clean if fmt_clean in ("json", "csv", "markdown") else "markdown",
@@ -198,6 +229,14 @@ def render_export_page() -> None:
                     format=fmt_clean if fmt_clean in ("json", "csv", "markdown") else "markdown",
                     output_path=out_file,
                 )
+            elif "Dependency Graph" in export_target:
+                graph_svc = get_graph_service()
+                g_metrics = graph_svc.get_graph_metrics()
+                exported_path = export_service.export_research_notes(
+                    data=g_metrics,
+                    format=fmt_clean if fmt_clean in ("json", "csv", "markdown") else "markdown",
+                    output_path=out_file,
+                )
             else:
                 dash_svc = get_dashboard_service()
                 stats = dash_svc.get_statistics()
@@ -222,7 +261,7 @@ def render_export_page() -> None:
                     "format": export_format,
                     "size_str": format_bytes_to_kb(f_size),
                     "duration_ms": duration_ms,
-                    "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
+                    "timestamp": get_ist_now_str(),
                     "file_path": str(exported_path),
                     "bytes": file_bytes,
                     "mime": mime_type,

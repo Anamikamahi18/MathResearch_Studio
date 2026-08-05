@@ -37,14 +37,28 @@ def render_assistant_page() -> None:
     """Render the AI Research Assistant page view."""
     render_page_title(
         title="Mathematics AI Research Assistant",
-        subtitle="Ask grounded questions across mathematical literature powered by multi-stage RAG, proof evidence mapping, and mathematical guardrails.",
+        subtitle="Ask research questions across your mathematical library backed by source evidence, proof step tracing, and academic citations.",
         icon="🤖",
         badge="Math AI Assistant",
     )
 
-
     doc_service = get_document_service()
     chat_service = get_chat_service()
+
+    # Pre-build catalog mapping for clean paper title and author resolution
+    papers = doc_service.list_papers()
+    paper_title_map: dict[str, str] = {}
+    paper_author_map: dict[str, str] = {}
+    paper_options: dict[str, str] = {}
+
+    for p in papers:
+        pid = p.get("paper_id")
+        if pid:
+            t = p.get("title") or pid
+            paper_title_map[pid] = t
+            paper_options[t] = pid
+            a_list = p.get("authors") or []
+            paper_author_map[pid] = ", ".join(a_list) if a_list else "Author not specified"
 
     # Suggested Example Questions Chips
     st.markdown("**Suggested Research Questions:**")
@@ -63,7 +77,7 @@ def render_assistant_page() -> None:
         question_text = st.text_area(
             label="Research Question",
             value=default_q,
-            placeholder="Ask a technical question or query mathematical concepts across your library...",
+            placeholder="Ask a technical question or query mathematical concepts across your library (e.g., 'What is Linear Algebra?', 'State the Banach Fixed Point Theorem')...",
             height=100,
             key="assistant_question_input",
         )
@@ -72,19 +86,17 @@ def render_assistant_page() -> None:
 
         with c_topk:
             top_k = st.selectbox(
-                label="Evidence Top-K",
+                label="Max Source Passages to Consult",
                 options=[5, 10, 20],
                 index=0,
-                help="Maximum candidate passages to retrieve for grounding.",
+                help="Select how many paper passages the AI should consult when formulating the answer.",
             )
 
         with c_papers:
-            papers = doc_service.list_papers()
-            paper_options = {p.get("title", p.get("paper_id")): p.get("paper_id") for p in papers}
             selected_paper_titles = st.multiselect(
                 label="Scope to Paper(s)",
                 options=list(paper_options.keys()),
-                placeholder="Search across all library documents...",
+                placeholder="Search across all math papers in library...",
             )
 
         submit_ask = st.form_submit_button("🤖 Ask AI Assistant", type="primary", use_container_width=True)
@@ -100,7 +112,7 @@ def render_assistant_page() -> None:
     if submit_ask and question_text.strip():
         start_time = time.perf_counter()
 
-        with st.spinner("Executing 8-stage RAG pipeline (Retrieval, Prompt, Answer, Evidence, Citations, Grounding, Guardrails)..."):
+        with st.spinner("Analyzing literature passages, verifying mathematical statements, & drafting grounded answer..."):
             try:
                 response = chat_service.receive_question(
                     question=question_text.strip(),
@@ -141,47 +153,51 @@ def render_assistant_page() -> None:
                 unsafe_allow_html=True,
             )
         with m2:
-            st.metric("Grounding Confidence", f"{confidence_pct}%")
+            st.metric("Grounding Accuracy", f"{confidence_pct}%")
         with m3:
-            st.metric("Pipeline Duration", f"{active_duration} ms")
+            st.metric("Response Time", f"{active_duration} ms")
         with m4:
-            st.metric("Evidence Passages", f"{retrieved_count}")
+            st.metric("Cited Passages", f"{retrieved_count}")
 
-        # Guardrail Warnings
+        # Guardrail Warnings Collapsed Expander
         if active_response.warnings:
-            for w in active_response.warnings:
-                st.warning(f"⚠️ **Guardrail Warning:** {w}")
+            with st.expander(f"ℹ️ Verification & Quality Notes ({len(active_response.warnings)})"):
+                for w in active_response.warnings:
+                    st.markdown(f"- ⚠️ {w}")
 
         # Answer Section
         st.markdown(f"### Question: *\"{active_question}\"*")
         st.markdown(
             f"""
-            <div style="background: #1E293B; border-left: 4px solid #6366F1; padding: 16px; border-radius: 4px; margin-bottom: 20px;">
+            <div style="background: #1E293B; border-left: 4px solid #6366F1; padding: 16px; border-radius: 6px; margin-bottom: 20px; font-size: 1.02rem; line-height: 1.6;">
                 {active_response.answer_text}
             </div>
             """,
             unsafe_allow_html=True,
         )
 
-        # Tabs for Evidence and Citations
-        tab_ev, tab_cit, tab_raw = st.tabs(["📚 Supporting Evidence", "🏷️ Citations & Bibliography", "🔍 Raw Pipeline Inspection"])
+        # Tabs for Supporting Passages, Citations, and Verification
+        tab_ev, tab_cit, tab_verify = st.tabs([
+            "📚 Supporting Literature Passages",
+            "🏷️ Academic Citations & References",
+            "📖 Answer Verification & Source Mapping",
+        ])
 
         with tab_ev:
             evidence_items = active_response.metadata.get("evidence_items", []) if isinstance(active_response.metadata, dict) else []
             retrieved_cands = active_response.metadata.get("retrieved_candidates", []) if isinstance(active_response.metadata, dict) else []
-
             passages = evidence_items or retrieved_cands
 
             if passages:
                 for idx, item in enumerate(passages, start=1):
-                    # Handle dict or object attributes
-                    paper_title = getattr(item, "paper_title", None) or (item.get("paper_title") if isinstance(item, dict) else "Unknown Paper")
+                    pid = getattr(item, "paper_id", None) or (item.get("paper_id") if isinstance(item, dict) else "")
+                    paper_title = paper_title_map.get(pid) or getattr(item, "paper_title", None) or (item.get("paper_title") if isinstance(item, dict) else "Paper")
                     section_title = getattr(item, "section_title", None) or (item.get("section_title") if isinstance(item, dict) else "Section")
                     score = getattr(item, "final_score", None) or getattr(item, "score", 0.0) or (item.get("score", 0.0) if isinstance(item, dict) else 0.0)
                     text = getattr(item, "text", None) or (item.get("text", "") if isinstance(item, dict) else "")
                     page_start = getattr(item, "page_start", 1) or (item.get("page_start", 1) if isinstance(item, dict) else 1)
 
-                    with st.expander(f"Passage #{idx} [{float(score):.4f}] **{paper_title}** - *{section_title}* (Page {page_start})"):
+                    with st.expander(f"Passage #{idx} [{float(score):.4f}] **{paper_title}** — *{section_title}* (Page {page_start})"):
                         st.info(text)
             else:
                 st.caption("No specific evidence passages mapped for this answer.")
@@ -203,8 +219,14 @@ def render_assistant_page() -> None:
             if not citations and not bibliography:
                 st.caption("No explicit academic citations generated for this answer.")
 
-        with tab_raw:
-            st.json(active_response.to_dict())
+        with tab_verify:
+            st.markdown("### Answer Verification & Literature Alignment")
+            st.markdown(f"- **Grounding Accuracy Score**: `{confidence_pct}%`")
+            st.markdown(f"- **Passages Consulted**: `{retrieved_count}`")
+            st.markdown(f"- **Response Generation Time**: `{active_duration} ms`")
+            
+            with st.expander("🛠️ Technical Pipeline Data (Developer View)"):
+                st.json(active_response.to_dict())
 
     # Render Empty Guidance State if no question submitted yet
     elif not active_question:

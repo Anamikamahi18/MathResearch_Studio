@@ -291,3 +291,39 @@ class DocumentService:
     def get_paper(self, paper_id: str) -> dict[str, Any] | None:
         """Retrieve a paper record by its paper_id."""
         return self._paper_library.get(paper_id)
+
+    def delete_paper(self, paper_id: str) -> bool:
+        """Delete a paper from the library catalog, parsed JSON output, and upload directory.
+
+        Args:
+            paper_id: Unique paper ID string to remove.
+
+        Returns:
+            True if paper was removed, False if not found.
+        """
+        paper = self._paper_library.pop(paper_id, None)
+        if not paper:
+            return False
+
+        # Remove parsed JSON file if exists
+        json_file = self.parsed_dir / f"{paper_id}.json"
+        if json_file.exists():
+            try:
+                json_file.unlink()
+            except Exception as exc:
+                logger.warning("Could not delete parsed paper file '%s': %s", json_file, exc)
+
+        # Remove PDF file if source_file path is in uploads
+        raw_doc = paper.get("raw_document") or {}
+        src_info = raw_doc.get("source_file") or {}
+        file_name = src_info.get("file_name")
+        if file_name:
+            pdf_path = self.upload_dir / file_name
+            if pdf_path.exists():
+                try:
+                    pdf_path.unlink()
+                except Exception as exc:
+                    logger.warning("Could not delete uploaded PDF file '%s': %s", pdf_path, exc)
+
+        logger.info("Deleted paper '%s' from library catalog", paper_id)
+        return True

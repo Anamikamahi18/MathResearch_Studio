@@ -95,3 +95,14 @@ class TestUploadAndLibraryPages:
 
         # Should render empty state without raising exception
         library.render_library_page()
+
+    def test_delete_paper(self, tmp_path, mock_paper_summary):
+        doc_service = DocumentService(upload_dir=tmp_path / "uploads", parsed_dir=tmp_path / "parsed")
+        paper_id = mock_paper_summary["paper_id"]
+        doc_service._paper_library[paper_id] = mock_paper_summary
+        assert doc_service.get_paper(paper_id) is not None
+
+        # Delete paper
+        assert doc_service.delete_paper(paper_id) is True
+        assert doc_service.get_paper(paper_id) is None
+        assert doc_service.delete_paper(paper_id) is False

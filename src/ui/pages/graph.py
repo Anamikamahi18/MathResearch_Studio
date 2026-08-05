@@ -291,25 +291,36 @@ def generate_interactive_graph_html(
 
 
 def render_graph_page() -> None:
-    """Render the Research Graph page view."""
+    """Render the Theorem Dependency Network page view."""
     render_page_title(
-        title="Mathematical Research Graph",
-        subtitle="Explore interactive statement dependencies, definitions, theorems, lemmas, and proof chains.",
+        title="Theorem Dependency Network",
+        subtitle="Explore interactive mathematical statement dependencies, definitions, theorems, lemmas, corollaries, and proof step connections.",
         icon="🕸️",
-        badge="Dependency Network",
+        badge="Theorem Network",
     )
-
 
     doc_service = get_document_service()
     graph_service = get_graph_service()
 
+    # Pre-build paper catalog title mapping
+    papers = doc_service.list_papers()
+    paper_title_map: dict[str, str] = {}
+    paper_options: dict[str, str] = {}
+
+    for p in papers:
+        pid = p.get("paper_id")
+        if pid:
+            t = p.get("title") or pid
+            paper_title_map[pid] = t
+            paper_options[t] = pid
+
     # Toolbar with Refresh Button
     c_title, c_ref = st.columns([3, 1])
     with c_ref:
-        if st.button("🔄 Refresh Graph", type="primary", use_container_width=True):
+        if st.button("🔄 Sync Network Graph", type="primary", use_container_width=True):
             with st.spinner("Building dependency graph from parsed papers..."):
                 graph_service.build_dependency_graph()
-                st.toast("Dependency graph updated!")
+                st.toast("Theorem dependency graph updated!")
                 st.rerun()
 
     render_graph_legend()
@@ -326,13 +337,13 @@ def render_graph_page() -> None:
     # Display Metrics Summary Bar
     m1, m2, m3, m4 = st.columns(4)
     with m1:
-        st.metric("Total Nodes", f"{total_nodes}")
+        st.metric("Total Statements & Papers", f"{total_nodes}")
     with m2:
-        st.metric("Total Edges", f"{total_edges}")
+        st.metric("Statement Connections", f"{total_edges}")
     with m3:
-        st.metric("Average Degree", f"{avg_deg:.2f}")
+        st.metric("Average Connections per Node", f"{avg_deg:.2f}")
     with m4:
-        st.metric("Graph Density", f"{density:.4f}")
+        st.metric("Network Interconnectedness", f"{density:.4f}")
 
     if total_nodes == 0:
         st.divider()
@@ -349,32 +360,30 @@ def render_graph_page() -> None:
 
     with c_lay:
         layout_mode = st.selectbox(
-            label="Graph Layout",
+            label="Network Layout",
             options=["Hierarchical (DAG)", "Force-Directed (Spring)", "Circular", "Grid"],
             index=0,
         )
 
     with c_src:
         search_query = st.text_input(
-            label="Search Node",
-            placeholder="Search statement label or text...",
+            label="Search Statement / Concept",
+            placeholder="Search statement name, definition, or theorem text...",
             key="graph_search_node_input",
         )
 
     with c_type:
         node_type_opt = st.selectbox(
-            label="Filter Statement Type",
-            options=["All", "definition", "theorem", "lemma", "proof"],
+            label="Statement Category Filter",
+            options=["All", "definition", "theorem", "lemma", "corollary", "proof"],
             index=0,
         )
 
     with c_paper:
-        papers = doc_service.list_papers()
-        paper_options = {p.get("title", p.get("paper_id")): p.get("paper_id") for p in papers}
         selected_paper_titles = st.multiselect(
-            label="Filter by Paper",
+            label="Scope to Paper(s)",
             options=list(paper_options.keys()),
-            placeholder="All papers...",
+            placeholder="All papers in library...",
         )
 
     # Apply Filters via GraphService.node_lookup()
@@ -397,29 +406,29 @@ def render_graph_page() -> None:
         if e.source_id in matched_node_ids and e.target_id in matched_node_ids
     ]
 
-    st.markdown(f"**Displaying {len(matched_nodes)} Node(s) & {len(filtered_edges)} Edge(s):**")
+    st.markdown(f"**Displaying {len(matched_nodes)} Statement Node(s) & {len(filtered_edges)} Connection(s):**")
 
-    # Render Interactive Graph Canvas
+    # Render Interactive Vis.js Graph Canvas
     graph_html = generate_interactive_graph_html(
         nodes=matched_nodes,
         edges=filtered_edges,
         layout=layout_mode,
         height=480,
     )
-    st.html(graph_html)
+    components.html(graph_html, height=520)
 
     # Node Details Inspector Drawer
     st.divider()
-    st.markdown("### 🔍 Statement Node Inspector")
+    st.markdown("### 📖 Statement Details & Proof Context")
 
     node_options_dict = {
-        f"[{str(n.get('node_type', 'other')).upper()}] {n.get('label') or n.get('node_id')} ({n.get('paper_id')})": n.get("node_id")
+        f"[{str(n.get('node_type', 'other')).upper()}] {n.get('label') or n.get('node_id')} ({paper_title_map.get(n.get('paper_id'), n.get('paper_id'))})": n.get("node_id")
         for n in matched_nodes
     }
 
     if node_options_dict:
         selected_node_label = st.selectbox(
-            label="Select Statement Node to Inspect",
+            label="Select Mathematical Statement or Paper to Inspect",
             options=list(node_options_dict.keys()),
             index=0,
         )
@@ -435,14 +444,16 @@ def render_graph_page() -> None:
                 ntype = str(n_data.get("node_type", "other")).lower()
                 icon = ICON_MAP.get(ntype, "⚪")
                 color = COLOR_MAP.get(ntype, "#64748B")
+                paper_id = n_data.get("paper_id", "")
+                paper_title = paper_title_map.get(paper_id, paper_id)
 
                 st.markdown(
                     f"""
                     <div style="background: #1E293B; border-left: 4px solid {color}; padding: 16px; border-radius: 6px; margin-bottom: 12px;">
                         <h4 style="margin: 0; color: #F8FAFC;">{icon} {n_data.get('label') or n_data.get('node_id')}</h4>
                         <p style="margin: 4px 0 0 0; color: #94A3B8; font-size: 0.85rem;">
-                            <strong>Node ID:</strong> <code>{n_data.get('node_id')}</code> &bull; 
-                            <strong>Paper ID:</strong> <code>{n_data.get('paper_id')}</code> &bull; 
+                            <strong>Paper:</strong> {paper_title} &bull; 
+                            <strong>Reference ID:</strong> <code>{paper_id}</code> &bull; 
                             <strong>Section:</strong> {n_data.get('section_id', 'N/A')} &bull; 
                             <strong>Page:</strong> {n_data.get('page_start', 1)}
                         </p>
@@ -455,7 +466,7 @@ def render_graph_page() -> None:
                 st.info(n_data.get("text") or "No text excerpt available.")
 
             with col_deps:
-                st.markdown("**Prerequisite Incoming Dependencies:**")
+                st.markdown("**⬅️ Prerequisite Statements & Definitions:**")
                 antecedents = graph_service.get_antecedents(selected_node_id)
                 if antecedents:
                     for a in antecedents:
@@ -464,7 +475,7 @@ def render_graph_page() -> None:
                 else:
                     st.caption("No prerequisite dependencies.")
 
-                st.markdown("**Outgoing Consequent Statements:**")
+                st.markdown("**➡️ Consequent Theorems & Deductions:**")
                 consequents = graph_service.get_consequents(selected_node_id)
                 if consequents:
                     for c in consequents:

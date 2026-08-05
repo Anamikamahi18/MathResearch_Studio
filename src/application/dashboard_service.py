@@ -50,6 +50,9 @@ class DashboardService:
             if hasattr(self.vector_store, "number_of_vectors")
             else 0
         )
+        if vector_chunks == 0:
+            for p in self.document_service.list_papers():
+                vector_chunks += p.get("chunk_count", 0)
 
         stats = {
             "paper_count": paper_count,
