@@ -1,0 +1,109 @@
+[
+  {
+    "paper_id": "paper_hilbert_01",
+    "title": "Spectral Theory of Hilbert Space Operators",
+    "authors": [
+      "A. Hilbert",
+      "B. Banach"
+    ],
+    "year": 2024,
+    "section_count": 3,
+    "chunk_count": 3,
+    "equation_count": 1,
+    "reference_count": 1,
+    "ingested_at": "2024-08-05T10:00:00Z",
+    "raw_document": {
+      "paper_id": "paper_hilbert_01",
+      "metadata": {
+        "title": "Spectral Theory of Hilbert Space Operators",
+        "authors": [
+          "A. Hilbert",
+          "B. Banach"
+        ],
+        "year": 2024,
+        "source": "Journal of Functional Analysis",
+        "doi": "10.1000/jfa.2024.01",
+        "keywords": [
+          "Hilbert space",
+          "Spectral theory",
+          "Compact operators"
+        ],
+        "ingested_at": "2024-08-05T10:00:00Z"
+      },
+      "sections": [
+        {
+          "section_id": "s1",
+          "heading": "1. Introduction and Basic Definitions",
+          "level": 1,
+          "page_start": 1,
+          "page_end": 2,
+          "text": "Definition 1.1 (Hilbert Space). A Hilbert space H is a complete inner product space over the complex field C. An operator T on H is compact if the image of the unit ball is relatively compact in H.",
+          "section_type": "definition"
+        },
+        {
+          "section_id": "s2",
+          "heading": "2. Main Spectral Theorem",
+          "level": 1,
+          "page_start": 3,
+          "page_end": 5,
+          "text": "Theorem 2.1 (Spectral Decomposition Theorem). Let T be a self-adjoint compact operator on a Hilbert space H. Then there exists an orthonormal basis of H consisting of eigenvectors of T. Lemma 2.2 (Bounded Eigenvalues). All eigenvalues of T are real and bounded.",
+          "section_type": "theorem"
+        },
+        {
+          "section_id": "s3",
+          "heading": "3. Proof of Theorem 2.1",
+          "level": 1,
+          "page_start": 6,
+          "page_end": 8,
+          "text": "Proof of Theorem 2.1. By Lemma 2.2, we construct an orthonormal sequence of eigenvectors using Gram-Schmidt orthogonalization.",
+          "section_type": "proof"
+        }
+      ],
+      "equations": [
+        {
+          "equation_id": "eq1",
+          "latex": "T e_k = \\lambda_k e_k",
+          "section_id": "s2",
+          "page": 4
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "ref1",
+          "raw_text": "F. Riesz, Spectral Theory of Compact Operators, 1955."
+        }
+      ],
+      "math_entities": {
+        "definitions": [
+          {
+            "id": "def_1.1",
+            "title": "Definition 1.1 (Hilbert Space)",
+            "type": "definition"
+          }
+        ],
+        "theorems": [
+          {
+            "id": "thm_2.1",
+            "title": "Theorem 2.1 (Spectral Decomposition Theorem)",
+            "type": "theorem"
+          }
+        ],
+        "lemmas": [
+          {
+            "id": "lem_2.2",
+            "title": "Lemma 2.2 (Bounded Eigenvalues)",
+            "type": "lemma"
+          }
+        ],
+        "corollaries": [],
+        "proofs": [
+          {
+            "id": "prf_2.1",
+            "title": "Proof of Theorem 2.1",
+            "type": "proof"
+          }
+        ]
+      }
+    }
+  }
+]

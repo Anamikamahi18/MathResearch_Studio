@@ -555,3 +555,44 @@ AI safety guardrails (Reaver et al., 2023) act as policy decision filters that e
 **Ideas for MathResearch Studio**  
 - Create `GuardrailDecisionEngine` in `src/rag/guardrails/` enforcing policy rules (`RETURN`, `RETURN_WITH_WARNING`, `REFUSE`, `ASK_FOR_CLARIFICATION`, `INSUFFICIENT_EVIDENCE`) over upstream RAG outputs.
 
+---
+
+### Topic 13: Research Software Interfaces & Human-Computer Interaction (HCI) for Scientists
+
+**Summary**  
+Scientific software interfaces often suffer from cognitive overload, unintuitive workflows, and lack of visual transparency (Munzner, 2014 - *Visualization Analysis and Design*; Shneiderman, 1996 - *The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations*). Designing interfaces for mathematical researchers requires balancing high information density (latex equations, theorem statements, proof dependencies) with clean visual hierarchies and low-friction navigation.
+
+**Advantages**  
+- Reduces visual fatigue and cognitive friction during multi-hour literature research sessions.
+- Enables single-click access to paper metadata, mathematical definitions, and grounding citations.
+
+**Weaknesses**  
+- Existing academic software often presents raw JSON or unformatted text blocks, requiring manual formatting by researchers.
+
+**Research Gap**  
+- Integrated research workspace interfaces designed specifically for mathematical literature analysis that combine document ingestion, semantic search, interactive graph visualization, grounded AI Q&A, and multi-format exporting into a unified dashboard.
+
+**Ideas for MathResearch Studio**  
+- Build a single-page Streamlit application shell with persistent sidebar navigation (`src/ui/router.py`), dark-mode palette (`#0F172A`/`#1E293B`), and modular page components (`src/ui/pages/`) providing low-cognitive-load workflows for MSc students, PhD scholars, and faculty.
+
+---
+
+### Topic 14: Scientific Visualization & Interactive Knowledge Dashboards
+
+**Summary**  
+Interactive scientific dashboards (Heer et al., 2010 - *Declarative Language Design for Interactive Visualization*) allow researchers to explore complex multi-paper relationship networks, statement dependency trees, and mathematical symbol dictionaries dynamically. Providing interactive zoom/pan graph visualization, live configuration previews, and real-time metric cards significantly improves literature comprehension.
+
+**Advantages**  
+- Visualizing theorem dependency graphs helps researchers trace proof precedents and foundational definitions intuitively.
+- Interactive filtering and export preview panels prevent export errors and improve trust in generated research outputs.
+
+**Weaknesses**  
+- Static visual images (PNG/SVG) lack interactivity, making large network graphs difficult to inspect.
+
+**Research Gap**  
+- Dynamic web dashboards that link interactive HTML graph visualizers (PyVis/NetworkX) directly with RAG retrieval engines and structured export centers.
+
+**Ideas for MathResearch Studio**  
+- Combine interactive PyVis network graphs (`src/ui/pages/graph.py`), symbol search dictionaries (`src/ui/pages/notation.py`), system statistics panels (`src/ui/pages/statistics.py`), and multi-format export engines (`src/ui/pages/export.py`) into the Streamlit dashboard architecture.
+
+

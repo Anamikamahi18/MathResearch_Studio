@@ -16,7 +16,7 @@ class TestSemanticRetriever(unittest.TestCase):
     def setUpClass(cls) -> None:
         sample_path = Path("exports/parser_outputs/paper_6cd768c13674.json")
         if not sample_path.is_file():
-            cls.skipTest(cls, f"Sample parsed JSON not found at {sample_path}")
+            raise unittest.SkipTest(f"Sample parsed JSON not found at {sample_path}")
 
         cls.provider = SentenceTransformerEmbeddingProvider("all-MiniLM-L6-v2")
         cls.embedded_chunks = process_parsed_document(
@@ -27,6 +27,7 @@ class TestSemanticRetriever(unittest.TestCase):
         cls.retriever = SemanticRetriever(
             provider=cls.provider, vector_store=cls.vector_store
         )
+
 
     def test_retrieve_scibert(self) -> None:
         results = self.retriever.retrieve("SciBERT", top_k=3)

@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_8a682b29e7d6",
+  "source_file": {
+    "file_name": "Additional notes 1.pdf",
+    "file_path": "C:\\Projects\\MathResearchStudio\\uploads\\Additional notes 1.pdf",
+    "file_hash": "8a682b29e7d6cada5cf5de6e7103f1fabc04fe33a4bbdd0a8015b670ff45e25a",
+    "ingested_at": "2026-08-05T10:40:48.825117+00:00"
+  },
+  "title": "Mashupstack | Fullstack Software Training Institute in Trivandrum",
+  "authors": [
+    {
+      "name": "give you additional knowledge that is usually learned after working in the industry for 1\u20132 years. By going through these materials",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "you can build a stronger",
+      "affiliation": null,
+      "email": null
+    }
+  ],
+  "abstract": "\ue629  PREV NEXT \ue628\nIntroduction\nWe are sharing some extra reading materials with you. These are bonus topics that go beyond what we normally teach in class. The main purpose of these notes is to\ngive you additional knowledge that is usually learned after working in the industry for 1\u20132 years. By going through these materials, you can build a stronger\nfoundation and get a sense of what real-world developers deal with.\nPlease remember, these are not part of our regular syllabus. We will not be teaching or explaining these topics in class. They are only for your own exploration and\nself-learning.\nThese bonus notes are meant to help you grow beyond the basics. If you learn them and mention these topics in your resume, it will give you an advantage while\nsearching for your job. Recruiters will notice that you have explored advanced concepts, which can make you stand out from others.\nTreat these as an opportunity and not a requirement. Use them when you have time, once you are comfortable with the main course content.\nMVC vs MVT\nModel: Handles the data and database part.\nView: Deals with how things look (UI).\nController: Connects the model and view, controls the flow of data.\nFor example, if a user fills a login form: The Controller checks the request, the Model gets the user details from the database, and the View shows the result such as\nlogin success or an error message.\nModel: Manages data and database.\nView: Contains the business logic (like a controller in MVC).\nTemplate: Handles the presentation (HTML, CSS, UI).\nFor example, in Django, when you make a login page: The View function checks the request and logic, the Model talks to the database, and the Template shows the final\nHTML page to the user.\nDifference Between MVC and MVT\nThe difference between MVC and MVT lies in how they handle logic and presentation.\nIn MVC, the Controller is a separate component that manages the application logic, while in MVT, the View takes care of the logic. In MVC, the View manages\npresen",
+  "keywords": [],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "Introduction",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 8,
+      "text": "We are sharing some extra reading materials with you. These are bonus topics that go beyond what we normally teach in class. The main purpose of these notes is to\ngive you additional knowledge that is usually learned after working in the industry for 1\u20132 years. By going through these materials, you can build a stronger\nfoundation and get a sense of what real-world developers deal with.\nPlease remember, these are not part of our regular syllabus. We will not be teaching or explaining these topics in class. They are only for your own exploration and\nself-learning.\nThese bonus notes are meant to help you grow beyond the basics. If you learn them and mention these topics in your resume, it will give you an advantage while\nsearching for your job. Recruiters will notice that you have explored advanced concepts, which can make you stand out from others.\nTreat these as an opportunity and not a requirement. Use them when you have time, once you are comfortable with the main course content.\nMVC vs MVT\nModel: Handles the data and database part.\nView: Deals with how things look (UI).\nController: Connects the model and view, controls the flow of data.\nFor example, if a user fills a login form: The Controller checks the request, the Model gets the user details from the database, and the View shows the result such as\nlogin success or an error message.\nModel: Manages data and database.\nView: Contains the business logic (like a controller in MVC).\nTemplate: Handles the presentation (HTML, CSS, UI).\nFor example, in Django, when you make a login page: The View function checks the request and logic, the Model talks to the database, and the Template shows the final\nHTML page to the user.\nDifference Between MVC and MVT\nThe difference between MVC and MVT lies in how they handle logic and presentation.\nIn MVC, the Controller is a separate component that manages the application logic, while in MVT, the View takes care of the logic. In MVC, the View manages\npresentation, whereas in MVT, the Template handles presentation. MVC is used in many frameworks like Spring, ASP.NET, and Ruby on Rails, while MVT is mainly used in\nDjango.\nVirtual Environment\nThe MVC pattern stands for Model \u2013 View \u2013 Controller. It is a common design pattern used in web development to organize code.\nThe MVT pattern stands for Model \u2013 View \u2013 Template. It is very similar to MVC, but commonly used in Django (a Python framework).\nA virtual environment is an isolated space where you can install Python packages separately for each project. It helps manage dependencies\nwithout affecting your system-wide Python installation.\nIn simple words, a virtual environment allows you to create a separate area on your computer where your project\u2019s Python packages and dependencies are installed.\nThis way, different projects don\u2019t interfere with each other, and you can use different versions of packages as needed.\nWe use a virtual environment in Django projects to keep project dependencies separate and organized, avoiding version conflicts and making the project portable.\nImagine working on multiple Django projects, and one needs Django version 3.2 while another needs Django version 4.2. Without a virtual environment, installing\none version will override the other. A virtual environment keeps them isolated so they don\u2019t conflict.\nHow to Create a Virtual Environment?\nFirst, we install the virtualenv tool using pip. Then, we create a virtual environment by running virtualenv venv. The folder venv will contain the isolated Python\nenvironment. Finally, we activate the virtual environment:\nOn Windows, run venv\\Scripts\\activate.\nOn macOS/Linux, run source venv/bin/activate.\nOnce activated, any Python packages we install will stay inside this environment.\nHow to Deactivate a Virtual Environment?\nAfter finishing work in the virtual environment, type deactivate to exit it. This returns you to the system\u2019s normal Python environment.\nHow to Install Django in the Virtual Environment?\nOnce the virtual environment is activated, we use pip install django to install Django only inside this environment. This keeps your system clean and ensures\neach project uses only the required dependencies.\nClass-Based Views (CBVs)\nIn Django, views control what is displayed when a user visits a web page. Instead of writing functions for each view, CBVs let you use classes, which help organize\nyour code better by grouping related functionality.\nExample:\n# Step 1: Install virtualenv (only once)\npip install virtualenv\n# Step 2: Create a virtual environment named 'venv'\nvirtualenv venv\n# Step 3: Activate the virtual environment\n# On Windows:\nvenv\\Scripts\\activate\n# On macOS or Linux:\nsource venv/bin/activate\nCOPY\ndeactivate\nCOPY\npip install django\nCOPY\nClass-Based Views (CBVs) in Django are views implemented as Python classes instead of functions. They provide an object-oriented way to build\nviews, making code more reusable and organized.\nfrom django.http import HttpResponse\nfrom django.views import View\nclass HelloWorldView(View):\ndef get(self, request):\nreturn HttpResponse(\"Hello, World!\")\nCOPY\nWe import View from django.views. We create a class called HelloWorldView that inherits from View. Inside the class, we define a method called get that runs when\nthe user visits the page via an HTTP GET request. The view responds with \"Hello, World!\" as an HTTP response.\nGeneric Views\nInstead of writing all the code from scratch, Django offers generic views that already do common jobs like showing a list of database records or a form for creating a\nnew record. You just configure them by telling what model or form to use.\nExample:\nWe import ListView from django.views.generic. We create a class ProductListView that inherits from ListView. We specify the model as Product so that Django\nknows which data to display. We tell Django to use the template product_list.html to show the list of products. Without writing code to fetch data or render the\ntemplate, Django does it automatically.\nMixins\nMixins help developers avoid repeating code. Instead of writing the same functionality in multiple views, you can create a mixin and include it in any view that needs\nit. They are combined with other classes to extend behavior.\nExample:\nThe GreetingMixin class defines one method, get_greeting(), which returns a message.\nThe MyView class inherits from both GreetingMixin and Django\u2019s View.\nThe get() method calls get_greeting() from the mixin when a GET request is made.\nThe view returns the greeting message as an HttpResponse.\nHosting Django Application on Vercel\nVercel makes it simple to put your web project online. Even though it is mainly designed for frontend frameworks like Next.js, you can configure Django to work by\nsetting it up properly, so your web app runs from the cloud without managing your own server.\nExample:\nGeneric Views in Django are pre-built, reusable views provided by Django that handle common tasks such as displaying a list of items, showing a\ndetail page, creating or updating records, etc (CRUD operations).\nfrom django.views.generic import ListView\nfrom .models import Product\nclass ProductListView(ListView):\nmodel = Product\ntemplate_name = 'product_list.html'\nCOPY\nA Mixin in Django is a type of class that provides reusable methods for other classes without being a complete class on its own. Mixins are often\nused with Django\u2019s class-based views to add extra functionality.\nfrom django.http import HttpResponse\nfrom django.views import View\n# Define a mixin\nclass GreetingMixin:\ndef get_greeting(self):\nreturn \"Hello, welcome to Django Mixins!\"\n# Use the mixin with a class-based view\ni ( i i i i )\nCOPY\nVercel is a cloud platform that allows developers to easily deploy web applications. It is commonly used for hosting frontend applications but can\nalso host Django applications using serverless functions or special configurations.\nInstall Vercel CLI:\nAdd a vercel.json file in your Django project root:\nDeploy the app:\nFirst, we install the Vercel CLI using npm. This tool helps us deploy projects easily. The vercel.json file tells Vercel how to handle the project:\n\"version\": 2 indicates we\u2019re using Vercel\u2019s latest deployment method.\n\"builds\" instructs Vercel to use Python to run manage.py, the Django management script.\n\"routes\" tells Vercel to send all web requests to manage.py so Django can handle routing.\nFinally, running vercel in the terminal uploads and deploys the Django project to the cloud. This makes your Django project available online with minimal\nconfiguration.\nHosting Django Application on Render\nInstead of setting up servers manually, Render allows you to upload your Django project and it takes care of installing dependencies, running your app, and keeping it\nonline. This helps beginners deploy applications without worrying about complex server configurations.\nSteps to host Django application:\nPush your Django project to GitHub.\nGo to https://render.com and create an account.\nClick on \"New Web Service\".\nConnect your GitHub repository.\nConfigure the service:\nEnvironment: Python 3\nBuild Command:\nStart Command:\nnpm i -g vercel\nCOPY\n{\n\"version\": 2,\n\"builds\": [\n{ \"src\": \"manage.py\", \"use\": \"@vercel/python\" }\n],\n\"routes\": [\n{ \"src\": \"/(.*)\", \"dest\": \"manage.py\" }\n]\n}\nCOPY\nvercel\nCOPY\nRender is a cloud platform that makes it easy to deploy web applications, including Django apps, by automating server setup, deployment, and\nscaling.\npip install -r requirements.txt\nCOPY\ngunicorn myproject.wsgi\nCOPY\nClick \"Create Web Service\" and Render will deploy your Django project.\nWe set the environment to Python 3 because Django runs on Python. The Build Command installs our project\u2019s dependencies listed in requirements.txt. The Start\nCommand runs the Django app using Gunicorn, a production-grade server, pointing it to our project\u2019s WSGI file. After clicking \u201cCreate Web Service\u201d, Render\nautomatically sets up the server, installs everything, and makes our Django project accessible online.\nASGI\nIn simple terms, ASGI is like a bridge between your Django application and the server. Unlike WSGI (which only supports synchronous requests), ASGI supports both\nsynchronous and asynchronous communication. This means Django can handle modern features like WebSockets, real-time updates, and background tasks.\nASGI in Django\nBy default, Django projects come with an asgi.py file, which acts as the entry point for ASGI servers (like Daphne or Uvicorn). This allows Django to run in\nenvironments where real-time communication is required.\nExample: Basic asgi.py in a Django Project\n1. import os \u2013 This imports the os module to help configure environment variables.\n2. from django.core.asgi import get_asgi_application \u2013 This function creates an ASGI application that Django can use.\n3. os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings') \u2013 This sets the default settings file for the Django project.\n4. application = get_asgi_application() \u2013 This creates the ASGI application object that the server (like Uvicorn) will use to serve your Django project.\nThis file is automatically created when you start a new Django project and is used when deploying the project with an ASGI server.\nWSGI\nThink of WSGI as a simple contract between your Django app and the web server. The server sends an HTTP request to your app through WSGI, your app processes\nit, and WSGI sends the response back. It handles one request at a time per worker (synchronous processing).\nWSGI in Django\nWhen deploying a traditional Django site (no WebSockets needed), you run a WSGI server that imports wsgi.py. That file creates a WSGI-compatible application\nobject. The server uses this object to pass requests to Django and return responses to users.\nExample: Basic wsgi.py in a Django Project\nASGI (Asynchronous Server Gateway Interface) is a specification that defines how web servers communicate with asynchronous Python web\napplications and frameworks, such as Django.\nDjango uses ASGI to provide asynchronous capabilities, allowing it to handle both traditional HTTP requests and newer protocols like WebSockets.\n# asgi.py\nimport os\nfrom django.core.asgi import get_asgi_application\nos.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')\napplication = get_asgi_application()\nCOPY\nWSGI (Web Server Gateway Interface) is a Python standard that defines how web servers communicate with Python web applications. It enables\nservers and frameworks to work together in a consistent, synchronous way.\nDjango supports WSGI out of the box and includes a wsgi.py file as the entry point for WSGI servers such as Gunicorn, uWSGI, or mod_wsgi (Apache).\n1. import os \u2013 Lets the script work with environment variables.\n2. from django.core.wsgi import get_wsgi_application \u2013 Imports a Django helper that creates a WSGI-compatible application.\n3. os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings') \u2013 Points Django to your project\u2019s settings.\n4. application = get_wsgi_application() \u2013 Builds the WSGI application object. Your WSGI server (e.g., Gunicorn) uses this to forward HTTP requests to Django\nand return responses to clients.\nNginx\nIn simple words, Nginx acts as a \u201cmiddleman\u201d between users and your Django app. When someone visits your site, Nginx receives the request first. If it is for a static\nfile (like an image or CSS file), Nginx serves it directly. If it is for dynamic content (like Django views), Nginx forwards the request to your Django application server\n(like Gunicorn or uWSGI). This makes the website faster and more secure.\nNginx with Django\nDjango itself is not designed to serve static files in production. Nginx handles those requests quickly and passes only the important application requests to Django.\nThis setup improves performance, scalability, and security.\nExample: Basic Nginx Configuration for Django\n1. listen 80; \u2013 Nginx listens on port 80 (default HTTP port).\n2. server_name example.com; \u2013 Defines the domain name of your Django site.\n3. location /static/ { alias /home/myproject/static/; } \u2013 Tells Nginx to serve static files (CSS, JS, images) directly from the /home/myproject/static/ folder.\n4. location / { proxy_pass http://127.0.0.1:8000; } \u2013 For all other requests, Nginx forwards them to Django\u2019s application server (e.g., Gunicorn) running on\n127.0.0.1:8000.\n5. proxy_set_header Host $host; and proxy_set_header X-Real-IP $remote_addr; \u2013 Pass important request details (host and client IP) to Django.\nThis setup ensures Nginx serves static content efficiently and forwards application requests to Django properly.\nEnvironment Variables\nInstead of writing sensitive information (like passwords) directly into Django\u2019s code, we use environment variables. This makes applications more secure and easier\nto configure across different environments (development, testing, production).\n# wsgi.py\nimport os\nfrom django.core.wsgi import get_wsgi_application\nos.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')\napplication = get_wsgi_application()\nCOPY\nNginx is a high-performance web server that can also be used as a reverse proxy, load balancer, and HTTP cache. It is commonly used to serve\nstatic files and forward requests to application servers.\nNginx is often used with Django in production to serve static files efficiently and to pass dynamic requests to Django\u2019s WSGI/ASGI server.\nserver {\nlisten 80;\nserver_name example.com;\nlocation /static/ {\nalias /home/myproject/static/;\n}\nlocation / {\nhtt //127 0 0 1 8000\nCOPY\nEnvironment variables are key-value pairs stored outside the source code, used to configure settings like database credentials, secret keys, or API\ntokens in a secure and flexible way.\nExample: Using Environment Variables in Django\nIn the settings.py file, Django imports the os module to read environment variables.\nos.environ.get('DJANGO_SECRET_KEY', 'default-secret-key') tries to fetch the DJANGO_SECRET_KEY. If it doesn\u2019t exist, it uses 'default-secret-\nkey'.\nThe DEBUG variable is also read from environment variables. Since environment variables are strings, 'True' is compared to set it properly as True\nor False.\nIn the terminal, we set values for DJANGO_SECRET_KEY and DJANGO_DEBUG using the export command.\nWhen Django runs, it picks up these values and uses them instead of hardcoding them inside the code.\nDjango Admin\nThink of Django Admin as a ready-made control panel for your website where you can manage all the data models in your project through a web interface.\nExample:\nWe import admin from django.contrib. We import the Product model created in models.py. We use admin.site.register(Product) to make the Product model\nmanageable from the admin interface.\nHandling Users in Django Admin\nInstead of building your own user management system, Django gives you a simple interface where you can manage users directly.\nExample:\n# settings.py\nimport os\n# Get secret key from environment variable\nSECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-secret-key')\n# Get debug mode setting from environment variable\nDEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'\nCOPY\n# In your terminal or .env file\nexport DJANGO_SECRET_KEY='my-secret-key-123'\nexport DJANGO_DEBUG='True'\nCOPY\nDjango Admin is a built-in web interface in Django that helps you manage your website\u2019s data. It allows you to add, edit, view, and delete database\nrecords without writing any code.\n# In admin.py\nfrom django.contrib import admin\nfrom .models import Product\nadmin.site.register(Product)\nCOPY\nDjango Admin provides a default interface to manage user accounts. You can create, update, or delete users and manage their passwords from the\nadmin panel.\n- Visit http://localhost:8000/admin/\n- Log in with a superuser account.\n- Go to the \"Users\" section.\n- Add a new user by filling out username, password, and email.\nCOPY\nOpen the admin interface in your browser. Log in with your superuser credentials. Under Users, you can manage users. Click Add user, enter details, and save the\nuser record.\nPermissions in Django Admin\nYou can limit users so they only see or change what they\u2019re allowed to, which helps keep your site safe and organized.\nExample:\nGroups in Django Admin\nInstead of assigning permissions to every user one by one, you can group users (like \"Editors\", \"Moderators\") and manage permissions for the group.\nExample:\nWhen you assign a user to this group, they inherit all group permissions.\nCRUD in Django Admin\nYou don\u2019t need to write code for basic database operations. Django Admin provides easy forms and lists to manage your data records.\nExample:\n1. Create: Open the admin, click \"Add Product\", fill in product details, and save.\n2. Read: Products are listed in a table in the admin interface.\n3. Update: Click a product name, modify fields, and save.\\\n4. Delete: Select a product and click \"Delete\" to remove it from the database.\n\ue629 PREV NEXT \ue628\nPermissions in Django Admin control what actions a user can perform, such as adding, changing, or deleting data for specific models.\n- In the Django admin user edit page,\ncheck/uncheck permissions like \u201cCan add product\u201d or \u201cCan delete product.\u201d\nCOPY\nGroups in Django Admin are collections of permissions. You can assign multiple users to a group and manage their permissions together.\n- Create a group \"Content Editors\".\n- Assign \u201cCan add product\u201d and \u201cCan change product\u201d permissions to the group.\n- Add users to the \"Content Editors\" group.\nCOPY\nCRUD stands for Create, Read, Update, and Delete. In Django Admin, CRUD operations allow you to manage database records through the web\ninterface.\n- Go to Django Admin --> Product.\n- Create: Click \"Add product\" and fill the form.\n- Read: See the list of products.\n- Update: Click a product to edit its fields.\n- Delete: Select a product and click \"Delete\".\nCOPY",
+      "parent_section_id": null,
+      "section_type": "introduction",
+      "confidence": 0.98
+    }
+  ],
+  "definitions": [],
+  "theorems": [],
+  "lemmas": [],
+  "corollaries": [],
+  "proofs": [],
+  "references": [],
+  "equations": [
+    {
+      "equation_id": "eq_001",
+      "label": null,
+      "text_repr": "template_name = 'product_list.html'",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 3,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_002",
+      "label": null,
+      "text_repr": "def get_greeting(self):",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 3,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_003",
+      "label": null,
+      "text_repr": "application = get_asgi_application()",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 5,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_004",
+      "label": null,
+      "text_repr": "application = get_wsgi_application()",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 6,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_005",
+      "label": null,
+      "text_repr": "server_name example.com;",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 6,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_006",
+      "label": null,
+      "text_repr": "export DJANGO_SECRET_KEY='my-secret-key-123'",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 7,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_007",
+      "label": null,
+      "text_repr": "export DJANGO_DEBUG='True'",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 7,
+      "confidence": 0.55
+    }
+  ],
+  "figures": [],
+  "tables": [],
+  "metadata": {
+    "parser_version": "0.1.0",
+    "extraction_mode": "text_pdf",
+    "extraction_confidence": 0.85,
+    "language": "en",
+    "page_count": 8,
+    "ocr_used": false,
+    "processing_time_ms": 11243,
+    "warnings": [
+      "[META_YEAR_MISSING] (metadata) Publication year not detected.",
+      "[META_DOI_MISSING] (metadata) DOI not detected."
+    ],
+    "source": "Skia/PDF m143",
+    "year": null,
+    "doi": null,
+    "diagnostics": [
+      {
+        "code": "META_YEAR_MISSING",
+        "severity": "warning",
+        "stage": "metadata",
+        "message": "Publication year not detected."
+      },
+      {
+        "code": "META_DOI_MISSING",
+        "severity": "warning",
+        "stage": "metadata",
+        "message": "DOI not detected."
+      }
+    ],
+    "parse_state": "degraded_success"
+  }
+}

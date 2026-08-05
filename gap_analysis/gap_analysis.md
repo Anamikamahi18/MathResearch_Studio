@@ -347,3 +347,34 @@ When two authors prove the exact same theorem using different variable conventio
 2. **Cross-Document Proof Chain Traversal**: Combine Graph-RAG (Day 4 Research Graph) with multi-hop vector retrieval to verify multi-paper proof dependencies.
 3. **Fine-Tuned Mathematical LLMs**: Transition from generic adapters to open-weights models fine-tuned on arXiv math preprints (`Llama-3-Math`, `DeepSeek-Math`).
 
+---
+
+## Day 6: Research Dashboard & User Interface Gap Analysis
+
+### What makes research software difficult to use?
+* **High Cognitive Overload & Visual Noise**: Traditional scientific software tools overcrowd the interface with dense unformatted raw text, raw JSON outputs, or complex command-line flags, forcing researchers to spend time parsing output formatting rather than focusing on literature insights.
+* **Disconnected Workflows**: Researchers often have to use separate tools for PDF reading, vector search, theorem notation tracking, network graph rendering, and note-taking, causing context switching and fragmented research notes.
+* **Lack of Visual Transparency & Source Trust**: Many AI tools provide opaque text summaries without inline page citations or evidence snippets, leaving researchers skeptical of AI-generated claims.
+
+### Which dashboard features save researchers the most time?
+1. **Single-Click Document Ingestion & Structuring**: Automating PDF text parsing, section detection, and entity indexing (definitions, theorems, lemmas, proofs) upon upload eliminates manual document organization.
+2. **Integrated Multi-Style Export Center**: Exporting research notes, search logs, Q&A transcripts, and notation dictionaries directly to formatted Markdown, JSON, CSV, or PDF files saves hours of thesis/paper draft preparation.
+3. **Interactive Theorem Dependency Graph**: Visually tracing antecedents and consequents of complex theorems prevents manual back-and-forth reading across multi-page preprints.
+4. **Instant Symbol & Notation Dictionary**: Searching LaTeX notation definitions across an entire paper library eliminates symbol ambiguity across different mathematical subfields.
+
+### How can visualisations improve understanding?
+* **Network Topology Traversal**: Interactive PyVis graphs convert complex linear proof chains into navigable node networks, allowing researchers to visualize foundational definitions and proof dependencies at a glance.
+* **Entity Distribution Progress Bars**: Bar charts and progress indicators showing the breakdown of definitions vs. theorems vs. lemmas provide immediate structural insight into paper density.
+* **Real-Time Configuration Preview**: Displaying live export file previews and estimated file sizes before execution prevents formatting errors and increases user confidence.
+
+### Which accessibility features should be added?
+1. **Screen-Reader Accessible Semantic HTML**: Using proper HTML headings (`<h1>`-`<h6>`), descriptive ARIA labels (`aria-label`), and structured tables for mathematical entity displays.
+2. **High-Contrast Dark & Light Themes**: Accessible color contrast ratios ($\ge 4.5:1$) across dark mode (`#0F172A`/`#1E293B`) and light mode (`#FFFFFF`/`#F1F5F9`) palettes (`src/ui/theme.py`).
+3. **Keyboard Shortcuts & Focus Navigation**: Supporting full keyboard navigation for search inputs, form submits, page tab switching, and graph controls.
+
+### What advanced dashboard features could Version 2 include?
+1. **Side-by-Side PDF & Knowledge View**: Embedded PDF renderer with sync-scrolling to highlighted definition and theorem bounding boxes.
+2. **Collaborative Research Workspaces**: Multi-user session sharing, real-time shared library annotations, and collaborative export synchronization for university research groups.
+3. **Automated Literature Discovery Sync**: Background API integration with arXiv, OpenAlex, and Semantic Scholar for automated paper recommendation based on dependency graph analysis.
+
+

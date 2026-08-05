@@ -7,12 +7,18 @@ This folder contains the core planning and research documentation for MathResear
 - [MVP Scope](mvp_scope.md)
 - [Project Kanban](tasks.md)
 - [Release Plan](release_plan.md)
+- [Dashboard Design Specification](dashboard_design.md)
+- [Navigation & UI/UX Architecture](navigation.md)
+- [Export Strategy Specification](export_design.md)
+- [Dashboard System Architecture](../architecture/dashboard.md)
+- [Dashboard Test Matrix](../tests/dashboard_tests.md)
 - [Day 2 Deliverables](day2_deliverables.md)
 - [Documentation Structure](documentation_structure.md)
 - [Parser Design](parser_design.md)
 - [Parser Error Policy](parser_error_policy.md)
 - [JSON Schema Design](json_schema.md)
 - [Parser Limitations](parser_limitations.md)
+
 
 ## Research Documents
 

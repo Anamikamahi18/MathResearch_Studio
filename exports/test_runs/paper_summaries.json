@@ -1,0 +1,64 @@
+[
+  {
+    "paper_id": "paper_export_006",
+    "title": "Lie Groups and Representation Theory",
+    "authors": [
+      "S. Lie",
+      "H. Weyl"
+    ],
+    "year": 1888,
+    "section_count": 1,
+    "chunk_count": 1,
+    "equation_count": 0,
+    "reference_count": 0,
+    "ingested_at": "2024-08-05T10:00:00Z",
+    "raw_document": {
+      "paper_id": "paper_export_006",
+      "metadata": {
+        "title": "Lie Groups and Representation Theory",
+        "authors": [
+          "S. Lie",
+          "H. Weyl"
+        ],
+        "year": 1888,
+        "source": "Leipzig Teubner",
+        "doi": "10.1000/lie.1888",
+        "keywords": [
+          "Lie Algebra",
+          "Representation Theory",
+          "Compact Group"
+        ],
+        "ingested_at": "2024-08-05T10:00:00Z"
+      },
+      "sections": [
+        {
+          "section_id": "s1",
+          "heading": "1. Lie Algebras",
+          "level": 1,
+          "page_start": 1,
+          "page_end": 6,
+          "text": "Definition 1.1 (Lie Algebra). A Lie algebra g over a field F is a vector space with a bilinear bracket operation satisfying antisymmetry and Jacobi identity.",
+          "section_type": "definition"
+        }
+      ],
+      "equations": [],
+      "references": [],
+      "source_file": {
+        "file_name": "lie_groups.pdf",
+        "file_path": "uploads/lie_groups.pdf"
+      },
+      "math_entities": {
+        "definitions": [
+          {
+            "id": "def_1.1",
+            "title": "Definition 1.1 (Lie Algebra)"
+          }
+        ],
+        "theorems": [],
+        "lemmas": [],
+        "corollaries": [],
+        "proofs": []
+      }
+    }
+  }
+]

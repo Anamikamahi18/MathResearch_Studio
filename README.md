@@ -24,10 +24,11 @@ MathResearch Studio addresses this gap by focusing on literature understanding, 
 
 ## Current Milestone Status
 
-Completed Milestones: Day 1 (Foundation), Day 2 (PDF Parsing), Day 3 (Vector Database & Semantic Search), Day 4 (Mathematical Knowledge Graph), and Day 5 (AI Research Assistant RAG Layer).
+Completed Milestones: Day 1 (Foundation), Day 2 (PDF Parsing), Day 3 (Vector Database & Semantic Search), Day 4 (Mathematical Knowledge Graph), Day 5 (AI Research Assistant RAG Layer), and Day 6 (Streamlit Research Dashboard & User Workspace).
 
-- **Day 5 Features**: Query Processing, Hybrid Retrieval (Vector + Keyword + Graph Adjacency), Context Token Budgeting Prompt Builder, Provider-Agnostic LLM Adapters, Formatted Answer Generator, Sentence-Level Evidence Mapper, Multi-Style Citation Engine (`[1]`, `(Author, Year)`, `[Paper, Section, Page]`), Grounding Verification Layer, and Policy Guardrails Decision Engine.
-- **Scope**: Source-grounded scientific QA over uploaded mathematics preprints with zero hallucinations and explicit citations.
+- **Day 6 Features**: Single-page Streamlit application shell (`src/ui/app.py`), persistent sidebar router (`src/ui/router.py`), 10 interactive page views (Home, PDF Upload, Document Library, Semantic Search, AI Assistant, Research Graph, Notation Dictionary, Statistics Dashboard, Export Center, Settings), shared Application Service Layer (`DocumentService`, `SearchService`, `ChatService`, `GraphService`, `DashboardService`, `ExportService`), multi-format export center (Markdown, JSON, CSV, PDF), direct browser file downloader (`st.download_button`), and export audit history logging.
+- **Scope**: Production-ready researcher dashboard workspace integrating PDF ingestion, knowledge extraction, semantic retrieval, grounded Q&A, theorem dependency graphs, symbol dictionaries, system analytics, and note exporting into a unified user interface.
+
 
 
 ## Problem Statement
@@ -109,11 +110,18 @@ Create a local `.env` file for API keys or runtime configuration when the applic
 
 ## Usage
 
-Day 2 pipeline usage (current runnable workflow):
+### Run the Researcher Dashboard (Day 6 Streamlit UI)
+
+```bash
+streamlit run src/ui/app.py
+```
+
+### Run PDF Parsing Pipeline (CLI)
 
 ```bash
 python -m src.parser.pipeline tests/sample_papers --output-dir exports/parser_outputs
 ```
+
 
 Current Day 2 scope:
 

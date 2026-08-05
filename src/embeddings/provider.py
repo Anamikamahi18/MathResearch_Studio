@@ -156,3 +156,26 @@ class SentenceTransformerEmbeddingProvider(EmbeddingProvider):
             raise RuntimeError(
                 f"Embedding generation failed for batch of size {len(texts)}: {exc}"
             ) from exc
+
+
+class MockEmbeddingProvider(EmbeddingProvider):
+    """Lightweight mock embedding provider for fast unit testing."""
+
+    def __init__(self, dimension: int = 384, model_name: str = "mock-mini-l6") -> None:
+        self._dimension = dimension
+        self._model_name = model_name
+
+    @property
+    def model_name(self) -> str:
+        return self._model_name
+
+    @property
+    def embedding_dimension(self) -> int:
+        return self._dimension
+
+    def embed_text(self, text: str) -> list[float]:
+        return [0.0] * self._dimension
+
+    def embed_texts(self, texts: Sequence[str]) -> list[list[float]]:
+        return [[0.0] * self._dimension for _ in texts]
+

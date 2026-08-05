@@ -1,0 +1,472 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_29d7f7b0f146",
+  "source_file": {
+    "file_name": "feynman.pdf",
+    "file_path": "C:\\Projects\\MathResearchStudio\\uploads\\feynman.pdf",
+    "file_hash": "29d7f7b0f14636bdc9249fb71baa4fb53f26226793f128062401d91e7c830469",
+    "ingested_at": "2026-08-05T12:45:04.193108+00:00"
+  },
+  "title": "International Journal of Theoretical Physics",
+  "authors": [
+    {
+      "name": "A journal of original research",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "reviewsin theoretical physics",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "reo",
+      "affiliation": null,
+      "email": null
+    }
+  ],
+  "abstract": "International Journal of Theoretical Physics\nA journal of original research and reviewsin theoretical physics and reo\nlated mathematics, dedicated to the unification of physics.\nEditor DAVID FINKELSTEIN,Georgia Institute of Technology\nEditorial\nBoard PETER G. BERGMANN,Syracuse University\nSHELDONGLASHOW,Harvard University\nTSUNG-DAOLEE, Columbia University\nI. M. LIFSHITZ, Institute for Physical Problems, Moscow\nROGER PENROSE,Oxford University\nILYA PRIGOGINE,University of Texas at Austin\nABDUS SALAM, International Centre for Theoretical Physics, Trieste\nLEONARDSUSSKIND,Stanford University\nANDRZEJTRAUTMAN,Institute forTheoreticalPhysics,Universityof\nWarsaw '\nSTEVENWEINBERG,University of Texas at Austin\nEUGENEP. WIGNER,Princeton University\nCHEN.NINGYANG,State University of New York, Stony Brook\nSecrctary EVELYNCROWNER,Georgia Institute of Technology\nContributions Manuscript~and correspondence should be sent to lntemational Journal\nof Theoretical Physics, School of Physics, Georgia Institute of Technol.,\nogy, Atlanta, Georgia30332.\nInternational Journal of TheoreticalPhysics is published monthly by PlenumPublishingCorporation, ,\n233 Spring Street, New York, N.Y. 10013. Subscription orders should be addressed to the pu~,}\nlisher. Intematiollal JOllrnal of Theoretical Physics is abstracted or indexed in Chemical Abstracts,\nCurrent Contents, INSPEC-Physics Abstracts, Mathematical Reviews, Referativnyi Zhurnal, Scienco':'7\nCitation Index, Science Research Abstracts-Part A, and Zentralblatt fUr Mathematik. @1982 Plenum).\nPublishing Corporation. Internatiollal JOllrnal of Theoretical Physics participates in the program of,'\",.\nCopyright Clearance Center, Inc. The appearance of a code line at the bottom of the first page of aD ,:1\narticle in this journal indicates the copyright owner's consent that copies of the article may be mado .~,\nfor personal or internal use. However, this consent is given on the condition that the copier pay tho \"\nstated per-copy fee through the Copyright",
+  "keywords": [],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "INTRODUCTION",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 3,
+      "text": "On the program it says this is a keynote speech-and I don't know\nwhat a keynote speech is. I do not intend in any way to suggest what should\nbe in this meeting as a keynote of the subjects or anything like that. I have\nmy own things to say and to talk about and there's no implication that\nanybody needs to talk about the same thing or anything like it. So what I\nwant to talk about is what Mike Dertouzos suggested that nobody would\ntalk about. I want to talk about the problem of simulating physics with\ncomputers and I mean that in a specific way which I am going to explain.\nThe reason for doing this is something that I learned about from Ed\nFredkin, and my entire interest in the subject has been inspired by him. It\nhas to do with learning something about the possibilities of computers, and\nalso something about possibilities in physics. If we suppose that we know all\nthe physical laws perfectly, of course we don't have to pay any attention to\ncomputers. It's interesting anyway to entertain oneself with the idea that\nwe've got something to learn about physical laws; and if I take a relaxed\nview here (after all I'm here and not at home) I'll admit that we don't\nunderstand everything.\nThe first question is, What kind of computer are we going to use to\nsimulate physics? Computer theory has been developed to a point where it\nrealizes that it doesn't make any difference; when you get to a universal\ncomputer, it doesn't matter how it's manufactured, how it's actually made.\nTherefore my question is, Can physics be simulated by a universal com-\nputer? I would like to have the elements of this computer locally intercon-\nnected, and therefore sort of think about cellular automata as an example\n(but I don't want to force it). But I do want something involved with the\n467\n\"\"...\" t.' '0\"1 ,,,,nn n\"''''c:n'' nf)'O\"\" Int.., \"\"T('Ollmp\"hl;..h;\",. (.'.r 'i....\n468\nFeynman\nlocality of interaction. I would not like to think of a very enormous\ncomputer with arbitrary interconnections throughout the entire thing.\n. Now,what kind of physicsare wegoingto imitate?First, I am goingto\ndescribe the possibility of simulating physics in the classical approximation,\na thing which is usually described by local differential equations. But the\nphysical world is quantum mechanical, and therefore the proper problem is\nthe simulation of quantum physics-which is what I really want to talk\nabout, but I'll come to that later. So what kind of simulation do I mean?\nThere is, of course, a kind of approximate simulation in which you design\nnumerical algorithms for differential equations, and then use the computer\nto compute these algorithms and get an approximate view of what physics\nought to do. That's an interesting subject, but is not what I want to talk\nabout. I want to talk about the possibility that there is to be an exact\nsimulation, that the computer will do exactly the same as nature. If this is to\nbe proved and the type of computer is as I've already explained, then it's\ngoing to be necessary that everything that happens in a finite volume of\nspace and time would have to be exactly analyzable with a finite number of\nlogical operations. The present theory of physics is not that way, apparently.\nIt allows space to go down into infinitesimal distances, wavelengths to get\ninfinitely great, terms to be summed in infinite order, and so forth; and\ntherefore, if this proposition is right, physical law is wrong.\nSo good, we already have a suggestion of how we might modify\nphysical law, and that is the kind of reason why I like to study this sort of\nproblem. To take an example, we might change the idea that space is\ncontinuous to the idea that space perhaps is a simple lattice and everything\nis discrete (so that we can put it into a finite number of digits) and that time\njumps discontinuously. Now let's see what kind of a physical world it would\nbe or what kind of problem of computation we would have. For example,\nthe first difficulty that would come out is that the speed of light would\ndepend slightly on the direction, and there might be other anisotropies in\nthe physics that we could detect experimentally. They might be very small\nanisotropies. Physical knowledge is of course always incomplete, and you\ncan always say we'll try to design something which beats experiment at the\npresent time, but which predicts anistropies on some scale to be found later.\nThat's fine. That would be good physics if you could predic~ something\nconsistent with all the known facts and suggest some new fact that we didn't\nexplain, but I have no specific examples. So I'm not objecting to the fact\nthat it's anistropic in principle, it's a question of how anistropic. If you tell\nme it's so-and-so anistropic, I'll tell you about the experiment with the\nlithium atom which shows that the anistropy is less than that much, andthat this here theory of yours is impossible.\n469Simulating Physics with Computers\nAnother thing that had been suggested early was that natural laws are\nreversible, but that computer rules are not. But this turned out to be false;\nthe computer rules can be reversible, and it has been a very, very useful\nthing to notice and to discover that. (Editors' note: see papers by Bennett,\nFredkin, and Toffoli, these Proceedings). This is a place where the relation-\nship of physics and computation has turned itself the other way and told us\nsomething about the possibilities of computation. So this is an interesting\nsubject because it tells us something about computer rules, and might tell us\nsomething about physics.\nThe rule of simulation that I would like to have is that the number of\ncomputer elements required to simulate a large physical system is only to be\nproportional to the space-time volume of the physical system. I don't want\nto have an explosion. That is, if you say I want to explain this much physics,\nI can do it exactly and I need a certain-sized computer. If doubling the\nvolume of space and time means I'll need an exponentially larger computer,\nI consider that against the rules (I make up the rules, I'm allowed to do\nthat). Let's start with a few interesting questions.",
+      "parent_section_id": null,
+      "section_type": "introduction",
+      "confidence": 0.98
+    },
+    {
+      "section_id": "s2",
+      "heading": "SIMULATING TIME",
+      "level": 1,
+      "page_start": 3,
+      "page_end": 4,
+      "text": "First I'd like to talk about simulating time. We're going to assume it's\ndiscrete. You ..know that we don't have infinite accuracy in physical mea-\nsurements so time might be discrete on a scale ofless than 10-27 sec. (You'd\nhave to have it at least like to this to avoid clashes with experiment-but\nmake it 10-41 sec. if you like, and then you've got us!)\nOne way in which we simulate time-in cellular automata, for example\n-is to say that\" the computer goes from state to state.\" But really, that's\nusing intuition that involves the idea of time-you're going from state to\nstate. And therefore the time (by .the way, like the space in the case of\ncellular automata) is not simulated at all, it's imitated in the computer.\nAn interesting question comes up: \"Is there a way of simulating it,\nrather than imitating it?\" Well, there's a way of looking at the world that is\ncalled the space-time view, imagining that the points of space and time are\nall laid out, so to speak, ahead of time. And then we could say tha,t a\n\"computer\" rule (now computer would be in quotes, because it's not the\nstandard kind of computer which operates in time) is: We have a state s; at\neach point i in space-time. (See Figure 1.) The state s; at the space time\npoint i is a given function F;(Sj,.Sk\"\") of the state at the pointsj, k in some\nneighborhood of i:\ns; = F;(sj\"Sk'''')\n./.'I\n..1\".,\n470\nFeynman\nti~e\n.Sj\n.,si.\n'Sk\nspac.e.\nFig.1.\n, ,\nYou'll notice immediately that if this particular function is such that the\nvalue of the function at i only involves the few points behind in time, earlier\nthan this time i, all I've done is to redescribe the cellular automaton,\nbecause it means that you calculate a given point from points at earlier\ntimes, and I can compute the next on,e and so on, and I can go through this\nin that particular order. But just let's us think of a more general kind of\ncomputer, because we might have a more general function. So let's think\nabout whether we could have a wider case of generality of interconnections\nof points in space-time. If F depends on all the points both'in the future and\nthe past, what then? That could be the way physics works. I'll mention how\nour theories go at the moment. It has turned out in many physical theories\nthat the mathematical equations are quite a bit simplified by imagining such\na thing-by imagining positrons as electrons going backwards in time, and\nother things that connect objects forward and backward. The important\nquestion would be, if. this computer were laid out, is there in fact an\norganized algorithm by which a solution could be laid out, that is, com-\nputed? Suppose you know this function F; and it is a function of the\nvariables in the future as well.How would you layout numbers so that they\nautomatically satisfy the above equation? It may not be possible. In the case\nof the cellular automaton it is, because from a given row you get the next\nrow and then the next row, and there's an organized way of doing it. It's an\ninteresting question whether there are circumstances where you get func-\ntions for which you can't think, at least right away, of an organized way of\nlayingit out. Maybesort of shakeit downfromsomeapproximation,or .\nsomething, but it's an interesting different type of computation.\nQuestion: \"Doesn't this reduce to the ordinary boundary value, as\nopposed to initial-value type of calculation?\"\nAnswer: \"Yes, but remember this is the computer itself that I'm\ndescribing.\"\nIt appears actually that classical physics is causal. You can, in terms of\nthe information in the past, .if you include both momentum and position, or\nSimulating Physics with Computers 471\nthe position at two different times in the past (either way, you need two\npieces of information at each point) calculate the future in principle. So\nclassical physics is local, causal, and reversible, and therefore apparently\nquite adaptable (except for the discreteness and so on, which I already\nmentioned) to computer simulation. We have no difficulty, in principle,\napparently, with that.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s3",
+      "heading": "SIMULATING PROBABILITY",
+      "level": 1,
+      "page_start": 4,
+      "page_end": 4,
+      "text": ".'t.\nTurning to quantum mechanics, we know immediately that here we get\nonly the ability, apparently, to predict probabilities. Might I say im-\nmediately, so that you know where I really intend to go, that we always have\nhad (secret, secret, close the doors!) we always have had a great deal of\ndifficulty in understanding the world view that quantum mechanics repre-\nsents. At least I do, because I'm an old enough man that I haven't got to the\npoint that this stuff is obvious to me. Okay, I still get nervous with it. And\ntherefore, some of the younger students ... you know how it always is,\nevery new idea, it takes a generation or two until it becomes obvious that\nthere's no real problem. It has not yet become obvious to me that there's no\nreal problem. I cannot define the real problem, therefore I suspect there's no\nreal problem, but I'm note sure there's no real problem. So that's why I like\nto investigate things. Can I learn anything from asking this question about\ncomputers-about this mayor may not be mystery as to what the world\nview of quantum mechanics is? So I know that quantum mechanics seem to\ninvolve probability-and I therefore want to talk about simulating proba-\nbility.\nWell, one way that we could have a computer that simulates a prob-\nabilistic theory, something that has a probability in it, would be to calculate\nthe probability and then interpret this number to represent nature. For\nexample, let's suppose that a particle has a probability P(x, t) to be at x at a\ntime t. A typical example of such a probability might satisfy a differential\nequation, as, for example, if the particle is diffusing:\nap(x, t) _ 2\np( )at -\\7 x,t\nNow we could discretize t and x and perhaps even the probability itself and\nsolve this differential equation like we solve any old field equation, and\nmake an algorithm for it, making it exact by discretization. First there'd be\na problem about discretizing probability. If you are only going to take k\ndigits it would mean that when the probability is less that rk of something\nhappening, you say it doesn't happen at all. In practice we do that. If the",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s4",
+      "heading": "Feynman",
+      "level": 1,
+      "page_start": 5,
+      "page_end": 6,
+      "text": "probability of something is 10-700, we say it isn't going to happen, and\nwe're not caught out very often. So we could allow ourselves to do that. But\nthe real difficulty is this: If we had many particles, we have R particles, for\nexample, in a system, then we would have to describe the probability of a\ncircumstance by giving the probability to find these particles at points\nXI' X2,... 'XR at the time t. That would be a description of the probability of\nthe system. And therefore, you'd need a k-digit number for every configura-\ntion of the system, for every arrangement of the R values of x. And\ntherefore if there are N points in space, we'd need NR configurations.\nActually, from our point of view that at each point in space there is\ninformation like electric fields and so on, R will be of the same order as N if\nthe number of information bits is the same as the number of points in space,\nand therefore you'd have to have something like NN configurations to be\ndescribed to get the probability out, and that's too big for our computer to\nhold if the size of ,the computer is of order N.\nWe emphasize, if a description of an isolated part of nature with N\nvariables requires a general function of N variables and if a computer\nstimulates this by actually computing or storing this function then doubling\nthe size of nature (N -+2N) would require an exponentially explosive\ngrowth in the size of the simulating computer. It is therefore impossible,\naccording to the rules stated, to simulate by calculating the probability.\nIs there any other way? What kind of.simulation can we have? We can't\nexpect to compute the probability of configurations for a probabilistic\ntheory. But the other way to simulate a probabilistic nature, which I'll call\n~ for the moment, might still be to simulate the probabilistic nature by a\ncomputer ewhich itself is probabilistic, in which you always randomize the\nlast two digit's of every number, or you do something terrible to it. So it\nbecomes what I'll call a probabilistic computer, in which the output is not a\nunique function of the input. And then you try to work it out so that it\nsimulates nature in this sense: that egoes from some state-initial state if\nyou like-to some final state with the same probability that ~ goes from\nthe corresponding initial state to the corresponding final state. Of course\nwhen you set up the machine and let nature do it, the imitator will not do\nthe same thing, it only does it with the same probability. Is that no good?\nNo it's O.K. How do you know what the probability is? You see, nature's\nunpredictable; how do you expect to predict it with a computer? You can't,\n-it's unpredictable if it's probabilistic. But what you really do in a\nprobabilistic system is repeat the experiment in nature a large number of\ntimes. If you repeat the same experiment in the computer a large number of\ntimes (and that doesn't take any more time than it does to do the same thing\nin nature of course), it will give the frequency of a given final state\nproportional to the number of times, with approximately the same rate (plus\nSimulating Physics with Computers\n473\nor'minus the square root of n and an that) as it happens in nature. In other\nwords, we could imagine and be perfectly happy, I think, with a probabilis-\ntic simulator of a probabilistic nature, in which the machine doesn't exactly\n.do what nature does, but if you repeated a particular type of experiment a\nsufficient number of times to determine nature's probability, then you did\nthe corresponding experiment on the computer, you'd get the corresponding\nprobability with the corresponding accuracy (with the same kind of accu-\nracy of statistics).\nSo let us now think about the characteristics of a local probabilistic\ncomputer, because I'll see if I can imitate nature with that (by \"nature\" I'm\nnow going to mean quantum mechanics). One of the characteristics is that\nyou can determine how it behaves in a local region by simply disregard\\ng\nwhat it's doing in all other regions. For example, suppose there are variables\nin the system that describe the whole world (xA, xB)-the variables xA\nyou're interested in, they're \"around here\"; X'8are the whole result of the\nworld. If you want to know the probability that something around here is\nhappening, you would have to get that by integrating the total probability of\nall kinds of possibilities over XB' If we had computed this probability, we\nwould still have to do the integration\nPA(XA) =f p(xA, xB)dx8\ni~'\"J\nwhich is a hard job! But if we have imitated the probability, it's very simple\nto do it: you don't have to do anything to do the integration, you simply\ndisregard what the values of XB are, you just look at the region XA' And\ntherefore it does have the characteristic of nature: if it's local, you can find\nout what's happening in a region not by integrating or doing an extra\noperation, but merely by disregarding what happens elsewhere, which is no\noperation, nothing at all.\nThe other aspect that I want to emphasize is that the equations will\nhave a form, no doubt, something like the following. Let each point\ni =1,2,.. .,N in space be in a state s; chosen from a small state set (the size\nof this set should be reasonable, say, up to 25). And let the probability to\nfind someconfiguration{s;} (a set of values of the state s; at each point i)\nbe some number P({s;}). It satisfies an equation such that at each jump in\ntime\nPt+l((s})= ~ [ IJm(s;\\s;, s~... )) p/({s'})\n. {s'} I\nwhere m(s;ls;,s~...) is the probability that we move to state s; at point i\n, 474 Feynman\nwhen the neighbors have values s;, s~..., where j, k etc. are points in the\nneighborhood of i. As j moves far from i, m becomes ever less sensitive to\ns> At each change the state at a particular point i will move from what it\nwas to a state s with a probability m that depends only upon the states of\nthe neighborhood (which may be so defined as to include the point i itself).\nThis gives the probability of making a transition. It's the same as in a\ncellular automaton; only, instead of its being definite, it's a probability. Tell\nme the environment, and I'll tell you the probability after a next moment of\ntime that this point is at state s. And that's the way it's going to work, okay?\nSo you get a mathematical equation of this kind of form.\nNow I explicitly go to the question of how we can simulate with a\ncomputer-a universal automaton or something-the quantum-mechanical\neffects. (The usual formulation is that quantum mechanics has some sort of\na differential equation for a function If.) If you have a single particle, If is a\nfunction of x and t, and this differential equation could be simulated just\nlike my probabilistic equation was before. That would be all right and one\nhas seen people make little computers which simulate the Schroedinger\nequation for a single particle. But the full description of quantum mechanics\nfor a large system with R particles is given by a function If(X(, x2,.. .,XR, t)\nwhich we call the amplitude to find the particles x\\,...,xR, and therefore,\nbecause it has too many variables, it cannot be simulated with a normal\ncomputer with a number of elements proportional to R or proportional to\nN. We had the same troubles with the probability in classical physics. And\ntherefore, the problem is, how can we simulate the quantum mechanics?\nThere are two ways that we can go about it. We can give up on our rule\nabout what the computer was, we can say: Let the computer itself be built\nof quantum mechanical elements which obey quantum mechanical laws. Or\nwe can turn the other way and say: Let the computer still be the same kind\nthat we thought of before-a logical, universal automaton; can we imitate\nthis situation? And I'm going to separate my talk here, for it branches into\ntwo parts.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s5",
+      "heading": "QUANTUM COMPUTERS-UNIVERSAL QUANTUM",
+      "level": 1,
+      "page_start": 6,
+      "page_end": 7,
+      "text": "SIMULATORS\nThe first branch, one you might call a side-remark, is, Can you do it\nwith a new kind of computer-a quantum computer? (I'll come back to the\nother branch in a moment.) Now it turns out, as far as I can tell, that you\ncan simulate this with a quantum system, with quantum computer elements.\nIt's not a Turing machine, but a machine of a different kind. If we disregard\nthe continuity of space and make it discrete, and so on, as an approximation\n(the same way as we allowed ourselves in the classical case), it does seem to\nSimulating Physics with Computers 475\n\"\nbe true that all the various field theories have the same kind of behavior,\nand can be simulated in every way, apparently, with little latticeworks of\nspins and other things. It's been noted time and time again that the\nphenomena of field theory (if the world is made in a discrete lattice) are well\nimitated by many phenomena in solid state theory (which is simply the\nanalysis of a latticework of crystal atoms, and in the case of the kind of\nsolid state I mean each atom is just a point which has numbers associated\nwith it, with quantum-mechanical rules). For example, the spin waves in a\nspin lattice imitating Bose-particles in the field theory. I therefore believe\nit's true that with a suitable class of quantum machines you could imitate\nany quantum system, including t~e physical world. But I don't know\nwhether the general theory of this intersimulation of quantum systems has\ne~er been worked out, and so I present that as another interesting problem:\nto work out the classes of different kinds of quantum mechanical systems\nwhich are really intersimulatable-which are equivalent-as has been done\nin the case of classical computers. It has been found that there is a kind of\nuniversal computer that can do anything, and it doesn't make much\ndifference specifically how it's designed. The same way we should try to find\nout what kinds ef quantum mechanical systems are mutually intersimulata-\nble, and try to find a specific class, or a character of that class which will\nsimulate everything. What, in other words, is the universal quantum simula-\ntor? (assuming this discretization of space and time). If you had discrete\nquantum systems, what other discrete quantum systems are exact imitators\nof it, and is there a class against which everything can be matched? I believe\nit's rather simple to answer that question and to find the class, but I just\nhaven't done it.\nSuppose that we try the following guess: that every finite quantum\nmechanical system can be described exactly, imitated exactly, by supposing\nthat we have another system such that at each point in space-time this\nsystem has only two possible base states. Either that point is occupied, or\nunoccupied-those are the two states. The mathematics of the quantum\nmechanical operators associated with that point would be very simple.\nDCC UN\n- I\n( . )o -2 C1x-lC1y\no\na = ANNIHILATE = DCC\nI\n0\nUN I\n=---+--o--i\nI 0 0\n=--t-]--o\nI 0 0\nn =IDENTITY =--t-]--o\nI 0 1\n=a*a=1(I+o,,)\na* = CREATE = H C1x+ iC1y)\nn= NUMBER\n1\n.\nI\ni111\nIiI,",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s6",
+      "heading": "Feynman",
+      "level": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "text": "There would be an operator a which annihilates if the point is occupied\n-it changes it to unoccupied. There is a conjugate operator a* which does\nthe opposite: if it's unoccupied, it occupies it. There's another operator n\ncalled the number to ask, Is something there? The little matrices tell you\nwhat they do. If it's there, n gets a one and' leaves it alone, if it's not there,\nnothing happens. That's mathematically equivalent to the product of the\nother two, as a matter of fact. And then there's the identity, n, which we\nalways have to put in there to complete our'mathematics-it doesn't do a\ndamn thing! _\nBy the way, on the right-hand side of the above formulas the same\noperators are written in terms of matrices that most physicists find more\nconvenient, because they are Hermitian, and that seems to make it easier for\nthem. They have invented another set of matrices, the Pauli a matrices:\naz= (6\n0\n)\n-\n(\n0\n- 1 ' ax - 1\n1\n)\n_\n(\n0\no ' ay - i\n-i\n) n=(\nl\no ' 0 ~)\nAnd these are called spin-spin one-half-so sometimes people say you're\ntalking about a spin-one-half lattice.\nThe question is, if we wrote a Hamiltonian which i,nvolved only these\noperators, locally coupled to corresponding operators on the other space-time\npoints, could we imitate every quantum mechanical system which is discrete\nand has a finite number of degrees of freedom? I know, almost certainly,\nthat we could do that for any quantum mechanical system which involves\nBose particles. I'm not sure whether Fermi particles could be described by\nsuch a system. So I leave that open. Well, that's an example of what I meant\nby a general quantum mechanical simulator. I'm not sure that it's sufficient,\nbecause I'm not sure that it takes 'care of Fermi particles.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s7",
+      "heading": "CAN QUANTUM SYSTEMS BE PROBABILISTICALLY",
+      "level": 1,
+      "page_start": 7,
+      "page_end": 8,
+      "text": "SIMULATED BY A CLASSICAL COMPUTER?\nNow the next question that I would like to bring up is, of course, the\ninteresting one, i.e., Can a quantum system be probabilistically simulated by\na classical (probabilistic, I'd assume) universal computer? In other words,'a\ncomputer which will give the same probabilities as the quantum system\ndoes. If you take the computer to 1?ethe classical kind I've described so far,\n(not the quantum kind described in the last section) and there're no changes\nin any laws, and there's no hocus-pocus, the answer is certainly, No! This is\ncalled the hidden-variable problem: it is impossible to represent the results\nof quantum mechanics with a classical universal device. To learn a little bit\nabout it, I say let us try to put the quantum equations in a form as close as\nSimulating Physics with Computers 47~\npossible' to classical equations so that we can see what the difficulty is and\nwhat happens. Well, first of all we can't simulate1/1in the normal way. As\nI've. explained already, there're too many variables. Our only hope is that\nwe're going to sim~late probabilities, that we're going to have our computel\ndo things with the same probability as we observe in nature, as calculated\nby the quantum mechanical system. Can you make a cellular automaton, 01\nsomething, imitate with the same probability what nature does, where I'm\ngoing to suppose that quantum mechanics is correct, or at least after I\ndiscretize space and time it's correct, and see if I can do it. I must point out\nthat you must directly generate the probabilities, the results, with the correct\nquantum probability. Directly, because we have no way to store all the\nnumbers, we have to just imitate the phenomenon directly.\nIt turns out then that another thing, rather than the wavefunction, a\nthing called the density matrix, is much more useful for this. It's not so\nuseful as far as the mathematical equations are concerned, since it's more\ncomplicated than the equations for 1/1, but I'm not going to worry about\nmathematical complications, or which is the easiest way to calculate, be-\ncause with computers we don't have to be so careful to do it the very easiest\nway. And so with a slight increase in the complexity of the equations (and\nnot very much increase) I turn to the density matrix, which for a single\nparticle of coordinate x in a pure state of wave function 1/1(x)is\np(x, x') = 1/1*(x )1/1(x')\nThis has a special property that is a function of two coordinates x, x'. The\npresence of two quantities x and x' associated with each coordinate is\nanalogous to the fact that in classical. mechanics you have to have two\nvariables to describe the state, x and x. States are described by a second-order\ndevice, with two informations (\"position\" and \"velocity\"). So we have to\nhave two pieces of information associated with a particle, analogous to the\nclassical situation, in order to describe configurations. (I've written the\ndensity matrix for one particle, but of course there's the analogous thing for\nR particles, a function of 2R variables).\nThis quantity has many of the mathematical properties of a probability.\nFor example if a state 1/1(x)is not certain but is \u00a5'a with the probability Po\nthen the density matrix is the appropriate weighted sum of the matrix fOI\neach state a:\np(x,x')= ~Pa1/1a*(x)1/1a(x').\na\nA quantity which has properties even more similar to classical probabilitie~\nis the Wigner function, a simple reexpression of the density matrix; for 11\nt",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s8",
+      "heading": "Feynman",
+      "level": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "text": "single particle\nW(x,p)= fp(x+~,x-~)e;PYdY\nI\"'\nWe shall be emphasizingtheir similarity and shall call it \"probability\" in\nquotes instead of Wignerfunction.Watch these quotes carefully,when they\nare absent we mean the real probability.. If \"probability\" had all the\nmathematical properties of a probability we could remove the quotes and\nsimulate it. W{x, p) is the \"probability\" that the particlehas positionx and\n. momentum p (per dx and dp). What properties does it have that are\nanalogous to an ordinary probability?\nIt has the property that if there are many variables and you want to\nknow the \"probabilities\" associated with a finite region, you simply disre-\ngard the other variables (by integration). Furthermore the probability of\nfinding a particle at x is fW{x, p)dp. If you can interpret W as a\nprobability of finding x and p, this would be an expected equation. Likewise\nthe probability of p would be expected to be fW{x, p)dx. These two\nequations are correct, and therefore you would hope that maybe W{x, p) is\nthe probability of finding x and p. And the question then is can we make a\ndevice which simulates this W? Because then it would work fine.\nSince the quantum systems I noted were best represented by spin\none-half (occupied versus unoccupied or spin one-half is the same thing), I\ntried to do the same thing for spin one-half objects, and it's rather easy to\ndo. Although before one object only had two states, occupied and unoc-\ncupied, the full description-in order to develop things as a function of time\n-requires twice as many variables, which mean two slots at each point\nwhich are occ~pied or unoccupied (denoted by + and - in what follows),\nanalogous to the x and .i, or the x and p. So you can find four numbers,\nfour \"probabilities\"{f++, f +-,f _ +, f _ _} which act just like, and I have\nto explainwhy they'renot exactlylike, but they actjust like,probabilitiesto\nfind things in the state in which both symbolsare up, one's up and one's\ndown,and so on. For example,the sumf++ +f+- +f-+ +f-- of the\nfour \"probabilities\" is 1. You'll remember that one object now is going to\nhave two indices, two plus/minus indices, or two ones and zeros at each\npoint, although the quantum system had only one. For example, if you\nwouldlike to know whetherthe first index is positive,the probabilityof that\nwould be\nProb(first indexis+) =f + + + f + _ [spin z up]\ni.e., you don't care about the second index. The probability that the first\nindex is negativeis\nProb(first indexis -)= f\"-+ + f--, [spin z down]\nI-\nI\n,~.\n181\ni\nII'\"I... I'\n\"\n','\nSimulating Physics with Computers 479\nThese two formulas are exactly correct in quantum mechanics. You see I'm\nhedging on whether or not \"probability\" f can really be a probability\nwithout quotes. But when I write probability without quotes on the left-hand\nside I'm not hedging; that really is the quantum mechanical probability. It's\ninterpreted perfectly fine here. Likewise the probability that the second\nindex is positive can be obtained by finding\nProb( second index is + ) =f + + + f - + [spinx up]\nand likewise\nProb(secondindexis -)= f+- + f-- [spin x down]\nYou could also ask other questions about the system. You might like to\nknow, What is the probability that b.oth indices are positive? You'll get in\ntrouble. But you could ask other questions that you won't get in trouble\nwith, and that get correct physical answers. You can ask, for example, what\nis the probability that the two indices are the same~ That would be\nProb(match)= f++ +f-- [spinyup]\nOr the probability that there's no match between the indices,that they're\ndifferent,\nProb(no match) =f+- + f-+ [spin y down]\nAll perfectly all right. All these probabilities are correct and make sense.\nand have a precise meaning in the spin model, shown in the square brackets\nabove. There are other \"probability\" combinations, other linear combina-\ntions of these f's which also make physically sensible probabilities, but I\nwon't go into those now. There an~other linear combinations that you can\nask questions about, but you don't seem to be able to ask questions about\nan individual f.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s9",
+      "heading": "NEGATIVE PROBABILITIES",
+      "level": 1,
+      "page_start": 8,
+      "page_end": 10,
+      "text": "Now, for many interacting spins on a lattice we can give a \"probability\"\n(the quotes remind us that there is still a question about whether it's a\nprobability) for correlated possibilities:\nF(SI' S2\"\",SN) (SjE{ ++,+ -,- +, - -})\n480 Feynman Simulating Physics with Computers 481\nNext, if I look for the quantum mechanical equation which tells me what the\nchanges of F are with time, they are exactly of the form that I wrote above\nfor the classical theory:\n7. POLARIZATION OF PHOTONS-lWO-STA TES SYSTEMS\nf++ =0.6 f+- = -0.1 f-+ =0.3 f-- =0.2\nI would like to show you why such minus signs cannot be avoided, or\nat least that you have some sort of difficulty. You probably have all heard\nthis example of the Einstein-Podolsky-Rosen paradox, but I will explain this\nlittle example of a physical experiment which can be done, and which has\nbeen done, which does give the answers quantum theory predicts, and the\nanswers are really right, there's no mistake, if you do the experiment, it\nactually comes out. And I'm going to use the example of polarizations of\nphotons, which is an example of a two-state system. When a photon comes,\nyou 'can say it's either x polarized or y polarized. You can find that out by\nputting in a piece of calcite, and the photon goes through the calcite either\nout in one direction, or out in another-actually slightly separated, and\nthen you put in some mirrors, that's not important. You get two beams, two\nplaces out, where the photon can go. (See Figure 2.)\nIf you put a polarized photon in, then it will go to one beam called the\nordinary ray, or another, the extraordinary one. If you put detectors there\nyou find that each photon that you put in, it either comes out in one or the\nother 100% of the time, and not half and half. You either find a photon in\none or the other. The probability of finding it in the ordinary ray plus the\nprobability of finding it in the extraordinary ray is always I-you have to\nhave that rule. That works. And further, it's never found at both detectors.\n(If you' might have put two photons in, you could get that, but you cut the\nintensity down-it's a technical thing, you don't find .them in both detec-\ntors.)\nNow the next experiment: Separa~ion into 4 polarized beams (see\nFigure 3). You put two calcites in a row so that their axes have a relative\nangle cp,I happen to have drawn the second calcite in two positions, but it\ndoesn't make a difference if you use the same piece or not, as you care. Take\nthe ordinary ray from one and put it through another piece of calcite and\nlook at its ordinary ray, which I'll call the ordinary-ordinary (0-0) ray, or\nlook at its extraordinary ray, I have the ordinary-extraordinary (0-\u00a3) ray.\nAnd then the extraordinary ray from the first one comes out as the \u00a3-0\nray, and then there's an \u00a3 - \u00a3 ray, alright. Now you can ask what happens.\nF,+I({S})=~\n[ nM(S;ISj,Sk''') ]\nF,({s'})(s') , .\nbut now we have F instead of P. The M(s;jsj, Sk\"') would appear to be\ninterpreted as the \"probability\" per unit time, or per time jump, that' the\nstate at i turns into S;when the neighbors are in configuration s'. If you can\ninvent a probability M like that, you write the equations for it according to\nnormal logic, those are the correct equations, the real, correct, quantum\nmechanical equations for this F, and therefore you'd say, Okay, so I can\nimitate it with a probabilistic computer!\nThere's only one thing wrong. These equations unfortunately cannot be\nso interpreted on the basis of the so-called \"probability\", or this probabilis-\ntic computer can't simulate them, because the F is not necessarily positive.\nSometimes it's negative! The M, the \"probability\" (so-called) of moving\nfrom one condition to another is itself not positive; if I had gone all the way\nback to the f for a single object, it again is not necessarily positive.\nAn example of possibilities here are\nThe sum f + + -i-f +_ is 0.5, that's 50% chance of finding the first index\npositive. The probability of finc:iing the first index negative is the sum\nf - + + f - + which is also 50%. The probability of finding the second index.\npositive is the sum f + + + f _+ which is nine tenths, the probability of\nfinding it negative is f + _ + f _ _ which is one-tenth, perfectly alright, it's\neither plus or minus. The probability that they match is eight-tenths, the\nprobability that they mismatch is plus two-tenths; every physical probabil-\nity comes out positive. But the original f's are not positive, and therein lies\nthe great difficulty. The only difference between a probabilistic classical\nworld and the equations of the quantum world is that somehow or other it\nappears as if the probabilities would have to go negative, and that we do not\nknow, as far as I know, how to simulate. Okay, that's the fundamental\nproblem. I don't know the answer to it, but I wanted to explain that if I try\nmy best to make the equations look as near as possible to what would be\nimitable by a classical probabilistic computer, I get into trouble.\n~~!t\nil'(o\"';.g f\\loto.\nE.1t>ordi..,~ ,.~\nO1dilli!'~ ,.~ o\n] d.t.it..~\nJE.\nFig.2.\n482 Feynman Simulating Physics with Computers 483\nand finally the probability PEOthat I measure E and you measure 0 is\nFig.3.\nP -1' 2( )EO-2sm \u00abP2-\u00abP1\nNotice that you can always predict, from your own measurement, what I\nshall get, 0 or E. For any axis \u00abPIthat I chose, just set your axis \u00abP2to \u00abPI'\nthen\nYou'll find the following. When a photon comes in, you alwaysfind that only\none of the four counters goes off.\nIf the photon is 0 from the first calcite, then the second calcite gives\n0-0 with probability cos2\u00abPor O-E with the complementaryprobability\nl-cosl\u00abp=sin2\u00abp. Likewisean E photon givesa E-O with the probability\nsin2\u00abPor an E -E with the probability cos2 \u00abp.\nPOE=PEO=O",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s10",
+      "heading": "TWO-PHOTON CORRELATION EXPERIMENT",
+      "level": 1,
+      "page_start": 10,
+      "page_end": 10,
+      "text": "and I must get whatever you get.\nLet us see now how it would have to be for a local probabilistic\ncomputer. Photon I must be in some condition a with the probability fa(\u00abPI)'\nthat determines it to go through as an ordinary ray [the probability it would\npass as E is 1- fa(\u00abPI)]. Likewise photon. 2 will be in a condition {3with\nprobability gP(\u00abP2)'If Pap is the conjoint probability to find the condition\npair a, {3,the probability Poo that both of us observe 0 rays is,\nLet us turn now to the two photon correlation experiment (see\nFigure 4).\nWhat can happen is that an atom emits two photons in opposite\ndirection (e.g., the 3s -.2 P -+Is transition in the H atom). They are ob-\nservedsimultaneously(say,by you and by me) through twocalcitesset at \u00abPI\nand \u00abP2to the vertical. Quantum theory and experiment agree that the\nprobability P00 that both of us detect an ordinary photon is\nPoo = !cos2( \u00abP2- \u00abPI)\nPOO(\u00abPI,<<P2)= ~Papfa(<<PI)gP(<<P2)\nafJ\n~PaP= I\nafJ\nlikewise\nPOE(<<PI'\u00abP2)=LPap(l- fa(<<PI))gP(<<P2)etc.\nafJ\nFig.4.\nThe conditions a determine how the photons go. There's some kind of\ncorrelation of the conditions. Such a formula cannot reproduce the quantum\nresults above for any Pap'/a(\u00abPI)'g{J(\u00abP2)if they are real probabilities- that\nis all positive, although it is easy if they are \"probabilities\" -negative for\nsome conditions or angles. We now analyze why that is so.\n. I don't know what kinds of conditionsthey are, but for any condition\nthe probability fa(\u00abp)of its being extraordinary or ordinary in any direction\nmust be either one or zero. Otherwise you couldn't predict it on the other\nside. You would be unable to predict with certainty what I was going to get,\nunless, every time the photon comes here, which way it's going to go is\nabsolutely determined. Therefore, whatever condition the photon is in, there\nis some hidden inside variable that's going to determine whether it's going\nto be ordinary or extraordinary. This determination is done deterministi-\ncally, not probabilistically; otherwise we can't explain the fact that you\ncould predict what I was going to get exactly. So let us suppose that\nsomething like this happens. Suppose we discuss results just for angles\nwhich are multiples of 30\u00b0.\nThe probability PEE that we both observe an extraordinary ray is the same\nPEE = 1COS2(<<P2 -\u00abPI)\nThe probability POEthat I find 0 and you find E is\nPOE = 1sin2 (<<P2- \u00abPI)\n..,!\n~\n:\no[ ~~ \"]0\nE[===\\j or... ~]E",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s11",
+      "heading": "Feynman",
+      "level": 1,
+      "page_start": 11,
+      "page_end": 12,
+      "text": "On each diagram (Figure 5) are the angles 0\u00b0, 30\u00b0, 60\u00b0, 90\u00b0, 120\u00b0, and\n150\u00b0. A particle comes out to me, and it's in some sort of state, so what it's\ngoing to give for 0\u00b0, for 30\u00b0, etc. are all predicted-determined-by the\nstate. Let us say that in a particular state that is set up the prediction for 0\u00b0\nis that it'll be extraordinary (black dot), for 30\u00b0 it's also extraordinary, for\n600 it's ordinary (white dot), and so on (Figure 5a). By the way, the\noutcomes are complements of each other at right angles, because, remember,\nit's always either extraordinary or ordinary; so if you turn 90\u00b0, what used to\nbe an ordinary ray becomes the extraordinary ray. Therefore, whatever\ncondition it's in, it has some predictive pattern in which you either have a\nprediction of ordinary or of extraordinary-three and three-because at\nright angles they're not the same color. Likewise the particle that comes to\nyou when they're separated must have the same pattern because you can\ndetermine what I'm going. to get by measuring yours. Whatever circum-\nstances come out, the patterns must be the same. So, if I want to know, Am\nI going to get white at 60\u00b0? You just measure at 60\u00b0, and you'll find white,\nand therefore you'll predict white, or ordinary, for me. Now each time we\ndo the experiment the pattern may not be the same. Every time we make a\npair of photons, repeating this experiment again and again, it doesn't have\nto be the same as Figure 5a. Let's assume that the next time the experiment\nmy photon will be 0 or E for each angle as in Figure 5c. Then your pattern\nlooks like Figure 5d. But whatever it is, your pattern has to be my pattern\nexactly-otherwise you couldn't predict what I was going to get exactly by\nmeasuring the corresponding angle. And so on. Each time we do the\nexperiment, we get different patterns; and it's easy: there are just six dots\nand three of them are white, and you chase them around different way-ev-\nerything can happen. If we measure at the same angle, we always find that\nwith this kind of arrangement we would get the same result.\nNow supposewe measureat cf>2- cf>. = 30\u00b0,andask,Withwhatproba-\nbility do we get the same result? Let's first try this example here (Figure\n5a,5b). With what probability would we get the same result, that they're\nU\nta' ~o;iroh\"ot\no\n\"'\"\n30. I~.\n-t. 0\\>.\n0-\nM.!! ~hot... (41) !SO... \"\"\"1\"... (~J\nt\"~ir 01 photo.s\nQQ\n~ ~o\"'\" ~) \"0\" \\>IIot...f/)\nFig.S.\nSimulating Physics with Computers 48S\nboth white, or they're both black? The thing comes out like this: suppose I\nsay, After they come out, I'm going to choose a direction at random, I tell\nyou to measure 30\u00b0 to the right of that direction. Then whatever I get, you\nwould get something different if the neighbors were different. (We would\nget the same if the neighbors were the same.) What is the chance that you\nget the same result as me? The chance is the number of times that the\nneighbor is the same color. If you'll think a minute, you'll find that two\nthirds of the time, in the case of Figure 5a, it's the same color. The worst\ncase would be blackjwhitejblackjwhitejblackjwhite, and there the proba-\nbility of a match would be zero (Figure 5c,d). If you look at all eight\npossible distinct cases, you'll find that the biggest possible answer is\ntwo-thirds. You cannot arrange, in a classical kind of method like this, that\nthe probability of agreement at 30\u00b0 will be bigger than two-thirds. But the\nquantum mechanical formula predicts cos230\u00b0 ,(or 3j4)-and experiments\nagree with this-and therein lies the difficulty.\nThat's all. That's the difficulty. That's why quantum mechanics can't\nseem to be imitable by a local classical computer.\nI've entertained myself always by squeezing the difficulty of quantum\nmechanics into a smaller and smaller place, so as to get mo're and more\nworried about this particular item. It seems to be almost ridiculous that you\ncan squeeze it to a numerical question that one thing is bigger than another.\nBut there you are-it is bigger than any logical argument can produce, if\nyou have this kind of logic. Now, we say \"this kind of logic;\" what other\npossibilities are there? Perhaps there may be no possibilities, but perhaps\nthere are. Its interesting to try to discuss the possibilities. I mentioned\nsomething about the possibility of time-of things being affected not just\nby the past, but also by the future, and therefore that our probabilities are\nin some sense \"illusory.\" We only have the information from the past, and\nwe try to predict the next step, but in reality it depends upon the near future\nwhich we can't get at, or something like that. A very interesting question is\nthe origin of the probabilities in quantum mechanics. Another way of\nputtings things is this: we have an illusion that we can do any experiment\nthat we want. We all, however, come from the same universe, have evolved\nwith it, and don't really have any \"real\" freedom. For we obey certain laws\nand have come from a certain past. Is it somehow that we are correlated to\nthe experiments that we do, so that the apparent probabilities don't look\nlike they ought to look if you assume that they are random. There are all\nkinds of questions like this, and what I'm trying to do is to get you people\nwho think about computer-simulation possibilities to pay a great deal of\nattention to this, to digest as well as possible the real answers of quantum\nmechanics, and see if you can't invent a different point of view than the\nphysicists have had to invent to describe this. In fact the physicists have no\n486 Feynman Simulating Physics with Computers 487\ngood point of view. Somebody mumbled something about a many-world\npicture, and that many-world picture says that the wave function t/; is what's\nreal, and damn the torpedos if there are so many variables, N R. All these\ndifferent worlds and every arrangement of configurations are all there just\nlike our arrangement of configurations, we just happen to be sitting in this\none. It's possible, but I'm not very happy with it.\nSo, I would like to see if there's some other' way out, and I want to\nemphasize, or bring the question here, because the discovery of computers\nand the thinking about computers has turned out to be extremely useful in\nmany branches of human reasoning. For instance, we never really under-\nstood how lousy our understanding of languages was, the theory of gram-\nmar and all that stuff, until we tried to make a computer which would be\nable to understand language. We tried to learn a great deal about psychol-\nogy by trying to understand how computers work. There are interesting\nphilosophical questions about reasoning, and relationship, observation, and\nmeasurement and so on, which computers have stimulated us to think about\nanew, with new types of thinking. And all I was doing was poping that the\ncomputer-type of thinking would give us some new ideas; if any ate really\nneeded. I don't know, maybe physics is absolutely OK the way it is. The\nprogram that Fredkin is always pushing, about trying to find'a computer\nsimulation of physics, seem to me to be an excellent program to follow out.\nHe and I have had wonderful, intense, and interminable arguments, and my\nargument is always that the real use of it would be with quantum mechanics,\nand therefore full attention and acceptance of the quantum mechanical\nphenomena-the challenge of explaining quantum mechanical phenomena\n-has to be put into the argument, and therefore these phenomena have to\nbe understood very well in analyzing the situation. And I'm not happy with\nall the analyses that go with just the classical theory, because nature isn't\nclassical, damrnit, and if you want to make a simulation of nature, you'd\nbetter make it quantum mechanical, and by golly it's a wonderful problem,\nbecause it doesn't look so easy. Thank .you. .\nextraordinary rays. The probability that our observations match is\nPoo + PEE=cos230o=3/4",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s12",
+      "heading": "DISCUSSION",
+      "level": 1,
+      "page_start": 12,
+      "page_end": 12,
+      "text": "Question: Does it in some sense depend upon an assumption as to how\nmuch information is accessible from the photon, or from the particle? And\nsecond, to take your question of prediction, your comment about predicting,\nis in some sense reminiscent of the philosophical question, Is there any\nmeaning to the question of whether .there is free will or predestination?\nnamely, the correlation between the observer and the experiment, and the\nquestion there is, Is it possible to construct a test in which the prediction\ncould be reported to the observer, or instead, has the ability to represent\ninformation already been used up? And I suspect that you may have already\nused up all the information so that prediction lies outside the range of the\ntheory .\nAnswer: All these things I don't understand; deep questions, profound\nquestions. However physicists have a .kind of a dopy way of avoiding all of\nthese things. They simply say, now look, friend, you take a pair of counters\nand you put them on the side of your calcite and you count how many times\nyou get this stuff, and it comes out 75% of the time. Then you go and you\nsay, Now can I imitate that with a device which is going to produce the\nsame results, and which will operate locally, and you try to invent some\nkind of way of doing that, and if you do it in the ordinary way of thinking,\nyou find that you can't get there with the same probability. Therefore some\nnew kind of thinking is necessary, but physicists, being kind of dull minded,\nonly look at nature, and don't know how to think in these new ways.\nQuestion: At the beginning of your talk, you talked about discretizing\nvarious things in order to go about doing a real computation of physics.\nAnd yet it seems to me that there are some differences between things like\nspace and time, and probability that might exist at some place, or energy, or\nsome field value. Do you see any reason to distinguish between quantization\nor discretizing of space and time, versus discretizing any of the specific\nparameters or values that might exist?\nAnswer: I would like to make a few comments. You said quantizing or\ndiscretizing. That's very dangerous. Quantum theory and quantizing is a\nvery specific type of theory. Discretizing is the right word. Quantizing is a\ndifferent kind of mathematics. If we talk about discretizing... of course I\npointed out that we're going to have to change the laws of physics. Because\nthe laws of physics as written now have, in the classical limit, a continuous\nvariable everywhere, space and time. If, for example, in your theory you\nwere going to have an electric field, then the electric field could not have (if\nit's going to be imitable, computable by a finite number of elements) an\nQuestion: Just to interpret, you spoke first of the probability of A given\nB, versus the probability of A and B jointly-that's the probability of one\nobserver seeing the result, assigning a probability to the other; and then you\nbrought up the paradox of the quantum mechanical result being 3/4, and\nthis being 2/3. Are those really the same probabilities? Isn't one a joint\nprobability, and the other a conditional one?\nAnswer: No, they are the same. Poo is thejoint probability that both you\nand I observe an ordinary ray, and PEE is the joint probability for two",
+      "parent_section_id": null,
+      "section_type": "results",
+      "confidence": 0.94
+    },
+    {
+      "section_id": "s13",
+      "heading": "Feynman",
+      "level": 1,
+      "page_start": 13,
+      "page_end": 13,
+      "text": "infinite number of possible values, it'd have to be digitized. You might be\nable to get away with a theory by redescribing things without an electric\nfield, but supposing for a moment that you've discovered that you can't do\nthat and you want to describe it with an electric field, then you would have\nto say that, for example, when fields are smaller than a certain amount, they\naren't there at all, or something. And those are very interesting problems,\nbut unfortunately they're not good problems for classical physics because if\nyou take the example of a star a hundred light years away, and it makes a\nwave which comes to us, and it gets weaker, and weaker, and weaker, and\nweaker, the electric field's going down, down, down, how low can we\nmeasure? You put a counter out there and you find \"clunk,\" and nothing\nhappens for a while, \"clunk,\" and nothing happens for a while. It's not\ndiscretized at all, you never can measure such a tiny field, you don't find a\ntiny field, you don't have to imitate such a tiny field, because the world that\nyou're trying to imitate, the physical world, is not the classical world, and it\nbehaves differently. So the particular example of discretizing the electric\nfield, is a problem which I would not see, as a physicist, as fundamentally\ndifficult, because it will just mean that your field has gotten so small that I\nhad better be using quantum mechanics anyway, and so you've got the\nwrong equations, and so you did the wrong problem! That's\"how I would\nanswer that. Because you see, if you would imagine that the electric field is\ncoming out.of some 'ones' or something, the lowest you could get would be\na full one, but that's what we see, you get a full photon. All these things\nsuggest that it's really true, somehow, that the physical world is represent-\nable in a discretized way, because every time you get into a bind like this,\nyou discover that the experiment does just what's necessary to escape the\ntrouble.that would come if the electric field went to zero, or you'd never be\nable to see a star beyond a certain distance, because the field would have\ngotten below the number of digits that your world can carry.\nInternatiol/al Journal of Theoretical Physic.r, Vol. 21, No.r. 6/7, 1982\nQuantum Sets and Clifford Algebras\nDavid Finkelstein I\nGeorgia [I/stitute of Techl/ology, Atlal/ta, Georgia 30332\nReceived May 7, 1981\nThe mathematical language presently used for quantum physics is a high-level\nlanguage. As a lowest-level or basic language Lconstruct a quantum set theory in\nthree stages: (I) Classical set theory, formulated as a Clifford algebra of \"S\nnumbers\" generated by a single monadic operation, \"bracing,\" Br =( . . . ). (2)\nIndefinite set theory, a modification of set theory dealing with the modal logical\nconcept of possibility. (3) Quantum set theory. The quantum set is constructed\nfrom the nun set by the familiar quantum techniques of tensor product and\nantisymmetrization. There are both a Clifford and a Grassmann algebra with sets\nas basis elements. Rank and cardinality operators are analogous to Schroedinger\ncoordinates of the theory, in that they are multiplication or \"Q.type\" operators.\n\"P-type\" operators analogous to Schroedinger momenta, in that they transform\nthe Q-type quantities, are bracing (Br), Clifford multiplication by a set X, and\nthe creator of X, represented by Grassmann multiplication c( X) by the set X. Br\nand its adjoint Br* form a Bose-Einstein canonical pair, and c(X) and its\nadjoint c(X)* form a Fermi-Dirac or anticanonical pair. Many coefficient\nnumber systems can be employed in this quantization. I use the integers for a\ndiscrete quantum theory, with the usual complex quantum theory as limit.\nQuantum set theory may be applied to a quantum time space and a quantum\nautomaton.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s14",
+      "heading": "INTRODUCTION",
+      "level": 1,
+      "page_start": 13,
+      "page_end": 13,
+      "text": "Several of us here, including Feynman, Fredkin, Kantor, Moussouris,\nPetri, Wheeler, and Zuse, suggest that the universe may be discrete rather\nthan continuous, and more like a digital than an analog computer. C. F.\nvon Weizsaecker has worked this path since the early 1950s, and recently I\nhave benefitted from the relevant work of J. Ford.\nYon Neumann points out that quantum theory revises the predicate\nalgebra of physics, making it coherent (in the sense of Jauch that it admits,8>\n'This material is based upon work supported in part by NSF Grant No. PHY8007921.\n489\n0020-774R/R2/0600-04R9S03.00/0 \"\" 19R2 Plenum Puhli.hing C\"orpo,olion",
+      "parent_section_id": null,
+      "section_type": "introduction",
+      "confidence": 0.98
+    }
+  ],
+  "definitions": [],
+  "theorems": [],
+  "lemmas": [],
+  "corollaries": [],
+  "proofs": [],
+  "references": [],
+  "equations": [
+    {
+      "equation_id": "eq_001",
+      "label": null,
+      "text_repr": "s; = F;(sj\"Sk'''')",
+      "latex_repr": null,
+      "section_id": "s1",
+      "page": 3,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_002",
+      "label": null,
+      "text_repr": "ap(x, t) _ 2",
+      "latex_repr": null,
+      "section_id": "s2",
+      "page": 4,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_003",
+      "label": null,
+      "text_repr": "PA(XA) =f p(xA, xB)dx8",
+      "latex_repr": null,
+      "section_id": "s4",
+      "page": 5,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_004",
+      "label": null,
+      "text_repr": "Pt+l((s})= ~ [ IJm(s;\\s;, s~... )) p/({s'})",
+      "latex_repr": null,
+      "section_id": "s4",
+      "page": 5,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_005",
+      "label": null,
+      "text_repr": "=---+--o--i",
+      "latex_repr": null,
+      "section_id": "s4",
+      "page": 6,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_006",
+      "label": null,
+      "text_repr": "=--t-]--o",
+      "latex_repr": null,
+      "section_id": "s4",
+      "page": 6,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_007",
+      "label": null,
+      "text_repr": "n =IDENTITY =--t-]--o",
+      "latex_repr": null,
+      "section_id": "s4",
+      "page": 6,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_008",
+      "label": null,
+      "text_repr": "=a*a=1(I+o,,)",
+      "latex_repr": null,
+      "section_id": "s4",
+      "page": 6,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_009",
+      "label": null,
+      "text_repr": "a* = CREATE = H C1x+ iC1y)",
+      "latex_repr": null,
+      "section_id": "s4",
+      "page": 6,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_010",
+      "label": null,
+      "text_repr": ") n=(",
+      "latex_repr": null,
+      "section_id": "s5",
+      "page": 7,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_011",
+      "label": null,
+      "text_repr": "p(x, x') = 1/1*(x )1/1(x')",
+      "latex_repr": null,
+      "section_id": "s5",
+      "page": 7,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_012",
+      "label": null,
+      "text_repr": "p(x,x')= ~Pa1/1a*(x)1/1a(x').",
+      "latex_repr": null,
+      "section_id": "s5",
+      "page": 7,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_013",
+      "label": null,
+      "text_repr": "W(x,p)= fp(x+~,x-~)e;PYdY",
+      "latex_repr": null,
+      "section_id": "s7",
+      "page": 8,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_014",
+      "label": null,
+      "text_repr": "Prob(first indexis+) =f + + + f + _ [spin z up]",
+      "latex_repr": null,
+      "section_id": "s7",
+      "page": 8,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_015",
+      "label": null,
+      "text_repr": "Prob(first indexis -)= f\"-+ + f--, [spin z down]",
+      "latex_repr": null,
+      "section_id": "s7",
+      "page": 8,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_016",
+      "label": null,
+      "text_repr": "Prob( second index is + ) =f + + + f - + [spinx up]",
+      "latex_repr": null,
+      "section_id": "s7",
+      "page": 8,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_017",
+      "label": null,
+      "text_repr": "Prob(secondindexis -)= f+- + f-- [spin x down]",
+      "latex_repr": null,
+      "section_id": "s7",
+      "page": 8,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_018",
+      "label": null,
+      "text_repr": "Prob(match)= f++ +f-- [spinyup]",
+      "latex_repr": null,
+      "section_id": "s7",
+      "page": 8,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_019",
+      "label": null,
+      "text_repr": "Prob(no match) =f+- + f-+ [spin y down]",
+      "latex_repr": null,
+      "section_id": "s7",
+      "page": 8,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_020",
+      "label": null,
+      "text_repr": "f++ =0.6 f+- = -0.1 f-+ =0.3 f-- =0.2",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 9,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_021",
+      "label": null,
+      "text_repr": "F,+I({S})=~",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 9,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_022",
+      "label": null,
+      "text_repr": "Poo = !cos2( \u00abP2- \u00abPI)",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 10,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_023",
+      "label": null,
+      "text_repr": "POO(\u00abPI,<<P2)= ~Papfa(<<PI)gP(<<P2)",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 10,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_024",
+      "label": null,
+      "text_repr": "POE(<<PI'\u00abP2)=LPap(l- fa(<<PI))gP(<<P2)etc.",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 10,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_025",
+      "label": null,
+      "text_repr": "PEE = 1COS2(<<P2 -\u00abPI)",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 10,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_026",
+      "label": null,
+      "text_repr": "POE = 1sin2 (<<P2- \u00abPI)",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 10,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_027",
+      "label": null,
+      "text_repr": "E[===\\j or... ~]E",
+      "latex_repr": null,
+      "section_id": "s9",
+      "page": 10,
+      "confidence": 0.55
+    },
+    {
+      "equation_id": "eq_028",
+      "label": null,
+      "text_repr": "Poo + PEE=cos230o=3/4",
+      "latex_repr": null,
+      "section_id": "s11",
+      "page": 12,
+      "confidence": 0.55
+    }
+  ],
+  "figures": [],
+  "tables": [],
+  "metadata": {
+    "parser_version": "0.1.0",
+    "extraction_mode": "text_pdf",
+    "extraction_confidence": 0.85,
+    "language": "en",
+    "page_count": 13,
+    "ocr_used": false,
+    "processing_time_ms": 2664,
+    "warnings": [
+      "[META_DOI_MISSING] (metadata) DOI not detected."
+    ],
+    "source": "Adobe PDF Library 5.0",
+    "year": 1982,
+    "doi": null,
+    "diagnostics": [
+      {
+        "code": "META_DOI_MISSING",
+        "severity": "warning",
+        "stage": "metadata",
+        "message": "DOI not detected."
+      }
+    ],
+    "parse_state": "degraded_success"
+  }
+}

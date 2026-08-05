@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "paper_11dc31d64ebd",
+  "source_file": {
+    "file_name": "IRJHIS2104006.pdf",
+    "file_path": "C:\\Projects\\MathResearchStudio\\uploads\\IRJHIS2104006.pdf",
+    "file_hash": "11dc31d64ebd40a35be107ae60269752011586afaf2bc5c157d22166f69d4033",
+    "ingested_at": "2026-08-05T12:29:21.676143+00:00"
+  },
+  "title": "www.irjhis.com \u00a92021 IRJHIS | Volume 2, Issue 4 April 2021 | ISSN 2582-8568 | Impact Factor 5.71",
+  "authors": [
+    {
+      "name": "IRJHIS2104006 | International Research Journal of Humanities",
+      "affiliation": null,
+      "email": null
+    },
+    {
+      "name": "Interdisciplinary Studies (IRJHIS) | 26",
+      "affiliation": null,
+      "email": null
+    }
+  ],
+  "abstract": "www.irjhis.com              \u00a92021 IRJHIS | Volume 2, Issue 4  April 2021 | ISSN 2582-8568 | Impact Factor 5.71 \nIRJHIS2104006 |     International Research Journal of Humanities and Interdisciplinary Studies (IRJHIS) | 26  \n \nA Study on the Linear Algebra and Matrix in Mathematics \n \nSnehal Nandkumar patait \nResearch Student \n \nProf. Dr. P. G. Sasane \nDept. of  Mathematics \nP. V. P. College, Patoda \n \nDOI Link :: http://doi-ds.org/doilink/04.2021-45438843/IRJHIS2104006 \n \nAbstract : \n                 In this we are presenting a study on the linear algebra and matrix in math ematics. Linear \nalgebra is the branch of mathematics concerned with the study of ve ctors, vector spaces (also called \nlinear spaces), linear maps (also called linear transfo rmations), and systems of linear equations. \nVector spaces are a central theme in modern mathematics: thus, linear algebra is widely used in \nboth abstract algebra and functional analysis. Linear algebra also has a concrete representation in \nanalytic geometry and it is generalized in operator theory. It has applications in the natural sciences \nand the social sciences. since nonlinear models can often be approximated by linear ones. \nKeywords: Linear Algebra, Matrix, Linear Spaces, n-Tuples, Vectors, Linear   Equation. \n \nIntroduction: \n              Linear algebra had its beginnings in the study of vectors in Cartesian 2 -space and 3 -space.  \nA vector, here, is a directed line segment characterized by both its magn itude, represented by length, \nand its direction. Vector s can be used to represent phys ical entities such as forces, and they can be \nadded to each other and multiplied with scalars, thus forming the first example of a real vector spa ce. \nModern linear algebra has been extended to consider spaces of arbitrary or Infinite dimension.         \nA vector space of dimension n is called an n -space. Most of the useful results from 2 - and 3-space \ncan be extended to these higher dimensional spaces. Although people ",
+  "keywords": [
+    "Linear Algebra",
+    "Matrix",
+    "Linear Spaces",
+    "n-Tuples",
+    "Vectors",
+    "Linear Equation."
+  ],
+  "sections": [
+    {
+      "section_id": "s1",
+      "heading": "V. P. College, Patoda",
+      "level": 2,
+      "page_start": 1,
+      "page_end": 1,
+      "text": "DOI Link :: http://doi-ds.org/doilink/04.2021-45438843/IRJHIS2104006\nAbstract :\nIn this we are presenting a study on the linear algebra and matrix in math ematics. Linear\nalgebra is the branch of mathematics concerned with the study of ve ctors, vector spaces (also called\nlinear spaces), linear maps (also called linear transfo rmations), and systems of linear equations.\nVector spaces are a central theme in modern mathematics: thus, linear algebra is widely used in\nboth abstract algebra and functional analysis. Linear algebra also has a concrete representation in\nanalytic geometry and it is generalized in operator theory. It has applications in the natural sciences\nand the social sciences. since nonlinear models can often be approximated by linear ones.\nKeywords: Linear Algebra, Matrix, Linear Spaces, n-Tuples, Vectors, Linear Equation.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s2",
+      "heading": "Introduction:",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 2,
+      "text": "Linear algebra had its beginnings in the study of vectors in Cartesian 2 -space and 3 -space.\nA vector, here, is a directed line segment characterized by both its magn itude, represented by length,\nand its direction. Vector s can be used to represent phys ical entities such as forces, and they can be\nadded to each other and multiplied with scalars, thus forming the first example of a real vector spa ce.\nModern linear algebra has been extended to consider spaces of arbitrary or Infinite dimension.\nA vector space of dimension n is called an n -space. Most of the useful results from 2 - and 3-space\ncan be extended to these higher dimensional spaces. Although people cannot easily visua lize vectors\nin n-space, such vectors or n -tuples are useful in representing data. Since vectors, as n -tuples, are\nordered lists of components, it is possible to summarize and manipulate data efficiently in this\nframework. For example, in economics, one can create and use, say, 8 -dimensional vectors or\n8-tuples to represent the Gross National Product of 8 countries. One can decide to display the GNP\nof 8 cou ntries for a partic ular year, where the countries' order is specified, for example, (United\nStates, United Kingdom, France, Germany, Spain, India, Japan, Australia). by using a vector (v1, v2,\nwww.irjhis.com \u00a92021 IRJHIS | Volume 2, Issue 4 April 2021 | ISSN 2582-8568 | Impact Factor 5.71\nIRJHIS2104006 | International Research Journal of Humanities and Interdisciplinary Studies (IRJHIS) | 27\nv3,v4,v5,v6.v7V5, V6 V7. Vg) where each country's GNP is in its respective position. A vector\nspace (or\nLinear space), as a purely abstract concept about which theorems are proved, is part of abstract\nalgebra, and is well integrated into this discipline. Some striking examples of this are the group of\ninvertible linear maps or matrices, and the ring of linear maps of a vector space. Linear algebra also\nplays an important part in analysis, notably, in the description of higher order derivatives in vector\nanalysis and the study of tensor pro ducts and alternating maps.In this abstract setting, the scalars\nwith which an element of a vector space can be multiplied eed not be numbers. The only requirement\nis that the scala rs form a mathematical structure, called a field. In applications, this field is us ually\nthe field of real numbers or the field of complex numbers. Linear maps take el ements from a linear\nspace to another (or to itself), in a manner that is compatible with the addition and scalarmultiplic a-\ntion given on the vector space(s). The set of all such transformations is itself a vector space. If a basis\nfor a vector space is fixed. every li near transform can be represented by a table of numbers called a\nmatrix. The detailed study of the properties of and algorithms acting on matrices, including determ i-\nnants and eigenvectors, is considered to be part of linear algebra. One can say quite simply that the\nlinear problems of mathematics - those that exhibit linearity in t heir behavior - are those most likely\nto be solved. For example differential calculus does a great with linear approximation to functions.\nThe difference from nonlinear problems is very i mportant in practice. The general method of finding\na linear way to look at a problem, expressing this in terms of linear algebra, and solving it, if need be\nby matrix calculations, is\none of the most generally applicable in mathematics",
+      "parent_section_id": null,
+      "section_type": "introduction",
+      "confidence": 0.98
+    },
+    {
+      "section_id": "s3",
+      "heading": "Linear Algebra:",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "text": "A line passing through the origin (blue, thick) in R is a lin ear subspace, a co mmon object of\nstudy in linear algebra. Linear algebra is a branch of mathematics co ncerned with the study of\nvectors, vector spaces (also called linear spaces), linear maps (also called linear formations), and\nsystems of linear equations . Vector spaces are a central theme in modern mathematics; thus. Linear\nalgebra is widely used matrix, consult the invertible matrix article.",
+      "parent_section_id": "s2",
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s4",
+      "heading": "ELEMENTARY INTRODUCTION:",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 3,
+      "text": "Linear algebra had its beginnings in the study of vectors in Cartesian 2 -space a nd 3-space. A\nvector, here, is a directed line segment, characterized by both its magnitude (also called length or\nnorm) and its direction. The zero vectors is an exception; it has zero magnitude and no direction.\nVectors can be used to represent physical entities such as forces, and they can be added to each other\nand multiplied by scalars, thus forming the first example of a real vector space, where a distinctio n is\nmade between \"scalars\", in this case real umbers, and \"vectors\". Modern linear algebra has been\nextended to consider spaces of arbitrary or infinite dimension. A vector space of dime nsion n is\nwww.irjhis.com \u00a92021 IRJHIS | Volume 2, Issue 4 April 2021 | ISSN 2582-8568 | Impact Factor 5.71\nIRJHIS2104006 | International Research Journal of Humanities and Interdisciplinary Studies (IRJHIS) | 28\ncalled an n -space. Most of the useful results from 2 - and 3 -space can be e xtended to these higher\ndimensional spaces.\nAlthough people cannot easily visua lize vectors in n -space, such vectors or n -tuples are useful in\nrepresenting data. Since vectors, as n-tuples, consist of n ordered components, data can be efficiently\nsummarized and manipulated in this framework. For e xample, in economics, one can create and use,\nsay, 8-dimensional vectors or 8-tuples to represent the gross national product of 8 countries. One can\ndecide to display the GNP of 8 countries for a particular year, where the countries' order is specif ied,\nfor example, (United States, United Kin gdom,Armenia, Germany, Brazil, India, Japan, Bangl adesh),\nby using a vector (V1, V2, V3, V4, V5, V6 V7 V8) where each country's GNP is in its respective\nposition.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s5",
+      "heading": "SOME USEFUL THEOREMS:",
+      "level": 1,
+      "page_start": 3,
+      "page_end": 3,
+      "text": "Cardinality, equivalently, the dimension of a vector s pace is well -defined. A matrix is\ninvertible if and only if its determinant is nonzero. A matrix is invertible if and only if the linear map\nrepresented by the matrix is an isomorphism. If a square matrix has a left inverse or a right inverse\nthen it is in vertible (see invertible matrix for other equivalent statements). A matrix is positive semi\ndefinite if and only if each of its eigen values is greater than or equal to zero.. A matrix is positive\ndefinite if and only if each of its eigen values is greater than zero. An nxn matrix is diagonalizable\n(i.e. there exists an invertible matrix P and a diagonal matrix D such that A = PDP) if and only if it\nhas n linearly independent eigenvectors.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s6",
+      "heading": "LINEAR EQUATION:",
+      "level": 1,
+      "page_start": 3,
+      "page_end": 3,
+      "text": "A linear equation is an algebraic equ ation in which each terms is either a co nstant or the\nproduct of a constant and the first power of) a single variable. Linear equations can have one or more\nA linear equation is an algebraic equation in which each term is either a constant or the product\nvariables. Linear equations occur abundantly in most subareas of mathematics and especially are\nparticularly useful since many non-linear equations may be reduced to linear requesting by assuming\nthat quantities of interest vary to only a small extent from some \"background\" state. Linear equations\ndo not include exponents. This article considers the case of a compile solution and, more generally\nfor linear equations with coefficients and solutions in any field.",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s7",
+      "heading": "MATRIX:",
+      "level": 1,
+      "page_start": 3,
+      "page_end": 4,
+      "text": "In mathematics, a matrix (plural matrices, or less commonly matrixes) is a recta ngular array of\nnumbers, as shown at the right. Matrices consisting of only one column or row are called vectors,\nwhile higher-dimensional, e.g. three-dimensional, arrays of numbers are called tensors. Matric es can\nbe added and subtracted entry wise, and mu ltiplied according to a rule corresponding to composition\nof linear transformations. These operations satisfy the usual identities, except that matrix multipl ica-\ntion is not commutative: the identity AB-BA can\nwww.irjhis.com \u00a92021 IRJHIS | Volume 2, Issue 4 April 2021 | ISSN 2582-8568 | Impact Factor 5.71\nIRJHIS2104006 | International Research Journal of Humanities and Interdisciplinary Studies (IRJHIS) | 29\nFail. One use of matrices is to represent linear transformations, which are higher -dimensional ana-\nlogs of linear functions of the form f(x) cx, where c is a constant. M atrices can also keep track of the\ncoefficients in a system of linear equations. For a square matrix, the determinant and inverse matrix\n(when it exists) govern the behavior of solutions to the corresponding system of linear equations, a nd\neigen values and e igenvectors provide insight into the geometry of the associated linear tran sforma-\ntion. Matrices find many applications. Physics makes use of them in various domains, for e xample in\ngeometrical optics and matrix mechanics. The latter also led to studying in more detail m atrices with\nan infinite number of rows and columns. Matrices encoding distances of knot points in a graph, such\nas cities connected by roads, are used in graph theory, and computer graphics use matr ices to encode\nprojections of three -dimensional space onto a two -dimensional screen. Matrix calculus generalizes\nclassical analytical notions such as derivatives of functions or exponentials to matrices. The latter is a\nrecurring need in solving ordinary differential equations. Serialism and d odecaphonism are musical\nmovements of the 20th century that utilize a square math ematical matrix to determine the pattern of\nmusic intervals. Due to their widespread use, considerable effort has been made to develop efficient\nmethods of matrix computing,particularly if the matrices are big. To this end, there are several matrix\ndecomposition m ethods, which express matrices as products of other matr ices with particular\nproperties simplifying computations, both theoretically and practically. Sparse matr ices, matrices\nconsisting mostly of zeros, which occur, for example, in simulating m echanical experiments using\nthe finite element method, often allow for more specif ically tailored algorithms performing these\ntasks. The close relationship of matrices with linear transformations makes the former a key notion\nof linear algebra. Other types of entries , such as elements in more general mathematical fields or\neven rings are also used",
+      "parent_section_id": null,
+      "section_type": "other",
+      "confidence": 0.62
+    },
+    {
+      "section_id": "s8",
+      "heading": "CONCLUSIONS:",
+      "level": 1,
+      "page_start": 4,
+      "page_end": 4,
+      "text": "Linear transformations and the associated symmetries play a key role in modern physics.\nChemistry makes use of matrices in various ways, particul arly since the use of quantum theory to\ndiscuss molecular bonding and spectroscopy. In this we are pr esenting a study on the linear algebra\nand matrix in mathematics. A linear equation is an algebraic equation in which each term is either a\nconstant or the product of a co nstant and (the first power of) a single variable. Linear equations can\nhave one or more variables. Linear algebra is the branch of mathematics concerned with the study of\nvectors,",
+      "parent_section_id": null,
+      "section_type": "conclusion",
+      "confidence": 0.98
+    },
+    {
+      "section_id": "s9",
+      "heading": "REFERENCES:",
+      "level": 1,
+      "page_start": 4,
+      "page_end": 5,
+      "text": "[1] Anton, Howard, \"Elementary Linear Algeb ra,\" 5th ed., New York: Wiley, ISBN 0-471-84819-0,\n1985.\n[2] Artin, Michael, \"Algebra,\" Prentice Hall, ISBN 978-0-89871-510-1, 1991.\nwww.irjhis.com \u00a92021 IRJHIS | Volume 2, Issue 4 April 2021 | ISSN 2582-8568 | Impact Factor 5.71\nIRJHIS2104006 | International Research Journal of Humanities and Interdisciplinary Studies (IRJHIS) | 30\n[3] Baker, Andrew J., \"Matrix Groups: An Introd uction to Lie Group Theory,\" Berlin, DE; New\nYork, NY: Springer-Verlag, ISBN 978-1-85233-470-3, 2003.\n[4] Bau III, David, Trefethen, Lloyd N., \"Numerical linear algebra, Philadelphia, PA: Society for\nIndustrial and Applied\nMathematics,\" ISBN 978-0-89871-361-9, 1995.\n[5] Beauregard, Raymond A., Fraleigh, John B., \"A First Course in Linear Algebra: with Optional\nIntroduction to Groups, Rings,and Fields,\" Boston: Houghton Mifflin Co., ISBN 0 -395-14017-X,\n1973.\n6 Bretscher, Otto, \"Linear Algebra with Applications (3rd ed.),\n[7] Bronson, Richard,\" Matrix Methods: An Introducti on,\" New York: Academic Press, LCCN\n70097490.1970.\n[8] Bronson, Richard,\" Schaum's outline of theory and problems of matrix operations,\" New York:\nMcGraw-Hill, ISBN 978-0-07-007978-6, 1989.\n[9] Brown, William C.,\" Matrices and vector spaces\" New York,NY: Marcel Dekker, ISBN, 1991\n[10] www.math.upatras.gr/-vpiperig/Mul/Algebra.pdf.\n[11] https://en.wikibooks.org/wiki/Linear_Algebra/Matrices.\n[12] www.math.tamu.edu/~dallen/m640_03c/lectures/chapter2.pdf.\n[13] https://www.khanacademy.org/math/linear-algebra.\n[14] www.sosmath.com/matrix/matrix.html.",
+      "parent_section_id": null,
+      "section_type": "references",
+      "confidence": 0.99
+    }
+  ],
+  "definitions": [],
+  "theorems": [],
+  "lemmas": [],
+  "corollaries": [],
+  "proofs": [],
+  "references": [
+    {
+      "reference_id": "ref_001",
+      "raw_text": "Anton, Howard, \"Elementary Linear Algeb ra,\" 5th ed., New York: Wiley, ISBN 0-471-84819-0,",
+      "title": ", New York: Wiley, ISBN 0-471-84819-0,",
+      "authors": [
+        "Anton",
+        "Howard",
+        "\"Elementary Linear Algeb ra",
+        "\" 5th ed"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_002",
+      "raw_text": "[2] Artin, Michael, \"Algebra,\" Prentice Hall, ISBN 978-0-89871-510-1, 1991. www.irjhis.com \u00a92021 IRJHIS | Volume 2, Issue 4 April 2021 | ISSN 2582-8568 | Impact Factor 5.71 IRJHIS2104006 | International Research Journal of Humanities and Interdisciplinary Studies (IRJHIS) | 30",
+      "title": "www",
+      "authors": [
+        "Artin",
+        "Michael",
+        "\"Algebra",
+        "\" Prentice Hall",
+        "ISBN 978-0-89871-510-1",
+        "1991"
+      ],
+      "year": 1991,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_003",
+      "raw_text": "Baker, Andrew J., \"Matrix Groups: An Introd uction to Lie Group Theory,\" Berlin, DE; New York, NY: Springer-Verlag, ISBN 978-1-85233-470-3, 2003.",
+      "title": ", \"Matrix Groups: An Introd uction to Lie Group Theory,\" Berlin, DE; New York, NY: Springer-Verlag, ISBN 978-1-85233-470-3, 2003",
+      "authors": [
+        "Baker",
+        "Andrew J"
+      ],
+      "year": 2003,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_004",
+      "raw_text": "Bau III, David, Trefethen, Lloyd N., \"Numerical linear algebra, Philadelphia, PA: Society for Industrial and Applied Mathematics,\" ISBN 978-0-89871-361-9, 1995.",
+      "title": ", \"Numerical linear algebra, Philadelphia, PA: Society for Industrial and Applied Mathematics,\" ISBN 978-0-89871-361-9, 1995",
+      "authors": [
+        "Bau III",
+        "David",
+        "Trefethen",
+        "Lloyd N"
+      ],
+      "year": 1995,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_005",
+      "raw_text": "Beauregard, Raymond A., Fraleigh, John B., \"A First Course in Linear Algebra: with Optional Introduction to Groups, Rings,and Fields,\" Boston: Houghton Mifflin Co., ISBN 0 -395-14017-X,",
+      "title": ", Fraleigh, John B",
+      "authors": [
+        "Beauregard",
+        "Raymond A"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_006",
+      "raw_text": "6 Bretscher, Otto, \"Linear Algebra with Applications (3rd ed.),",
+      "title": "),",
+      "authors": [
+        "6 Bretscher",
+        "Otto",
+        "\"Linear Algebra with Applications (3rd ed"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_007",
+      "raw_text": "Bronson, Richard,\" Matrix Methods: An Introducti on,\" New York: Academic Press, LCCN 70097490.1970.",
+      "title": "1970",
+      "authors": [
+        "Bronson",
+        "Richard",
+        "\" Matrix Methods: An Introducti on",
+        "\" New York: Academic Press",
+        "LCCN 70097490"
+      ],
+      "year": 1970,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_008",
+      "raw_text": "Bronson, Richard,\" Schaum's outline of theory and problems of matrix operations,\" New York: McGraw-Hill, ISBN 978-0-07-007978-6, 1989.",
+      "title": null,
+      "authors": [
+        "Bronson",
+        "Richard",
+        "\" Schaum's outline of theory",
+        "problems of matrix operations",
+        "\" New York: McGraw-Hill",
+        "ISBN 978-0-07-007978-6",
+        "1989"
+      ],
+      "year": 1989,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_009",
+      "raw_text": "Brown, William C.,\" Matrices and vector spaces\" New York,NY: Marcel Dekker, ISBN, 1991",
+      "title": ",\" Matrices and vector spaces\" New York,NY: Marcel Dekker, ISBN, 1991",
+      "authors": [
+        "Brown",
+        "William C"
+      ],
+      "year": 1991,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_010",
+      "raw_text": "www.math.upatras.gr/-vpiperig/Mul/Algebra.pdf.",
+      "title": "math",
+      "authors": [
+        "www"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_011",
+      "raw_text": "https://en.wikibooks.org/wiki/Linear_Algebra/Matrices.",
+      "title": "wikibooks",
+      "authors": [
+        "https://en"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": "https://en.wikibooks.org/wiki/Linear_Algebra/Matrices."
+    },
+    {
+      "reference_id": "ref_012",
+      "raw_text": "www.math.tamu.edu/~dallen/m640_03c/lectures/chapter2.pdf.",
+      "title": "math",
+      "authors": [
+        "www"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    },
+    {
+      "reference_id": "ref_013",
+      "raw_text": "https://www.khanacademy.org/math/linear-algebra.",
+      "title": "khanacademy",
+      "authors": [
+        "https://www"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": "https://www.khanacademy.org/math/linear-algebra."
+    },
+    {
+      "reference_id": "ref_014",
+      "raw_text": "www.sosmath.com/matrix/matrix.html.",
+      "title": "sosmath",
+      "authors": [
+        "www"
+      ],
+      "year": null,
+      "venue": null,
+      "doi": null,
+      "url": null
+    }
+  ],
+  "equations": [],
+  "figures": [],
+  "tables": [],
+  "metadata": {
+    "parser_version": "0.1.0",
+    "extraction_mode": "text_pdf",
+    "extraction_confidence": 0.85,
+    "language": "en",
+    "page_count": 5,
+    "ocr_used": false,
+    "processing_time_ms": 947,
+    "warnings": [
+      "[META_DOI_MISSING] (metadata) DOI not detected."
+    ],
+    "source": "doPDF Ver 7.3 Build 382 (unknown Windows version - Version: 10.0.18363 (x64))",
+    "year": 2021,
+    "doi": null,
+    "diagnostics": [
+      {
+        "code": "META_DOI_MISSING",
+        "severity": "warning",
+        "stage": "metadata",
+        "message": "DOI not detected."
+      }
+    ],
+    "parse_state": "degraded_success"
+  }
+}
