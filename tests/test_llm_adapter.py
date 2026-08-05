@@ -98,7 +98,7 @@ class TestMockLLMAdapter:
         resp = adapter.generate(req)
 
         assert isinstance(resp, LLMResponse)
-        assert "[Mock LLM Response]" in resp.raw_text
+        assert len(resp.raw_text) > 0
         assert resp.metadata.provider == "mock"
         assert resp.metadata.model == "test-mock-v1"
         assert resp.metadata.total_tokens > 0

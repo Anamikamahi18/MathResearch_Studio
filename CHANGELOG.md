@@ -6,68 +6,36 @@ The project follows Semantic Versioning.
 
 ## [Unreleased]
 
+*No unreleased changes at this time.*
+
+---
+
+## [1.0.0] - 2026-08-06
+
+### Release Highlights
+
+First complete, production-quality release of **MathResearch Studio** — a fully integrated AI-powered mathematical research workspace with 225 passing automated tests.
+
 ### Added
 
-- Repository initialized and connected to GitHub
-- Python virtual environment created
-- Required packages installed and `requirements.txt` generated
-- Initial project folder structure created
-- Documentation scaffolding added for README, MVP scope, tasks, literature review, gap analysis, and architecture
-- MIT License, `.gitignore`, and `CHANGELOG.md` added
-- Day 2 Session 1 completed: scientific document parsing literature update and parser architecture design
-- Day 2 Session 2 completed: parser submodule folder structure and JSON schema specification
-- Day 2 Session 3 completed: document pipeline workflow, sample paper test set, and parser test-case tracking
-- Day 2 Session 4 completed: parser-focused gap analysis update and parser limitations documentation
-- Day 2 pipeline implementation completed with parser modules for PDF loading, metadata extraction, section detection, reference parsing, equation detection, and schema-normalized JSON export
-- Centralized parser reliability policy enforcement in code constants and helper functions (warning codes, confidence deltas, quality thresholds, parse-state resolution)
-- Parser reliability and schema tests expanded and validated for Day 2 behavior
-- Day 3 Session 1 completed: embedding data models (`ChunkMetadata`, `TextChunk`, `EmbeddedChunk`), embedding architecture documentation (`docs/embedding_design.md`), literature review update for dense retrieval and MIR (`literature/literature_review.md`)
-- Day 3 Session 2 completed: `EmbeddingProvider` abstract interface and `SentenceTransformerEmbeddingProvider` implementation (`src/embeddings/provider.py`), section-aware and math entity-preserving chunker (`src/embeddings/chunker.py`), chunking strategy specification (`docs/chunking_strategy.md`)
-- Day 3 Session 3 completed: embedding pipeline orchestrator (`src/embeddings/pipeline.py`), FAISS vector store with L2 normalized cosine similarity (`src/rag/vector_store.py`), vector database architecture documentation (`architecture/vector_database.md`), semantic search test cases (`tests/search_tests.md`)
-- Day 3 Session 4 completed: semantic retriever layer (`src/rag/retriever.py`), search API specification (`docs/search_api.md`), Day 3 retrieval gap analysis update (`gap_analysis/gap_analysis.md`)
-- Day 3 Session 5 completed: Day 3 summary report (`docs/day3_report.md`), unit tests for semantic retrieval (`tests/test_retriever.py`), Kanban updates (`docs/tasks.md`)
-- Day 4 Session 1 completed: Literature review update for MKM, scientific NER, and relation extraction (`literature/literature_review.md`); research graph design specification (`docs/research_graph_design.md`)
-- Day 4 Session 2 completed: Graph package module structure (`src/graph/`); mathematical entity schema specification (`docs/entity_schema.md`); entity extraction layer (`src/graph/entity_extraction/`)
-- Day 4 Session 3 completed: Research graph architecture specification (`architecture/research_graph.md`); pluggable relation extraction layer (`src/graph/relation_extraction/`); graph testing plan and test scenario matrix (`tests/graph_tests.md`)
-- Day 4 Session 4 completed: Graph API specification (`docs/graph_api.md`); research gap analysis update for mathematical dependency networks (`gap_analysis/gap_analysis.md`); NetworkX dependency graph builder (`src/graph/dependency_graph/`)
-- Day 4 Session 5 completed: Interactive PyVis graph visualizer (`src/graph/visualization/`); multi-format graph exporters for HTML, JSON, Cytoscape JSON, GraphML, GEXF, and Pickle (`src/graph/graph_export/`); mathematics literature benchmark validation report (`reports/day4_validation_report.md`); full test suite expanded (60/60 tests passing); Kanban updated to Done (`docs/tasks.md`)
-- Day 5 Step 1 & 1.5 completed: Query processing layer (`src/rag/query_processing/`) with normalization, intent classification, multi-entity extraction, and symbol preservation.
-- Day 5 Step 2, 2.5 & 2.6 completed: Hybrid Retrieval Engine (`src/rag/retrieval/`) combining FAISS vector search, keyword matching, intent boosting, graph adjacency, ranking explainability breakdowns (`RetrievalExplanation`), retrieval statistics (`RetrievalStatistics`), and pluggable scoring engines (`BaseScoringEngine`, `WeightedScoringEngine`).
-- Day 5 Step 3 & 3.5 completed: Prompt Builder (`src/rag/prompt_builder/`) with token budgeting (`TokenManager`), context selection (`ContextSelector`), template registry (`TemplateRegistry`), and prompt formatting (`PromptFormatter`); provider-agnostic LLM Adapter layer (`src/rag/llm/`) supporting `MockLLMAdapter` and `LLMAdapterFactory`.
-- Day 5 Step 4 & 4.5 completed: Answer Generator (`src/rag/answer_generator/`) with post-processing (`AnswerPostProcessor`), validation (`AnswerValidator`), confidence estimation (`ConfidenceEstimator`), and 5-section response formatting; deterministic sentence-level Evidence Mapping layer (`src/rag/evidence/`) with `AlignmentEngine` (`DIRECT`, `PARTIAL`, `WEAK`, `NONE` support levels) and `CoverageAnalyzer`.
-- Day 5 Step 5 completed: Style-configurable Citation Engine (`src/rag/citation_engine/`) supporting `INLINE` (`[1]`), `AUTHOR_YEAR` (`(Smith, 2024)`), and `ACADEMIC` (`[Paper, Section, Page]`) formats with `CitationFormatter`, bibliography generation, hover metadata tooltips (`CitationRenderer`), and `CitationValidator`.
-- Day 5 Step 5.5 completed: Grounding Verification layer (`src/rag/grounding/`) with claim extraction (`ClaimExtractor`), claim verification (`ClaimVerifier`), grounding coverage analysis (`GroundingCoverageAnalyzer`), and report generation (`GroundingReportBuilder`).
-- Day 5 Step 6 completed: Guardrails Decision Engine layer (`src/rag/guardrails/`) evaluating policy rules (`GuardrailRules`) across 5 decision types (`RETURN`, `RETURN_WITH_WARNING`, `REFUSE`, `ASK_FOR_CLARIFICATION`, `INSUFFICIENT_EVIDENCE`), input payload validation (`GuardrailValidator`), and final response construction (`ResponseBuilder`).
-- Day 6 Step 0 completed: Application Service Layer (`src/application/`) introducing reusable services (`DocumentService`, `SearchService`, `ChatService`, `GraphService`, `DashboardService`, `ExportService`) orchestrating underlying backend parser, vector store, knowledge graph, RAG, and export modules without UI dependencies.
-- Day 6 Step 1 completed: Streamlit Application Shell & Router (`src/ui/app.py`, `src/ui/router.py`, `src/ui/layout.py`, `src/ui/sidebar/`, `src/ui/theme.py`, `src/ui/state.py`) providing a dark-mode SPA workspace with persistent sidebar navigation and lazy-initialized session state.
-- Day 6 Step 2 completed: PDF Upload & Document Library pages (`src/ui/pages/upload.py`, `src/ui/pages/library.py`) integrated with `DocumentService` for drag-and-drop ingestion, section parsing, statement entity displays, and catalog management.
-- Day 6 Step 3 completed: Semantic Search page (`src/ui/pages/search.py`) integrated with `SearchService` for natural language search queries, relevance scoring badges, section previews, and query logs.
-- Day 6 Step 4 completed: AI Research Assistant page (`src/ui/pages/assistant.py`) integrated with `ChatService` for grounded research Q&A, example prompts, evidence snippets, multi-style citations, and guardrails status indicators.
-- Day 6 Step 5 completed: Research Graph page (`src/ui/pages/graph.py`) integrated with `GraphService` for interactive theorem dependency graph visualizers (PyVis/HTML), zoom/pan controls, degree stats, and layout toggles.
-- Day 6 Step 6 completed: Notation Dictionary page (`src/ui/pages/notation.py`) integrated with `GraphService` for LaTeX symbol lookup, domain category filters, and mathematical meaning displays.
-- Day 6 Step 7 completed: Statistics Dashboard page (`src/ui/pages/statistics.py`) integrated with `DashboardService` for system-wide overview metrics (10 metric cards), distribution charts, quick research insights, and health status indicators.
-- Day 6 Step 8 completed: Export Center page (`src/ui/pages/export.py`) integrated with `ExportService` for multi-format research note exports (Markdown, JSON, CSV, PDF), live configuration preview cards, direct browser file downloads (`st.download_button`), and export audit history logs.
-- Day 6 Documentation & Design completed: Dashboard design spec (`docs/dashboard_design.md`), Navigation & UI/UX spec (`docs/navigation.md`), Export strategy spec (`docs/export_design.md`), Dashboard system architecture (`architecture/dashboard.md`), Dashboard test matrix (`tests/dashboard_tests.md`), Expanded literature review (`literature/literature_review.md`), Usability gap analysis (`gap_analysis/gap_analysis.md`), and updated Kanban (`docs/tasks.md`).
+- Day 7 Step 1: Complete end-to-end integration test documentation (`tests/integration_tests.md`), automated system verification script (`scripts/verify_end_to_end.py`), and full 10-module end-to-end verification (10/10 modules PASS).
+- Day 7 Step 2: Comprehensive performance benchmark script (`scripts/benchmark_performance.py`) measuring 11 core operations; performance documentation (`docs/performance.md`) with bottleneck analysis; performance analysis report (`reports/day7_step2_performance_analysis.md`).
+- Day 7 Step 3: Bug fixes (export filename sanitization, paper deletion, header anchor links, terminology improvements, notation categorization); code cleanup (removed dead duplicate code block in `library.py`); known issues documentation (`docs/known_issues.md`); bug fix report (`reports/day7_step3_bugfix_cleanup.md`).
+- Day 7 Step 4: Complete README overhaul (20 sections including Mermaid architecture diagram, technology stack table, step-by-step installation, project structure, roadmap, contributing, license, acknowledgements); `CONTRIBUTING.md`; `CODE_OF_CONDUCT.md`; `SECURITY.md`; enhanced `.gitignore`; repository polish report (`reports/day7_step4_repository_polish.md`).
 
-- Day 5 Documentation & Testing completed: Added RAG design specification (`docs/rag_design.md`), prompt engineering strategy (`docs/prompt_strategy.md`), RAG API specification (`docs/rag_api.md`), RAG pipeline architecture diagram (`architecture/rag_pipeline.md`), QA test matrix (`tests/rag_tests.md`), literature review update (`literature/literature_review.md`), gap analysis update (`gap_analysis/gap_analysis.md`), and unit test suite across all 9 RAG modules (109/109 RAG unit tests passing).
+### Fixed
 
+- Export Center download filenames sanitized (removed special characters and spaces) to ensure cross-platform compatibility.
+- Removed duplicate `if __name__ == "__main__":` entry block in `src/ui/pages/library.py`.
+- Disabled auto-generated relative anchor hover links on section heading titles.
+- Corrected mathematical concept category classification in `notation.py`.
 
-## [1.0.0] - Planned
+### Tested
 
-### Milestone Focus
+- Full regression suite: **225 / 225 tests passed (100% pass rate)**.
+- End-to-end system verification: **10 / 10 modules verified (PASS)**.
+- Performance benchmark: **11 / 11 operations measured (all PASS)**.
 
-First complete MVP workflow for mathematical research paper ingestion, extraction, retrieval, and note export.
-
-### Expected Deliverables
-
-- PDF upload and ingestion
-- Text extraction from research papers
-- Basic section detection
-- Search across uploaded documents
-- Grounded AI assistant over uploaded papers
-- Structured note export
-- Streamlit frontend and FastAPI backend integration
-- Local FAISS-based retrieval pipeline
 
 ## [1.1.0] - Planned
 

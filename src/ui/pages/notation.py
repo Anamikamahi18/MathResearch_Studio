@@ -56,7 +56,9 @@ def classify_notation_category(item: dict[str, Any]) -> str:
     text = (item.get("text") or "").lower()
     ntype = str(item.get("node_type", "")).lower()
 
-    if ntype == "concept" or "matrix" in lbl or "vector space" in lbl or "linear map" in lbl:
+    if ntype == "concept":
+        return "Concept"
+    if "matrix" in lbl or "vector space" in lbl or "linear map" in lbl:
         return "Matrix"
     if any(k in lbl or k in text for k in ("set", "space", "field", "\\mathbb", "group", "algebra", "manifold", "hilbert space", "topological space")):
         return "Set"

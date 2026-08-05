@@ -1,25 +1,61 @@
-# Python environments
+# ─── Python environments ───────────────────────────────────────────────────
 venv/
+.venv/
+env/
 
-# Python cache
+# ─── Python bytecode & cache ────────────────────────────────────────────────
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
 
-# Jupyter
+# ─── Build & distribution ────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ─── Jupyter ─────────────────────────────────────────────────────────────────
 .ipynb_checkpoints/
 
-# Environment files
+# ─── Environment & secrets ───────────────────────────────────────────────────
 .env
+.env.*
+*.pem
+*.key
 
-# Project runtime data
+# ─── Project runtime data ─────────────────────────────────────────────────────
 uploads/
 models/
+exports/vector_store/
 
-# Databases
+# ─── Databases ────────────────────────────────────────────────────────────────
 *.db
 *.sqlite
+*.sqlite3
 
-# Logs
+# ─── Logs ────────────────────────────────────────────────────────────────────
 *.log
+logs/
 
-# OS files
+# ─── Testing & coverage ──────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ─── Type checking ────────────────────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
+
+# ─── OS-specific files ───────────────────────────────────────────────────────
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo

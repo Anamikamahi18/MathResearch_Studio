@@ -295,15 +295,3 @@ if __name__ == "__main__":
     set_current_page("library")
     render_app_layout()
 
-
-
-if __name__ == "__main__":
-    import sys
-    from pathlib import Path
-    PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-    if str(PROJECT_ROOT) not in sys.path:
-        sys.path.insert(0, str(PROJECT_ROOT))
-    from src.ui.layout import render_app_layout
-    set_current_page("library")
-    render_app_layout()
-

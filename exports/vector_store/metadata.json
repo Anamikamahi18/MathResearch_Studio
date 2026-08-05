@@ -89,7 +89,46 @@
     "paper_stats_test_01_s1_c001",
     "paper_stats_test_01_s1_c001",
     "paper_export_test_01_s1_c001",
-    "paper_stats_test_01_s1_c001"
+    "paper_stats_test_01_s1_c001",
+    "paper_e2e_topology_01_s1_c001",
+    "paper_e2e_topology_01_s2_c001",
+    "paper_e2e_topology_01_s3_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_export_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_02_s1_c001",
+    "paper_e2e_topology_01_s1_c001",
+    "paper_e2e_topology_01_s2_c001",
+    "paper_e2e_topology_01_s3_c001",
+    "paper_e2e_topology_01_s1_c001",
+    "paper_e2e_topology_01_s2_c001",
+    "paper_e2e_topology_01_s3_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_e2e_topology_01_s1_c001",
+    "paper_e2e_topology_01_s2_c001",
+    "paper_e2e_topology_01_s3_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_export_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_02_s1_c001",
+    "paper_bench_topology_01_s1_c001",
+    "paper_bench_topology_01_s2_c001",
+    "paper_bench_topology_01_s3_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_export_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_02_s1_c001"
   ],
   "metadata_store": {
     "paper_6cd768c13674_s1_c001": {
@@ -1000,6 +1039,114 @@
         "section_type": "definition",
         "page_start": 1,
         "page_end": 1,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_e2e_topology_01_s1_c001": {
+      "chunk_id": "paper_e2e_topology_01_s1_c001",
+      "text": "Definition 1.1 (Compact Space). A topological space X is compact if every open cover of X has a finite subcover. Let T be a continuous mapping from X into itself.",
+      "metadata": {
+        "paper_id": "paper_e2e_topology_01",
+        "paper_title": "On Compact Topological Spaces and Fixed Point Theorems",
+        "authors": [
+          "A. N. Kolmogorov",
+          "S. L. Sobolev"
+        ],
+        "section_id": "s1",
+        "section_title": "1. Topological Preliminaries",
+        "section_type": "definition",
+        "page_start": 1,
+        "page_end": 2,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_e2e_topology_01_s2_c001": {
+      "chunk_id": "paper_e2e_topology_01_s2_c001",
+      "text": "Theorem 2.1 (Fixed Point Theorem). Let X be a non-empty compact convex subset of a Banach space. Then any continuous mapping T from X into X has at least one fixed point x in X such that T(x) = x. Lemma 2.2 (Bounded Closed Set). Every closed subset of a compact space is compact.",
+      "metadata": {
+        "paper_id": "paper_e2e_topology_01",
+        "paper_title": "On Compact Topological Spaces and Fixed Point Theorems",
+        "authors": [
+          "A. N. Kolmogorov",
+          "S. L. Sobolev"
+        ],
+        "section_id": "s2",
+        "section_title": "2. Main Fixed Point Theorems",
+        "section_type": "theorem",
+        "page_start": 3,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_e2e_topology_01_s3_c001": {
+      "chunk_id": "paper_e2e_topology_01_s3_c001",
+      "text": "Proof of Theorem 2.1. By Lemma 2.2, the sequence of convex combinations converges in X. Therefore T(x) = x by continuity.",
+      "metadata": {
+        "paper_id": "paper_e2e_topology_01",
+        "paper_title": "On Compact Topological Spaces and Fixed Point Theorems",
+        "authors": [
+          "A. N. Kolmogorov",
+          "S. L. Sobolev"
+        ],
+        "section_id": "s3",
+        "section_title": "3. Proof of Theorem 2.1",
+        "section_type": "proof",
+        "page_start": 6,
+        "page_end": 8,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_bench_topology_01_s1_c001": {
+      "chunk_id": "paper_bench_topology_01_s1_c001",
+      "text": "Definition 1.1 (Compact Space). A topological space X is compact if every open cover of X has a finite subcover. Let T be a continuous mapping from X into itself.",
+      "metadata": {
+        "paper_id": "paper_bench_topology_01",
+        "paper_title": "On Compact Topological Spaces and Fixed Point Theorems",
+        "authors": [
+          "A. N. Kolmogorov",
+          "S. L. Sobolev"
+        ],
+        "section_id": "s1",
+        "section_title": "1. Topological Preliminaries",
+        "section_type": "definition",
+        "page_start": 1,
+        "page_end": 2,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_bench_topology_01_s2_c001": {
+      "chunk_id": "paper_bench_topology_01_s2_c001",
+      "text": "Theorem 2.1 (Fixed Point Theorem). Let X be a non-empty compact convex subset of a Banach space. Then any continuous mapping T from X into X has at least one fixed point x in X such that T(x) = x. Lemma 2.2 (Bounded Closed Set). Every closed subset of a compact space is compact.",
+      "metadata": {
+        "paper_id": "paper_bench_topology_01",
+        "paper_title": "On Compact Topological Spaces and Fixed Point Theorems",
+        "authors": [
+          "A. N. Kolmogorov",
+          "S. L. Sobolev"
+        ],
+        "section_id": "s2",
+        "section_title": "2. Main Fixed Point Theorems",
+        "section_type": "theorem",
+        "page_start": 3,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_bench_topology_01_s3_c001": {
+      "chunk_id": "paper_bench_topology_01_s3_c001",
+      "text": "Proof of Theorem 2.1. By Lemma 2.2, the sequence of convex combinations converges in X. Therefore T(x) = x by continuity.",
+      "metadata": {
+        "paper_id": "paper_bench_topology_01",
+        "paper_title": "On Compact Topological Spaces and Fixed Point Theorems",
+        "authors": [
+          "A. N. Kolmogorov",
+          "S. L. Sobolev"
+        ],
+        "section_id": "s3",
+        "section_title": "3. Proof of Theorem 2.1",
+        "section_type": "proof",
+        "page_start": 6,
+        "page_end": 8,
         "entity_type": "section_text"
       }
     }
