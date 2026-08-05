@@ -18,8 +18,7 @@ def render_footer(config: AppConfig | None = None) -> None:
     st.markdown(
         f"""
         <div class="mrs-footer">
-            <p><strong>{cfg.title}</strong> {cfg.version} &bull; Deepmind Agentic AI Architecture</p>
-            <p style="margin-top: 0.25rem;">Built with Streamlit &bull; Python 3.12</p>
+            <p><strong>{cfg.title}</strong> {cfg.version} &bull; Interactive Mathematics Workspace</p>
         </div>
         """,
         unsafe_allow_html=True,

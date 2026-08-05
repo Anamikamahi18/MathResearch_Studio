@@ -15,9 +15,9 @@ from src.ui.state import get_chat_service, get_document_service
 logger = logging.getLogger(__name__)
 
 EXAMPLE_QUESTIONS = [
-    "What is the definition of a Hilbert Space?",
-    "Explain the main results and theorems in the ingested papers.",
-    "How are vector embeddings computed for mathematical notation?",
+    "What is the rigorous definition of a Hilbert Space and inner product norm?",
+    "Explain the proof structure and antecedents of the Banach Fixed Point Theorem.",
+    "Summarize the main theorems, lemmas, and LaTeX equations across the ingested math papers.",
 ]
 
 
@@ -36,10 +36,10 @@ def render_decision_badge(decision_val: str) -> tuple[str, str, str]:
 def render_assistant_page() -> None:
     """Render the AI Research Assistant page view."""
     render_page_title(
-        title="AI Research Assistant",
-        subtitle="Ask grounded questions across mathematical literature powered by multi-stage RAG, evidence mapping, and guardrails.",
+        title="Mathematics AI Research Assistant",
+        subtitle="Ask grounded questions across mathematical literature powered by multi-stage RAG, proof evidence mapping, and mathematical guardrails.",
         icon="🤖",
-        badge="AI Research Assistant",
+        badge="Math AI Assistant",
     )
 
 

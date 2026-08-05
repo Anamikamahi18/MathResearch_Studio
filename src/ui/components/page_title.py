@@ -24,7 +24,7 @@ def render_page_title(
     if badge:
         st.markdown(f'<span class="mrs-badge">{badge}</span>', unsafe_allow_html=True)
 
-    st.title(f"{icon_prefix}{title}")
+    st.title(f"{icon_prefix}{title}", anchor=False)
 
     if subtitle:
         st.caption(subtitle)

@@ -72,82 +72,84 @@ def set_user_preference(key: str, value: Any) -> None:
     st.session_state["user_preferences"][key] = value
 
 
-def get_document_service() -> Any:
-    """Retrieve or initialize the shared DocumentService instance in session state."""
-    if "doc_service" not in st.session_state or st.session_state["doc_service"] is None:
-        from src.application.document_service import DocumentService
+@st.cache_resource(show_spinner=False)
+def _init_cached_document_service() -> Any:
+    from src.application.document_service import DocumentService
 
-        doc_svc = DocumentService()
-        doc_svc.refresh_library()
-        st.session_state["doc_service"] = doc_svc
-        logger.info("Initialized shared DocumentService in session state")
+    doc_svc = DocumentService()
+    doc_svc.refresh_library()
+    logger.info("Created cached DocumentService instance")
+    return doc_svc
+
+
+def get_document_service() -> Any:
+    """Retrieve or initialize the DocumentService instance in session state."""
+    if "doc_service" not in st.session_state or st.session_state["doc_service"] is None:
+        st.session_state["doc_service"] = _init_cached_document_service()
     return st.session_state["doc_service"]
 
 
 def get_search_service() -> Any:
-    """Retrieve or initialize the shared SearchService instance connected to DocumentService vector store."""
+    """Retrieve or initialize the SearchService instance connected to DocumentService vector store."""
     if "search_service" not in st.session_state or st.session_state["search_service"] is None:
         from src.application.search_service import SearchService
-
         doc_svc = get_document_service()
-        search_svc = SearchService(vector_store=doc_svc.vector_store)
-        st.session_state["search_service"] = search_svc
-        logger.info("Initialized shared SearchService in session state linked to DocumentService vector store")
+        st.session_state["search_service"] = SearchService(vector_store=doc_svc.vector_store)
+        logger.info("Created SearchService instance linked to DocumentService vector store")
     return st.session_state["search_service"]
 
 
 def get_chat_service() -> Any:
-    """Retrieve or initialize the shared ChatService instance connected to DocumentService resources."""
+    """Retrieve or initialize the ChatService instance connected to DocumentService resources."""
     if "chat_service" not in st.session_state or st.session_state["chat_service"] is None:
         from src.application.chat_service import ChatService
-
         doc_svc = get_document_service()
-        chat_svc = ChatService(
+        st.session_state["chat_service"] = ChatService(
             vector_store=doc_svc.vector_store,
             graph_service=doc_svc.graph_service,
         )
-        st.session_state["chat_service"] = chat_svc
-        logger.info("Initialized shared ChatService in session state linked to DocumentService vector store and graph")
+        logger.info("Created ChatService instance linked to DocumentService resources")
     return st.session_state["chat_service"]
 
 
 def get_graph_service() -> Any:
-    """Retrieve or initialize the shared GraphService instance connected to DocumentService graph."""
+    """Retrieve or initialize the GraphService instance connected to DocumentService graph."""
     if "graph_service" not in st.session_state or st.session_state["graph_service"] is None:
         from src.application.graph_service import GraphService
-
         doc_svc = get_document_service()
-        graph_svc = GraphService(backend_graph_service=doc_svc.graph_service)
-        st.session_state["graph_service"] = graph_svc
-        logger.info("Initialized shared GraphService in session state linked to DocumentService graph")
+        st.session_state["graph_service"] = GraphService(backend_graph_service=doc_svc.graph_service)
+        logger.info("Created GraphService instance linked to DocumentService graph")
     return st.session_state["graph_service"]
 
 
 def get_dashboard_service() -> Any:
-    """Retrieve or initialize the shared DashboardService instance connected to DocumentService & GraphService."""
+    """Retrieve or initialize the DashboardService instance."""
     if "dashboard_service" not in st.session_state or st.session_state["dashboard_service"] is None:
         from src.application.dashboard_service import DashboardService
-
         doc_svc = get_document_service()
         graph_svc = get_graph_service()
-        dash_svc = DashboardService(
+        st.session_state["dashboard_service"] = DashboardService(
             document_service=doc_svc,
             graph_service=graph_svc,
             vector_store=doc_svc.vector_store,
         )
-        st.session_state["dashboard_service"] = dash_svc
-        logger.info("Initialized shared DashboardService in session state linked to DocumentService and GraphService")
+        logger.info("Created DashboardService instance")
     return st.session_state["dashboard_service"]
 
 
-def get_export_service() -> Any:
-    """Retrieve or initialize the shared ExportService instance in session state."""
-    if "export_service" not in st.session_state or st.session_state["export_service"] is None:
-        from src.application.export_service import ExportService
+@st.cache_resource(show_spinner=False)
+def _init_cached_export_service() -> Any:
+    from src.application.export_service import ExportService
 
-        exp_svc = ExportService(export_dir="exports")
-        st.session_state["export_service"] = exp_svc
-        logger.info("Initialized shared ExportService in session state")
+    exp_svc = ExportService(export_dir="exports")
+    logger.info("Created cached ExportService instance")
+    return exp_svc
+
+
+def get_export_service() -> Any:
+    """Retrieve or initialize the cached ExportService instance."""
+    if "export_service" not in st.session_state or st.session_state["export_service"] is None:
+        st.session_state["export_service"] = _init_cached_export_service()
     return st.session_state["export_service"]
 
 

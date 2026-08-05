@@ -18,10 +18,10 @@ from src.ui.state import (
 def render_home_page() -> None:
     """Render the Home / Research Overview landing page."""
     render_page_title(
-        title="Research Overview",
-        subtitle="Central AI workspace for mathematical paper analysis, knowledge graph exploration, and grounded RAG research assistance.",
+        title="Mathematics Research Overview",
+        subtitle="Interactive AI workspace for mathematical paper analysis, LaTeX equation parsing, theorem dependency networks, and grounded literature Q&A.",
         icon="🏠",
-        badge="Workspace Overview",
+        badge="Math Studio Workspace v1.0.0",
     )
 
     doc_service = get_document_service()
@@ -32,13 +32,13 @@ def render_home_page() -> None:
     stats = dash_service.get_statistics()
     m1, m2, m3, m4 = st.columns(4)
     with m1:
-        st.metric("Catalog Papers", stats["paper_count"])
+        st.metric("Ingested Papers", stats.get("paper_count", 0))
     with m2:
-        st.metric("Vector Chunks", stats["total_vector_chunks"])
+        st.metric("Indexed Passages", stats.get("total_vector_chunks", 0))
     with m3:
-        st.metric("Extracted Theorems", stats["theorem_count"])
+        st.metric("Theorems & Definitions", stats.get("theorem_count", 0) + stats.get("definition_count", 0))
     with m4:
-        st.metric("Graph Nodes", stats["graph_nodes"])
+        st.metric("Statement Connections", stats.get("graph_nodes", 0))
 
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -50,8 +50,8 @@ def render_home_page() -> None:
         st.markdown(
             """
             <div class="mrs-card">
-                <h4>📥 1. Ingest Literature</h4>
-                <p style="color: #94A3B8; font-size: 0.85rem;">Upload mathematics PDF preprints, parse sections, and extract definitions, theorems, lemmas, and proofs.</p>
+                <h4>📥 1. Upload Math Papers</h4>
+                <p style="color: #94A3B8; font-size: 0.85rem;">Upload mathematical research PDFs to extract section hierarchies, inline & display LaTeX formulas, definitions, theorems, lemmas, and proofs.</p>
             </div>
             """,
             unsafe_allow_html=True,
@@ -64,13 +64,13 @@ def render_home_page() -> None:
         st.markdown(
             """
             <div class="mrs-card">
-                <h4>🔍 2. Semantic Search</h4>
-                <p style="color: #94A3B8; font-size: 0.85rem;">Search natural language math queries across uploaded papers with cosine relevance scores and chunk highlights.</p>
+                <h4>🔍 2. Mathematical Search</h4>
+                <p style="color: #94A3B8; font-size: 0.85rem;">Search natural language math queries, theorem names, or LaTeX concepts across uploaded papers with relevance scores and passage excerpts.</p>
             </div>
             """,
             unsafe_allow_html=True,
         )
-        if st.button("Go to Search", use_container_width=True, key="btn_home_search"):
+        if st.button("Go to Math Search", use_container_width=True, key="btn_home_search"):
             set_current_page("search")
             st.rerun()
 
@@ -78,8 +78,8 @@ def render_home_page() -> None:
         st.markdown(
             """
             <div class="mrs-card">
-                <h4>🤖 3. AI Assistant</h4>
-                <p style="color: #94A3B8; font-size: 0.85rem;">Ask source-grounded research questions with sentence-level evidence mapping and academic citations.</p>
+                <h4>🤖 3. Math AI Assistant</h4>
+                <p style="color: #94A3B8; font-size: 0.85rem;">Ask research questions across your mathematical library backed by sentence-level evidence mapping, proof step tracing, and academic citations.</p>
             </div>
             """,
             unsafe_allow_html=True,
@@ -94,13 +94,13 @@ def render_home_page() -> None:
         st.markdown(
             """
             <div class="mrs-card">
-                <h4>🕸️ 4. Research Graph</h4>
-                <p style="color: #94A3B8; font-size: 0.85rem;">Explore interactive theorem dependency networks, antecedent proof chains, and statement node degrees.</p>
+                <h4>🕸️ 4. Theorem Dependency Network</h4>
+                <p style="color: #94A3B8; font-size: 0.85rem;">Explore interactive statement networks showing how theorems depend on prior definitions, lemmas, and proof antecedents.</p>
             </div>
             """,
             unsafe_allow_html=True,
         )
-        if st.button("Go to Research Graph", use_container_width=True, key="btn_home_graph"):
+        if st.button("Go to Theorem Graph", use_container_width=True, key="btn_home_graph"):
             set_current_page("graph")
             st.rerun()
 
@@ -109,7 +109,7 @@ def render_home_page() -> None:
             """
             <div class="mrs-card">
                 <h4>🔣 5. Notation Dictionary</h4>
-                <p style="color: #94A3B8; font-size: 0.85rem;">Search and browse extracted LaTeX mathematical symbols, domain categories, and definitions.</p>
+                <p style="color: #94A3B8; font-size: 0.85rem;">Browse and search extracted LaTeX mathematical symbols, operator definitions, set notations, and variables across your literature.</p>
             </div>
             """,
             unsafe_allow_html=True,
@@ -122,8 +122,8 @@ def render_home_page() -> None:
         st.markdown(
             """
             <div class="mrs-card">
-                <h4>📤 6. Export Center</h4>
-                <p style="color: #94A3B8; font-size: 0.85rem;">Export structured research notes, summaries, and graphs to Markdown, JSON, CSV, and PDF formats.</p>
+                <h4>📤 6. Research Export Center</h4>
+                <p style="color: #94A3B8; font-size: 0.85rem;">Export structured research notes, theorem summaries, notation dictionaries, and citations into Markdown, JSON, CSV, or PDF formats.</p>
             </div>
             """,
             unsafe_allow_html=True,
@@ -134,16 +134,24 @@ def render_home_page() -> None:
 
     # Recent Library Summary
     st.divider()
-    st.markdown("### 📚 Ingested Library Catalog")
+    st.markdown("### 📚 Mathematical Literature Catalog")
     if papers:
-        for p in papers[:3]:
+        for p in papers:
+            title = p.get("title") or p.get("paper_id") or "Untitled Paper"
+            authors_list = p.get("authors") or []
+            authors_str = ", ".join(authors_list) if authors_list else "Author not specified"
+            paper_id = p.get("paper_id", "")
+            sec_cnt = p.get("section_count", 0)
+            chunk_cnt = p.get("chunk_count", 0)
+            eq_cnt = p.get("equation_count", 0)
+
             st.markdown(
-                f"- **{p.get('title', 'Untitled')}** (`{p.get('paper_id')}`) &bull; "
-                f"Authors: *{', '.join(p.get('authors', [])) or 'N/A'}* &bull; "
-                f"Sections: `{p.get('section_count', 0)}` &bull; Chunks: `{p.get('chunk_count', 0)}`"
+                f"- **{title}** (`{paper_id}`) &bull; "
+                f"Authors: *{authors_str}* &bull; "
+                f"Sections: `{sec_cnt}` &bull; Passages: `{chunk_cnt}` &bull; LaTeX Equations: `{eq_cnt}`"
             )
     else:
-        st.info("No papers currently ingested. Click **Go to PDF Upload** above to import your first paper!")
+        st.info("No mathematical papers currently ingested. Click **Go to PDF Upload** above to import your first paper!")
 
 
 if __name__ == "__main__":

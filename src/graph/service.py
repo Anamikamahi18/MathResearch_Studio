@@ -29,7 +29,7 @@ class GraphService:
 
     def build_from_document(self, document: dict[str, Any]) -> None:
         """Build/update graph from a parsed document dictionary."""
-        self.graph = self.builder.build_from_document(document)
+        self.builder.add_document_to_graph(document, self.graph)
 
     def build_from_file(self, file_path: str | Path) -> None:
         """Build/update graph from a parsed document JSON file."""

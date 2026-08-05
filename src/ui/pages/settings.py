@@ -22,7 +22,27 @@ def render_settings_page() -> None:
 
     doc_service = get_document_service()
 
+    import os
+
+    current_hf_token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN") or ""
+
     with st.form("settings_form"):
+        st.markdown("### 🔑 Hugging Face Hub Authentication")
+        st.caption("Provide an HF Token to enable higher rate limits and faster downloads for SentenceTransformers model weights.")
+        
+        hf_token_input = st.text_input(
+            label="Hugging Face Access Token (HF_TOKEN)",
+            value=current_hf_token,
+            type="password",
+            placeholder="hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            help="Set your Hugging Face User Access Token to authorize model downloads.",
+        )
+
+        if current_hf_token:
+            st.success("🔑 **HF_TOKEN active:** Authenticated downloads enabled.")
+        else:
+            st.info("ℹ️ **Unauthenticated mode:** Implicit warnings suppressed. Set HF_TOKEN above for higher rate limits.")
+
         st.markdown("### 🔍 Retrieval & Search Preferences")
         c1, c2 = st.columns(2)
 
@@ -60,20 +80,30 @@ def render_settings_page() -> None:
 
         st.markdown("### 📁 System Storage & Vector Index")
         v_store = getattr(doc_service, "vector_store", None)
-        v_size = getattr(v_store, "size", 0) if v_store else 0
+        v_size = getattr(v_store, "number_of_vectors", lambda: 0)() if v_store else 0
         v_dim = getattr(v_store, "dimension", 384) if v_store else 384
 
         st.info(
-            f"**Vector Store Location:** `exports/vector_store.faiss` &bull; "
+            f"**Vector Store Location:** `exports/vector_store/index.faiss` &bull; "
             f"**Current Index Vectors:** `{v_size}` &bull; "
             f"**Embedding Dimension:** `{v_dim}`"
         )
 
-
         save_settings = st.form_submit_button("💾 Save Preferences", type="primary", use_container_width=True)
 
     if save_settings:
-        st.toast("Settings saved successfully!")
+        if hf_token_input.strip():
+            tok = hf_token_input.strip()
+            os.environ["HF_TOKEN"] = tok
+            os.environ["HUGGING_FACE_HUB_TOKEN"] = tok
+            os.environ.pop("HF_HUB_DISABLE_IMPLICIT_TOKEN_WARNING", None)
+            st.toast("Updated Hugging Face Token in environment!")
+        else:
+            os.environ.pop("HF_TOKEN", None)
+            os.environ.pop("HUGGING_FACE_HUB_TOKEN", None)
+            os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN_WARNING"] = "1"
+            st.toast("HF_TOKEN cleared; implicit warning suppression enabled.")
+
         st.success("✅ Application preferences updated.")
 
 

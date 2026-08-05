@@ -49,6 +49,10 @@ class EmbeddingProvider(ABC):
         raise NotImplementedError
 
 
+# Process-wide singleton model cache to avoid re-downloading or reloading model weights
+_MODEL_CACHE: dict[str, Any] = {}
+
+
 class SentenceTransformerEmbeddingProvider(EmbeddingProvider):
     """SentenceTransformers-backed embedding provider implementation."""
 
@@ -80,43 +84,68 @@ class SentenceTransformerEmbeddingProvider(EmbeddingProvider):
     @property
     def embedding_dimension(self) -> int:
         """Return the vector dimension of the active model."""
-        model = self._load_model()
-        if hasattr(model, "get_embedding_dimension"):
-            dim = model.get_embedding_dimension()
-        else:
-            dim = model.get_sentence_embedding_dimension()
-        return int(dim) if dim is not None else 384
+        if self._model is not None:
+            if hasattr(self._model, "get_embedding_dimension"):
+                dim = self._model.get_embedding_dimension()
+            else:
+                dim = self._model.get_sentence_embedding_dimension()
+            return int(dim) if dim is not None else 384
+        return 384
 
     def _load_model(self) -> Any:
-        """Lazy-load the SentenceTransformer model on first invocation."""
-        if self._model is None:
-            try:
-                from sentence_transformers import SentenceTransformer
+        """Lazy-load the SentenceTransformer model on first invocation with global caching."""
+        if self._model is not None:
+            return self._model
 
-                logger.info(
-                    "Loading SentenceTransformer model: %s (device=%s)",
-                    self._model_name,
-                    self._device or "default",
-                )
-                if self._device:
-                    self._model = SentenceTransformer(
-                        self._model_name, device=self._device
-                    )
-                else:
-                    self._model = SentenceTransformer(self._model_name)
-                logger.info(
-                    "Successfully loaded model %s",
-                    self._model_name,
-                )
-            except Exception as exc:
-                logger.error(
-                    "Failed to load SentenceTransformer model '%s': %s",
-                    self._model_name,
-                    exc,
-                )
-                raise RuntimeError(
-                    f"Could not load embedding model '{self._model_name}': {exc}"
-                ) from exc
+        cache_key = f"{self._model_name}:{self._device or 'cpu'}"
+        if cache_key in _MODEL_CACHE:
+            self._model = _MODEL_CACHE[cache_key]
+            return self._model
+
+        try:
+            import os
+            import warnings
+            
+            # Configure HuggingFace authentication token & environment defaults
+            os.environ.setdefault("HF_HUB_DISABLE_IMPLICIT_TOKEN_WARNING", "1")
+            os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+            warnings.filterwarnings("ignore", message=".*unauthenticated requests to the HF Hub.*")
+            warnings.filterwarnings("ignore", category=UserWarning, module="huggingface_hub")
+
+            hf_token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")
+
+            from sentence_transformers import SentenceTransformer
+
+            logger.info(
+                "Loading SentenceTransformer model: %s (device=%s)",
+                self._model_name,
+                self._device or "default",
+            )
+            
+            kwargs: dict[str, Any] = {}
+            if self._device:
+                kwargs["device"] = self._device
+            if hf_token:
+                kwargs["token"] = hf_token
+
+            loaded_model = SentenceTransformer(self._model_name, **kwargs)
+
+            _MODEL_CACHE[cache_key] = loaded_model
+            self._model = loaded_model
+            logger.info(
+                "Successfully loaded model %s into process cache",
+                self._model_name,
+            )
+        except Exception as exc:
+            logger.error(
+                "Failed to load SentenceTransformer model '%s': %s",
+                self._model_name,
+                exc,
+            )
+            raise RuntimeError(
+                f"Could not load embedding model '{self._model_name}': {exc}"
+            ) from exc
+
         return self._model
 
     def embed_text(self, text: str) -> list[float]:

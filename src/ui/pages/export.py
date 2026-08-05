@@ -51,8 +51,8 @@ def format_bytes_to_kb(b_size: int) -> str:
 def render_export_page() -> None:
     """Render the Export Center page view."""
     render_page_title(
-        title="Export Center",
-        subtitle="Export research notes, paper summaries, search results, AI conversations, notation dictionaries, and graph metrics.",
+        title="Mathematics Export Center",
+        subtitle="Export mathematical research notes, theorem summaries, search results, AI Q&A conversations, notation dictionaries, and graph metrics.",
         icon="📤",
         badge="Export Center",
     )

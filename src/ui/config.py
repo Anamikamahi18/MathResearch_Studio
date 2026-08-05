@@ -11,8 +11,8 @@ class AppConfig:
     """Configuration settings for the Streamlit research dashboard UI."""
 
     title: str = "MathResearch Studio"
-    version: str = "v0.6.1"
-    tagline: str = "AI-Powered Mathematical Document & Knowledge Graph Research Environment"
+    version: str = "v1.0.0"
+    tagline: str = "Interactive AI Workspace for Mathematical Literature, Theorems & Symbol Relationships"
     page_icon: str = "📐"
     sidebar_width: int = 280
     default_page: str = "home"
@@ -30,15 +30,47 @@ class AppConfig:
     pages: dict[str, dict[str, str]] = field(
         default_factory=lambda: {
             "home": {"label": "Home", "icon": "🏠", "group": "Overview"},
-            "upload": {"label": "Upload Papers", "icon": "📤", "group": "Library"},
-            "library": {"label": "Library", "icon": "📚", "group": "Library"},
-            "search": {"label": "Semantic Search", "icon": "🔍", "group": "Discovery"},
-            "assistant": {"label": "AI Assistant", "icon": "💬", "group": "Discovery"},
-            "graph": {"label": "Research Graph", "icon": "🕸️", "group": "Knowledge Graph"},
+            "upload": {"label": "Upload Math Papers", "icon": "📤", "group": "Library"},
+            "library": {"label": "Math Library", "icon": "📚", "group": "Library"},
+            "search": {"label": "Math Search", "icon": "🔍", "group": "Discovery"},
+            "assistant": {"label": "Math AI Assistant", "icon": "💬", "group": "Discovery"},
+            "graph": {"label": "Theorem Graph", "icon": "🕸️", "group": "Knowledge Graph"},
             "notation": {"label": "Notation Dictionary", "icon": "🔣", "group": "Knowledge Graph"},
-            "statistics": {"label": "Statistics", "icon": "📊", "group": "Analytics"},
-            "export": {"label": "Export", "icon": "💾", "group": "Workspace"},
+            "statistics": {"label": "Math Statistics", "icon": "📊", "group": "Analytics"},
+            "export": {"label": "Export Center", "icon": "💾", "group": "Workspace"},
             "settings": {"label": "Settings", "icon": "⚙️", "group": "Workspace"},
+        }
+    )
+
+    # Mathematics arXiv Subject Classifications & Subfield Tags
+    arxiv_math_categories: dict[str, str] = field(
+        default_factory=lambda: {
+            "math.AG": "Algebraic Geometry",
+            "math.AT": "Algebraic Topology",
+            "math.AP": "Analysis of PDEs",
+            "math.CA": "Classical Analysis & ODEs",
+            "math.CO": "Combinatorics",
+            "math.CT": "Category Theory",
+            "math.DG": "Differential Geometry",
+            "math.DS": "Dynamical Systems",
+            "math.FA": "Functional Analysis",
+            "math.GM": "General Mathematics",
+            "math.GN": "General Topology",
+            "math.GR": "Group Theory",
+            "math.HO": "History and Overview",
+            "math.IT": "Information Theory",
+            "math.KT": "K-Theory and Homology",
+            "math.LO": "Logic & Set Theory",
+            "math.MP": "Mathematical Physics",
+            "math.NA": "Numerical Analysis",
+            "math.NT": "Number Theory",
+            "math.OA": "Operator Algebras",
+            "math.PR": "Probability & Stochastic Processes",
+            "math.QA": "Quantum Algebra",
+            "math.RT": "Representation Theory",
+            "math.SG": "Symplectic Geometry",
+            "math.SP": "Spectral Theory",
+            "math.ST": "Statistics Theory",
         }
     )
 

@@ -28,21 +28,40 @@ def get_score_badge_style(score: float) -> tuple[str, str, str]:
 def render_search_page() -> None:
     """Render the Semantic Search page view."""
     render_page_title(
-        title="Semantic Vector Search",
-        subtitle="Search mathematical document chunks using vector embeddings, section types, and entity metadata.",
+        title="Mathematical Semantic Search",
+        subtitle="Search mathematical document passages, theorem statements, definitions, and LaTeX formulas using vector embeddings.",
         icon="🔍",
-        badge="Semantic Retrieval",
+        badge="Mathematical Retrieval",
     )
-
 
     doc_service = get_document_service()
     search_service = get_search_service()
 
+    # Mathematics Quick Query Presets
+    st.markdown("**Suggested Mathematics Queries:**")
+    c_q1, c_q2, c_q3, c_q4 = st.columns(4)
+    preset_q = None
+    with c_q1:
+        if st.button("📐 Hilbert Space & Norm", key="btn_q1", use_container_width=True):
+            preset_q = "Hilbert Space definition inner product norm completeness"
+    with c_q2:
+        if st.button("🔍 Cauchy-Schwarz Proof", key="btn_q2", use_container_width=True):
+            preset_q = "Cauchy-Schwarz inequality proof steps and vector bounds"
+    with c_q3:
+        if st.button("🔢 Banach Fixed Point", key="btn_q3", use_container_width=True):
+            preset_q = "Banach Fixed Point Theorem contraction mapping proof"
+    with c_q4:
+        if st.button("🕸️ Galois Field Extension", key="btn_q4", use_container_width=True):
+            preset_q = "Galois group polynomial roots field extension automorphism"
+
+    default_search_val = preset_q or st.session_state.get("active_search_query", "")
+
     # Search Form Input & Controls
     with st.form(key="semantic_search_form", clear_on_submit=False):
         query_text = st.text_input(
-            label="Search Query",
-            placeholder="Enter natural language query or mathematical concept (e.g. 'What is a Hilbert Space definition?')...",
+            label="Mathematical Query, Theorem Name, or Formula Concept",
+            value=default_search_val,
+            placeholder="Enter natural language query, LaTeX formula, or math concept (e.g., 'Hilbert Space norm', 'Cauchy-Schwarz inequality proof', 'Galois group')...",
             key="search_query_input",
         )
 
@@ -53,7 +72,7 @@ def render_search_page() -> None:
                 label="Top-K Results",
                 options=[5, 10, 20],
                 index=0,
-                help="Maximum number of candidate chunks to retrieve.",
+                help="Maximum number of candidate mathematical chunks to retrieve.",
             )
 
         with c_min_score:
@@ -75,7 +94,7 @@ def render_search_page() -> None:
 
         with c_ent_type:
             ent_type_opt = st.selectbox(
-                label="Entity Type Filter",
+                label="Math Statement Filter",
                 options=["All", "definition", "theorem", "lemma", "proof"],
                 index=0,
             )
@@ -84,12 +103,12 @@ def render_search_page() -> None:
         papers = doc_service.list_papers()
         paper_options = {p.get("title", p.get("paper_id")): p.get("paper_id") for p in papers}
         selected_paper_titles = st.multiselect(
-            label="Filter by Paper(s)",
+            label="Filter by Mathematical Paper(s)",
             options=list(paper_options.keys()),
-            placeholder="Search all papers in library...",
+            placeholder="Search across all math papers in library...",
         )
 
-        submit_search = st.form_submit_button("🔍 Search Literature", type="primary", use_container_width=True)
+        submit_search = st.form_submit_button("🔍 Search Mathematical Literature", type="primary", use_container_width=True)
 
     # Assemble Filters Dictionary
     filters: dict[str, Any] = {}

@@ -44,7 +44,38 @@
     "paper_6cd768c13674_s13_c007",
     "paper_6cd768c13674_s13_c008",
     "paper_6cd768c13674_s13_c009",
-    "paper_6cd768c13674_s13_c010"
+    "paper_6cd768c13674_s13_c010",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_export_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_export_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_02_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_02_s1_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_export_test_01_s1_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_01_s2_c001",
+    "paper_stats_test_01_s1_c001",
+    "paper_export_test_01_s1_c001",
+    "paper_test_01_s1_c001",
+    "paper_test_02_s1_c001"
   ],
   "metadata_store": {
     "paper_6cd768c13674_s1_c001": {
@@ -880,6 +911,81 @@
         "section_type": "references",
         "page_start": 5,
         "page_end": 6,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_test_01_s1_c001": {
+      "chunk_id": "paper_test_01_s1_c001",
+      "text": "Definition 1.1 (Metric Space). A set X with a metric d.",
+      "metadata": {
+        "paper_id": "paper_test_01",
+        "paper_title": "Untitled Paper",
+        "authors": [],
+        "section_id": "s1",
+        "section_title": "1. Intro",
+        "section_type": "definition",
+        "page_start": 1,
+        "page_end": 1,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_test_01_s2_c001": {
+      "chunk_id": "paper_test_01_s2_c001",
+      "text": "Theorem 2 (Spectral Radius Formula). The spectral radius r(T) equals lim ||T^n||^(1/n).",
+      "metadata": {
+        "paper_id": "paper_test_01",
+        "paper_title": "Untitled Paper",
+        "authors": [],
+        "section_id": "s2",
+        "section_title": "2. Main Theorem",
+        "section_type": "theorem",
+        "page_start": 2,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_stats_test_01_s1_c001": {
+      "chunk_id": "paper_stats_test_01_s1_c001",
+      "text": "Definition 1.1 (Gaussian Curvature). The product of principal curvatures.",
+      "metadata": {
+        "paper_id": "paper_stats_test_01",
+        "paper_title": "Untitled Paper",
+        "authors": [],
+        "section_id": "s1",
+        "section_title": "1. Curvature",
+        "section_type": "definition",
+        "page_start": 1,
+        "page_end": 5,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_export_test_01_s1_c001": {
+      "chunk_id": "paper_export_test_01_s1_c001",
+      "text": "Definition 1.1 (Test). Sample definition.",
+      "metadata": {
+        "paper_id": "paper_export_test_01",
+        "paper_title": "Untitled Paper",
+        "authors": [],
+        "section_id": "s1",
+        "section_title": "1. Intro",
+        "section_type": "definition",
+        "page_start": 1,
+        "page_end": 3,
+        "entity_type": "section_text"
+      }
+    },
+    "paper_test_02_s1_c001": {
+      "chunk_id": "paper_test_02_s1_c001",
+      "text": "Definition 1.1 (Function f). Let f: X -> Y be a mapping.",
+      "metadata": {
+        "paper_id": "paper_test_02",
+        "paper_title": "Untitled Paper",
+        "authors": [],
+        "section_id": "s1",
+        "section_title": "1. Definitions",
+        "section_type": "definition",
+        "page_start": 1,
+        "page_end": 1,
         "entity_type": "section_text"
       }
     }

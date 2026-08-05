@@ -41,14 +41,14 @@ class TestUIConfig:
     def test_default_config_properties(self):
         cfg = DEFAULT_APP_CONFIG
         assert cfg.title == "MathResearch Studio"
-        assert cfg.version == "v0.6.1"
+        assert cfg.version == "v1.0.0"
         assert cfg.default_page == "home"
         assert len(cfg.pages) == 10
 
     def test_get_page_info(self):
         cfg = DEFAULT_APP_CONFIG
         info = cfg.get_page_info("search")
-        assert info["label"] == "Semantic Search"
+        assert info["label"] == "Math Search"
         assert info["icon"] == "🔍"
 
         unknown_info = cfg.get_page_info("unknown_page")

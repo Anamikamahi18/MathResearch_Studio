@@ -406,7 +406,7 @@ def render_graph_page() -> None:
         layout=layout_mode,
         height=480,
     )
-    components.html(graph_html, height=500)
+    st.html(graph_html)
 
     # Node Details Inspector Drawer
     st.divider()

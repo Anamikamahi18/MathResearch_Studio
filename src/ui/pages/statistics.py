@@ -24,10 +24,10 @@ logger = logging.getLogger(__name__)
 def render_statistics_page() -> None:
     """Render the Statistics Dashboard page view."""
     render_page_title(
-        title="Research Statistics Dashboard",
+        title="Mathematical Research Statistics",
         subtitle="System overview, mathematical statement distributions, research activity logs, and system health status.",
         icon="📊",
-        badge="System Analytics",
+        badge="Math Analytics",
     )
 
 

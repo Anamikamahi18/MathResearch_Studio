@@ -40,6 +40,11 @@ def get_custom_css(config: AppConfig | None = None) -> str:
         max-width: 1280px;
     }}
 
+    /* Suppress Header Anchor Link Icons on Hover */
+    a.header-anchor {{
+        display: none !important;
+    }}
+
 
 
     /* Card Containers */
