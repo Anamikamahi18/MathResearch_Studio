@@ -26,16 +26,31 @@ def get_score_badge_style(score: float) -> tuple[str, str, str]:
 
 
 def render_search_page() -> None:
-    """Render the Semantic Search page view."""
+    """Render the Mathematical Search page view."""
     render_page_title(
-        title="Mathematical Semantic Search",
-        subtitle="Search mathematical document passages, theorem statements, definitions, and LaTeX formulas using vector embeddings.",
+        title="Mathematical Search",
+        subtitle="Search mathematical document passages, theorem statements, definitions, and LaTeX formulas using semantic similarity.",
         icon="🔍",
-        badge="Mathematical Retrieval",
+        badge="Math Literature Search",
     )
 
     doc_service = get_document_service()
     search_service = get_search_service()
+
+    # Pre-build catalog mapping for clean paper title and author resolution
+    papers = doc_service.list_papers()
+    paper_title_map: dict[str, str] = {}
+    paper_author_map: dict[str, str] = {}
+    paper_options: dict[str, str] = {}
+
+    for p in papers:
+        pid = p.get("paper_id")
+        if pid:
+            t = p.get("title") or pid
+            paper_title_map[pid] = t
+            paper_options[t] = pid
+            a_list = p.get("authors") or []
+            paper_author_map[pid] = ", ".join(a_list) if a_list else "Author not specified"
 
     # Mathematics Quick Query Presets
     st.markdown("**Suggested Mathematics Queries:**")
@@ -61,7 +76,7 @@ def render_search_page() -> None:
         query_text = st.text_input(
             label="Mathematical Query, Theorem Name, or Formula Concept",
             value=default_search_val,
-            placeholder="Enter natural language query, LaTeX formula, or math concept (e.g., 'Hilbert Space norm', 'Cauchy-Schwarz inequality proof', 'Galois group')...",
+            placeholder="Enter natural language query, LaTeX formula, or math concept (e.g., 'Hilbert Space norm', 'Cauchy-Schwarz inequality proof', 'Banach fixed point theorem')...",
             key="search_query_input",
         )
 
@@ -69,39 +84,39 @@ def render_search_page() -> None:
 
         with c_topk:
             top_k = st.selectbox(
-                label="Top-K Results",
+                label="Max Passages to Show",
                 options=[5, 10, 20],
                 index=0,
-                help="Maximum number of candidate mathematical chunks to retrieve.",
+                help="Select how many top relevant passage excerpts to display.",
             )
 
         with c_min_score:
             min_score = st.slider(
-                label="Min Relevance Score",
+                label="Minimum Similarity Threshold",
                 min_value=0.0,
                 max_value=1.0,
                 value=0.0,
                 step=0.05,
-                help="Filter out results below this similarity threshold.",
+                help="Filter out passage excerpts below this relevance score (0.00 = show all).",
             )
 
         with c_sec_type:
             sec_type_opt = st.selectbox(
-                label="Section Type Filter",
+                label="Section Filter",
                 options=["All", "definition", "theorem", "lemma", "proof", "other"],
                 index=0,
+                help="Filter by section role within papers.",
             )
 
         with c_ent_type:
             ent_type_opt = st.selectbox(
-                label="Math Statement Filter",
-                options=["All", "definition", "theorem", "lemma", "proof"],
+                label="Statement Type Filter",
+                options=["All", "definition", "theorem", "lemma", "corollary", "proof"],
                 index=0,
+                help="Filter passages containing specific mathematical statement types.",
             )
 
         # Paper Filter Options
-        papers = doc_service.list_papers()
-        paper_options = {p.get("title", p.get("paper_id")): p.get("paper_id") for p in papers}
         selected_paper_titles = st.multiselect(
             label="Filter by Mathematical Paper(s)",
             options=list(paper_options.keys()),
@@ -127,7 +142,7 @@ def render_search_page() -> None:
     if submit_search and query_text.strip():
         start_time = time.perf_counter()
 
-        with st.spinner("Generating query vector embeddings & searching FAISS index..."):
+        with st.spinner("Searching mathematical literature index..."):
             results = search_service.semantic_search(
                 query=query_text.strip(),
                 top_k=top_k,
@@ -161,22 +176,33 @@ def render_search_page() -> None:
                 bg_color, text_color, match_label = get_score_badge_style(score)
                 chunk_id = res.get("chunk_id", f"chunk_{idx}")
                 paper_id = res.get("paper_id", "Unknown")
-                paper_title = res.get("paper_title") or paper_id
-                section_title = res.get("section_title") or res.get("section_id") or "Section"
+                
+                # Resolve real paper title and authors
+                raw_title = res.get("paper_title") or res.get("title") or ""
+                if paper_id in paper_title_map:
+                    paper_title = paper_title_map[paper_id]
+                elif not raw_title or raw_title.startswith("paper_") or "irjhis.com" in raw_title.lower() or "journal of" in raw_title.lower():
+                    paper_title = paper_id
+                else:
+                    paper_title = raw_title
+
+                authors_str = paper_author_map.get(paper_id, ", ".join(res.get("authors") or []) if res.get("authors") else "Author not specified")
+                section_title = res.get("section_title") or res.get("section_id") or "Section Text"
                 section_type = res.get("section_type", "other")
                 page_start = res.get("page_start", 1)
                 page_end = res.get("page_end", 1)
                 text = res.get("text", "")
 
-                with st.expander(f"#{idx} [{score:.4f}] **{paper_title}** - *{section_title}*"):
+                with st.expander(f"#{idx} [{score:.4f}] **{paper_title}** — *{section_title}*"):
                     col_meta, col_score = st.columns([4, 1])
 
                     with col_meta:
                         st.markdown(
                             f"""
                             <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">
-                                <strong>Paper ID:</strong> <code>{paper_id}</code> &bull; 
-                                <strong>Section Type:</strong> <code>{section_type}</code> &bull; 
+                                <strong>Paper:</strong> {paper_title} &bull; 
+                                <strong>Authors:</strong> {authors_str} &bull; 
+                                <strong>Section:</strong> <code>{section_type}</code> &bull; 
                                 <strong>Page:</strong> {page_start}{f'-{page_end}' if page_end > page_start else ''}
                             </div>
                             """,
@@ -193,24 +219,33 @@ def render_search_page() -> None:
                             unsafe_allow_html=True,
                         )
 
-                    st.markdown("**Retrieved Chunk Text:**")
+                    st.markdown("**Retrieved Passage Text:**")
                     st.info(text)
 
                     # Detail Inspection Popover
-                    with st.popover(f"🔍 Inspect Chunk `{chunk_id}` Metadata"):
-                        st.json(res)
+                    with st.popover("📖 View Passage Details & Context"):
+                        st.markdown(f"### {paper_title}")
+                        st.markdown(f"**Authors**: *{authors_str}*")
+                        st.markdown(f"**Section**: {section_title} | **Page**: {page_start}")
+                        st.markdown(f"**Relevance Score**: `{score:.4f}` ({match_label})")
+                        st.divider()
+                        st.markdown("**Complete Excerpt:**")
+                        st.markdown(text)
+                        
+                        with st.expander("🛠️ Technical JSON Data (Developer View)"):
+                            st.json(res)
 
         else:
-            st.warning("⚠️ **No relevant passages were found.**")
+            st.warning("⚠️ **No relevant passages were found matching your criteria.**")
             st.caption(
-                "Try broadening your search keywords, reducing the minimum relevance score threshold, or clearing section/paper filters."
+                "Try broadening your search keywords, reducing the similarity threshold, or clearing section filters."
             )
 
     # Render Initial Search Guidance if no search active
     elif not active_query:
         render_empty_state(
-            title="Perform Semantic Search Across Papers",
-            message="Enter a natural language question, formula description, or mathematical concept above to retrieve ranked text passages from indexed literature.",
+            title="Search Mathematical Literature",
+            message="Enter a natural language question, formula description, or mathematical concept above to retrieve ranked text passages from your library.",
             icon="🔍",
         )
 
