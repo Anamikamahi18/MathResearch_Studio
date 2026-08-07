@@ -1,101 +1,189 @@
-# Project Kanban
+# Project Kanban — MathResearch Studio
 
-## To Do
+**Version**: 1.0.0  
+**Status**: ✅ v1.0.0 COMPLETE — All planned work delivered  
+**Last Updated**: 7 August 2026
 
-### Version 1.0.0
+---
 
-- RAG assistant
-- Export notes
-- Streamlit and FastAPI integration
+## ✅ Done — Version 1.0.0
 
-### Version 1.1.0
+### Day 1 — Foundation
 
-- Metadata extraction improvements
-- Better theorem-like structure detection
-- Improved chunking and embeddings quality
-- UI usability improvements
-- Export formatting improvements
-- Initial notation dictionary
+- [x] Repository setup
+- [x] Documentation folder structure
+- [x] Environment setup (`requirements.txt`, `.gitignore`, `venv`)
+- [x] MVP scope definition (`docs/mvp_scope.md`)
+- [x] Release plan (`docs/release_plan.md`)
+- [x] Project Kanban initialisation (`docs/tasks.md`)
 
-### Version 2.0.0
+### Day 2 — Parser
 
-- Dependency graph
-- Stronger notation tracking
-- Multi-paper knowledge organization
-- Retrieval filtering improvements
-- Durable persistence layer
+- [x] Scientific document parsing pipeline
+- [x] Parser architecture (`docs/parser_design.md`)
+- [x] Parser error policy (`docs/parser_error_policy.md`)
+- [x] Parser limitations (`docs/parser_limitations.md`)
+- [x] JSON schema design (`docs/json_schema.md`, `docs/entity_schema.md`)
+- [x] Sample paper collection (`tests/sample_papers/`)
+- [x] Day 2 deliverables report (`docs/day2_deliverables.md`)
 
-### Version 3.0.0
+### Day 3 — Embeddings & Search
 
-- Dashboard
-- Research group collaboration workflows
-- Large-scale research library support
-- External literature integrations
-- Advanced analytics
-- Extensible plugin or provider architecture
+- [x] Chunking strategy (`docs/chunking_strategy.md`)
+- [x] Embedding module and provider (`src/embeddings/`)
+- [x] Embedding pipeline orchestrator
+- [x] FAISS vector database design and implementation (`src/rag/vector_store.py`)
+- [x] Search API specification (`docs/search_api.md`)
+- [x] Semantic Retriever implementation
+- [x] Semantic search testing and documentation
+- [x] Literature review update (`literature/literature_review.md`)
+- [x] Gap analysis update (`gap_analysis/gap_analysis.md`)
+- [x] Day 3 report (`docs/day3_report.md`)
 
-## In Progress
+### Day 4 — Knowledge Graph
 
-## Done
+- [x] Mathematical entity schema design (`docs/entity_schema.md`)
+- [x] Research graph architecture (`architecture/research_graph.md`)
+- [x] Dependency graph design (`docs/research_graph_design.md`)
+- [x] Graph visualisation strategy and report (`reports/day4_visualization_report.md`)
+- [x] Graph API specification (`docs/graph_api.md`)
+- [x] Graph testing plan and test matrix (`tests/graph_tests.md`)
+- [x] Entity extraction pipeline (`src/graph/entity_extraction/`)
+- [x] Pluggable relation extraction layer (`src/graph/relation_extraction/`)
+- [x] NetworkX dependency graph builder (`src/graph/dependency_graph/`)
+- [x] Interactive PyVis visualiser and multi-format exporters (`src/graph/visualization/`, `src/graph/graph_export/`)
+- [x] Mathematics literature benchmark validation (`reports/day4_validation_report.md`)
+- [x] Day 4 pipeline audit (`reports/day4_pipeline_audit.md`)
+- [x] Schema audit (`reports/schema_audit.md`)
 
-- Repository setup
-- Documentation
-- Folder structure
-- Environment setup
-- Parser architecture
-- Document pipeline
-- JSON schema
-- Sample paper collection
-- Parser documentation
-- Scientific document parsing pipeline (Day 2)
-- Chunking strategy (Day 3)
-- Embedding module & provider (Day 3)
-- Embedding pipeline orchestrator (Day 3)
-- FAISS vector database design & implementation (Day 3)
-- Search API specification & Semantic Retriever (Day 3)
-- Semantic search testing & documentation (Day 3)
-- Literature review update (Day 3)
-- Gap analysis update (Day 3)
-- Mathematical entity schema design (`docs/entity_schema.md`) (Day 4)
-- Research graph architecture (`architecture/research_graph.md`) (Day 4)
-- Dependency graph design (`docs/research_graph_design.md`) (Day 4)
-- Graph visualization strategy & report (`reports/day4_visualization_report.md`) (Day 4)
-- Graph API specification (`docs/graph_api.md`) (Day 4)
-- Graph testing plan & test matrix (`tests/graph_tests.md`) (Day 4)
-- Entity extraction pipeline implementation (`src/graph/entity_extraction/`) (Day 4)
-- Pluggable relation extraction layer (`src/graph/relation_extraction/`) (Day 4)
-- NetworkX dependency graph builder (`src/graph/dependency_graph/`) (Day 4)
-- Interactive PyVis visualizer & multi-format exporters (`src/graph/visualization/`, `src/graph/graph_export/`) (Day 4)
-- Mathematics literature benchmark validation (`reports/day4_validation_report.md`) (Day 4)
-- AI Research Assistant RAG design specification (`docs/rag_design.md`) (Day 5)
-- Prompt engineering strategy (`docs/prompt_strategy.md`) (Day 5)
-- RAG API specification (`docs/rag_api.md`) (Day 5)
-- RAG pipeline architecture & dataflow diagram (`architecture/rag_pipeline.md`) (Day 5)
-- RAG QA test plan & test scenario matrix (`tests/rag_tests.md`) (Day 5)
-- Query processing layer implementation (`src/rag/query_processing/`) (Day 5)
-- Hybrid retrieval engine implementation (`src/rag/retrieval/`) (Day 5)
-- Prompt builder layer implementation (`src/rag/prompt_builder/`) (Day 5)
-- Provider-agnostic LLM adapter layer (`src/rag/llm/`) (Day 5)
-- Answer generator implementation (`src/rag/answer_generator/`) (Day 5)
-- Evidence mapping layer implementation (`src/rag/evidence/`) (Day 5)
-- Citation engine layer implementation (`src/rag/citation_engine/`) (Day 5)
-- Grounding verification layer implementation (`src/rag/grounding/`) (Day 5)
-- Guardrails decision engine layer implementation (`src/rag/guardrails/`) (Day 5)
-- RAG literature review & gap analysis update (`literature/literature_review.md`, `gap_analysis/gap_analysis.md`) (Day 5)
-- Application Service Layer implementation (`src/application/`) (Day 6 Step 0)
-- Streamlit application shell & page router (`src/ui/app.py`, `src/ui/router.py`) (Day 6 Step 1)
-- PDF Upload & Document Library pages (`src/ui/pages/upload.py`, `src/ui/pages/library.py`) (Day 6 Step 2)
-- Semantic Search page (`src/ui/pages/search.py`) (Day 6 Step 3)
-- AI Research Assistant page (`src/ui/pages/assistant.py`) (Day 6 Step 4)
-- Research Graph page (`src/ui/pages/graph.py`) (Day 6 Step 5)
-- Notation Dictionary page (`src/ui/pages/notation.py`) (Day 6 Step 6)
-- Statistics Dashboard page (`src/ui/pages/statistics.py`) (Day 6 Step 7)
-- Export Center page (`src/ui/pages/export.py`) (Day 6 Step 8)
-- Dashboard design specification (`docs/dashboard_design.md`) (Day 6)
-- Navigation & UI/UX specification (`docs/navigation.md`) (Day 6)
-- Export strategy specification (`docs/export_design.md`) (Day 6)
-- Dashboard architecture diagram (`architecture/dashboard.md`) (Day 6)
-- Dashboard test matrix (`tests/dashboard_tests.md`) (Day 6)
-- Expanded literature review & usability gap analysis update (Day 6)
+### Day 5 — RAG Pipeline
 
+- [x] RAG design specification (`docs/rag_design.md`)
+- [x] Prompt engineering strategy (`docs/prompt_strategy.md`)
+- [x] RAG API specification (`docs/rag_api.md`)
+- [x] RAG pipeline architecture and dataflow diagram (`architecture/rag_pipeline.md`)
+- [x] RAG QA test plan and test scenario matrix (`tests/rag_tests.md`)
+- [x] Query processing layer (`src/rag/query_processing/`)
+- [x] Hybrid retrieval engine (`src/rag/retrieval/`)
+- [x] Prompt builder layer (`src/rag/prompt_builder/`)
+- [x] Provider-agnostic LLM adapter (`src/rag/llm/`)
+- [x] Answer generator (`src/rag/answer_generator/`)
+- [x] Evidence mapping layer (`src/rag/evidence/`)
+- [x] Citation engine (`src/rag/citation_engine/`)
+- [x] Grounding verification layer (`src/rag/grounding/`)
+- [x] Guardrails decision engine (`src/rag/guardrails/`)
+- [x] RAG literature review and gap analysis update
 
+### Day 6 — Streamlit UI
+
+- [x] Application Service Layer (`src/application/`)
+- [x] Streamlit application shell and page router (`src/ui/app.py`, `src/ui/router.py`)
+- [x] PDF Upload page (`src/ui/pages/upload.py`)
+- [x] Document Library page (`src/ui/pages/library.py`)
+- [x] Semantic Search page (`src/ui/pages/search.py`)
+- [x] AI Research Assistant page (`src/ui/pages/assistant.py`)
+- [x] Research Graph page (`src/ui/pages/graph.py`)
+- [x] Notation Dictionary page (`src/ui/pages/notation.py`)
+- [x] Statistics Dashboard page (`src/ui/pages/statistics.py`)
+- [x] Export Center page (`src/ui/pages/export.py`)
+- [x] Dashboard design specification (`docs/dashboard_design.md`)
+- [x] Navigation and UI/UX specification (`docs/navigation.md`)
+- [x] Export strategy specification (`docs/export_design.md`)
+- [x] Dashboard architecture diagram (`architecture/dashboard.md`)
+- [x] Dashboard test matrix (`tests/dashboard_tests.md`)
+- [x] UI literature review and usability gap analysis update
+
+### Day 7 — Release Engineering
+
+- [x] End-to-end integration testing (225 tests, 100% pass) — `tests/integration_tests.md`
+- [x] Performance benchmark (11 operations, 66 ms avg) — `docs/performance.md`
+- [x] Bug fixes and cleanup (5 bugs resolved) — `docs/known_issues.md`
+- [x] README overhaul (388 lines, 20 sections, Mermaid diagram)
+- [x] Repository governance: `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`
+- [x] `CHANGELOG.md` — v1.0.0 entry complete
+- [x] `.gitignore` — comprehensive exclusions
+- [x] Release notes — `docs/release_notes_v1.0.0.md`
+- [x] Deployment guide — `docs/deployment.md`
+- [x] Git tag `v1.0.0` — local + remote
+- [x] GitHub Release description — `docs/github_release.md`
+- [x] Release assets checklist — `docs/release_assets.md`
+- [x] Pre-release verification — `reports/pre_release_verification.md` (APPROVED)
+- [x] Demo script — `docs/demo_script.md`
+- [x] Demo walkthrough guide — `docs/demo_walkthrough.md`
+- [x] Demo assets checklist — `docs/demo_assets.md`
+- [x] Demo recording checklist — `docs/demo_recording_checklist.md`
+- [x] Recruiter demo guide — `docs/recruiter_demo.md`
+- [x] 12-slide presentation outline — `docs/presentation_outline.md`
+- [x] Presentation speaker notes — `docs/presentation_speaker_notes.md`
+- [x] Presentation assets checklist — `docs/presentation_assets.md`
+- [x] Faculty discussion guide (13 Q&As) — `docs/faculty_discussion.md`
+- [x] Recruiter talking points (17 technologies) — `docs/recruiter_talking_points.md`
+- [x] Final repository audit — `reports/final_repository_audit.md`
+- [x] Final deliverables checklist — `reports/final_deliverables_checklist.md`
+- [x] Version 1 summary — `docs/version1_summary.md`
+- [x] Project retrospective — `docs/project_retrospective.md`
+- [x] Portfolio review (5 perspectives) — `docs/portfolio_review.md`
+- [x] Future research directions — `docs/future_research.md`
+- [x] Project closure report — `reports/day7_step10_project_closure.md`
+
+---
+
+## ⏳ Pending — Manual Tasks (Post-Release)
+
+### High Priority (Before Sharing Repository)
+
+- [ ] Publish GitHub Release page (use `docs/github_release.md`)
+- [ ] Screenshot session — 9 application pages
+
+### Medium Priority (Within 1 Week)
+
+- [ ] Demo video recording (~7 min, follow `docs/demo_recording_checklist.md`)
+- [ ] Upload screenshots to GitHub Release
+- [ ] Embed screenshots in README.md
+- [ ] Add demo video URL to README and GitHub Release
+
+### Low Priority (Optional Enhancements)
+
+- [ ] Build slide deck in PowerPoint / Google Slides (use `docs/presentation_outline.md`)
+- [ ] GitHub Actions CI workflow (`.github/workflows/test.yml`)
+- [ ] GitHub Issue templates (`.github/ISSUE_TEMPLATE/`)
+- [ ] Add sample PDF to repository or `tests/sample_papers/`
+- [ ] 2× presentation rehearsals
+- [ ] LinkedIn project announcement
+
+---
+
+## 🔭 Planned — Version 2.0.0
+
+*See `docs/future_research.md` for detailed research direction plans.*
+
+- [ ] Real LLM adapter (OpenAI GPT-4o, Ollama Llama 3, Anthropic Claude)
+- [ ] GPU/ONNX accelerated embedding inference (10× speedup)
+- [ ] Docker container for one-command deployment
+- [ ] GitHub Actions CI/CD pipeline
+- [ ] Cloud vector database adapter (Pinecone / Milvus)
+- [ ] SQLite persistent library storage
+- [ ] BibTeX export
+- [ ] Nougat OCR integration for scanned PDFs
+- [ ] Cross-paper entity alignment and notation conflict detection
+- [ ] Multi-user shared library (read-only access)
+- [ ] Interactive 3D dependency graph (WebGL / D3.js)
+- [ ] arXiv and Semantic Scholar paper import
+
+---
+
+## 🌐 Planned — Version 3.0.0
+
+- [ ] Full real-time collaborative workspace (research groups)
+- [ ] Global mathematical knowledge graph
+- [ ] Formula embedding and semantic formula search
+- [ ] Proof summarisation (faithfulness-validated)
+- [ ] Multi-paper contradiction detection
+- [ ] LaTeX theorem/definition export and survey draft generation
+- [ ] Full notation harmonisation interface
+- [ ] Interactive proof exploration assistant
+- [ ] Mobile-responsive interface
+
+---
+
+*MathResearch Studio · Project Kanban · Last updated 7 August 2026*
